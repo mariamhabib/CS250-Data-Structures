@@ -173,3 +173,22 @@ Here is the relevant code so you can check:
 	{
 		EditPerson( &employees[index] );
 	}
+
+
+### Creating an array of pointers
+
+In **main()**, after
+
+	Employee employees[10];
+    Customer customers[10];
+    SetupPeople( employees, customers );
+    
+we will create an array of pointers that will store all the 
+Employees and Customers, all lumped in together.
+
+This array will be a static array, it will be of size 20, and
+it will store Person pointers. Your declaration will look like this:
+
+>! Person* people[20];
+	
+

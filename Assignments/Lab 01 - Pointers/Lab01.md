@@ -148,8 +148,9 @@ Make sure to build and test the program to make sure it still works properly!
 
 #### Double-check
 
-Here is the relevant code so you can check:
-
+<details>
+	<summary>Here is the relevant code so you can check</summary>
+    <pre>
 	// Reference version
 	void EditPerson( Person& person )
 	{
@@ -184,6 +185,8 @@ Here is the relevant code so you can check:
 	{
 		EditPerson( &employees[index] );
 	}
+    </pre>
+</details>
 
 
 ### Creating an array of pointers

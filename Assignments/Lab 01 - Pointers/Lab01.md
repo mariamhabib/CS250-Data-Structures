@@ -110,7 +110,9 @@ but the pointer needs to be **dereferenced** in order to get to the object's
 internal member variables.
 
 <details>
-	<summary>Method one, dereferencing the pointer THEN getting the name.</summary>
+	<summary><strong>
+		Method one, dereferencing the pointer THEN getting the name.
+	</strong></summary>
 	(*ptrPerson).name
 </details>	
 
@@ -119,7 +121,9 @@ internal member variables.
 Order of operations re dereferencing and the dot operator.*
 
 <details>
-	<summary>Method two, using the "member-of" operator shorthand.</summary>
+	<summary><strong>
+		Method two, using the "member-of" operator shorthand.
+	</strong></summary>
 	ptrPerson->name
 </details>	
 	
@@ -129,15 +133,19 @@ change the references to EditCustomer and EditEmployee to both just
 call EditPerson.
 
 <details>
-	<summary>**If your parameter is a reference:** Then your code will look like:</summary>
+	<summary><strong>
+		If your parameter is a reference: Then your code will look like this.
+	</strong></summary>
+
 	EditPerson( customers[index] );
 </details>	
 	
 <details>
-	<summary>
-		**If your parameter is a pointer:** Then you need to pass in the
-		*address* of the person, so it will look like this:
-	</summary>
+	<summary><strong>
+		If your parameter is a pointer: Then you need to pass in the
+		*address* of the person, so it will look like this.
+	</strong></summary>
+
 	EditPerson( &employees[index] );
 </details>	
 
@@ -149,7 +157,10 @@ Make sure to build and test the program to make sure it still works properly!
 #### Double-check
 
 <details>
-	<summary>Here is the relevant code so you can check</summary>
+	<summary><strong>
+		Here is the solution so you can check your work.
+	</strong></summary>
+	
     <pre>
 	// Reference version
 	void EditPerson( Person& person )
@@ -204,8 +215,13 @@ This array will be a static array, it will be of size 20, and
 it will store Person pointers.
 
 <details>
-	<summary>Your declaration will look like this:</summary>
+	<summary><strong>
+		Your declaration will look like this.
+	</strong></summary>
+	
+	<pre>
 	Person* people[20];
+	</pre>
 </details>
 
 Then, create a for-loop that iterates from 0 to 10 to populate each
@@ -219,7 +235,10 @@ in the array.
 2. Set indices 10 - 19 of the *people* array to customers 0 - 9.
 
 <details>
-	<summary>View solution</summary>
+	<summary><strong>
+		View solution
+	</strong></summary>
+	
     <pre>
     for ( int i = 0; i < 10; i++ )
     {
@@ -248,7 +267,10 @@ to either **dereference then use the dot operator** or **use the
 address-of operator**.
 
 <details>
-	<summary>View solution</summary>
+	<summary><strong>
+		View solution
+	</strong></summary>
+	
     <pre>
     for ( int i = 0; i < 20; i++ )
     {

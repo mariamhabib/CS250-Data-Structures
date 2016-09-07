@@ -189,6 +189,11 @@ Employees and Customers, all lumped in together.
 This array will be a static array, it will be of size 20, and
 it will store Person pointers. Your declaration will look like this:
 
->! Person* people[20];
+<details>
+	<summary>testing 1 2 3</summary>
+	4 5 6
+</details>
+
+Person* people[20];
 	
 

@@ -1,4 +1,4 @@
-# CS 250 - Lab 0
+# STL Stack Lab
 
 ## Stacks Introduction
 

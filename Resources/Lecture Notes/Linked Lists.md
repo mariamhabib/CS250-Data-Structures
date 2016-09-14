@@ -89,3 +89,54 @@ Note: If we store a pointer to the last element of our list, we don't have to *t
 
 ## Implementing a Linked List...
 
+[View the example Linked List project here](https://github.com/Rachels-Courses/CS250-Data-Structures/tree/master/Resources/Example%20Code/Singly%20Linked%20List%20with%20Templates)
+
+## Pros and Cons of Linked Lists
+
+### Pros
+
+* Avoid the stop-and-resize processing time like with a dynamic array
+* Insertion and Deletion is cheap and easy - just moving pointers around!
+* Stacks and Queues can be implemented easily with a Linked List
+
+### Cons
+
+* No random-access like with arrays: Have to traverse the list to get a specific element (Sequential access)
+* More memory is needed due to next/prev pointers (vs. no pointers in an array)
+
+### Other notes
+
+* Elements of the list don't have to be in contiguous memory spaces like with an array.
+
+
+## Common Types of Linked Lists
+
+If your Node only points to the next item in the list, then it is a **Singly Linked List**.
+
+If your Node points to the next and the previous Node, it is a **Doubly Linked List**.
+
+If your "last" Node points to the "first" Node of the list, then it is a **Circular Linked List**.
+
+
+## Stacks and Queues?
+
+What's the point of having these kinds of data structures? Well, our computers run on them...
+
+* Ever heard of "Stack Overflow"? Besides a website, it is a kind of error that can occur from running out of space, usually from calling too many functions.
+	* Memory that isn't allocated dynamically is allocated on the stack, so any time you create a local variable or call a function and pass in arguments, memory is being allocated on the Stack.
+
+* A "Message Queue" is used in a lot of software to store a list of messages (sometimes requests for something to be processed), and execute them in order. Having the queue is useful, so if a message can't be immediately processed, it waits its turn, rather than be denied and lost.
+
+* Some User Interfaces use a "Stack" to store menus that you're on - such as when you press button A, B, then C, each one pops "Menu A", "Menu B", "Menu C", onto a stack. When you hit the "Back" button, it removes the current menu from the stack and goes backwards by one.
+
+A **Stack** is a First-In-Last-Out or Last-In-First-Out structure.
+
+* In Pringles, the last chip added to the can is the first one you have to eat before getting to the next chip down. 
+
+A **Queue** is a First-In-First-Out structure.
+
+* Like at a grocery store or anywhere else you have to stand in line - first come, first serve.
+
+### Gotta know 'em
+
+Just warning you early - you're going to be tested on implementations of functions of Queues and Stacks, among other things.

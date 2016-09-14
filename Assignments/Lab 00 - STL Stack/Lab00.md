@@ -30,7 +30,7 @@ Project files are not needed.
 
 ### Group Work Policy
 
-* Group work is **not allowed** for this assignment.
+* Group work and/or collaboration is allowed for this assignment.
 * You are allowed to research on the internet.
 * You are allowed to ask the instructor for help.
     * You can either ask to be helped one-on-one, or

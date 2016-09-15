@@ -136,6 +136,7 @@ to a nullptr so we can allocate the memory to get the array ready.
 1. Check to see if m_ptrDocArray is already pointing to a nullptr.
 2. If it is NOT pointing to nullptr...
 	1. Iterate through every element of the array, calling FreeDocument on each index.
+3. Delete the m_ptrDocArray (delete [] m_ptrDocArray)
 
 ## DocList Constructor
 

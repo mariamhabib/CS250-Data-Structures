@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1474135723 source:/home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Linked Lists/Single Linked List/main.cpp
+	<iostream>
+	"SingleLinkedList.hpp"
+
+1474136117 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Linked Lists/Single Linked List/SingleLinkedList.hpp
+	<iostream>
+

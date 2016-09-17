@@ -86,6 +86,7 @@ class SingleLinkedList
 
                 // Update the last pointer to the second to last item.
                 m_ptrLast = prevNode;
+                m_ptrLast->ptrNext = nullptr;
             }
             // Otherwise...
             else

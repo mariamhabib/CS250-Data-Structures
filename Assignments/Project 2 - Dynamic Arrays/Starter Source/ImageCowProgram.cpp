@@ -201,9 +201,16 @@ void ImageCowProgram::AddTextDocument( const string& filename, const string& fri
     newDoc->SetContent( content );
     newDoc->Save( filename + ".txt" );
 
-    m_docList.AddItem( newDoc );
+	if (m_docList.AddItem(newDoc))
+	{
+		cout << "Added" << endl;
+	}
+	else
+	{
+		cout << "Add failed... deallocating memory" << endl;
+		delete newDoc;
+	}
 
-    cout << "Added" << endl;
     dal::Menu::Pause();
 }
 
@@ -229,9 +236,16 @@ void ImageCowProgram::AddWebDocument( const string& filename, const string& frie
 
     newDoc->Save( filename + ".html" );
 
-    m_docList.AddItem( newDoc );
+	if (m_docList.AddItem(newDoc))
+	{
+		cout << "Added" << endl;
+	}
+	else
+	{
+		cout << "Add failed... deallocating memory" << endl;
+		delete newDoc;
+	}
 
-    cout << "Added" << endl;
     dal::Menu::Pause();
 }
 
@@ -257,9 +271,16 @@ void ImageCowProgram::AddCSVDocument( const string& filename, const string& frie
 
     newDoc->Save( filename + ".csv" );
 
-    m_docList.AddItem( newDoc );
+	if (m_docList.AddItem(newDoc))
+	{
+		cout << "Added" << endl;
+	}
+	else
+	{
+		cout << "Add failed... deallocating memory" << endl;
+		delete newDoc;
+	}
 
-    cout << "Added" << endl;
     dal::Menu::Pause();
 }
 

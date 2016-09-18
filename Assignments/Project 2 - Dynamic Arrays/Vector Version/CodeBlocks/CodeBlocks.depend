@@ -41,3 +41,45 @@
 	<sstream>
 	<iostream>
 
+1473871223 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/Document.cpp
+	"Document.hpp"
+	<iostream>
+	<fstream>
+
+1473871196 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/Document.hpp
+	<string>
+	<fstream>
+	<vector>
+
+1473871387 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/ImageCowProgram.cpp
+	"ImageCowProgram.hpp"
+	"utils/Menu.hpp"
+
+1473871065 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/ImageCowProgram.hpp
+	"Document.hpp"
+	<vector>
+
+1473869720 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/utils/Menu.hpp
+	<iostream>
+	<string>
+	<vector>
+
+1473869369 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/main.cpp
+	<iostream>
+	"ImageCowProgram.hpp"
+
+1473206914 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/utils/Menu.cpp
+	"Menu.hpp"
+	"Strings.hpp"
+	<cstdlib>
+	<limits>
+
+1473206914 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/utils/Strings.hpp
+	<string>
+
+1473206914 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Project 2 - Dynamic Arrays/Vector Version/utils/Strings.cpp
+	"Strings.hpp"
+	<cstdlib>
+	<sstream>
+	<iostream>
+

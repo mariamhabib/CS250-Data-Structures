@@ -52,7 +52,6 @@ class SingleLinkedList
             // This is the only node so point both
             // the beginning and ending at the new node.
             m_ptrFirst = m_ptrLast = newNode;
-            m_ptrFirst->ptrNext = m_ptrLast;
         }
         else
         {

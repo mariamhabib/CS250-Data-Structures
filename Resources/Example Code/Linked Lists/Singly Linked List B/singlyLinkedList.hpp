@@ -1,5 +1,5 @@
-#ifndef _LINKED_LIST
-#define _LINKED_LIST
+#ifndef LINKED_LIST_HPP
+#define LINKED_LIST_HPP
 
 #include <iostream>
 using namespace std;
@@ -7,123 +7,111 @@ using namespace std;
 template <typename T>
 class Node
 {
-    public:
-    Node()
-    {
-        next = NULL;
-    }
+public:
+	Node()
+	{
+		ptrNext = nullptr;
+	}
 
-    T data;
-    Node<T>* next;
+	T data;
+	Node<T>* ptrNext;
 };
+
 
 template <typename T>
 class SinglyLinkedList
 {
-    public:
-    SinglyLinkedList()
-    {
-        m_size = 0;
-        head = NULL;
-        tail = NULL;
-    }
+public:
+	SinglyLinkedList()
+	{
+		m_size = 0;
+		m_ptrHead = m_ptrTail = nullptr;
+	}
 
-    ~SinglyLinkedList()
-    {
-        Node<T>* current = head;
-        Node<T>* next;
-        while ( m_size > 0 )
-        {
-            Pop();
-        }
-    }
+	~SinglyLinkedList()
+	{
+		while (m_size > 0)
+		{
+			Pop();
+		}
+	}
 
-    Node<T>* Begin()
-    {
-        return head;
-    }
+	int Size()
+	{
+		return m_size;
+	}
 
-    Node<T>* End()
-    {
-        return tail;
-    }
+	void Push(T data)
+	{
+		Node<T>* newNode = new Node<T>;
+		newNode->data = data;
 
-    int Size()
-    {
-        return m_size;
-    }
+		if (m_size == 0)
+		{
+			m_ptrHead = newNode;
+			m_ptrTail = newNode;
+		}
+		else
+		{
+			m_ptrTail->ptrNext = newNode;
+			m_ptrTail = newNode;
+		}
 
-    void Push( T data )
-    {
-        Node<T>* newNode = new Node<T>;
-        newNode->data = data;
+		m_size++;
+	}
 
-        if ( head == NULL )
-        {
-            head = newNode;
-            tail = newNode;
-        }
-        else
-        {
-            tail->next = newNode;
-            tail = newNode;
-        }
+	T Top()
+	{
+		if (m_ptrTail != nullptr)
+		{
+			return m_ptrTail->data;
+		}
+		return nullptr;
+	}
 
-        m_size++;
-    }
+	void Pop()
+	{
+		if (m_ptrHead == m_ptrTail)
+		{
+			delete m_ptrHead;
+			m_ptrHead = nullptr;
+			m_ptrTail = nullptr;
+			m_size--;
+			return;
+		}
 
-    void Pop()
-    {
-        // find next-to-last node
-        Node<T>* current = head;
-        if ( head == tail )
-        {
-            delete head;
-            head = NULL;
-            tail = NULL;
-            m_size--;
-            return;
-        }
+		else if (m_size == 0)
+		{
+			return;
+		}
 
-        while ( current->next != tail )
-        {
-            current = current->next;
-        }
+		Node<T>* current = m_ptrHead;
+		while (current->ptrNext != m_ptrTail)
+		{
+			current = current->ptrNext;
+		}
+		delete m_ptrTail;
+		m_ptrTail = current;
+		m_ptrTail->ptrNext = nullptr;
+		m_size--;
+	}
 
-        delete tail;
-        tail = current;
-        m_size--;
-    }
+	void Print()
+	{
+		Node<T>* current = m_ptrHead;
+		while (current != nullptr)
+		{
+			cout << current->data << endl;
+			current = current->ptrNext;
+		}
+	}
 
-    void Print()
-    {
-        Node<T>* current = head;
-
-        int ct = 0;
-        while ( current != NULL )
-        {
-            ct++;
-            cout << ct << ": " << current->data;
-
-            if ( current == head )
-            {
-                cout << "\t HEAD";
-            }
-            if ( current == tail )
-            {
-                cout << "\t TAIL";
-            }
-            cout << endl;
-
-            current = current->next;
-        }
-        cout << endl;
-    }
-
-    private:
-    Node<T>* head;
-    Node<T>* tail;
-    int m_size;
+private:
+	Node<T>* m_ptrHead;
+	Node<T>* m_ptrTail;
+	int m_size;
 };
+
+
 
 #endif

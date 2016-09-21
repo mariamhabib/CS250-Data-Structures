@@ -30,7 +30,7 @@ Make sure to download the following files:
 
 ## Reference
 
-* [View a C++ implementation of Linked List](https://github.com/Rachels-Courses/CS250-Data-Structures/tree/master/Resources/Example%20Code/Singly%20Linked%20List%20with%20Templates)
+* [View a C++ implementation of Linked List](https://github.com/Rachels-Courses/CS250-Data-Structures/blob/master/Resources/Example%20Code/Linked%20Lists/Singly%20Linked%20List%20B/singlyLinkedList.hpp)
 
 ---
 

@@ -1,6 +1,6 @@
 # STL List Lab
 
-![Bird](bird.ppm)
+![Bird](bird.png)
 
 ## Introduction
 
@@ -179,7 +179,7 @@ You can use this information to make other changes...
 
 ### flipped.ppm
 
-![Example](flipped.ppm)
+![Example](flipped.png)
 
 Flip the bird image without changing the colors - remember that colors
 come in groups of 3. You might want to modify your color input code to something more like this:
@@ -198,7 +198,7 @@ back, you get an upside-down bird.
 
 ### removecolor.ppm
 
-![Example](removecolor.ppm)
+![Example](removecolor.png)
 
 For this image, remove **one** color from the image by replacing it with 0.
 
@@ -207,7 +207,7 @@ the modulus operator to set each 3rd item to output "0" instead of the actual co
 
 ### halfcolor.ppm
 
-![Example](halfblue.ppm)
+![Example](halfblue.png)
 
 For this image, remove **one** color from the image by replacing it with 0.
 

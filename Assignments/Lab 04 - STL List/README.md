@@ -212,5 +212,5 @@ the modulus operator to set each 3rd item to output "0" instead of the actual co
 For this image, remove **one** color from the image by replacing it with 0.
 
 Remember that the colors come in groups of 3, so you can use a counter and
-the modulus operator to set each 3rd item to output "0" instead of the actual color.
+the modulus operator to set each 3rd item to output half the current color instead of the actual color.
 The image above is halving the blue values.

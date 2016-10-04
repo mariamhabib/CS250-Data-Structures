@@ -57,16 +57,13 @@ Once your Stack object is implemented, you might have to update these functions 
 
 ---
 
-# LinkedList Class
+# DoublyLinkedList Class
 
-Before implementing a Stack, you should implement a generic LinkedList class. This class should utilize templates and have the following functions:
+Before implementing a Stack, you should implement a generic DoublyLinkedList class. This class should utilize templates and have the standard functions needed for a doubly linked list. Additionally, your LinkedList class should also utilize exceptions and throw exceptions as appropriate.
 
-* void push( T item )
-* void pop()
-* T top()
-* int size()
+## Node of a DoublyLinkedList
 
-Additionally, your LinkedList class should also utilize exceptions and throw exceptions as appropriate.
+What makes a DoublyLinkedList "doubly" is that the Node structure/class contains two pointers - one to the next node, and one to the previous node.
 
 ---
 

@@ -4,12 +4,11 @@
 
 Read this in Chrome! :)
 
-For this program, two programmers have worked on a program to
+For this program, two (hypothetical) programmers have worked on a program:
 
-*Ray* implemented a List object with a static array, but didn't add any
+* *Ray* implemented a List object with a static array, but didn't add any
 error checking in.
-
-*Chel* implemented the main program, but also did not put in any error checking.
+* *Chel* implemented the main program, but also did not put in any error checking.
 
 A user could easily input bad data and cause the program to crash.
 

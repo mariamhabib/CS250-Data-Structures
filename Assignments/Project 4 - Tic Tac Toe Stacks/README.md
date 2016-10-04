@@ -63,13 +63,65 @@ Before implementing a Stack, you should implement a generic DoublyLinkedList cla
 
 ## Node of a DoublyLinkedList
 
+![Node diagram](images/node_diagram.png)
+
+Note: + is public, top portion is variables, bottom portion is functions.
+
 What makes a DoublyLinkedList "doubly" is that the Node structure/class contains two pointers - one to the next node, and one to the previous node.
+
+### Variables:
+
+* Node<T>* ptrNext
+* Node<T>* ptrPrev
+* T data
+
+### Functions:
+
+* A constructor should initialize its pointers to **nullptr**.
+
+## DoublyLinkedList
+
+![DoublyLinkedList Diagram](images/doublylinkedlist.png)
+
+Note: + is public, # is protected, top portion is variables, bottom portion is functions.
+
+The DoublyLinkedList will need to be a generic object, because we will be implementing the **Stack** and, later, the **Queue** with this object. Once it is written once, implementing the Stack will use some of these functions, but not require all of them (though some of these functions will be useful for the Queue or a generic List later on.)
+
+### Member Variables
+
+* ptrFirst
+* ptrLast
+* itemCount
+
+### Member Methods
+
+Initialization/Deinitialization:
+
+* Constructor
+* Destructor
+
+List manipulation:
+
+* PushFront
+* PopFront
+* GetFront
+* PushBack
+* PopBack
+* GetBack
+* PushItemAt
+* PopItemAt
+* GetItemAt
+
+
+Other:
+
+* GetSize
 
 ---
 
 # Stack Class
 
-Your Stack class should be built *on top of* your LinkedList class. You can either utilize an "is-a" (inheritance) or a "has-a" (compositional) relationship.
+Your Stack class should be built *on top of* your LinkedList class. You will use a "has-a" (compositional) relationship.
 
 The Stack will contain the functions:
 

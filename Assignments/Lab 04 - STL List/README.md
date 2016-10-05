@@ -77,8 +77,6 @@ See the solution below if you aren't very familiar with File I/O.
 		**Opening the file and saving the header**
 	</strong></summary>
 	
-	<pre>
-	
 	ifstream input( "bird.ppm" );
 	string buffer;
 	string header;
@@ -93,7 +91,6 @@ See the solution below if you aren't very familiar with File I/O.
 	getline( input, buffer ); // max color
 	header += buffer + "\n";
 	
-	</pre>
 </details>	
 
 After the header, all the contnets of the file are integers representing colors, each on their own line.

@@ -102,20 +102,26 @@ Initialization/Deinitialization:
 
 List manipulation:
 
-* PushFront
-* PopFront
-* GetFront
-* PushBack
-* PopBack
-* GetBack
-* PushItemAt
-* PopItemAt
-* GetItemAt
+* PushFront - Add something as the first item of the list
+* PopFront - Remove the first item of the list (make the 2nd item the new 1st)
+* GetFront - Return the data of the first Node of the list
+* PushBack - Add something as the last item of the list
+* PopBack - Remove the last item of the list (make 2nd to last the new last)
+* GetBack - Return the data at the last Node of the list
+* PushItemAt - Push item at a specific index
+* PopItemAt - Remove item at a specific index
+* GetItemAt - Return the data of a Node at a specific index
 
 
 Other:
 
-* GetSize
+* GetSize - Return the size of the itemCount
+
+### Exception Handling
+
+---
+
+# Testing your Linked List
 
 ---
 
@@ -123,14 +129,63 @@ Other:
 
 Your Stack class should be built *on top of* your LinkedList class. You will use a "has-a" (compositional) relationship.
 
-The Stack will contain the functions:
+![Stack diagram](images/stack_diagram.png)
 
-WIP
+The stack will have one private member variable:
 
-These functions will act as an interface, delegating the actual tasks to the underlying LinkedList.
+* list, a DoublyLinkedList<T>
+
+(This means that the Stack will also be a template class, so the
+template type T can "transfer down" to the internal linked list).
+
+Then, the Stack will have the following methods:
+
+* Push - Push some data onto the top of the stack (use PushBack)
+* Pop - Remove the top-most node from the stack (use PopBack)
+* Top - Get the top-most item from the stack (use GetBack)
+* GetSize - Return the value of the list's GetSize function.
+
+The Stack here is essentially just an *interface*; we've done all the hard
+work in the DoublyLinkedList, now it's just time to snap on a Stack
+or a Queue or a List interface on top.
+
+### Exception Handling
+
+---
+
+# Testing the Stack
+
+---
+
+# Updating the program
+
+Once you've implemented your own Stack object, you will swap out the
+usages of the STL Stack from the **TicTacToe.cpp** and **TicTacToe.hpp** files:
+
+## TicTacToe.hpp
+
+Change the 
+	
+	stack<GameBoard> m_gameHistory; 
+
+to use your Stack instead.
+
+## TicTacToe.cpp
+
+### Stack update
+
+You will need to update any method calls to the original stack;
+the C++ stack has lower-case function names, so if you used upper-case,
+you will have to update these.
+
+* TicTacToe constructor - calls push
+* PushHistory - calls push and size
+* UndoLastMove - calls size, pop, and top.
+
+### Try/Catch update
 
 ---
 
 # Grading Rubric
 
-WIP
+<table border="0" cellspacing="0" cellpadding="0" class="ta1"><colgroup><col width="12"/><col width="252"/><col width="256"/><col width="163"/><col width="162"/></colgroup><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td colspan="4" style="text-align:left;width:163.64pt; " class="ce1"><p>Grading Rubric</p></td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce2"><p>Name:</p></td><td colspan="3" style="text-align:left;width:165.94pt; " class="ce7"> </td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce2"><p>Assignment:</p></td><td colspan="3" style="text-align:left;width:165.94pt; " class="ce7"><p>Project 4 (Tic Tac Toe Stack), CS 250</p></td></tr><tr class="ro2"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="Default"> </td><td style="text-align:left;width:165.94pt; " class="Default"> </td><td style="text-align:left;width:105.76pt; " class="Default"> </td><td style="text-align:left;width:104.94pt; " class="Default"> </td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td colspan="4" style="text-align:left;width:163.64pt; " class="ce1"><p>Breakdown</p></td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce3"><p>Item</p></td><td style="text-align:left;width:165.94pt; " class="ce3"><p>Description</p></td><td style="text-align:left;width:105.76pt; " class="ce3"><p>Total %</p></td><td style="text-align:left;width:104.94pt; " class="ce3"><p>Your Score</p></td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce4"><p>Builds &amp; Runs</p></td><td style="text-align:left;width:165.94pt; " class="ce8"> </td><td style="text-align:right; width:105.76pt; " class="ce11"><p>5.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce11"> </td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce5"><p>Clean Code</p></td><td style="text-align:left;width:165.94pt; " class="ce9"> </td><td style="text-align:right; width:105.76pt; " class="ce12"><p>5.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce12"> </td></tr><tr class="ro3"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce4"><p>Node struct/class</p></td><td style="text-align:left;width:165.94pt; " class="ce8"><p>Node is implemented properly: ptrNext, ptrPrev, data, and a constructor</p></td><td style="text-align:right; width:105.76pt; " class="ce11"><p>5.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce11"> </td></tr><tr class="ro4"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce5"><p>DoublyLinkedList variables</p></td><td style="text-align:left;width:165.94pt; " class="ce9"><p>Member variables added – ptrFirst, ptrLast, itemCount</p></td><td style="text-align:right; width:105.76pt; " class="ce12"><p>5.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce12"> </td></tr><tr class="ro4"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce4"><p>DoublyLinkedList – Push functions</p></td><td style="text-align:left;width:165.94pt; " class="ce8"><p>Logic properly implemented for push functions</p></td><td style="text-align:right; width:105.76pt; " class="ce11"><p>10.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce11"> </td></tr><tr class="ro4"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce5"><p>DoublyLinkedList – Pop functions</p></td><td style="text-align:left;width:165.94pt; " class="ce8"><p>Logic properly implemented for pop functions</p></td><td style="text-align:right; width:105.76pt; " class="ce12"><p>10.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce12"> </td></tr><tr class="ro4"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce4"><p>DoublyLinkedList – Get functions</p></td><td style="text-align:left;width:165.94pt; " class="ce8"><p>Logic properly implemented for get functions</p></td><td style="text-align:right; width:105.76pt; " class="ce11"><p>10.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce11"> </td></tr><tr class="ro4"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce5"><p>DoublyLinkedList – Throw errors</p></td><td style="text-align:left;width:165.94pt; " class="ce9"><p>Proper error checking in the doubly-linked list.</p></td><td style="text-align:right; width:105.76pt; " class="ce12"><p>15.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce12"> </td></tr><tr class="ro5"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce4"><p>Stack interface</p></td><td style="text-align:left;width:165.94pt; " class="ce8"><p>Stack member variable(s) and functions declared properly, delegate tasks to the DoublyLinkedList</p></td><td style="text-align:right; width:105.76pt; " class="ce11"><p>5.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce11"> </td></tr><tr class="ro3"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce5"><p>Stack – Errors</p></td><td style="text-align:left;width:165.94pt; " class="ce9"><p>Stack should catch DoublyLinkedList errors and pass them on.</p></td><td style="text-align:right; width:105.76pt; " class="ce12"><p>5.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce12"> </td></tr><tr class="ro4"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce4"><p>Main program Stack update</p></td><td style="text-align:left;width:165.94pt; " class="ce8"><p>Replace usage of STL Stack with your Stack</p></td><td style="text-align:right; width:105.76pt; " class="ce11"><p>10.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce11"> </td></tr><tr class="ro4"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce5"><p>Main program Try/Catch</p></td><td style="text-align:left;width:165.94pt; " class="ce9"><p>Add try/catch error checking into the TicTacToe program</p></td><td style="text-align:right; width:105.76pt; " class="ce12"><p>15.00%</p></td><td style="text-align:left;width:104.94pt; " class="ce12"> </td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce6"> </td><td style="text-align:left;width:165.94pt; " class="ce6"> </td><td style="text-align:left;width:105.76pt; " class="ce13"> </td><td style="text-align:left;width:104.94pt; " class="ce13"> </td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce2"><p>Totals</p></td><td style="text-align:left;width:165.94pt; " class="ce2"> </td><td style="text-align:left;width:105.76pt; " class="ce13"> </td><td style="text-align:left;width:104.94pt; " class="ce13"> </td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce6"> </td><td style="text-align:left;width:165.94pt; " class="ce6"> </td><td style="text-align:right; width:105.76pt; " class="ce13"><p>100.00%</p></td><td style="text-align:right; width:104.94pt; " class="ce14"><p>0.00%</p></td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="ce6"> </td><td style="text-align:left;width:165.94pt; " class="ce6"> </td><td style="text-align:left;width:105.76pt; " class="ce6"> </td><td style="text-align:left;width:104.94pt; " class="ce6"> </td></tr><tr class="ro2"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="Default"> </td><td style="text-align:left;width:165.94pt; " class="Default"> </td><td style="text-align:left;width:105.76pt; " class="Default"> </td><td style="text-align:left;width:104.94pt; " class="Default"> </td></tr><tr class="ro2"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="Default"> </td><td style="text-align:left;width:165.94pt; " class="Default"> </td><td style="text-align:left;width:105.76pt; " class="Default"> </td><td style="text-align:left;width:104.94pt; " class="Default"> </td></tr><tr class="ro2"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="Default"> </td><td style="text-align:left;width:165.94pt; " class="Default"> </td><td style="text-align:left;width:105.76pt; " class="Default"> </td><td style="text-align:left;width:104.94pt; " class="Default"> </td></tr><tr class="ro2"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="Default"> </td><td style="text-align:left;width:165.94pt; " class="Default"> </td><td style="text-align:left;width:105.76pt; " class="Default"> </td><td style="text-align:left;width:104.94pt; " class="Default"> </td></tr><tr class="ro2"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="Default"> </td><td style="text-align:left;width:165.94pt; " class="Default"> </td><td style="text-align:left;width:105.76pt; " class="Default"> </td><td style="text-align:left;width:104.94pt; " class="Default"> </td></tr><tr class="ro2"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td style="text-align:left;width:163.64pt; " class="Default"> </td><td style="text-align:left;width:165.94pt; " class="Default"> </td><td style="text-align:left;width:105.76pt; " class="Default"> </td><td style="text-align:left;width:104.94pt; " class="Default"> </td></tr><tr class="ro1"><td style="text-align:left;width:7.71pt; " class="Default"> </td><td colspan="4" style="text-align:left;width:163.64pt; " class="ce1"><p>Notes</p></td></tr></table>

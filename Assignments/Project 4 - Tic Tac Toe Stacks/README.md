@@ -119,6 +119,50 @@ Other:
 
 ### Exception Handling
 
+In addition to implementing the core functionality for a list, you should
+also be checking for errors and [throwing exceptions](http://www.cplusplus.com/reference/exception/exception/) should they come up:
+
+#### Memory Allocation errors -- bad_alloc
+
+Wrap a try/catch around any **memory allocation**. You should be attempting to catch any [bad_alloc exceptions](http://www.cplusplus.com/reference/new/bad_alloc/).
+
+Example from the cplusplus.com reference page:
+
+	try
+	{
+		int* myarray= new int[10000];
+	}
+	catch (std::bad_alloc& ba)
+	{
+		std::cerr << "bad_alloc caught: " << ba.what() << '\n';
+	}
+
+It is unlikely that you will run into this exception while working on your program,
+unless you're on a machine with *very very* limited memory.
+
+If you **catch** this error, then you want to perhaps display an error message,
+and then throw the same error back up to the next level.
+
+#### Bad indices -- out_of_range
+
+Any time a function is called to get an element, but we end up
+pointing to a **nullptr** (such as, we've traversed the list, or the index
+given is out of bounds), you will throw another type of exception:  [out_of_range](http://www.cplusplus.com/reference/stdexcept/out_of_range/)
+
+C++ doesn't check for de-referencing nullptrs and it doesn't throw exceptions for it,
+so you won't be try/catching anything. You will, however, need to write logic to check
+to see if you're going outside the bounds of the list, and if this is the case,
+you will *throw* the out_of_range error.
+
+You will mostly want to use this error for the "*ItemAt" functions when pushing at an index < 0, or > itemCount.
+
+* PushItemAt
+* PopItemAt
+* GetItemAt
+
+You will also want to do checks and throw exceptions for the other Push/Pop/Get functions if the list is empty:
+If the first and last nodes are both nullptr, you don't want to dereference those!
+
 ---
 
 # Testing your Linked List
@@ -150,6 +194,14 @@ work in the DoublyLinkedList, now it's just time to snap on a Stack
 or a Queue or a List interface on top.
 
 ### Exception Handling
+
+Since the DoublyLinkedList will be throwing errors, the Stack should be
+listening for these errors in order to either handle them or pass them on
+to the programmer using the Stack class.
+
+For any functions in DoublyLinkedList that could possibly throw an exception,
+make sure to wrap the function call in a try/catch. Once caught, throw the same
+exception up one step higher (after perhaps an error message).
 
 ---
 
@@ -183,6 +235,20 @@ you will have to update these.
 * UndoLastMove - calls size, pop, and top.
 
 ### Try/Catch update
+
+In *PushHistory* and *UndoLastMove*, you will want to wrap your usage of
+the stack in a try/catch.
+
+* PushHistory - This pushes to the end of the DoublyLinkedList, so you
+will want to check for out_of_range, in the case that the Stack is empty.
+You will also want to check for bad_alloc exceptions, so for this try/catch you
+will have 2 catch blocks.
+
+* UndoLastMove - This function should be checking for out_of_range exceptions.
+
+If you catch any exceptions from within the program itself (not the data structures),
+then display an error message, including the .what() of the original caught exception
+for the bad_alloc exception.
 
 ---
 

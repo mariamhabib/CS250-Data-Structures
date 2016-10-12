@@ -154,18 +154,19 @@ so you won't be try/catching anything. You will, however, need to write logic to
 to see if you're going outside the bounds of the list, and if this is the case,
 you will *throw* the out_of_range error.
 
-You will mostly want to use this error for the "*ItemAt" functions when pushing at an index < 0, or > itemCount.
-
-* PushItemAt
-* PopItemAt
-* GetItemAt
-
-You will also want to do checks and throw exceptions for the other Push/Pop/Get functions if the list is empty:
+You will want to do checks and throw exceptions for the other Push/Pop/Get functions if the list is empty:
 If the first and last nodes are both nullptr, you don't want to dereference those!
 
 ---
 
 # Testing your Linked List
+
+The attached file (and the code in the Tester folder) contain a program
+to test the DoublyLinkedList. These files include:
+
+* main.cpp
+* ListTester.hpp
+* ListTester.cpp
 
 ---
 

@@ -1,0 +1,45 @@
+# depslib dependency file v1.0
+1476311526 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/BookProgram.cpp
+	"BookProgram.hpp"
+	"utils/Menu.hpp"
+	"utils/Strings.hpp"
+	<iostream>
+	<fstream>
+
+1476305682 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/BookProgram.hpp
+	<vector>
+	"Page.hpp"
+
+1476305682 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/Page.hpp
+	<string>
+	<iostream>
+
+1476305682 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/utils/Menu.hpp
+	<iostream>
+	<string>
+	<vector>
+
+1476305682 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/utils/Strings.hpp
+	<string>
+
+1476305682 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/main.cpp
+	"BookProgram.hpp"
+
+1476305682 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/utils/Menu.cpp
+	"Menu.hpp"
+	"Strings.hpp"
+	<cstdlib>
+	<limits>
+
+1476305682 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/utils/Strings.cpp
+	"Strings.hpp"
+	<cstdlib>
+	<sstream>
+	<iostream>
+
+1476305682 source:/home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/utils/System.cpp
+	"System.hpp"
+
+1476305682 /home/rejcx/TEACHING/CS250-Data-Structures/Assignments/Lab 06 - DoublyLinkedList/Book Project/utils/System.hpp
+	<string>
+

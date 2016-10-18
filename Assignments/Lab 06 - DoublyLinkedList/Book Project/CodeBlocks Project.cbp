@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
 				</Compiler>
 			</Target>
@@ -31,17 +32,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../BookProgram.cpp" />
-		<Unit filename="../BookProgram.hpp" />
-		<Unit filename="../CPP-Utilities-master/Menu.cpp" />
-		<Unit filename="../CPP-Utilities-master/Menu.hpp" />
-		<Unit filename="../CPP-Utilities-master/Strings.cpp" />
-		<Unit filename="../CPP-Utilities-master/Strings.hpp" />
-		<Unit filename="../CPP-Utilities-master/System.cpp" />
-		<Unit filename="../CPP-Utilities-master/System.hpp" />
-		<Unit filename="../Page.hpp" />
-		<Unit filename="../fairytales.txt" />
-		<Unit filename="../main.cpp" />
+		<Unit filename="BookProgram.cpp" />
+		<Unit filename="BookProgram.hpp" />
+		<Unit filename="Page.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="utils/Menu.cpp" />
+		<Unit filename="utils/Menu.hpp" />
+		<Unit filename="utils/Strings.cpp" />
+		<Unit filename="utils/Strings.hpp" />
+		<Unit filename="utils/System.cpp" />
+		<Unit filename="utils/System.hpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

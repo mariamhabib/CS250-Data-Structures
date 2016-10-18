@@ -30,25 +30,30 @@ class DoublyLinkedList
     DoublyLinkedList()
     {
         dal::Logger::Out( "Function Begin", "DoublyLinkedList::DoublyLinkedList" );
+
         m_ptrFirst = nullptr;
         m_ptrLast = nullptr;
         m_itemCount = 0;
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::DoublyLinkedList" );
     }
 
     ~DoublyLinkedList()
     {
         dal::Logger::Out( "Function Begin", "DoublyLinkedList::~DoublyLinkedList" );
+
         while ( m_ptrFirst != nullptr )
         {
             PopBack();
         }
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::~DoublyLinkedList" );
     }
 
     void PushFront( T data )
     {
         dal::Logger::Out( "Function Begin", "DoublyLinkedList::PushFront" );
+
         Node<T>* newNode = new Node<T>();
         newNode->m_data = data;
 
@@ -69,12 +74,14 @@ class DoublyLinkedList
         }
 
         m_itemCount++;
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::PushFront" );
     }
 
     void PushBack( T data )
     {
         dal::Logger::Out( "Function Begin", "DoublyLinkedList::PushBack" );
+
         Node<T>* newNode = new Node<T>();
         newNode->m_data = data;
 
@@ -95,12 +102,14 @@ class DoublyLinkedList
         }
 
         m_itemCount++;
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::PushBack" );
     }
 
     void Insert( T data, int index )
     {
         dal::Logger::Out( "Function Begin", "DoublyLinkedList::Insert" );
+
         if ( index > m_itemCount || index < 0 )
         {
             throw out_of_range( "Invalid index!" );
@@ -135,6 +144,7 @@ class DoublyLinkedList
         }
 
         m_itemCount++;
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::Insert" );
     }
 
@@ -172,6 +182,7 @@ class DoublyLinkedList
         m_ptrFirst = ptrSecond;
 
         m_itemCount--;
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::PopFront" );
     }
 
@@ -208,6 +219,7 @@ class DoublyLinkedList
         m_ptrLast = ptrPenultimate;
 
         m_itemCount--;
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::PopBack" );
     }
 
@@ -243,6 +255,7 @@ class DoublyLinkedList
         delete ptrCurrent;
 
         m_itemCount--;
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::Remove" );
     }
 
@@ -300,6 +313,7 @@ class DoublyLinkedList
     void Display()
     {
         dal::Logger::Out( "Function Begin", "DoublyLinkedList::Display" );
+
         Node<T>* ptrCurrent = m_ptrFirst;
         while ( ptrCurrent != nullptr )
         {
@@ -318,6 +332,7 @@ class DoublyLinkedList
 
             ptrCurrent = ptrCurrent->m_ptrNext;
         }
+
         dal::Logger::Out( "Function End", "DoublyLinkedList::Display" );
     }
 

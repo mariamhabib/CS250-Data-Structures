@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1476825769 source:/home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/main.cpp
+1476825817 source:/home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/main.cpp
 	<iostream>
 	"DoublyLinkedList.hpp"
 	"Stack.hpp"
 	"Queue.hpp"
 	"Utilities/Menu.hpp"
 
-1476825799 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/DoublyLinkedList.hpp
+1476825892 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/DoublyLinkedList.hpp
 	"Utilities/Logger.hpp"
 	"Utilities/Strings.hpp"
 	<stdexcept>

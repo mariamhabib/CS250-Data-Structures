@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1476825769 source:/home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/main.cpp
+	<iostream>
+	"DoublyLinkedList.hpp"
+	"Stack.hpp"
+	"Queue.hpp"
+	"Utilities/Menu.hpp"
+
+1476825799 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/DoublyLinkedList.hpp
+	"Utilities/Logger.hpp"
+	"Utilities/Strings.hpp"
+	<stdexcept>
+
+1476824716 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/Utilities/Logger.hpp
+	<chrono>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+
+1476824716 source:/home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/Utilities/Logger.cpp
+	"Logger.hpp"
+
+1476824716 source:/home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/Utilities/Strings.cpp
+	"Strings.hpp"
+	<cstdlib>
+	<sstream>
+	<iostream>
+
+1476824716 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/Utilities/Strings.hpp
+	<string>
+
+1476824716 source:/home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/Utilities/Menu.cpp
+	"Menu.hpp"
+	"Strings.hpp"
+	<cstdlib>
+	<limits>
+
+1476824716 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/Utilities/Menu.hpp
+	<iostream>
+	<string>
+	<vector>
+
+1476825604 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/Stack.hpp
+	"DoublyLinkedList.hpp"
+
+1476825705 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Stack and Queue project/Queue.hpp
+	"DoublyLinkedList.hpp"
+

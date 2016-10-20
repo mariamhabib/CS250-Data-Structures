@@ -61,14 +61,14 @@ void InitializeQueue( queue<int>& backlog )
 void SplitOutWork( queue<int>& backlog, queue<int>& fastQueue, queue<int>& slowQueue )
 {
     // Split out the work: Go through each item in the backlog.
-    // If the item is < 1000000000, put in the fast queue. Otherwise, put in the slow queue.
+    // If the item is < 10000, put in the fast queue. Otherwise, put in the slow queue.
 
 
 }
 
 void CountUp( int n )
 {
-    cout << "Count from 0 to " << n*n << "... ";
+    cout << "n is " << n << "... Count from 0 to " << n*n << "... ";
     dal::Timer::Start();
     for ( int i = 0; i < n; i++ ) 
 	{ 

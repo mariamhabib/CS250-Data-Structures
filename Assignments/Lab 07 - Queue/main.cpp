@@ -68,9 +68,14 @@ void SplitOutWork( queue<int>& backlog, queue<int>& fastQueue, queue<int>& slowQ
 
 void CountUp( int n )
 {
-    cout << "Count from 0 to " << n << "... ";
+    cout << "Count from 0 to " << n*n << "... ";
     dal::Timer::Start();
-    for ( int i = 0; i < n; i++ ) { }
+    for ( int i = 0; i < n; i++ ) 
+	{ 
+		for (int i = 0; i < n; i++)
+		{
+		}
+	}
     cout << "Finished in " << dal::Timer::GetElapsedTime().count() << " ticks" << endl;
 }
 

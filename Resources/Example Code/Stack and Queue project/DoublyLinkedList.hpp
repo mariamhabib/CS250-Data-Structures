@@ -302,6 +302,7 @@ class DoublyLinkedList
         int counter = 0;
         while ( counter != index )
         {
+            ptrCurrent = ptrCurrent->m_ptrNext;
             counter++;
         }
 

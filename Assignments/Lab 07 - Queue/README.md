@@ -35,7 +35,7 @@ you should implement the SplitOutWork function and test it out.
 
 The backlog of work is passed in, as well as the fast queue and the slow queue.
 
-Go through every item of the backlog, putting items < 1000000000 into the
+Go through every item of the backlog, putting items < 10000 into the
 fast queue, and the rest in the slow queue.
 
 Run the program to make sure it works.

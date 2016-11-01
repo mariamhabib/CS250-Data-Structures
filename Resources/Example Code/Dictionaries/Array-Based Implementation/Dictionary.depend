@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1477682637 source:/home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Dictionaries/Array-Based Implementation/main.cpp
+	<iostream>
+	<string>
+	"Dictionary.hpp"
+
+1477682511 /home/rejcx/TEACHING/CS250-Data-Structures/Resources/Example Code/Dictionaries/Array-Based Implementation/Dictionary.hpp
+

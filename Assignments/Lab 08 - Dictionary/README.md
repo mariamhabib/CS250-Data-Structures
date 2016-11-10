@@ -26,7 +26,7 @@ Upload your **.cpp**, **.hpp** (or **.h**) files.
 You will need the reference documentation for the following:
 
 * [substr](http://www.cplusplus.com/reference/string/string/substr/)
-* [find](http://www.cplusplus.com/reference/algorithm/find/)
+* [find](http://www.cplusplus.com/reference/string/string/find/)
 * [getline](http://www.cplusplus.com/reference/string/string/getline/)
 
 ---
@@ -58,7 +58,7 @@ To parse the file, I suggest that you use three string variables - **english**, 
 
 You will use a while loop to read in a single line of the file at a time, using the [**getline**](http://www.cplusplus.com/reference/string/string/getline/) command on your **ifstream** object.
 
-Use the [**find**](http://www.cplusplus.com/reference/algorithm/find/) function to find the position at where the = is. It will return an index, so store this in an integer.
+Use the [**find**](http://www.cplusplus.com/reference/string/string/find/) function to find the position at where the = is. It will return an index, so store this in an integer.
 
 Then, use this integer with the [**substr**](http://www.cplusplus.com/reference/string/string/substr/) function to pull out the values for the **english** and **esperanto** variables.
 

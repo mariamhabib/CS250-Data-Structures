@@ -16,7 +16,7 @@ Upload your **.cpp**, **.hpp** (or **.h**) files.
 
 # Starting Off
 
-Download the starting project files: 
+Download the starting project files: [Starter files](https://github.com/Rachels-Courses/CS250-Data-Structures/blob/master/Assignments/Labs/Lab%2010%20-%20Algorithm%20Efficiency/Projects/01%20Simple%20Array.zip?raw=true)
 
 ---
 

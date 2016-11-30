@@ -37,8 +37,15 @@ int LinearSearch( vector<string>& haystack, const string& needle )
 
 int CustomSearch( vector<string>& haystack, const string& needle )
 {
-    // Implement a custom search...
     return -1;
+}
+
+void CustomSort( vector<string>& haystack )
+{
+}
+
+void Sort( vector<string>& haystack )
+{
 }
 
 int main()

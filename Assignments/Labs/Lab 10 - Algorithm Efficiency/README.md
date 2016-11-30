@@ -16,105 +16,51 @@ Upload your **.cpp**, **.hpp** (or **.h**) files.
 
 # Starting Off
 
-Use this code to begin with:
-
-
-      #include <iostream>
-      #include <string>
-      #include <cstdlib>
-      #include <ctime>
-      using namespace std;
-
-      void InitArray( int arrayOfData[], int arraySize )
-      {
-          cout << "Initializing..." << endl;
-          for ( int i = 0; i < arraySize; i++ )
-          {
-              arrayOfData[ i ] = rand() % arraySize;
-          }
-      }
-
-      bool FindValue( const int arrayOfData[], int arraySize, int findMe )
-      {
-          cout << "Searching..." << endl;
-          for ( int i = 0; i < arraySize; i++ )
-          {
-              if ( arrayOfData[i] == findMe )
-              {
-                  return true;
-              }
-          }
-          return false;
-      }
-
-      int main()
-      {
-        srand( time( NULL ) );
-
-          int arraySize = 1000000;
-          int arrayOfData[ 1000000 ];
-          InitArray( arrayOfData, arraySize );
-
-          int searchFor = rand() % arraySize;
-          cout << "Found value " << searchFor << "? " << FindValue( arrayOfData, arraySize, searchFor ) << endl;
-
-          return 0;
-      }
-
-You will also want to download the Timer files:
-
-**Timer.hpp**
-
-    #ifndef TIMER_HPP
-    #define TIMER_HPP
-
-    #include <chrono>
-    using namespace std;
-
-    namespace dal
-    {
-
-    class Timer
-    {
-        public:
-        static void Start();
-        static chrono::duration<double> GetElapsedTime();
-
-        private:
-        static chrono::system_clock::time_point m_startTime;
-    };
-
-    }
-
-    #endif
-
-
-**Timer.cpp**
-
-    #include "Timer.hpp"
-
-    namespace dal
-    {
-
-    chrono::system_clock::time_point Timer::m_startTime;
-
-    void Timer::Start()
-    {
-        m_startTime = chrono::system_clock::now();
-    }
-
-    chrono::duration<double> Timer::GetElapsedTime()
-    {
-        return chrono::system_clock::now() - m_startTime;
-    }
-
-
-    }
-
-
+Download the starting project files: 
 
 ---
 
 # Instructions
 
-Work in progress.
+## 1. Search algorithm
+
+In the starter code, a linear search is already implemented.
+
+Try to brainstorm with a classmate on how to make an algorithm
+that is more efficient than checking one item at a time, from
+the start to the end.
+
+Implement a custom search function, and make sure you output
+how many iterations it took to find the result.
+
+## 2. Sorting the data
+
+A smart search algorithm is easier to come up with if the
+list of data is sorted. There are many sorting algorithms.
+
+Brainstorm with a classmate on how to make a sorting algorithm
+without referencing existing sorting algorithms.
+
+Try to implement a custom sorting function, and make sure you
+output how many iterations it took to sort the array.
+
+## 3. Sorting algorithms
+
+Look at some of the following Wiki pages for algorithms:
+
+* [Selection sort](https://en.wikipedia.org/wiki/Selection_sort)
+* [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)
+* [Quicksort](https://en.wikipedia.org/wiki/Quicksort)
+* [Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+
+Each of these pages have pseudocode available to reference.
+Implement one of these algorithms, adapting the pseudocode to
+work with your data.
+
+Make sure to add a counter that outputs how many iterations it took
+to sort the data afterward.
+
+
+
+
+

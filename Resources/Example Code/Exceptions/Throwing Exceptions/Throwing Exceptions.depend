@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1475299499 source:c:\teaching\cs250-data-structures\resources\example code\exceptions\throwing exceptions\throwing.cpp
+	<iostream>
+	<string>
+
+1475299958 source:c:\teaching\cs250-data-structures\resources\example code\exceptions\throwing exceptions\throw_cpp_exception.cpp
+	<iostream>
+	<stdexcept>
+	<string>
+

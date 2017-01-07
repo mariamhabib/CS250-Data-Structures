@@ -15,9 +15,14 @@ int main()
     while ( !commands.empty() )
     {
         string command = commands.front();
+        
+        cout << endl << command << endl;
+        
         system( command.c_str() );
+        
         commands.pop();
     }
+
     
     return 0;
 }

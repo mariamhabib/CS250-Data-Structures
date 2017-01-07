@@ -4,28 +4,20 @@
 using namespace std;
 
 int main()
-{
-    map<int, string> employees;
+{    
+    map<string, int> employees;
+    employees["Harry"] = 1024;
+    employees["Ron"] = 256;
+    employees["Hermione"] = 512;
     
-    employees[ 123 ] = "asdf";
-    employees[ 1024 ] = "bob";
-    employees[ 155 ] = "harry";
-    employees[ 1321 ] = "ron";
-    employees[ 1982 ] = "hermione";
+    string key;
+    cout << "Enter an employee name: ";
+    cin >> key;
     
-    /*
-    for ( map<int, string>::iterator it = employees.begin(); it != employees.end(); it++ )
-    {
-        cout << it->first << " = " << it->second << endl;
-    }
-    * */
+    cout << "That employee ID is " << employees[ key ] << endl;
     
-    int index;
-    cout << "Enter an index: ";
-    cin >> index;
     
-    cout << employees[ index ] << endl;
-    
+
     return 0;
 }
 

@@ -1,5 +1,9 @@
 # Lab 00: Introduction to GitHub
 
+![Example commit](images/commit.png)
+
+(Git-ception!)
+
 ## Turn In
 
 In the lab dropbox, you will upload a screenshot of your class repository.

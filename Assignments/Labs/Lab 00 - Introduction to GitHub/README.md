@@ -110,7 +110,9 @@ Every time you update a file, you will have to add it.
 
 	git add (FILENAME)		add one file
 	
-	git add .				add all files (that aren't in the .gitignore)
+	git add .			add all files (that aren't in the .gitignore)
+	
+	git status			check status of items in the repository
 	
 After you add files, create a changeset by committing:
 

@@ -70,3 +70,18 @@ Implement the [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algori
         Create three integer variables: left, right, and mid.
         
         Initialize *left* to 0 and *right* to the size-1.
+        
+        While left <= right...:
+                Increment the *cycleCounter*.
+                Set mid equal to the mid-point (left+right)/2.
+                
+                If the element at position *mid* is equal to *findMe*:
+                        return mid.
+                
+                Otherwise, if the element at position *mid* is less than *findMe*:
+                        Set *left* equal to *mid* + 1.
+                
+                Otherwise, if the element at position *mid* is greater than *findMe*:
+                        Set *right* equal to *mid* - 1.
+                        
+        When the loop is done, if the item hasn't been found, return -1.

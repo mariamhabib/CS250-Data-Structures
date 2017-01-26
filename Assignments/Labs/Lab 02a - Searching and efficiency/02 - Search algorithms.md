@@ -22,50 +22,11 @@ Make sure to include **all source files: .cpp, .hpp, .h, etc.**. (Project files 
 
 ---
 
-## Reference: Creating a project in Visual Studio
+## Reference
 
-When  you first open Visual Studio, the home screen has the option to create a **New Project**:
+* [Creating a new project and files in Visual Studio](https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Visual-Studio/New%20project%20howto.md)
 
-![New project view](images/https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/raw/master/Assignments/Homework%20Exercises/HWEX2%20-%20If%20Else%20Branching/images/visualstudio-start.png)
-
-Select that.
-
-From the left-hand menu, select **Visual C++**. Note: If you installed Visual Studio community edition on your machine, it may not automatically come with C++ and you'll have to download it.
-
-![New project](images/https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/raw/master/Assignments/Homework%20Exercises/HWEX2%20-%20If%20Else%20Branching/images/visualstudio-newproject.png)
-
-Select **Empty Project** (make sure you select this one!), and give your project a **Name** and a **Location** on your hard drive. Then click **OK**.
-
-Your project will be created without any files in it, so you will have to create one.
-
-From the **Solution Explorer**, right-click your project, go to **Add**, and select **New Item...**:
-
-![New item](images/https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/raw/master/Assignments/Homework%20Exercises/HWEX2%20-%20If%20Else%20Branching/images/vs-solutionexplorer.png)
-
-(If you accidentally closed Solution Manager, reopen it through View > Solution Explorer)
-
-Select **C++ File (.cpp)** and give it a name, like "Exercise2.cpp", or "YOURNAME.cpp", then click **Add**.
-
-![Adding a file](images/https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/raw/master/Assignments/Homework%20Exercises/HWEX2%20-%20If%20Else%20Branching/images/vs-addfile.png)
-
-Then you will start off your program with the bare minimum code:
-
-	int main()
-	{
-		return 0;
-	}
-
-And include the following libraries as-needed:
-
-	// For displaying text with cout and getting input with cin.
-	#include <iostream>
- 
-	// For making string variables
-	#include <string> 
-
----
-
-## Making sure your program doesn't immediately end
+### Making sure your program doesn't immediately end
 
 This is not the best way to make sure your program doesn't quit, but it is OK for now.
 

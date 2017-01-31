@@ -31,6 +31,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="SmartArrayTester.cpp" />
+		<Unit filename="SmartArrayTester.hpp" />
+		<Unit filename="SmartArray_Static.cpp" />
+		<Unit filename="SmartArray_Static.hpp" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

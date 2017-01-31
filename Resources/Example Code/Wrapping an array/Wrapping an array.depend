@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1485828084 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Resources/Example Code/Wrapping an array/main.cpp
+	<iostream>
+	"SmartArrayTester.hpp"
+
+1485828143 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Resources/Example Code/Wrapping an array/SmartArrayTester.hpp
+	<string>
+
+1485828977 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Resources/Example Code/Wrapping an array/SmartArray_Static.cpp
+	"SmartArray_Static.hpp"
+
+1485828133 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Resources/Example Code/Wrapping an array/SmartArray_Static.hpp
+	<string>
+
+1485828941 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Resources/Example Code/Wrapping an array/SmartArrayTester.cpp
+	"SmartArrayTester.hpp"
+	"SmartArray_Static.hpp"
+	<iostream>
+

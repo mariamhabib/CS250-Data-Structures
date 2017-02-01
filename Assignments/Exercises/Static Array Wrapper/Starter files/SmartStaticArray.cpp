@@ -64,7 +64,7 @@ string SmartStaticArray::operator[]( int index )
 }
 
 
-SmartStaticArray SmartStaticArray::operator=( const SmartStaticArray& other )
+SmartStaticArray& SmartStaticArray::operator=( const SmartStaticArray& other )
 {
     SmartStaticArray blorp; // temp
     return blorp; // temp

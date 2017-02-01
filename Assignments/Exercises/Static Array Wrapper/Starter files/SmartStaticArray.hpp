@@ -26,7 +26,7 @@ class SmartStaticArray
     bool IsEmpty() const;
 
     string operator[]( int index );
-    SmartStaticArray operator=( const SmartStaticArray& other );
+    SmartStaticArray& operator=( const SmartStaticArray& other );
     bool operator==( const SmartStaticArray& other );
 
     private:

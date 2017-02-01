@@ -17,11 +17,29 @@ Or you can download the files directly on GitHub:
 
 ## Rules
 
+### Open book / Open note:
+    Do research for this assignment as-needed. Use your textbook, the web, class example code, etc.
+     
+### Solo work
+    
+    This is a solo assignment and you should be working on this alone. This means...:
+    
+        ✓ You can verbally brainstorm with others to discuss the problem and techniques for problem solving.
+        
+        ✓ Your work must be your own work.
+        
+        ✓ Email the instructor, or ask in the Slack channel, if you are stuck or need clarification on the instructions.
+        
+        ✗ You cannot give your code to somebody else for them to "verify their work" with (more often than not they just copy it, and then you both get 0%!)
+        
+        ✗ You cannot copy another student's work. I will use a diff tool to compare student assignments (and code online). If there is obvious copying, all people involved will receive a 0%.
+
 * Team size: 1 person
     * You can brainstorm with others - that is, you can verbally discuss the problem.
     * You cannot copy another person's work. Code will be checked against other submissions with a diff tool. If a copy is found, both people will receive a 0 on the assignment.
 * Open book / open note - do research as-needed.
 
+ 
 ## Overview
 
 The starter files contain the stub for the Smart Array, with functions

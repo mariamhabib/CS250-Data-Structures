@@ -82,14 +82,14 @@ bool Tester_SmartStaticArray::TestInsert()
 
 	// Test 1: Test insert like a push
 	SmartStaticArray arr1;
-	for ( int i = 0; i < MAX_SIZE; i++ )
+	for ( int i = 1; i < MAX_SIZE; i++ )
 	{
-        if ( arr1.Insert( arr1.Size() - 1, "A" ) == false )
-        {
-            ReportFailure( "TestInsert()",
-                "Tried to insert items to the end of an array, failed for some reason." );
-            allTestsPass = false;
-        }
+		if ( arr1.Insert( arr1.Size() - 1, "A" ) == false )
+		{
+		    ReportFailure( "TestInsert()",
+			"Tried to insert items to the end of an array, failed for some reason." );
+		    allTestsPass = false;
+		}
 	}
 
 	// Test 2: Test insert at various positions

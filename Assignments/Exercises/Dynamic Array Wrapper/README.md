@@ -155,7 +155,7 @@ Then, everything can be copied over as before.
 
 This should free memory and update the pointer per best practices...
 
-1. Check if the pointer m_data is *nullptr*. If so:
+1. Check if the pointer m_data IS NOT *nullptr*. If so:
 	1. Delete the dynamic array
 	2. Set the m_data pointer to *nullptr*
 

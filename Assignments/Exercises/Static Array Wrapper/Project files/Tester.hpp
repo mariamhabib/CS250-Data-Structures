@@ -228,7 +228,7 @@ int TestExtend()
     else { totalSuccess++; }
 
 
-	string solution = "1, 2, 3, 4, 1, 2, 3, 4";
+	string solution = "1, 2, 3, 4";
 	string actual = "";
 
 	for ( int i = 0; i < arr2.Size(); i++ )

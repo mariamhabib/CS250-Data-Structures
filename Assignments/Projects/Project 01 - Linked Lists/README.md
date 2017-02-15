@@ -124,6 +124,12 @@ And to step to the next item, make use of *ptrNext*:
 If you want to go to item *n* in the list, then you'll just have to
 do the above step *n* times (via a loop.)
 
+You can traverse a few ways. If you have a specific position you want
+to stop at, use an integer counter.
+
+If you want to traverse over a full list, you can loop *while the
+traversal pointer is not nullptr.*
+
 ## Common errors
 
 ### New node pointer vs. Traversal pointer
@@ -165,17 +171,147 @@ prior to adding an item.
 
 ## bool Insert( int index, const T& newItem )
 
+Insert will still have to make sure the *index* is valid. If it isn't
+valid, simply return false. A valid index is >= 0, and <= m_itemCount.
+
+If the index is valid, and happens to be at the end of the list, call
+**Push** and pass in the newItem. Make sure to return true.
+
+Otherwise, we are going to have to find this position. You will need
+a **traversal** pointer (see the Linked List section above).
+
+Once your traversal node is pointing to the node at position *index*,
+now it's time to allocate some new memory (via a DIFFERENT pointer.)
+
+1. Create a new Node pointer
+2. Allocate memory for the new node
+3. Set the new node's **data**
+
+This new node is going to be inserted between two nodes.
+To do this, you will need to update the **ptrNext** pointer of the
+previous item, and the **ptrPrev** pointer of the next item.
+
+We also have to update *ptrNext* and *ptrPrev* of the new node.
+
+1. Set the new node's *ptrNext* to our traversal pointer.
+2. Set the new node's *ptrPrev* to our traversal pointer's *ptrPrev*.
+3. Set the previous node's *ptrNext* to the new node.
+4. Set the traversal node's *ptrPrev* to the new node.
+
+### Before insert
+
+![New node to be inserted](images/beforeinsert.png)
+
+A new node has been created, and the current* (traversal) pointer
+is pointing at item *index*.
+
+![New node after insert](images/afterinsert.png)
+
+B, C, and D's *ptrPrev* and/or *ptrNext* pointers have been updated
+to include C in-between.
+
 ## void Extend( const LinkedList& other )
+
+Extend can utilize the *Push* function to push all elements
+from the *other* list onto the local list.
+
+Use a traversal pointer to go through all of the *other* list's items
+and push onto the local list.
 
 ## bool Pop()
 
+This will remove the last item of the list, but the functionality
+will be different based on whether the list has 1 item or more than 1 item.
+
+### Empty list
+
+Do nothing; return false.
+
+You can tell the list is empty if *m_ptrFirst* and/or *m_ptrLast* is
+pointing to nullptr.
+
+### One item in list
+
+If there is only one item in the list, you will delete that only item.
+Both m_ptrFirst and m_ptrLast should both be pointing at the single item,
+so delete via one of these pointers.
+
+Afterward, make sure to update m_ptrFirst and m_ptrLast to both now
+point to *nullptr*.
+
+Make sure to decrement m_itemCount and return true.
+
+### Multiple items in list
+
+You will need to use a traversal pointer to get to the 2nd-to-last item
+of the list.
+
+You can get the 2nd-to-last item via m_ptrLast 's *ptrPrev* node.
+
+	Node<T>* penultimate = m_ptrLast->ptrPrev;
+	
+1. Free the memory at m_ptrLast.
+2. Update the m_ptrLast pointer to point to the 2nd-to-last item.
+3. Update the new m_ptrLast's *ptrNext* item to a nullptr.
+4. Decrement m_itemCount.
+5. Return true.
+
 ## bool Remove( int index )
+
+First, check for valid index. Return false if invalid.
+
+Next, if there is only one item in the list, or if the remove index
+is the last item of the list, just use Pop() to get rid of it.
+
+Otherwise, locate the item to be removed using a traversal pointer.
+
+Once you have the item, you will update the pointers (in a reverse
+of the insert functionality):
+
+1. The previous item's ptrNext will now point to the next item.
+2. The next item's ptrPrev will now point to the previous item.
+3. Free the memory that your traversal pointer is pointing to.
+4. Decrement m_itemCount.
+5. Return true.
 
 ## T Get( int index ) const
 
+Use a traversal technique to return the **data** of the Node
+at the given position.
+
+If the index is invalid, just return a T constructor:
+
+	if ( index < 0 || index >= m_itemCount )
+	{
+		// Return a new T item...
+		return T();
+	}
+
 ## LinkedList& operator=( const LinkedList& other )
 
+To set one linked list equal to another, you should make sure to
+free all the data first.
+
+1. Use Free() to clear out all memory in the local object.
+2. Traverse through every element of the *other* list, using Push() to push
+each element onto the local list.
+3. Return a pointer to this item.
+
+	return (*this);
+
 ## bool operator==( const LinkedList& other )
+
+This should return true of both lists are the same...:
+
+* If both lists have different sizes, return false.
+* Use **two** traversal pointers to traverse through both
+lists concurrently in a loop.
+	* Check the data values of both traversal items. If they don't match, return false.
+	* Otherwise, have both traversal items go to the next Node.
+	* Keep going until you've covered both lists fully.
+
+If you have traversed the lists and it never hit a *return false* statement,
+then that must mean the lists match, so return *true*.
 
 ---
 

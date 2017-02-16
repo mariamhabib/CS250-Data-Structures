@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Rachel J Morris">
+    <link rel="icon" href="http://www.moosader.com/wp-content/uploads/2016/08/kit-icon.png">
+
+    <title>CS 250 - Basic Data Structures using C++</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Template -->
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+
+    <link href="assets/css/rach.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CS 250 - Basic Data Structures using C++</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://online.jccc.edu/">Desire2Learn</a></li>
+            <li><a href="http://www.jccc.edu/">JCCC</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+	  
+		<!-- Left nav bar BEGIN -->
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About this course</a></li>
+            <li><a href="weekbyweek.html">Week-by-week</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="viewbychapter.html">View by chapter</a></li>
+            <li><a href="viewbyassignment.html">View by assignment</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="additional.html">Additional resources</a></li>
+          </ul>
+        </div>
+		<!-- Left nav bar END -->
+	
+		<!-- Page content BEGIN -->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">About this course</h1>
+          
+          
+          
+          <!-- Navigation -->
+		  <div class="row navigation">
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#course-info">Course information</a></p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#instructor">Instructor info &amp; office hours</a></p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#supplies">Class supplies</a></p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#assessments">Assessment breakdown</a></p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#format">Course format</a></p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#policies">Course policies</a></p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#schedule">Tentative schedule</a></p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#accommodations">Success &amp; accommodations</a></p>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<p><a class="btn btn-lg btn-primary" href="#additional">Additional information</a></p>
+			</div>
+		  </div>
+		  
+		  <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/courseinfo.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="course-info">Course information</a></h3>
+					
+					<div class="row">
+						
+						<div class="col-md-3 syllabus-info">
+							<h4 class="syllabus-header">Instructor:</h4>
+							
+							Rachel Morris
+						</div>
+						
+						<!-- row -->
+						
+						
+						<div class="col-md-3 syllabus-info">
+							<h4 class="syllabus-header">CRN:</h4>
+							00000
+						</div>
+						
+						<!-- row -->
+						
+						
+						<div class="col-md-3 syllabus-info">
+							<h4 class="syllabus-header">Course type:</h4>
+							Transfer
+						</div>
+						
+						<!-- row -->
+						
+						<div class="col-md-3 syllabus-info">
+							<h4 class="syllabus-header">Credits:</h4>
+							
+							3
+						</div>
+						
+						<!-- row -->
+						
+						
+						<div class="col-md-12 syllabus-info">
+							<h4 class="syllabus-header">Prerequisites:</h4>
+							MATH 171 or both MATH 116 and CS 134 or appropriate math assessment scores.
+						</div>
+						
+						<!-- row -->
+						
+						<div class="col-md-12 syllabus-info">
+							<h4 class="syllabus-header">Class schedule / room:</h4>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<h5>Section 001</h5>
+									
+									DAYS TIMES ROOM
+								</div>
+								
+								<div class="col-md-4">
+									<h5>Section 002</h5>
+									
+									DAYS TIMES ROOM
+								</div>
+								
+								<div class="col-md-4">
+									<h5>Section 003</h5>
+									
+									DAYS TIMES ROOM
+								</div>
+							</div>
+						</div>
+						
+						<!-- row -->
+						
+						<div class="col-md-12 syllabus-info">
+							<h4 class="syllabus-header">Catalog:</h4>
+							<a href="http://catalog.jccc.edu/coursedescriptions/cs/#CS_210">http://catalog.jccc.edu/coursedescriptions/cs/#CS_210</a>
+						</div>
+						
+						<!-- row -->
+						
+						<div class="col-md-12 syllabus-info">
+							<h4 class="syllabus-header">Course description:</h4>
+							Upon successful completion of this course, the student should be able to use fundamental discrete mathematics as it relates to computers and computer applications. The student will be exposed to a variety of discrete mathematical topics. The course will include fundamental mathematical principles, combinatorial analysis, mathematical reasoning, graphs and trees, and Boolean logic circuits. 3 hrs. lecture/wk.
+						</div>
+						
+						
+					</div>
+					
+					
+				</div>
+          </div>
+          <!-- Section end -->
+          
+          <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/schedule.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="instructor">Instructor &amp; office hours</a></h3>
+					
+					<h4 class="syllabus-header">Rachel Morris, assistant professor</h4>
+					
+					<h4 class="syllabus-header">Contact information</h4>
+					
+					<div class="row">
+						<div class="col-md-4">
+							<h5>Email</h5>
+							rmorri38@jccc.edu
+						</div>
+						
+						<div class="col-md-4">
+							<h5>Cellphone (text)</h5>
+							
+							<img src="assets/graphics/phonenumber.png">
+						</div>
+						
+						<div class="col-md-4">
+							<h5>Chatroom</h5>
+							We can discuss problems in <a href="https://rmorris-jccc.slack.com/">Slack</a>
+						</div>
+					</div>
+					
+					
+					<h4 class="syllabus-header">Office hours</h4>
+					
+					Location: TBD
+					
+					Hours: TBD
+					
+					<h4 class="syllabus-header">About me</h4>
+					
+					<h5>Educational background</h5>
+					
+					<ul>
+					<li>Homeschooled prior to college</li>
+					<li>Graduated from MCCKC-Longview in 2006 with A.S. in Computer Science</li>
+					<li>Graduated from UMKC in 2009 with B.S. in Computer Science</li>
+					<li>Currently attending KU working towards M.S. in Computer Science / Computer Systems Design focus</li>
+					</ul>
+					
+					<h5>Professional background</h5>
+					
+					<p>I've worked locally as a software and web developer since I graduated from UMKC in 2009. I've worked with C++, C#, ASP.NET, Python, Django, HTML, CSS, JS, and MySQL professionally.</p>
+					<p>I currently teach full time at JCCC and run my own software startup. We make apps.</p>
+					
+					<h5>Hobbies</h5>
+					
+					<p><img src="assets/graphics/rawr.png"  class="float-left" alt="Game I made" title="Game I made" /></p>
+					<p>I do a lot of programming in my spare time, ever since I was 12. Mostly game development.</p>
+					<p>When trying to <em>not</em> sit on the computer all day, I study human languages and do crafts.</p>
+					<p>I'm fluent in Esperanto, I've taken a class at KU Edwards in Mandarin Chinese, and I'm currently learning Hindi.</p>
+					
+				</div>
+          </div>
+          <!-- Section end -->
+          
+          <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/supplies.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="supplies">Class supplies</a></h3>
+					
+					<h4>Textbook</h4>
+					
+					<div class="row">
+						<div class="col-md-3">
+							<img src="assets/graphics/book_CS210.png">
+						</div>
+						
+						<div class="col-md-9">
+							<p>Discrete Mathematics: Mathematical Reasoning and Proof with Puzzles, Patterns, and Games (1st edition)</p>
+
+							<p>Author: Douglas E. Ensley, J. Winston Crawley</p>
+
+							<p>Publisher: Wiley, 2006</p>
+
+							<p>ISBN-13: 978-0471763802</p>
+							
+							<p><a href="https://www.amazon.com/gp/product/0471476021/ref=pd_cp_0_1?ie=UTF8&psc=1&refRID=AGKHQXM6P16542VT6GDY">
+							
+							View book on Amazon
+							</a></p>
+						</div>
+					</div>
+
+
+					
+					<h4>Calculator</h4>
+					
+					<p>
+						Graphing calculators are <strong>not allowed.</strong>
+					</p>
+					
+					<p>
+						You can use other types of calculators on tests, which have functions
+						like square root, exponents, etc.
+					</p>
+					
+				</div>
+          </div>
+          <!-- Section end -->
+          
+          <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/fail.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="assessments">Assessment breakdown</a></h3>
+					
+					<div class="row">
+						
+						<div class="col-md-2">
+							Final exam
+						</div>
+						<div class="col-md-2">
+							150 points
+						</div>
+						<div class="col-md-8">
+							Cumulative final exam (≈ 20%)
+						</div>
+						
+						<!-- row -->
+						
+						<div class="col-md-2">
+							Exams
+						</div>
+						<div class="col-md-2">
+							100 points each
+						</div>
+						<div class="col-md-8">
+							3 to 4 exams over chapters 1, 2, 3, and 4 (≈ 40%)
+						</div>
+						<!-- row -->
+						
+						<div class="col-md-2">
+							Homework quizzes
+						</div>
+						<div class="col-md-2">
+							10 points each
+						</div>
+						<div class="col-md-8">
+							About 21 homework assignments (≈ 27%)
+						</div>
+						
+						
+						<!-- row -->
+						
+						<div class="col-md-2">
+							In-class exercises
+						</div>
+						<div class="col-md-2">
+							5 points each
+						</div>
+						<div class="col-md-8">
+							About 21 exercises (≈ 13%)
+						</div>
+						
+					</div>
+					
+					<br>
+					
+					<h4>Grading criteria</h4>
+					
+					<ul>
+						<li>A: &nbsp; <em>89.5% ≤ grade ≤ 100%</em>
+						</li>
+						<li>B: &nbsp; <em>79.5% ≤ grade &lt; 89.5%</em>
+						</li>
+						<li>C: &nbsp; <em>70% ≤ grade &lt; 79.5%</em>
+						</li>
+						<li>D: &nbsp; <em>60% ≤ grade &lt; 70%</em>
+						</li>
+						<li>F: &nbsp; <em>grade &lt; 60%</em>
+						</li>
+					</ul>
+					
+					
+				</div>
+          </div>
+          <!-- Section end -->
+          
+          <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/format.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="format">Course format</a></h3>
+					
+					<h4>Lectures</h4>
+					
+					<p>
+						During class, <em>short</em> lectures and working
+						of example problems will be done by the instructor.
+					<br>
+						Longer, more in-depth lectures are available in
+						video form, for you to watch at home to help
+						clarify the book reading and to review.
+					</p>
+					
+					<h4>In-class Exercises</h4>
+					
+					<p>
+						The primary use of the class period will be on
+						working through math problems in teams.
+					<br>
+						The in-class exercises are built to introduce you
+						to the new topics a step at a time. Work with your
+						team to solve the problems, and turn in one set
+						per team. All members of the team will receive the same
+						score on the exercise.
+					</p>
+					
+					<h4>Homework</h4>
+					
+					<p>
+						Homework problems will be assigned out of the book.
+						However, instead of turning in on-paper homework for grading,
+						you will submit your answers via a D2L quiz.
+						This way, you will immediately get your results and feedback.
+					</p>
+					
+					<p>
+						Some homework assignments may pull questions from the book
+						which have the solutions in the back of the textbook.
+						These quizzes will have no limit on times you can retake them.
+					<br>
+						Other homework assignments will be from the other textbook problems,
+						which do not have the solution in the back. For these,
+						the amount of retakes you will be able to do is restricted.
+					</p>
+					
+					<h4>Exams</h4>
+					
+					<p>
+						After we've covered each sub-section in a section, we will have
+						an exam over those topics. These are generally on-paper.
+						Graphing calculators are not allowed.
+					</p>
+					
+				</div>
+          </div>
+          <!-- Section end -->
+          
+          <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/policies.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="policies">Course policies</a></h3>
+					
+					<h4>Communication</h4>
+					<p>
+						Communication is important in this class, but it also goes both ways.
+					</p>
+					
+					<p><span style="font-size: 12pt;"><strong>Emailing -</strong> I generally try to respond to emails and texts as soon as possible. If, for some reason, I'm not responding to your emails - there is something wrong! Please try to contact me by an alternative method (<a href="/d2l/common/dialogs/quickLink/quickLink.d2l?ou=78677&amp;type=content&amp;rcode=JCCC-1233636" target="_self">Instructor &amp; Office Hours</a>). Also make sure that you're sending me messages through D2L's email - go to Classlist, select Instructors, and click my name to send me an email. This way, the email will be marked with the class title, and we can track it better if it gets lost.</span></p>
+					<p><span style="font-size: 12pt;"><strong>Office Hours -</strong> You're welcome to come to my office hours any time; that is what they're there for. Come in with questions about assignments, the class, grades, the software industry, whatever.</span></p>
+					<p><span style="font-size: 12pt;"><strong>Is something wrong? - </strong>If you have a problem with the class, you need to let me know. I am trying my best, but I am not always aware of problems that students face. If there is something that I'm doing, or a classmate is doing, that is impeding your success in the class, you need to speak up early (NOT at the end of the semester!)</span></p>
+					<p><span style="font-size: 12pt;">If you're experiencing stress, anxiety, depression, or just generally having trouble managing everything, also let me know, and think about going to Student Services to work with them on getting accommodations for the class.</span></p>
+					
+					<hr class="plain"/>
+					
+					<h4>Attendance &amp; absenses</h4>
+					<p><span style="font-size: 12pt;">If you're going to be absent for an extended period of time, <strong>you need to get in touch with me.</strong> I do not auto-drop students from my courses, so if you fall off the face of the earth and don't turn in your work, you will receive an F - not a W.</span></p>
+					<p><span style="font-size: 12pt;">I am pretty flexible about absences, since I post lectures and course content on D2L. But if you intend to keep up with the class, but cannot make it to class, please check in.</span></p>
+					
+					<p></p>
+					
+					<hr class="plain"/>
+					<h4>Late assignments</h4>
+					<p><span style="font-size: 12pt;">With assignments that I grade, the assignments are closed after a week. If you need an extension, please let me know <strong>before</strong> the assignment has closed. You have a week's grace period to turn in your late work, with some deduction in maximum possible points for each day after the due date - still, 50 - 90% is worth A LOT more than a 0%. A zero will affect your grade a lot more than a D.</span></p>
+					
+					<p></p>
+					
+					<hr class="plain"/>
+					<h4>Help with assignments</h4>
+					<p><span style="font-size: 12pt;">There are many resources available to you, when it comes to learning the content. JCCC has tutors, I have office hours, there are YouTube tutorials and written guides online for various computer science topics.</span></p>
+					<p><span style="font-size: 12pt;">Sometimes tackling a tricky topic means that you have to put in extra work. Practice is usually the best way to gain fluency with a topic - try to do exercises from the textbook, or find practice problems online.</span></p>
+					<p><span style="font-size: 12pt;">If you're really stuck, let me know - sometimes there are weird errors from small things that you might not notice (for example, not having #include &lt;string&gt; at the top of a C++ program using strings will <em>not give you a useful error message!</em>).</span></p>
+					<p><span style="font-size: 12pt;">Also remember that for every compiler error you receive - someone has already gotten that error. Do a search online for the error message to get help with getting your program to build.</span></p>
+					
+					<p></p>
+					
+					<hr class="plain"/>
+					<h4>Feedback on assignments</h4>
+					<p><span style="font-size: 12pt;"><strong>Every programming assignment has a rubric.</strong></span></p>
+					<p><span style="font-size: 12pt;">Once you receive a grade on an assignment, make sure to look at it in D2L to view the feedback. With programming assignments, <strong>I attach the rubric and comments to the assignment.</strong></span></p>
+					<p><span style="font-size: 12pt;">This can be helpful to understand why you received the score that you did, and how you can improve next time.</span></p>
+
+					<p></p>
+					
+					<hr class="plain"/>
+					<h4>Objectives</h4>
+					<p><span style="font-size: 12pt;">These are my objectives, as your instructor:</span></p>
+					<ol>
+					<li><span style="font-size: 12pt;">To help my students <strong>build a solid foundation in discrete structures&nbsp;concepts</strong>, by:</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">Providing reference resources.</span></li>
+					<li><span style="font-size: 12pt;">Building exercises that help students practice and iron out their understanding of concepts.</span></li>
+					<li><span style="font-size: 12pt;">Building projects that challenge the student in order to build up their design and problem solving skills.</span></li>
+					<li><span style="font-size: 12pt;">Providing feedback on your work to help you improve.</span></li>
+					<li><span style="font-size: 12pt;">Answering questions with questions when appropriate - leading you to find an answer for yourself, rather than giving it to you.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;"><strong>To not be a gatekeeper.&nbsp;</strong>I am not here to scare people away.</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">If, for some reason, I or another person in class is making you feel <strong>unwelcome</strong>, please let me know.</span></li>
+					<li><span style="font-size: 12pt;">I believe that the classroom needs to be a supportive environment so that students can perform at their best.</span></li>
+					<li><span style="font-size: 12pt;">I believe that <strong>everybody can learn&nbsp;this math</strong>. We all just have different experience levels and foundations - sometimes it takes extra practice. That doesn't mean that you can't do it. Challenging, not impossible.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;"><strong>To be an available resource</strong>, both as a teacher, programmer, and a professional</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">I've worked in the industry as a software and web developer, and I've founded a small game studio startup. I am a resource for real-world development questions.</span><br />&nbsp;</li>
+					</ol>
+					<li><span style="font-size: 12pt;">To <strong>provide multiple learning resources</strong> of different styles, as each student learns differently.</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">If, for some reason, the resources I'm providing aren't helping you out - let me know. I will try to build or find more.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;">To <strong>advise and assess fairly.</strong> To help students understand how they earned their grade.<br /></span>&nbsp;&nbsp;</li>
+					<li><span style="font-size: 12pt;">To <strong>assign fair assignments</strong> and make sure students have what they need prior to those assignments.</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">Before an assignment's due date, we should have had textbook reading, lectures, and labs over the project's content.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;">To <strong>keep an eye out for academic dishonesty</strong>.</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">If you don't do the work, you don't learn.</span></li>
+					<li><span style="font-size: 12pt;">Passing students who cheat through the system reflects badly on <strong>all of us</strong> - On you, for being inept once you're applying for jobs, on me, because you were supposed to learn from me, and the school, for building an inept workforce.</span></li>
+					<li><span style="font-size: 12pt;">There are plenty of resources, and I'm always there to help. <strong>Ask me for help</strong>, rather than cheating.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;">To <strong>return graded assignments and feedback promptly.</strong></span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">Sometimes this can be a challenge due to my schedule, but I will try to get your assignments back to you as soon as possible.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;">To<strong> be respectful of everybody.</strong></span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">No matter who you are or what your background is, I will be respectful to all of you.</span></li>
+					</ol>
+					</ol>
+					<p>&nbsp;</p>
+					<p></p>
+					
+					<hr class="plain"/>
+					<h4>Expectations</h4>
+					<p><span style="font-size: 12pt;">These are the expectations I have of my students:</span></p>
+					<ol>
+					<li><span style="font-size: 12pt;">The student is responsible for <strong>knowing what they need</strong>.</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">You do not need to attend every class, but you need to be responsible for coming to class if <strong>that's what you need</strong>.</span></li>
+					<li><span style="font-size: 12pt;">If the resources provided in the class aren't working for you, <strong>it is your responsibility to let me know </strong>so we can get better resources for you.</span></li>
+					<li><span style="font-size: 12pt;">If you're experiencing stress, anxiety, or other issues that is affecting your performance, it is your responsibility to let me, or Access Services, know so that you can get proper accommodations.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					</ol>
+					<ol>
+					<li><span style="font-size: 12pt;">The student is responsible for <strong>turning their work in on time.</strong></span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">If you're not done with your assignment by the due date - turn it in anyway. You can keep working on it, and turn it in again within the week to have the completed version graded.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;">The student is responsible for <strong>notifying the teacher of an extended absence.</strong> I do not auto-drop students, so if you stop coming to class, you'll probably end up with an F.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					<li><span style="font-size: 12pt;">The student is responsible for <strong>respecting their peers and instructor.</strong></span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">Everybody should be treated with respect.</span></li>
+					<li><span style="font-size: 12pt;">This means you should not put peers down for asking questions, or based on their preferred operating system, or what languages they speak, or anything else.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;">The student is responsible for turning<strong> in presentable work</strong>.</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">If your code is messy, you will lose some points on it. If I can't read your work, you won't get credit for it.</span><br /><span style="font-size: 12pt;">&nbsp;</span></li>
+					</ol>
+					<li><span style="font-size: 12pt;">The student is responsible for following the<strong> academic honesty policies</strong> of this class and of JCCC.</span></li>
+					<ol>
+					<li><span style="font-size: 12pt;">Make sure to review the assignment's <strong>rules</strong>, as they will generally highlight if your work is allowed to be done in a group, or is expected to be solo work.</span></li>
+					<li><span style="font-size: 12pt;">See JCCC's <a href="http://www.jccc.edu/about/leadership-governance/policies/students/student-code-of-conduct/student-code-conduct.html" target="_blank">Student Code of Conduct Policy 319.01</a> for more information.</span></li>
+					</ol>
+					</ol>
+					<p></p>
+					
+					<hr class="plain"/>
+					<h4>Academic honesty</h4>
+					<p><span style="font-size: 12pt;">I will specify rules for each assignment type. If something is meant to be a solo effort, I will be checking your work against your classmates', and other code on the internet. If I find an instance of copying, all involved will receive 0% on their assignment.&nbsp;Additionally, it is JCCC's policy that any instance of cheating is&nbsp;<strong>reported to the dean of Student Services</strong>, and could eventually result in expulsion.</span></p>
+					<p><span style="font-size: 12pt;">If you need help with an assignment, there are plenty of resources. If you need some extra time on your work, let me know. You're not going to learn the material unless you work on it yourself!</span></p>
+					
+				</div>
+          </div>
+          <!-- Section end -->
+          
+          <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/calendar.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="schedule">Tentative schedule</a></h3>
+					
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Week</th>
+								<th>Date range</th>
+								<th>Topics</th>
+								<th>Notes</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<!-- Week Info -->
+							<tr>
+								<td>1</td> <!-- week -->
+								<td>Week of August 20</td> <!-- range -->
+								<td>Chapter 1.1, 1.2</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>2</td> <!-- week -->
+								<td>Week of August 27</td> <!-- range -->
+								<td>Chapter 1.3, 1.4</td> <!-- topics -->
+								<td>August 28<br>Last day to drop with 100% refund</td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>3</td> <!-- week -->
+								<td>Week of September 3</td> <!-- range -->
+								<td>Chapter 1.4, 1.5</td> <!-- topics -->
+								<td>September 4<br>No class, Labor Day</td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr class="exam">
+								<td>4</td> <!-- week -->
+								<td>Week of September 10</td> <!-- range -->
+								<td>Exam 1</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>5</td> <!-- week -->
+								<td>Week of September 17</td> <!-- range -->
+								<td>Chapter 3.1, 3.2</td> <!-- topics -->
+								<td>September 18<br>Last day to drop without &quot;W&quot;</td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>6</td> <!-- week -->
+								<td>Week of September 24</td> <!-- range -->
+								<td>Chapter 3.3, 3.4</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>7</td> <!-- week -->
+								<td>Week of October 1</td> <!-- range -->
+								<td>Chapter 3.5</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr class="exam">
+								<td>8</td> <!-- week -->
+								<td>Week of October 8</td> <!-- range -->
+								<td>Exam 2</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>9</td> <!-- week -->
+								<td>Week of October 15</td> <!-- range -->
+								<td>Chapter 4.1, 4.2</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>10</td> <!-- week -->
+								<td>Week of October 22</td> <!-- range -->
+								<td>Chapter 4.3, 4.4</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>11</td> <!-- week -->
+								<td>Week of October 29</td> <!-- range -->
+								<td>Chapter 4.5, 4.6</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr class="exam">
+								<td>12</td> <!-- week -->
+								<td>Week of November 5</td> <!-- range -->
+								<td>Exam 3</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>13</td> <!-- week -->
+								<td>Week of November 12</td> <!-- range -->
+								<td>Chapter 2.1, 2.2</td> <!-- topics -->
+								<td>November 15<br>Last day to drop with &quot;W&quot;</td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>14</td> <!-- week -->
+								<td>Week of November 19</td> <!-- range -->
+								<td>Lazy day?</td> <!-- topics -->
+								<td>November 22nd / 23rd / 24th<br>No class, Thanksgiving Holiday</td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>15</td> <!-- week -->
+								<td>Week of November 26</td> <!-- range -->
+								<td>Chapter 2.3, 2.4</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr>
+								<td>16</td> <!-- week -->
+								<td>Week of December 3</td> <!-- range -->
+								<td>Chapter 2.5, 2.6</td> <!-- topics -->
+								<td></td> <!-- notes -->
+							</tr>
+							<!-- Week Info -->
+							<tr class="exam">
+								<td>17</td> <!-- week -->
+								<td>Week of December 10</td> <!-- range -->
+								<td>Chapter 1.1, 1.2</td> <!-- topics -->
+								<td>Final exams</td> <!-- notes -->
+							</tr>
+						</tbody>
+					</table>
+					
+				</div>
+          </div>
+          <!-- Section end -->
+          
+          <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/hardships.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="accommodations">Succes &amp; accommodations</a></h3>
+					
+					
+					
+					<h4>
+					Tips for success
+					</h4>
+					
+						<p>
+							(From 
+							<a href="http://www.jccc.edu/academics/distance-learning/tips-for-success.html">
+							http://www.jccc.edu/academics/distance-learning/tips-for-success.html
+							</a>
+						)</p>
+					
+						<blockquote class="syllabus">
+					
+					        <div align="left"><strong>1. Time Management.</strong></div>
+							<ul>
+							<li>
+							<div style="unicode-bidi: embed;">Time management may be the biggest factor in succeeding at your online course. Successful online students have to be very proactive in their studies and take responsibility for their own learning.</div>
+							<div style="margin-top: 0pt; margin-bottom: 0pt; vertical-align: baseline; direction: ltr; unicode-bidi: embed; text-align: left;">&#160;</div>
+							<strong>(Online does mot mean an easier way to learn!)</strong></li>
+							</ul>
+							<div align="left"><strong>2. Participate!</strong></div>
+							<ul>
+							<li>
+							<div align="left">Whether you are working alone, or in a group, contribute your ideas, perspective and comments on the subject you are studying, and read about those of your classmates. Your instructor is not the only source of information in your course.</div>
+							</li>
+							<li>
+							<div align="left">You can gain great insight from your peers and they can learn from you as well.</div>
+							</li>
+							</ul>
+							<div align="left"><strong>3.</strong> <span style="font-weight: bold; color: black;">Balancing Personal Obligations</span></div>
+							<ul>
+							<li>
+							<div align="left"><span style="color: black;">&#160;While there are many reasons to take an online course &#8211; one of the most frequent reasons students choose these courses is because of the convenience. Whether you have a full-time job, don&#8217;t want to fight traffic or are raising a family &#8211; balancing school and personal obligations can become a juggling act.</span></div>
+							</li>
+							</ul>
+							<div align="left"><strong>4.</strong> <span style="font-weight: bold; color: black;">Study Environment</span><strong>.</strong></div>
+							<ul>
+							<li>
+							<div align="left">This will help lend importance to what you are doing as well. Your own space where you can shut the door, leave papers everywhere, and work in peace is necessary. If you try to share study space with the dining room or bedroom; food or sleep will take priority over studying.</div>
+							</li>
+							</ul>
+							<div align="left"><strong>5. Log on to your course every single day.</strong></div>
+							<ul>
+							<li>
+							<div align="left">Or&#160;log on a&#160;minimum of 5-6 days a week. Once you immerse yourself in the your course using the online system, you will be eager to see who has commented on your postings and read the feedback of your instructor and peers. You will also be curious to see who has posted something new that you can comment on. If you let too many days go by without logging on to your course discussion group, you will get behind and find it very difficult to catch up.</div>
+							</li>
+							</ul>
+							<div align="left"><strong>6.</strong> <span style="font-weight: bold; color: black;">Take advantage of being online.</span></div>
+							<ul>
+							<li>
+							<div align="left">One of the biggest advantages of the online format is that you can pursue your studies without the judgments typical in a traditional classroom. Unless you are using video conferencing, no one can see you. There are no stereotypes, and you don&#8217;t have to be affected by raised eyebrows, rolled eyeballs, other students stealing your thunder, or people making other non-verbal reactions to your contributions.</div>
+							</li>
+							<li>
+							<div align="left">You don&#8217;t have to feel intimidated or upstaged by students who can speak faster than you because you can take all of the time you need to think your ideas through and compose a response before posting your comments to your class.</div>
+							</li>
+							</ul>
+							<div align="left"><strong>7. Be polite and respectful - Netiquette</strong></div>
+							<ul>
+							<li>
+							<div align="left">Just because you are anonymous, doesn&#8217;t mean you should let yourself go.</div>
+							</li>
+							<li>
+							<div align="left">Remember, you are dealing with real people on the other end of the Internet.</div>
+							</li>
+							<li>
+							<div align="left">Being polite and respectful is not only common sense, it is absolutely required for a productive and supportive online environment. In a positive online environment, you will feel valued by your instructor, valued by your classmates and your own work will have greater value as well.</div>
+							</li>
+							</ul>
+							<div align="left"><strong>8. Speak up if you are having problems - Ask Questions</strong></div>
+							<ul>
+							<li>
+							<div align="left">Remember your professor cannot see you, so you must be absolutely explicit with your comments and requests. If you are having technical difficulties, or problems understanding something about the course, you MUST speak up otherwise there is no way that anyone will know that something is wrong.</div>
+							</li>
+							<li>
+							<div align="left">Also, if you don&#8217;t understand something, chances are several people have the same question. If another student is able to help you, he/she probably will.&#160;&#160;And if you are able to explain something to your classmates, you will not only help them out,&#160; but also reinforce your own knowledge about the subject.</div>
+							</li>
+							</ul>
+							<div align="left"><strong>9. Apply what you learn.</strong></div>
+							<ul>
+							<li>
+							<div align="left">Apply everything you learn as you learn it and you will remember it more readily.</div>
+							</li>
+							<li>
+							<div align="left">If it is possible, take the things you learn in your online course today and use them in your home or work tomorrow. Also, try to make connections between what you are learning and what you do or will do in your job. Contributing advice or ideas about the real-world as it applies to the subject matter helps you to internalize what you are learning, and gives valuable insight to your classmates who will benefit from your experience.</div>
+							</li>
+							</ul>
+							<div align="left"><strong>10.</strong> <span style="font-weight: bold; color: black;">Stay Motivated</span></div>
+							<ul>
+							<li>
+							<div style="margin-top: 0pt; margin-bottom: 0pt; vertical-align: baseline; direction: ltr; unicode-bidi: embed; text-align: left;"><span style="color: black;">Many distance learners agree that the most difficult part of studying online is staying motivated. Because students must take the initiative to complete their courses completely on their own, without the physical presence of teachers and other peers, many students find it easy to become distracted and discouraged in their work.</span></div>
+							</li>
+							</ul>
+							
+						</blockquote>
+					
+						
+					
+					
+					<hr class="plain"/>
+					<h4>
+					Time management for students
+					</h4>
+					
+						<p>
+							(From 
+							<a href="http://www.jccc.edu/student-resources/counseling/academic/time-management.html">
+							http://www.jccc.edu/student-resources/counseling/academic/time-management.html
+							</a>
+						)</p>
+						
+						<blockquote class="syllabus">
+							<strong>Keep a monthly schedule.</strong> 
+							<ul>
+							<li>On the monthly schedule, list the things you know are coming up.</li>
+							<li>By listing at the beginning of the semester when future assignments, tests and projects are due, you can periodically glance ahead and be sure you allow enough time to complete these.</li>
+							<li>Be sure to list on your monthly schedule, any events of a personal nature in which you will be involved. This helps you avoid getting caught up in choosing between school commitments and personal commitments.</li>
+							</ul>
+							<strong>Make a weekly schedule.</strong> 
+							<ul>
+							<li>On the weekly time charts, put in all your fixed commitments for the week.</li>
+							<li>Schedule in your study time.</li>
+							<li>Put in meal times, including meal preparation.</li>
+							<li>Be sure to schedule in time for leisure activities and relaxation.</li>
+							<li>Schedule your sleep time.</li>
+							</ul>
+							<strong>Prioritize your activities.</strong> 
+							<ul>
+							<li>On the Daily Activity Guide, divide your activities into three categories.</li>
+							<li>Category A is the things you must do.</li>
+							<li>Category B is the things you should do.</li>
+							<li>Category C is the things you could do.</li>
+							<li>At the end of the day, check yourself to see how well you did.</li>
+							</ul>
+							<h3>Time Wise Tips</h3>
+							<ul>
+							<li><strong>Use small pockets of time.</strong> Carry a book and a notepad with you. When you are waiting in line or waiting for an appointment, use this time to read a few pages or to jot down ideas, etc.</li>
+							<li><strong>Tackle the hard things first.</strong> The way you feel after getting the hard things done can give momentum to your day. You will feel like a weight has been lifted from your shoulders when the hard things are completed.</li>
+							<li><strong>Identify your best time and use it well.</strong> If you are a morning person, schedule this time to do the hardest tasks or to study and ready the most important things.</li>
+							<li><strong>Start projects as soon as they are assigned.</strong> Getting started is often the most difficult part of an assignment or project. One of the most common reasons for D papers is the fact that they were written the night before they were due. Assignments always seem to pile up. A little work on a report every week will allow you time to add quality to your work and also keep you from being stressed at the last minute.</li>
+							<li><strong>Keep to-do lists.</strong> Keep a notebook in your purse or pockets or keep Post-It notes in your car, in your briefcase, in your kitchen, etc. When you think of something you need to do or pick up at the store or something you want to remember, you can jot it down as a reminder before you forget.</li>
+							<li><strong>Divide tasks into small, manageable chunks.</strong> When things pile up or a task seems overwhelming, breaking it down into smaller parts helps make it manageable and gives you more incentive to begin the small steps toward your goal. For example, most papers have at least five stages &#8212;&#160;picking a topic, researching the topic, reading and taking notes on articles, organizing the information and writing the paper. Setting a time frame in which to accomplish each step makes the paper seem less overwhelming.</li>
+							<li><strong>Take time to take care of yourself.</strong> Give yourself a reward for doing a particularly difficult task or assignment or simply for taking the first steps toward a goal. Rewards can be simple, a hot bath, a cup of tea, coffee with a friend, a walk in the park, a good movie or an ice cream sundae. If you don't take care of yourself, you'll run out of steam sooner or later, or you'll find yourself getting sick or out of sorts or losing your enthusiasm. You are worth rewarding!</li>
+							</ul>
+						</blockquote>
+					
+					<hr class="plain"/>
+					
+					<h4>
+					Dealing with test anxiety
+					</h4>
+					
+						<p>
+							(From 
+							<a href="http://www.jccc.edu/student-resources/counseling/personal/test-anxiety.html">
+							http://www.jccc.edu/student-resources/counseling/personal/test-anxiety.html
+							</a>
+						)</p>
+						
+						<blockquote class="syllabus">
+							<h2>What is Test Anxiety?</h2>
+							<p>Feeling anxious at test time is very common among college students. Most students experience some level of stress when anticipating or taking an exam. A little nervousness can actually help motivate you, but if the stress becomes too intense, it can affect your concentration and exam performance. It's called test anxiety.</p>
+							<p>Test anxiety may be part of a general anxiety disorder, but it can also be specific only to a testing situation. Either way, some students, even though adequately prepared for an exam, may experience the following symptoms:</p>
+							<ul>
+							<li>Physical &#8212;&#160;headaches, nausea or diarrhea, feeling light headed or faint, being too hot or cold, rapid heartbeat, excessive sweating, dry mouth</li>
+							<li>Emotional &#8212;&#160;excessive feelings of fear, disappointment, anger or depression, uncontrollable crying or laughing, feelings of irritability or helplessness</li>
+							<li>Behavioral &#8212;&#160;fidgeting, pacing, substance abuse, avoidance</li>
+							<li>Cognitive &#8212;&#160;racing thoughts, "going blank," difficulty concentrating, negative self-talk, feelings of dread, comparing oneself to others, difficulty organizing thoughts</li>
+							</ul>
+							<p>All anxiety is a reaction to anticipating something stressful. Like other types of anxiety, test anxiety affects both the body and mind. Test anxiety is a type of performance anxiety, a feeling you might have in a situation where performance really counts or when the pressure is on to do well.</p>
+							<p>If your self-esteem is too closely tied to the outcome of any one test or grade, the results can be devastating. In this situation, you might find yourself spending more time focusing on the possible negative consequences to NOT doing well than you are in preparing to succeed.</p>
+							<p>Test anxiety can become a vicious cycle. The more you feel anxious about performance, worry about not living up to your own or your parents' expectations or focus on the bad things that could happen, the greater the possibility that you will not perform well on an exam.</p>
+							<h2>Methods to Help Reduce Test Anxiety</h2>
+							<h3 style="margin-left: 30px;">Preparing for the Exam</h3>
+							<ul>
+							<li style="list-style-type: none;">
+							<ul>
+							<li>Attend class regularly and complete all of the assignments in a timely manner.</li>
+							<li>Make and take practice tests.</li>
+							<li>Study well in advance of the exam and AVOID CRAMMING.</li>
+							<li>Use good study habits. Consider taking a class on time management and study skills.</li>
+							<li>Don't overplay the importance of a grade. Your grade in a class is not an overall reflection of your self-worth.</li>
+							<li>Replace negative thoughts such as "I'm going to fail" with "I've studied hard, and I know this material. I'll do the best I can."</li>
+							<li>Reward yourself after the test. Spend time with friends, go to a movie, etc.</li>
+							<li>Exercise regularly.</li>
+							<li>Get plenty of rest the night before the exam.</li>
+							<li>Eat healthy and avoid foods high in fat or sugar. Avoid too much caffeine.</li>
+							<li>Try to do something relaxing the hour immediately before the test.&#160;</li>
+							<li>Arrive at the test location early and calm yourself before you get the exam in your hands.</li>
+							<li>Select a seat located away from doors, windows or other distractions during the test.</li>
+							</ul>
+							</li>
+							</ul>
+							<h3 style="margin-left: 30px;">During the Exam</h3>
+							<ul>
+							<li style="list-style-type: none;">
+							<ul>
+							<li>When the test is passed out, review the entire test and read the directions TWICE.</li>
+							<li>Organize and budget your time during the test (work on the easiest portions of the test first).</li>
+							<li>If you "go blank," skip the question and go on, marking it to come back to later.</li>
+							<li>Don't rush through the test. Wear a watch and check it frequently so you know how much time you have left to finish as much as you can.</li>
+							<li>Don't panic when other students start handing in their exams.</li>
+							<li>If you find that you won't be able to finish the whole test, concentrate on those portions you can answer well.</li>
+							<li>Recheck your answers if you have extra time and only if you're not feeling anxious.</li>
+							</ul>
+							</li>
+							</ul>
+							<h3 style="margin-left: 30px;">After the Exam</h3>
+							<ul>
+							<li style="list-style-type: none;">
+							<ul>
+							<li>Don't dwell on the mistakes you've made.</li>
+							<li>Be sure to follow through on the reward you set up for yourself for getting through the test.</li>
+							<li>List what strategies worked for you and what things you still need to work on. Continue practicing these anxiety-reducing strategies until you become a pro at them.</li>
+							<li>When the exam is returned, review it carefully. If you don't understand what you didn't do well, make an appointment to talk with your instructor about it.</li>
+							<li>If you want to discuss your particular situation with test anxiety, see a JCCC counselor.</li>
+							</ul>
+							</li>
+							</ul>
+							<h2>Hints for Specific Types of Test Questions</h2>
+							<h3 style="margin-left: 30px;">Essay Questions</h3>
+							<ul>
+							<li style="list-style-type: none;">
+							<ul>
+							<li>Construct a short outline of your answer.</li>
+							<li>Begin your answer with a summary sentence to help you avoid rambling and repetition.&#160;</li>
+							<li>Make sure that all of the important points in your outline are included in your overall answer.</li>
+							</ul>
+							</li>
+							</ul>
+							<h3 style="margin-left: 30px;">Short Answer Questions</h3>
+							<ul>
+							<li style="list-style-type: none;">
+							<ul>
+							<li>Answer ONLY what is asked. Be short and to the point.</li>
+							<li>If you can't come up with the proper terminology, explain what you can&#160;in your own words. Show what knowledge you can.</li>
+							</ul>
+							</li>
+							</ul>
+							<h3 style="margin-left: 30px;">Multiple Choice Questions</h3>
+							<ul>
+							<li style="list-style-type: none;">
+							<ul>
+							<li>Read all of the options first, and then eliminate the most obviously incorrect choices.</li>
+							<li>If you're unsure of the correct response, choose the best of the remaining alternatives.</li>
+							<li>Rely on your first impression, then move on quickly.</li>
+							<li>Beware of tricky words such as "only," "always" or "most."</li>
+							</ul>
+							</li>
+							</ul>
+
+						</blockquote>
+					
+					
+					<hr class="plain"/>
+					<h4>
+					Dealing with anxiety and stress
+					</h4>
+						<p>
+							(From 
+							<a href="http://www.jccc.edu/student-resources/counseling/personal/anxiety.html">
+							http://www.jccc.edu/student-resources/counseling/personal/anxiety.html
+							</a>
+						)</p>
+						
+						<blockquote class="syllabus">
+							<p>Anxiety is a normal emotion that everyone experiences at times. We&#8217;ve all experienced nervousness when preparing to make a speech, faced with a problem at a job, or prior to taking a test.&#160; However, when anxiety gets to a point where it interferes with your ability to have a normal life, an anxiety disorder might be present.</p>
+							<p>Some symptoms of anxiety might include feelings of panic, fear and/or uneasiness; uncontrollable, obsessive thoughts, repeated thoughts or flashbacks of traumatic experiences, difficulty sleeping and/or nightmares; shortness of breath and/or heart palpitations; inability to sit still and be calm; dry mouth; nausea and/or muscle tension.</p>
+							<h2>Web Resources</h2>
+							<p>We hope the links below will provide some helpful information, but they are not intended to take the place of discussing your concerns with a counselor.</p>
+							<p><a href="http://www.mayoclinic.com/health/generalized-anxiety-disorder/DS00502">Generalized Anxiety Disorder</a><br/>
+							 The Mayo Clinic provides extensive information about&#160;generalized anxiety disorder.<br/>
+							<br/>
+							 <a href="http://lexington-on-line.com/naf.html">National Anxiety Foundation</a><br/>
+							 This site&#160;offers information about different types of anxiety and&#160;the types of doctors who treat it, as well as treatment tips and a suggested reading list for anxiety.<br/>
+							<br/>
+							 <a href="http://www.nimh.nih.gov/health/topics/anxiety-disorders/index.shtml">National Institute of Mental Health</a><br/>
+							 This site&#160;offers basic anxiety information and helps you locate service providers in your area.</p>
+							<h2>JCCC Student Assistance Program</h2>
+							If you are a student, you may be referred by a JCCC counselor to our short-term&#160;<a href="http://www.jccc.edu/student-resources/counseling/personal/index.html">student assistance program</a>&#160;to help you with emotional or mental health issues.
+
+						</blockquote>
+						
+						
+					<hr class="plain"/>
+					
+					<h4>Hardships</h4>
+					
+					<p>
+					If you have a hardship (family death, medical problem causing you to miss school, etc.) 
+					you need to <strong>make sure to communicate with me</strong> if you're planning on staying in the course. 
+					Make sure to <strong>email me through Desire2Learn so</strong> that it is harder for the email to get lost! 
+					And if you don't hear back from me, make sure to follow up in another way.
+					<br>
+					I am not a fan of getting makeup exam requests <em>after</em> the exam has passed!
+					</p>
+					
+					<h4>Access Services for accommodations</h4>
+					
+					<p>
+					JCCC has a branch called <a href="http://www.jccc.edu/student-resources/tutors-accessibility/access-services/index.html">Access Services</a>. If you work with Access Services, they will work with your teacher to provide services that we offer include testing accommodations, note-taking assistance, sign language interpreting services, audiobooks/alternative text, assistive technology and tutoring (when available). All accommodations are determined on a case-by-case basis during a meeting with an Access Services advisor.
+					</p>
+					
+					<p>
+					You can get <strong>permanent</strong> or <strong>temporary</strong> accommodations, such as if you're facing a temporary hardship in your life. Stress and anxiety also count as hardships, so if you have test anxiety or social anxiety, it can help to reach out, so that you can make a plan with A.S. and the teacher for being able to be properly assessed academically in class while minimizing the challenges presented by your situation.
+					</p>
+					
+					<p>
+					Some examples of accommodations are:
+					</p>
+					
+					<ul>
+						<li>Note-taking assistance</li>
+						<li>Letting the teacher know that the student does not perform well in a group</li>
+						<li>Being able to take tests in the testing center, a quiet location without distractions, rather than the classroom (such as if you have test anxiety)</li>
+						<li>Testing accommodations such as 1.5x time on exams</li>
+					</ul>
+				</div>
+          </div>
+          <!-- Section end -->
+          
+          <hr>
+          
+          <!-- Section begin -->
+          <div class="row">
+				<div class="col-md-1">
+					<img src="assets/graphics/icons/extra.png">
+				</div>
+			  
+				<div class="col-md-11">
+					<h3><a name="additional">Additional information</a></h3>
+					
+					<h4>Student Handbook</h4>
+					<p><a href="http://www.jccc.edu/student-resources/student-handbook.html">http://www.jccc.edu/student-resources/student-handbook.html</a></p>
+					
+					<h4>Student Code of Conduct Policy</h4>
+					<p><a href="http://www.jccc.edu/about/leadership-governance/policies/students/student-code-of-conduct/student-code-conduct.html">http://www.jccc.edu/about/leadership-governance/policies/students/student-code-of-conduct/student-code-conduct.html</a></p>
+					
+					<h4>College Emergency Response Plan</h4>
+					<p><a href="http://www.jccc.edu/student-resources/police-safety/police-department/college-emergency-response-plan/index.html">http://www.jccc.edu/student-resources/police-safety/police-department/college-emergency-response-plan/index.html</a></p>
+					
+					<p>
+					RC third floor <a href="http://www.jccc.edu/about/campus/maps/files/pdf/rc3-emergency.pdf">Emergency Response Plan</a> (PDF) detailed emergency instructions with storm security locations. During a weather emergency individuals should seek shelter in the interior most portion of the building away from exterior windows and doors.
+					</p>
+					
+					<p><strong>RC storm security areas</strong></p>
+					<ul>
+						<li>RC 311, 321, 323, 334</li>
+						<li>RC 340, 342, 344, 345, 346, 347</li>
+						<li>RC 353, 355</li>
+						<li>RC 361A, 361B</li>
+						<li>RC 372D</li>
+						<li>Mens' and womens' restrooms</li>
+					</ul>
+					
+					<hr class="plain"/>
+					
+					<h4>Academic Dishonesty</h4>
+					
+					<p>No student shall attempt, engage in, or aid and abet behavior that, in the judgment of the faculty member for a particular class, is construed as academic dishonesty. This includes, but is not limited to, cheating, plagiarism or other forms of academic dishonesty.</p>
+
+					<p>Examples of academic dishonesty and cheating include, but are not limited to, unauthorized acquisition of tests or other academic materials and/or distribution of these materials, unauthorized sharing of answers during an exam, use of unauthorized notes or study materials during an exam, altering an exam and resubmitting it for re-grading, having another student take an exam for you or submit assignments in your name, participating in unauthorized collaboration on coursework to be graded, providing false data for a research paper, using electronic equipment to transmit information to a third party to seek answers, or creating/citing false or fictitious references for a term paper. Submitting the same paper for multiple classes may also be considered cheating if not authorized by the faculty member.</p>
+
+					<p>Examples of plagiarism include, but are not limited to, any attempt to take credit for work that is not your own, such as using direct quotes from an author without using quotation marks or indentation in the paper, paraphrasing work that is not your own without giving credit to the original source of the idea, or failing to properly cite all sources in the body of your work. This includes use of complete or partial papers from internet paper mills or other sources of non-original work without attribution.</p>
+
+					<p>A faculty member may further define academic dishonesty, cheating or plagiarism in the course syllabus.</p>
+					
+					
+					<hr class="plain"/>
+					
+					<h4>ADA Compliance / Disabilities</h4>
+					
+					<p>JCCC provides a range of services to allow persons with disabilities to participate in
+
+					educational programs and activities. If you are a student with a disability and if you are in
+
+					need of accommodations or services, it is your responsibility to contact Access Services and
+
+					make a formal request. To schedule an appointment with an Access Advisor or for additional
+
+					information, you can contact Access Services at (913) 469-3521 or accessservices@jccc.edu.</p>
+
+					<p>Access Services is located on the 2nd floor of the Student Center (SC202).</p>
+					
+					<hr class="plain"/>
+					
+					<h4>Catalog Information</h4>
+					
+					<p><a href="http://catalog.jccc.edu/coursedescriptions/cs/#CS_210">http://catalog.jccc.edu/coursedescriptions/cs/#CS_210</a></p>
+					
+					<div class="courseOutline-objectives"><h3>Objectives</h3>
+					<p>Upon successful completion of this course, the student should be able to:</p>
+					<ol>
+						<li>
+						<p>Describe software development careers and types of software applications.</p>
+						</li>
+						<li>
+						<p>Describe internal and external data representation.</p>
+						</li>
+						<li>
+						<p>Apply object-oriented software development in a graphical framework.</p>
+						</li>
+						<li>
+						<p>Apply different problem-solving techniques.</p>
+						</li>
+						<li>
+						<p>Write computer programs that utilize fundamental statements and processes.</p>
+						</li>
+						<li>
+						<p>Break solutions into more manageable code using methods.</p>
+						</li>
+						<li>
+						<p>Create solutions using object-oriented methodology.</p>
+						</li>
+						<li>
+						<p>Write object-oriented programs that respond to events.</p>
+						</li>
+					</ol></div>
+					
+					
+					<div class="courseOutline-outline"><h3>Content Outline and Competencies:</h3>
+					<p>I. Software Development Careers and Software Applications</p>
+					<p style="margin-left:25px">A. Describe different types of careers available to software developers.</p>
+					<p style="margin-left:25px">B. Identify real-world applications that are based upon computer programs.</p>
+					<p>II. Internal and External Data Representation</p>
+					<p style="margin-left:25px">A. Convert characters to and from ASCII (American Standard Code for Information Interchange) code.</p>
+					<p style="margin-left:25px">B. Convert among binary, decimal and hexadecimal numbers.</p>
+					<p style="margin-left:25px">C. Discuss data storage.</p>
+					<p>III. Object-Oriented Software Development in a Graphical Framework.</p>
+					<p style="margin-left:25px">A. Utilize an Integrated Development Environment (IDE) that presents a code editor and an execution world in a visual manner.</p>
+					<p style="margin-left:25px">B. Manage project components.</p>
+					<p style="margin-left:25px">C. Describe the visual interactive execution environment as presented on a computer screen.</p>
+					<p style="margin-left:40px">1. Describe the two-dimensional grid world composed of pixels.</p>
+					<p style="margin-left:40px">2. Describe the properties of images.</p>
+					<p style="margin-left:25px">D. Use the Application Program Interface (API) documentation to select appropriate classes and methods needed to solve the current programming problem.</p>
+					<p style="margin-left:25px">E. Single step program execution.</p>
+					<p style="margin-left:25px">F. Inspect object instance data during program execution.</p>
+					<p style="margin-left:25px">G. Describe the class hierarchy presented in the IDE.</p>
+					<p>IV. Problem-Solving Techniques for Software Development</p>
+					<p style="margin-left:25px">A. Develop logic to solve computer programs.</p>
+					<p style="margin-left:25px">B. Represent problems and solutions.</p>
+					<p style="margin-left:40px">1. Use flowcharts to represent logical flow.</p>
+					<p style="margin-left:40px">2. Use hierarchy charts to represent relationships among classes.</p>
+					<p style="margin-left:40px">3. Use pseudo-code to represent algorithms.</p>
+					<p style="margin-left:25px">C. Discuss Top-Down Design.</p>
+					<p style="margin-left:25px">D. Explain the software development life cycle.</p>
+					<p style="margin-left:25px">E. Break a larger problem into smaller, more manageable units.</p>
+					<p style="margin-left:25px">F. Develop and implement plans to test solutions.</p>
+					<p style="margin-left:25px">G. Trace program flow manually and with a debugger.</p>
+					<p style="margin-left:25px">H. Identify needed classes.</p>
+					<p style="margin-left:40px">1. Identify needed instance and static data for the class.</p>
+					<p style="margin-left:40px">2. Identify needed instance and static methods for the class.</p>
+					<p>V. Fundamental Statements and Processes</p>
+					<p style="margin-left:25px">A. Declare variables using appropriate data types.</p>
+					<p style="margin-left:25px">B. Use assignment operators.</p>
+					<p style="margin-left:25px">C. Use arithmetic, relational and logical operators.</p>
+					<p style="margin-left:25px">D. Use branching statements.</p>
+					<p style="margin-left:25px">E. Use at least two different types of looping statements.</p>
+					<p style="margin-left:25px">F. Process user input.</p>
+					<p style="margin-left:25px">G. Generate user output.</p>
+					<p style="margin-left:25px">H. Declare and manipulate arrays.</p>
+					<p style="margin-left:25px">I. Generate random numbers to incorporate random behavior in objects.</p>
+					<p style="margin-left:25px">J. Dynamically create and remove objects during program execution.</p>
+					<p style="margin-left:25px">K. Utilize accumulator variables.</p>
+					<p>VI. Methods</p>
+					<p style="margin-left:25px">A. Utilize built-in methods from the Application Program Interface (API).</p>
+					<p style="margin-left:25px">B. Write methods.</p>
+					<p style="margin-left:25px">C. Call methods and pass parameters.</p>
+					<p style="margin-left:25px">D. Process returned values.</p>
+					<p>VII. Object-Oriented Methodology</p>
+					<p style="margin-left:25px">A. Discuss advantages of object-oriented techniques.</p>
+					<p style="margin-left:25px">B. Utilize objects and methods from built-in classes.</p>
+					<p style="margin-left:25px">C. Create user-defined classes.</p>
+					<p style="margin-left:40px">1. Create and utilize static and non-static instance variables.</p>
+					<p style="margin-left:40px">2. Create and utilize static and non-static methods.</p>
+					<p style="margin-left:40px">3. Create constructors to initialize instance variables.</p>
+					<p style="margin-left:40px">4. Properly use public and private access modifiers.</p>
+					<p style="margin-left:40px">5. Use inheritance.</p>
+					<p style="margin-left:25px">D. Instantiate objects from classes.</p>
+					<p style="margin-left:25px">E. Implement object interaction.</p>
+					<p style="margin-left:25px">F. Analyze real world visual applications (such as animations, games, simulations, models and apps) to identify language constructs and strategies that will help to solve the problem.</p>
+					<p style="margin-left:40px">1. Identify objects, their data and methods, used in the application.</p>
+					<p style="margin-left:40px">2. Define appropriate classes and code the methods.</p>
+					<p style="margin-left:40px">3. Create a user application that implements the visual application that was originally analyzed.</p>
+					<p>VIII. Event-driven Programming</p>
+					<p style="margin-left:25px">A. List different types of event triggers.</p>
+					<p style="margin-left:25px">B. Use built-in classes to capture events.</p>
+					<p style="margin-left:25px">C. Write event handlers to process events, including key pressed, mouse clicked and mouse moved.</p>
+					</div>
+					
+					<div class="courseOutline-evaluation"><h3>Method of Evaluation and Competencies:</h3>
+					<p>Students will complete a minimum of 20 computer programs and complete at least two major exams.<br />
+					20-60% &#160; &#160;Labs and Projects<br />
+					10-40% &#160; &#160;Assignments and Exercises<br />
+					20-60% &#160; &#160;Quizzes and Exams</p>
+					<p>Total: 100%</p>
+					</div>
+					
+					<div class="courseOutline-gradescale_details"><h3>Grade Criteria:</h3>
+					90 – 100% = A<br />80 – 89% = B<br />70 – 79% = C<br />60 – 69% = D<br />0 – 59% = F
+					</div>
+				</div>
+          </div>
+          <!-- Section end -->
+		  
+		</div>
+
+
+        </div>
+		<!-- Page content END -->
+		
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

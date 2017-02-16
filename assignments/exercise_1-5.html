@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Rachel J Morris">
+    <link rel="icon" href="http://www.moosader.com/wp-content/uploads/2016/08/kit-icon.png">
+    <title>CS 210 - Discrete Structures I - Exercise 1.5</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="assets/css/assignment.css" rel="stylesheet">
+  </head>
+
+  <body> 
+	  
+	  
+	<div class="container-fluid assignment-main">
+      <div class="row">
+	  
+	  <!-- Header -->
+	  <section class="header">
+		<div class="col-xs-4 col-md-4">
+			CS 210 Discrete Structures I
+		</div>
+		<div class="col-xs-4 col-md-4">
+			Spring 2017
+		</div>
+		<div class="col-xs-4 col-md-4">
+			Chapter 1.5 Exercise
+		</div>
+	  </section>
+	  
+	  <!-- Begin assignment text -->
+	  
+	  <div class="row">
+		<div class="col-md-12">
+			<h1>Section 1: Predicates</h1>
+			
+			<section class="example">
+				
+				<p>
+					<strong>Implications</strong>
+					are &quot;if-then&quot; statements, which utilize
+					propositional variables (like <em>p</em> and <em>q</em>).
+					An implication is generally written as: <em>p → q</em>,
+					which can be read aloud as &quot;if p is true, then q is true&quot;,
+					or &quot;p implies q&quot;, or &quot;if p, then q&quot;.
+				</p>
+				
+				<p>
+					In an implication <em>p → q</em>, <em>p</em> is called the <strong>hypothesis</strong>
+					and <em>q</em> is called the <strong>conclusion</strong>.
+				</p>
+				
+				<p>
+					The hypothesis and conclusion can each be more sophisticated 
+					propositional statements than just p and q, such as:<br>
+					<em>(p ∧ q) → r</em> (just as an example.)
+				</p>
+				
+				<div class="example">
+					<p>
+						<h2>Example problem:</h2>
+						
+						<em>p</em> represents the statement, &quot;x's age is less than 13&quot;
+						<br>
+						<em>q</em> represents the statement, &quot;x receives a discounted ticket price&quot;.
+						<br>
+						Therefore, the statement <em>p → q</em> represents
+						&quot;If x's age is less than 13, then x will receive a discounted ticket price.&quot;
+					</p>
+				</div>
+				
+			</section>
+			
+				
+			<section class="question">
+				<div class="row">
+					<div class="col-md-6 col-xs-6 question">
+						<h3>Exercise 1</h3>
+					</div>
+					<div class="col-md-6 col-xs-6 weight">
+						<h3>15%</h3>
+					</div>
+				</div>
+				
+				<p>
+					a. For the following statements given, assign a variable to each.
+					The variable name can be any single-letter variable, so long as each
+					statement has its own unique variable.
+				</p>
+				
+				<div class="row">
+					<div class="col-md-3 col-xs-3">
+						Collect 100 coins
+					</div>
+					
+					<div class="col-md-3 col-xs-3">
+						Gain an extra life
+					</div>
+					
+					<div class="col-md-3 col-xs-3">
+						Run into an enemy
+					</div>
+					
+					<div class="col-md-3 col-xs-3">
+						Lose a life
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-3 col-xs-3">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+					<div class="col-md-3 col-xs-3">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+					<div class="col-md-3 col-xs-3">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+					<div class="col-md-3 col-xs-3">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>	
+				
+				<p class="more-space">
+					Using the variables above, write out the following statements
+					using these variables.
+				</p>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						b. Collected 100 coins and ran into an enemy.
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						c. Gained an extra life, or lost a life.
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+				<br>
+				<br>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						d. If you collect 100 coins, then you gain an extra life.
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="row">
+					<div class="col-xs-12">
+						e. If you collect 100 coins or if you run into an enemy, then you gain an extra life.
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						f. If you don't run into an enemy, then you gain an extra life.
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						g. If you don't collect 100 coins or if you run into an enemy,
+						then you lose a life.
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+			
+			</section>
+			
+			
+			
+			<section class="example">
+				
+				<p><strong>Truth values for implications</strong></p>
+				
+				<p>
+					For a statement of the form, <em>if HYPOTHESIS, then CONCLUSION</em> to be <strong>false</strong>,
+					it must be the case that the <em>hypothesis</em> is true, while the <em>conclusion</em> is false.
+					<br>
+					Otherwise, the statement is <strong>true</strong>.
+				</p>
+				
+				<p>
+					The truth-table is as follows:
+				</p>
+				
+				<table class="truth-table">
+					<tr>
+						<th><em>p</em></th>
+						<th><em>q</em></th>
+						<th class="splitter"></th>
+						<th><em>p → q</em></th>
+					</tr>
+					<tr>
+						<td>T</td>
+						<td>T</td>
+						<td></td>
+						<td>T</td>
+					</tr>
+					<tr>
+						<td>T</td>
+						<td>F</td>
+						<td></td>
+						<td>F</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>T</td>
+						<td></td>
+						<td>T</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>F</td>
+						<td></td>
+						<td>T</td>
+					</tr>
+				</table>
+				
+				<p>
+					<strong>This might seem a little unintuitive.</strong>
+				</p>
+				
+				<p>
+					The only way the result is <strong>false</strong>
+					is when the <strong>hypothesis is true and the conclusion is false.</strong>
+				</p>
+				
+				<p>
+					Think of this as: If the hypothesis is false, then our question is pointless
+					anyway; if the hypothesis is false, then it doesn't affect the outcome
+					of this implication because we can only derive the conclusion for
+					a true hypothesis.
+				</p>
+				
+			</section>
+			
+			<hr class="printer-next-page">
+			
+			
+			<section class="question">
+				<div class="row">
+					<div class="col-md-6 col-xs-6 question">
+						<h3>Exercise 2</h3>
+					</div>
+					<div class="col-md-6 col-xs-6 weight">
+						<h3>30%</h3>
+					</div>
+				</div>
+				
+				<p>
+					Complete the truth tables for the given compound expressions.
+				</p>
+				
+				<div class="row">
+					<div class="col-xs-4">
+						a. (p ∧ q) → p
+					</div>
+					<div class="col-xs-4">
+						b. (p ∨ q) → p
+					</div>
+					<div class="col-xs-4">
+						c. p ∧ (q → r)
+					</div>
+				</div>
+				
+				<div class="answer-box answer-box-wholepage">
+				</div>
+				
+			</section>
+			
+			<hr class="printer-next-page">
+			
+			
+			<section class="question">
+				<div class="row">
+					<div class="col-md-6 col-xs-6 question">
+						<h3>Exercise 3</h3>
+					</div>
+					<div class="col-md-6 col-xs-6 weight">
+						<h3>24%</h3>
+					</div>
+				</div>
+				
+				<p>
+					Given the predicates:
+				</p>
+				
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<em>p: x is even</em>
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<em>q: y is even</em>
+					</div>
+				</div>
+				
+				<p>
+					Rewrite the following statements using these predicates,
+					and the symbols <em>∨   ∧   ¬   →</em> (as appropriate).
+				</p>
+					
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						a. if x is even, then y is even.
+					</div>
+					
+					<div class="col-md-6 col-xs-6">
+						b. is x is even, then y is odd.
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+				<div class="row">
+					
+					<div class="col-md-6 col-xs-6">
+						c. if x is odd, then y is even.
+					</div>
+					
+					<div class="col-md-6 col-xs-6">
+						d. if x is odd, then y is odd.
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>	
+				
+			</section>
+			
+			
+			<h1>Section 2: Negations of Implications</h1>
+			
+			
+			<section class="example">
+				
+				<p>
+					The negation of the implication <em>p → q</em> is the statement <em>p ∧ (¬q)</em>.
+					<br>
+					Notice that the negation is <strong>not also an implication</strong>.
+				</p>
+				
+				<p>
+					We can see that they are logically equivalent via a truth-table:
+				</p>
+				
+				<table class="truth-table">
+					<tr>
+						<th><em>p</em></th>
+						<th><em>q</em></th>
+						<th class="splitter"></th>
+						<th><em>p → q</em></th>
+						<th><em>¬(p → q)</em></th>
+						<th class="splitter"></th>
+						<th><em>p ∧ (¬q)</em></th>
+					</tr>
+					<tr>
+						<td>T</td>
+						<td>T</td>
+						<td></td>
+						<td>T</td>
+						<td>F</td>
+						<td></td>
+						<td>F</td>
+					</tr>
+					<tr>
+						<td>T</td>
+						<td>F</td>
+						<td></td>
+						<td>F</td>
+						<td>T</td>
+						<td></td>
+						<td>T</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>T</td>
+						<td></td>
+						<td>T</td>
+						<td>F</td>
+						<td></td>
+						<td>F</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>F</td>
+						<td></td>
+						<td>T</td>
+						<td>F</td>
+						<td></td>
+						<td>F</td>
+					</tr>
+				</table>
+				
+				<p>
+					This is one of the tricky things about implications, so make sure to pay attention!
+				</p>
+				
+				<div class="example">
+					<h2>Example problem:</h2>
+					
+					<p>
+						&quot;If Bob has an 8:00 class today, then it is a Tuesday.&quot;
+					</p>
+					
+					<p>
+						<em>p: Bob has an 8:00 class today</em>
+						<br>
+						<em>q: it is a Tuesday</em>
+					</p>
+					
+					<p>
+						The negation is: <em>¬(p → q) ≡ p ∧ (¬q)</em>,
+						which would be read as &quot;Bob has an 8:00 class today,
+						AND it is not Tuesday.&quot;
+					</p>
+				</div>
+				
+			</section>
+			
+				
+			<hr class="printer-next-page">
+			
+			
+			<section class="question">
+				<div class="row">
+					<div class="col-md-6 col-xs-6 question">
+						<h3>Exercise 4</h3>
+					</div>
+					<div class="col-md-6 col-xs-6 weight">
+						<h3>15%</h3>
+					</div>
+				</div>
+				
+				<p>
+					Write the negation of each of the following statements.
+					<br>
+					Do this in English terms (remember that the negation of &quot;if p then q&quot; 
+					is &quot;p and not q&quot;)
+				</p>
+				
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						a. If <em>nobody likes me</em>, then <em>I will eat worms</em>.
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="answer-box answer-box-small"></div>
+					</div>			
+				</div>
+				
+				
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						b. If <em>x > 2</em>, then <em>x · x > 4</em>
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+				
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						c. If <em>I read book 1</em> and <em>I read book 2</em>, then <em>I will read book 3</em>.
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+			</section>
+			
+			
+			<hr class="printer-next-page">
+			
+			
+			<h1>Section 3:Converse, Inverse, and Contrapositive</h1>
+			
+			
+			<section class="example">
+				
+				<p>
+					For some implication <em>p → q</em>...
+				</p>
+				
+				<ol>
+					<li>
+						The <strong>converse</strong> is <em>q → p</em>.
+					</li>
+					<li>
+						The <strong>inverse</strong> is <em>¬p → ¬q</em>
+					</li>
+					<li>
+						The <strong>contrapositive</strong> is <em>¬q → ¬p</em>
+					</li>
+				</ol>
+				
+				<p>
+					Another way of stating this is, suppose we have quantified statements,
+					<br>
+					<em>P(n) is &quot;n ends in a digit 2&quot;</em> and
+					<em>Q(n) is &quot;n is divisible by 2&quot;</em>, then...:
+				</p>
+				
+				<ul>
+					<li>
+						The implication <em>P(n) → Q(n)</em> 
+						means &quot;If n ends in a digit 2, then n is divisible by 2.&quot;
+					</li>
+					<li>
+						The converse <em>Q(n) → P(n)</em>
+						means &quot;If n is divisible by 2, then n ends in a digit 2.&quot;
+					</li>
+					<li>
+						The inverse <em>¬P(n) → ¬Q(n)</em> 
+						means &quot;If n does not end in a digit 2, then n is not divisible by 2.&quot;
+					</li>
+					<li>
+						The contrapositive <em>¬Q(n) → ¬P(n)</em> 
+						means &quot;If n is not divisible by 2, then n does not end in a 2.&quot;
+					</li>
+				</ul>
+				
+			</section>
+			
+			
+			<section class="question">
+				<div class="row">
+					<div class="col-md-6 col-xs-6 question">
+						<h3>Exercise 5</h3>
+					</div>
+					<div class="col-md-6 col-xs-6 weight">
+						<h3>12%</h3>
+					</div>
+				</div>
+				
+				<p>
+					With the statements given, write either the converse, inverse, or contrapositive.
+					<br>
+					You can use quantifiers like Q(x) and P(x), or just p and q (or whatever variables seem appropriate, just define them.)
+				</p>
+				
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						a. Write the contrapositive: If <em>x goes home</em>, then <em>x will watch Netflix all night</em>.
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+					<div class="col-md-12 col-xs-12">
+						b. Write the inverse: If <em>x likes peanut butter cups</em>, then <em>x likes chocolate and x likes peanut butter</em>.
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+					<div class="col-md-12 col-xs-12">
+						c. Write the converse: If <em>x is allergic to cats</em> then <em>x doesn't own a cat</em>.
+					</div>
+					<div class="col-md-12 col-xs-12">
+						<div class="answer-box answer-box-small"></div>
+					</div>
+				</div>
+				
+			</section>
+			
+		</div>
+	  </div>
+	  
+	  <!-- End assignment text -->
+	  </div>
+	</div>
+	  
+	  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

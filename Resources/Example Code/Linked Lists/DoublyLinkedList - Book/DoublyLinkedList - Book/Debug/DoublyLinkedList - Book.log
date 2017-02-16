@@ -1,4 +1,0 @@
-﻿  BookProgram.cpp
-c:\jccc\cs250-data-structures\resources\example code\linked lists\doublylinkedlist - book\doublylinkedlist - book\bookprogram.cpp(40): warning C4018: '<': signed/unsigned mismatch
-  DoublyLinkedList - Book.vcxproj -> C:\JCCC\CS250-Data-Structures\Resources\Example Code\Linked Lists\DoublyLinkedList - Book\Debug\DoublyLinkedList - Book.exe
-  DoublyLinkedList - Book.vcxproj -> C:\JCCC\CS250-Data-Structures\Resources\Example Code\Linked Lists\DoublyLinkedList - Book\Debug\DoublyLinkedList - Book.pdb (Partial PDB)

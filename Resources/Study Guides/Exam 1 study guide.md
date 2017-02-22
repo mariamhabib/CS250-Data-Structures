@@ -28,25 +28,19 @@
 
 # Static arrays 
 
+[CS 200 Lecture slides - Arrays](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/08%20Arrays/Arrays.pdf) | [CS 200 Lecture video - Arrays](http://edu.moosader.com/_CPP_LECTURES/08%20Arrays%20Lecture.mp4)
+
 ## Knowledge
 
 * What are the “dangers” of using a static array? What kind of validation do you need to do to ensure the structure can’t crash the program?
 * How are arrays stored in memory? Why can’t static arrays be resized?
-
-## Vocabulary
-
-# Dynamic arrays
-
-## Knowledge
-
-* What are the “dangers” of using a dynamic array? What kind of validation do you need to do to ensure the structure can’t crash the program?
-* When do dynamic arrays hit a speed bottleneck?
-* Steps to “resize” a dynamic array
-* Where local variables are allocated in memory vs. where dynamic variables are allocated.
-
-## Vocabulary
+* What are things we need to keep in mind when using static arrays? (Error checking?)
 
 # Pointers and memory management
+
+[CS 200 Lecture slides - Pointers](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/12%20Pointers/Pointers.pdf) | [CS 200 Lecture video - Pointers](http://edu.moosader.com/_CPP_LECTURES/16%20Pointer%20Lecture.mp4)
+
+[CS 200 Lecture slides - Memory management](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/12%20Pointers/Memory%20Management.pdf) | [CS 200 Lecture video - Memory management](http://edu.moosader.com/_CPP_LECTURES/17%20Memory%20Management%20Lecture.mp4)
 
 ## Knowledge
 
@@ -62,6 +56,23 @@
 * Address-of operator
 * De-reference operator
 * Member-access operator
+
+## Vocabulary
+
+# Dynamic arrays
+
+[CS 200 Lecture slides - Dynamic arrays](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/12%20Pointers/Dynamic%20Arrays.pdf) | [CS 200 Lecture video - Dynamic arrays](http://edu.moosader.com/_CPP_LECTURES/18%20Dynamic%20Arrays%20Lecture.mp4)
+
+## Knowledge
+
+* What are the “dangers” of using a dynamic array? What kind of validation do you need to do to ensure the structure can’t crash the program?
+* When do dynamic arrays hit a speed bottleneck?
+* Steps to “resize” a dynamic array
+* Where local variables are allocated in memory vs. where dynamic variables are allocated.
+
+## Vocabulary
+
+
 
 # Linked lists
 

@@ -37,8 +37,6 @@
 * A list is implemented with…
 * Functional differences between list and vector
 
-## Vocabulary
-
 ---
 
 # Static arrays 
@@ -55,6 +53,7 @@
 * What are the “dangers” of using a static array? What kind of validation do you need to do to ensure the structure can’t crash the program?
 * How are arrays stored in memory? Why can’t static arrays be resized?
 * What are things we need to keep in mind when using static arrays? (Error checking?)
+* **(code)** How to implement the functions in our static array wrapper.
 
 ---
 
@@ -73,6 +72,7 @@
 * Dynamic variables vs. arrays – allocating memory, freeing memory, accessing data at the address.
 * Utilization of “NULL” or “nullptr” - why?
 * Types of memory errors
+* **(code)** How to implement the functions in our dynamic array wrapper.
 
 ## Vocabulary
 
@@ -81,8 +81,6 @@
 * Address-of operator
 * De-reference operator
 * Member-access operator
-
-## Vocabulary
 
 ---
 
@@ -100,8 +98,6 @@
 * Steps to “resize” a dynamic array
 * Where local variables are allocated in memory vs. where dynamic variables are allocated.
 
-## Vocabulary
-
 ---
 
 # Linked lists
@@ -111,8 +107,9 @@
 ## Knowledge
 
 * The anatomy of a Node class and a Linked List class
+* Singly-linked list vs. doubly-linked list
 * How much space does a linked list need? How does it expand?
-* Knowledge of how the following works (should understand how to be able to derive the code later):
+* **(code)** Knowledge of how the following works (should understand how to be able to derive the code later):
   * Push (to back)
   * Pop (from back)
   * Insert (at index)

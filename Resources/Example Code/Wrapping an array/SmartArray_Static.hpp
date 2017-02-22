@@ -11,14 +11,13 @@ class SmartArray
 public:
     SmartArray();
 
-    bool Push( const string& value );
+    bool Push( string item );
     string Get( int index );
-
     int GetSize();
 
 private:
+    string m_array[MAX_SIZE];
     int m_itemCount;
-    string m_list[MAX_SIZE];
 };
 
 #endif

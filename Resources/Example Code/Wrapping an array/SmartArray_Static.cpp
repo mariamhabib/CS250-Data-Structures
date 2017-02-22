@@ -1,19 +1,19 @@
 #include "SmartArray_Static.hpp"
 
+
 SmartArray::SmartArray()
 {
     m_itemCount = 0;
 }
 
-bool SmartArray::Push( const string& value )
+bool SmartArray::Push( string item )
 {
     if ( m_itemCount == MAX_SIZE )
     {
-        // Array is full
         return false;
     }
 
-    m_list[m_itemCount] = value;
+    m_array[m_itemCount] = item;
     m_itemCount++;
 
     return true;
@@ -21,11 +21,12 @@ bool SmartArray::Push( const string& value )
 
 string SmartArray::Get( int index )
 {
-    if ( index < 0 || index >= m_itemCount )
+    if ( index < 0 || index >= MAX_SIZE )
     {
         return "";
     }
-    return m_list[index];
+
+    return m_array[index];
 }
 
 int SmartArray::GetSize()

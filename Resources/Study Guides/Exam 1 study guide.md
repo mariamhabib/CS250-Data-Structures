@@ -20,6 +20,8 @@
 * Object
 * Instance/Instantiation
 
+---
+
 # STL structures
 
 * [CS 201R Lecture slides - STL structures](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/19%20STL/STL.pdf) 

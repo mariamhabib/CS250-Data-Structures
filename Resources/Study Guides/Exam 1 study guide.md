@@ -1,5 +1,7 @@
 # Data structures
 
+![data structures icon](https://online.jccc.edu/content/enforced/83878-12334.201701/stack_queue.png?_&d2lSessionVal=vvpB1Es8rDdgm5VRKvGPaOhsm)
+
 * [CS 201R Lecture slides - Data structures](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/20%20Data%20Structures/Data%20Structures%20Intro.pdf)
 * [CS 250 Lecture slides - Data structures](https://github.com/Rachels-Courses/CS250-Data-Structures/blob/master/Lectures/Lecture%2000%20-%20What%20are%20data%20structures.pdf)
 * [CS 250 Lecture video - Data structures](http://edu.moosader.com/classes/cs250/videos/CS250_Lecture00%20What%20are%20Data%20Structures.mp4)
@@ -35,7 +37,11 @@
 
 ## Vocabulary
 
+---
+
 # Static arrays 
+
+![static array icon](https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Artwork/Topics/CS250/staticarray.png?raw=true)
 
 * [CS 200 Lecture slides - Arrays](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/08%20Arrays/Arrays.pdf)
 * [CS 200 Lecture video - Arrays](http://edu.moosader.com/_CPP_LECTURES/08%20Arrays%20Lecture.mp4)
@@ -48,7 +54,11 @@
 * How are arrays stored in memory? Why can’t static arrays be resized?
 * What are things we need to keep in mind when using static arrays? (Error checking?)
 
+---
+
 # Pointers and memory management
+
+![pointer icon](https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Artwork/Topics/CS200/pointers.png?raw=true)
 
 * [CS 200 Lecture slides - Pointers](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/12%20Pointers/Pointers.pdf) 
 * [CS 200 Lecture video - Pointers](http://edu.moosader.com/_CPP_LECTURES/16%20Pointer%20Lecture.mp4)
@@ -72,7 +82,11 @@
 
 ## Vocabulary
 
+---
+
 # Dynamic arrays
+
+![dynamic array icon](https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Artwork/Topics/CS250/dynamicarray.png?raw=true)
 
 * [CS 200 Lecture slides - Dynamic arrays](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/12%20Pointers/Dynamic%20Arrays.pdf)
 * [CS 200 Lecture video - Dynamic arrays](http://edu.moosader.com/_CPP_LECTURES/18%20Dynamic%20Arrays%20Lecture.mp4)
@@ -86,9 +100,11 @@
 
 ## Vocabulary
 
-
+---
 
 # Linked lists
+
+![linked list icon](https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Artwork/Topics/CS250/linkedlist.png?raw=true)
 
 ## Knowledge
 
@@ -107,7 +123,11 @@
 * Singly-linked list
 * Doubly-linked list
 
+---
+
 # Algorithm efficiency
+
+![efficiency icon](https://github.com/Rachels-Courses/Course-Common-Files/blob/master/Artwork/Topics/CS250/efficiency.png?raw=true)
 
 * [CS 201R Lecture slides - Searching and sorting](https://github.com/Rachels-Courses/CS200-Concepts-of-Progamming-Algorithms/blob/master/Resources/Lecture%20Slides/17%20Searching%20and%20Sorting/Searching%20and%20Sorting%201.pdf) 
 * [CS 250 Lecture slides - Searching and efficiency](https://github.com/Rachels-Courses/CS250-Data-Structures/blob/master/Lectures/Lecture%2002%20-%20Searching%20and%20Efficiency.pdf)

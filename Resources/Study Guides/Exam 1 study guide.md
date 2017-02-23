@@ -1,3 +1,22 @@
+# Basics
+
+## Knowledge
+
+* How can you protect against errors in your code?
+* Basic debugging techniques
+
+## Vocabulary
+
+* Interface
+* Coupling
+* Cohesion
+* Method
+* Class
+* Object
+* Instance/Instantiation
+
+---
+
 # Data structures
 
 ![data structures icon](https://online.jccc.edu/content/enforced/83878-12334.201701/stack_queue.png?_&d2lSessionVal=vvpB1Es8rDdgm5VRKvGPaOhsm)
@@ -10,15 +29,6 @@
 
 * Why do we build data structures? Why are there different types of structures?
 
-## Vocabulary
-
-* Interface
-* Coupling
-* Cohesion
-* Method
-* Class
-* Object
-* Instance/Instantiation
 
 ---
 

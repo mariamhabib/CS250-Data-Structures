@@ -8,11 +8,13 @@
 ## Vocabulary
 
 * Interface
+* ADT
 * Coupling
 * Cohesion
 * Method
 * Class
 * Object
+* Encapsulation
 * Instance/Instantiation
 
 ---

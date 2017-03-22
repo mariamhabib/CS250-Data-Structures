@@ -26,7 +26,7 @@ queue or stack and run those functions.
 
 **The implementation of each function will be one line each.**
 
-To explicitly call a function from the parent class, you can prefix
+To explicitly call a function from the child class, you can prefix
 the function name with the parent class and template marker:
 
 	DoublyLinkedList<T>::FunctionThingy( blorp );

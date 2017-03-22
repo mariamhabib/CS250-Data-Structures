@@ -57,70 +57,38 @@ Once your Stack object is implemented, you might have to update these functions 
 
 ---
 
-# DoublyLinkedList Class
+# Stack Class
 
-Before implementing a Stack, you should implement a generic DoublyLinkedList class. This class should utilize templates and have the standard functions needed for a doubly linked list. Additionally, your LinkedList class should also utilize exceptions and throw exceptions as appropriate.
-
-## Node of a DoublyLinkedList
-
-![Node diagram](images/node_diagram.png)
-
-Note: + is public, top portion is variables, bottom portion is functions.
-
-What makes a DoublyLinkedList "doubly" is that the Node structure/class contains two pointers - one to the next node, and one to the previous node.
-
-### Variables:
-
-* Node<T>* ptrNext
-* Node<T>* ptrPrev
-* T data
-
-### Functions:
-
-* A constructor should initialize its pointers to **nullptr**.
-
-## DoublyLinkedList
-
-![DoublyLinkedList Diagram](images/doublylinkedlist.png)
-
-Note: + is public, # is protected, top portion is variables, bottom portion is functions.
-
-The DoublyLinkedList will need to be a generic object, because we will be implementing the **Stack** and, later, the **Queue** with this object. Once it is written once, implementing the Stack will use some of these functions, but not require all of them (though some of these functions will be useful for the Queue or a generic List later on.)
-
-### Member Variables
-
-* ptrFirst
-* ptrLast
-* itemCount
-
-### Member Methods
-
-Initialization/Deinitialization:
-
-* Constructor
-* Destructor
-
-List manipulation:
-
-* PushFront - Add something as the first item of the list
-* PopFront - Remove the first item of the list (make the 2nd item the new 1st)
-* GetFront - Return the data of the first Node of the list
-* PushBack - Add something as the last item of the list
-* PopBack - Remove the last item of the list (make 2nd to last the new last)
-* GetBack - Return the data at the last Node of the list
-* PushItemAt - Push item at a specific index
-* PopItemAt - Remove item at a specific index
-* GetItemAt - Return the data of a Node at a specific index
+You will need to implement a Stack class for this project. The stack
+**must be a template**, and must be implemented with a Linked List.
+You can *either* use your Stack from the previous lab, where it is 
+implemented on top of a DoublyLinkedList, or you can implement
+a Stack from scratch.
 
 
-Other:
+Your stack needs to have the following public functions that the 
+TicTacToe project will access:
 
-* GetSize - Return the size of the itemCount
+* void Push( T data )
+* void Pop()
+* T Top()
+* int GetSize()
+
+
+
+## Exception Handling
+
+Your Stack should detect the following errors, and **throw** exceptions
+if they are detected.
+
+You will also modify **TicTacToe.cpp** to add try/catch statements
+to detect and handle these errors.
+
 
 ### Exception Handling
 
-In addition to implementing the core functionality for a list, you should
 also be checking for errors and [throwing exceptions](http://www.cplusplus.com/reference/exception/exception/) should they come up:
+
 
 #### Memory Allocation errors -- bad_alloc
 
@@ -143,6 +111,7 @@ unless you're on a machine with *very very* limited memory.
 If you **catch** this error, then you want to perhaps display an error message,
 and then throw the same error back up to the next level.
 
+
 #### Bad indices -- out_of_range
 
 Any time a function is called to get an element, but we end up
@@ -157,56 +126,6 @@ you will *throw* the out_of_range error.
 You will want to do checks and throw exceptions for the other Push/Pop/Get functions if the list is empty:
 If the first and last nodes are both nullptr, you don't want to dereference those!
 
----
-
-# Testing your Linked List
-
-The attached file (and the code in the Tester folder) contain a program
-to test the DoublyLinkedList. These files include:
-
-* main.cpp
-* ListTester.hpp
-* ListTester.cpp
-
----
-
-# Stack Class
-
-Your Stack class should be built *on top of* your LinkedList class. You will use a "has-a" (compositional) relationship.
-
-![Stack diagram](images/stack_diagram.png)
-
-The stack will have one private member variable:
-
-* list, a DoublyLinkedList<T>
-
-(This means that the Stack will also be a template class, so the
-template type T can "transfer down" to the internal linked list).
-
-Then, the Stack will have the following methods:
-
-* Push - Push some data onto the top of the stack (use PushBack)
-* Pop - Remove the top-most node from the stack (use PopBack)
-* Top - Get the top-most item from the stack (use GetBack)
-* GetSize - Return the value of the list's GetSize function.
-
-The Stack here is essentially just an *interface*; we've done all the hard
-work in the DoublyLinkedList, now it's just time to snap on a Stack
-or a Queue or a List interface on top.
-
-### Exception Handling
-
-Since the DoublyLinkedList will be throwing errors, the Stack should be
-listening for these errors in order to either handle them or pass them on
-to the programmer using the Stack class.
-
-For any functions in DoublyLinkedList that could possibly throw an exception,
-make sure to wrap the function call in a try/catch. Once caught, throw the same
-exception up one step higher (after perhaps an error message).
-
----
-
-# Testing the Stack
 
 ---
 
@@ -218,7 +137,7 @@ usages of the STL Stack from the **TicTacToe.cpp** and **TicTacToe.hpp** files:
 ## TicTacToe.hpp
 
 Change the 
-	
+
 	stack<GameBoard> m_gameHistory; 
 
 to use your Stack instead.

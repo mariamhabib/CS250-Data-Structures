@@ -111,6 +111,8 @@ unless you're on a machine with *very very* limited memory.
 If you **catch** this error, then you want to perhaps display an error message,
 and then throw the same error back up to the next level.
 
+**Hint: When does this occur? Only for functions that allocate memory.**
+
 
 #### Bad indices -- out_of_range
 
@@ -159,10 +161,7 @@ you will have to update these.
 In *PushHistory* and *UndoLastMove*, you will want to wrap your usage of
 the stack in a try/catch.
 
-* PushHistory - This pushes to the end of the DoublyLinkedList, so you
-will want to check for out_of_range, in the case that the Stack is empty.
-You will also want to check for bad_alloc exceptions, so for this try/catch you
-will have 2 catch blocks.
+* PushHistory - You will want to check for bad_alloc exceptions.
 
 * UndoLastMove - This function should be checking for out_of_range exceptions.
 

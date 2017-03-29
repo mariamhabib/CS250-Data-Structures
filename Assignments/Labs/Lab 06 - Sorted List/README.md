@@ -93,6 +93,9 @@ that return true or false if the tests all pass, or at least one fails...
 			cout << "Test failed: Size is not 3." << endl;
 			return false;
 		}
+		
+		cout << "All tests passed" << endl;
+		return true;
 	}
 	
 	int main()

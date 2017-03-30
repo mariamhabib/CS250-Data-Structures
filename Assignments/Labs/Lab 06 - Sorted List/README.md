@@ -64,45 +64,47 @@ of ways to write tests.
 It can be as simple as adding functions within your *main.cpp* file
 that return true or false if the tests all pass, or at least one fails...
 
-	bool TestSize()
+```c++
+bool TestSize()
+{
+	// Test 1
+	SortedList s1;
+	if ( s1.Size() != 0 )
 	{
-		// Test 1
-		SortedList s1;
-		if ( s1.Size() != 0 )
-		{
-			cout << "Test failed: Size is not 0." << endl;
-			return false;
-		}
-		
-		// Test 2
-		SortedList s2;
-		s2.SortedPush( 3 );
-		if ( s2.Size() != 1 )
-		{
-			cout << "Test failed: Size is not 1." << endl;
-			return false;
-		}
-		
-		// Test 3
-		SortedList s3;
-		s3.SortedPush( 3 );
-		s3.SortedPush( 4 );
-		s3.SortedPush( 5 );
-		if ( s2.Size() != 3 )
-		{
-			cout << "Test failed: Size is not 3." << endl;
-			return false;
-		}
-		
-		cout << "All tests passed" << endl;
-		return true;
+		cout << "Test failed: Size is not 0." << endl;
+		return false;
 	}
-	
-	int main()
+
+	// Test 2
+	SortedList s2;
+	s2.SortedPush( 3 );
+	if ( s2.Size() != 1 )
 	{
-		cout << "TestSize result: " << TestSize() << endl;
-		return 0;
+		cout << "Test failed: Size is not 1." << endl;
+		return false;
 	}
+
+	// Test 3
+	SortedList s3;
+	s3.SortedPush( 3 );
+	s3.SortedPush( 4 );
+	s3.SortedPush( 5 );
+	if ( s3.Size() != 3 )
+	{
+		cout << "Test failed: Size is not 3." << endl;
+		return false;
+	}
+
+	cout << "All tests passed" << endl;
+	return true;
+}
+
+int main()
+{
+	cout << "TestSize result: " << TestSize() << endl;
+	return 0;
+}
+```
 
 
 If you want something more sophisticated, you can also look at my

@@ -180,9 +180,9 @@ beginning!
 With Quadratic probing, if there is a collision we change the amount
 we look forward each time...:
 
-* First collision: Check *hashIndex + 2*
+* First collision: Check *hashIndex + 1<sup>2</sup>*
 * Second collision: Check *hashIndex + 2<sup>2</sup>*
-* Third collision: Chekc *hashIndex + 2<sup>3</sup>*
+* Third collision: Check *hashIndex + 3<sup>2</sup>*
 * etc.
 
 So once again, before collision:

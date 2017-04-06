@@ -173,7 +173,7 @@ Index *10* is free, so student #1079255 would go into index 10 under
 the Linear probing strategy.
 
 Of course, if we hit the end of the array, we wrap back around to the
-beginning!
+beginning! (Note: To do this, you can use *bignumber % TABLE_SIZE*)
 
 ### Quadratic probing
 

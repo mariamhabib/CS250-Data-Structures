@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1492595959 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 08 - Trees/main.cpp
+	<iostream>
+	<string>
+	"Filesystem.hpp"
+
+1492594479 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 08 - Trees/Tree.hpp
+	<iostream>
+	<vector>
+
+1492595935 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 08 - Trees/Filesystem.hpp
+	<iostream>
+	<vector>
+	"StringUtil.hpp"
+
+1486009899 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 08 - Trees/StringUtil.hpp
+	<string>
+	<sstream>
+
+1492606092 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 09 - Trees/main.cpp
+	<iostream>
+	<string>
+	"Filesystem.hpp"
+
+1492606105 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 09 - Trees/Filesystem.hpp
+	<iostream>
+	<vector>
+	<list>
+	"StringUtil.hpp"
+
+1486009899 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-01/Lab 09 - Trees/StringUtil.hpp
+	<string>
+	<sstream>
+
+1492606092 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Labs/Lab 09 - Trees/main.cpp
+	<iostream>
+	<string>
+	"Filesystem.hpp"
+
+1492606458 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Labs/Lab 09 - Trees/Filesystem.hpp
+	<iostream>
+	<vector>
+	<list>
+	"StringUtil.hpp"
+
+1486009899 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Labs/Lab 09 - Trees/StringUtil.hpp
+	<string>
+	<sstream>
+

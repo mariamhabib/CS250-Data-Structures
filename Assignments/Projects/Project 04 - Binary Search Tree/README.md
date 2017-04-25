@@ -2,7 +2,30 @@
 
 ## Introduction
 
-asdfasdfasdf
+For this project, you will implement the functionality of a Binary
+Search Tree. There is a **Tester** project and the **Program** project
+itself. You can use the Tester while you're developing the
+BinarySearchTree to check its functions.
+
+For the application itself, the *employee-list.txt* file is loaded.
+In the *EmployeeManager*, it stores the list of Employees in a vector,
+```vector<Employee> m_employeeList```
+However, we use the BinarySearchTree structure to store *pointers to
+Employees from the m_employeeList vector*, using different keys:
+
+1.    ```BinarySearchTree<int, Employee*> m_idIndex```
+2.    ```BinarySearchTree<string, Employee*> m_nameIndex```
+3.    ```BinarySearchTree<string, Employee*> m_emailIndex```
+
+The first is storing a tree where you can search for an employee
+by ID more quickly.
+
+The second is to search Employees by *lastname-firstname*.
+
+The third is to search Employees by email address.
+
+There is overhead because of the Tree structures, but these structures
+are storing pointers to Employees (which are stored in the vector.)
 
 ## Project files
 
@@ -25,7 +48,8 @@ in common. One is the tester project and the other is the actual application.
 
 ## Turn-In
 
-* Turn in your **StudentTable.cpp** and **StudentTable.hpp** files!
+* All the source files (*.cpp, *.hpp) should go in your GitHub repository.
+* Zip your entire project folder when you upload it to D2L.
 
 ## Group work policy
 

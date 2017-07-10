@@ -41,6 +41,25 @@ public:
 		return m_size;
 	}
 
+	T* Get( int index )
+	{
+		Node<T>* ptrCurrent = m_ptrHead;
+
+		int counter = 0;
+		while ( counter < index && ptrCurrent != nullptr )
+		{
+			ptrCurrent = ptrCurrent->ptrNext;
+			counter++;
+		}
+
+		if ( ptrCurrent == nullptr )
+		{
+			return nullptr;
+		}
+
+		return &ptrCurrent->data;
+	}
+
 	void Push(T data)
 	{
 		Node<T>* newNode = new Node<T>;

@@ -2,4 +2,4 @@
 
 Data Structures with C++
 
-Spring 2017
+Fall 2017

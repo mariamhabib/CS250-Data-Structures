@@ -7,7 +7,7 @@ int main()
 {
     string text;
     cout << "Enter some text: ";
-    cin >> text; // cats stac
+    cin >> text;
     
     stack<char> letters;
     

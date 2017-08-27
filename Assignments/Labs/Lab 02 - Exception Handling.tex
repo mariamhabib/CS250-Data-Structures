@@ -1,0 +1,589 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{boxedminipage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{CS 250}
+\chead{Fall 2017}
+\rhead{Lab 1: STL Containers}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{By Rachel Morris \date}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+    \chapter*{Lab 2: Exception Handling} \stepcounter{chapter}
+
+        \section*{Information}
+            \paragraph{ Topics: } Exception handling, file streams
+            \paragraph{ Turn in: } All source files (.cpp and .hpp), question document as .txt file. 
+
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+        \section*{Getting started}
+
+            You will start with the following code, which contains
+            an object that handles file streams, as well as the main
+            source file that contains tests.
+            At the moment, it should compile and run, but it will crash
+            during the tests because the RecordManager object doesn't
+            have error checking.
+
+            In this lab, you will implement the exception handling
+            within the RecordManager, as well as checking for exceptions
+            from the main file.
+
+            ~\\
+            The following code is the starter code that you will work with;
+            you can download the starter code, or type it out manually.
+            There are descriptions for how the functions work.
+
+            Once entered, the next part of the lab is to add the
+            error checking and exception handling.
+
+            \newpage{}
+            \subsection*{Starter code}
+            \subsubsection*{lab2\_RecordManager.hpp}
+
+            The RecordManager contains an array of output-file-streams
+            (\texttt{ofstream}). When the \texttt{OpenOutputFile} function
+            is called to open a new file, a free spot in the array is found
+            and its index is used for opening the file, writing to the
+            file, and closing the file.
+
+\begin{lstlisting}[style=code]
+#ifndef _RECORD_MANAGER_HPP
+#define _RECORD_MANAGER_HPP
+
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <stdexcept>
+using namespace std;
+
+class RecordManager
+{
+    public:
+    ~RecordManager();
+    
+    void OpenOutputFile( string filename );
+    void CloseOutputFile( string filename );
+    void WriteToFile( string filename, string text );
+    void DisplayAllOpenFiles();
+    
+    private:
+    int FindAvailableFile();
+    int FindFilenameIndex( string filename );
+    
+    ofstream m_outputs[5];
+    string m_filenames[5];
+    const int MAX_FILES = 5;
+};
+
+#endif
+\end{lstlisting}
+
+            \newpage
+            \subsubsection*{lab2\_RecordManager.cpp}
+
+            \paragraph{Destructor}
+            The destructor \texttt{\textasciitilde RecordManager} is
+            a function that gets called automatically once the object
+            is destroyed. This is a good place to close any currently-open
+            file streams, if any are open.
+            
+\begin{lstlisting}[style=code]
+RecordManager::~RecordManager()
+{
+    for ( int i = 0; i < MAX_FILES; i++ )
+    {
+        if ( m_outputs[i].is_open() )
+        {
+            m_outputs[i].close();
+        }
+    }
+}
+\end{lstlisting}
+
+            \paragraph{OpenOutputFile}
+            When the user wants to open a file, they pass in the filename
+            to open. Via the member function, \texttt{FindAvailableFile},
+            an available index is found. Then, the file strema at that
+            position is opened for usage.
+
+            If the \texttt{FindAvailableFile} function cannot find
+            an available index (that is, all files in the array are
+            currently open), then it will return -1. For this function,
+            trying to access \texttt{m\_outputs[ index ]} will cause
+            the program to crash.
+            
+\begin{lstlisting}[style=code]
+void RecordManager::OpenOutputFile( string filename )
+{
+    int index = FindAvailableFile();
+    m_outputs[ index ].open( filename );
+    m_filenames[ index ] = filename;
+}
+\end{lstlisting}
+
+            \paragraph{CloseOutputFile}
+            This function receives the filename that it should close.
+            Then, this function calls \texttt{FindFilenameIndex} to
+            search through the array of filenames, and if it is found,
+            the index is returned. If the filename is not found in the array,
+            then -1 is returned. Again, if \texttt{m\_outputs[ index ]}
+            is accessed when index is -1, the program will crash.
+
+\newpage
+\begin{lstlisting}[style=code]
+void RecordManager::CloseOutputFile( string filename )
+{
+    int index = FindFilenameIndex( filename );
+    m_outputs[ index ].close();
+    m_filenames[ index ] = "";
+}
+\end{lstlisting}
+
+            \paragraph{WriteToFile}
+            This function takes in a filename to be written to,
+            as well as some text to write out. Like with \texttt{CloseOutputFile},
+            it uses \texttt{FindFilenameIndex} to find an index to work with.
+            Then, it writes the \texttt{text} to that output file.
+            
+\begin{lstlisting}[style=code]
+void RecordManager::WriteToFile( string filename, string text )
+{
+    int index = FindFilenameIndex( filename );
+    m_outputs[ index ] << text << endl;
+}
+\end{lstlisting}
+
+            \paragraph{DisplayAllOpenFiles}
+            This function iterates through the list of filenames
+            and outputs them, if the corresponding file stream is open.
+
+            \textbf{This function doesn't cause a crash.}
+            
+\begin{lstlisting}[style=code]
+void RecordManager::DisplayAllOpenFiles()
+{
+    cout << "Open files: " << endl;
+    for ( int i = 0; i < MAX_FILES; i++ )
+    {
+        if ( m_outputs[i].is_open() )
+        {
+            cout << i << ". " << m_filenames[i] << endl;
+        }
+    }
+}
+\end{lstlisting}
+
+            \newpage
+            \paragraph{FindAvailableFile}
+            This function iterates through all the files, and for the first
+            element it finds that isn't open, it will return its index
+            for usage by other functions in the class. If all files
+            are open (none are available), -1 is returned.
+
+            \textbf{This function doesn't cause a crash.}
+            
+\begin{lstlisting}[style=code]
+int RecordManager::FindAvailableFile()
+{
+    for ( int i = 0; i < MAX_FILES; i++ )
+    {
+        if ( m_outputs[i].is_open() == false )
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+\end{lstlisting}
+
+            \paragraph{FindFilenameIndex}
+            This function will search for a filename in the array
+            that matches the one passed in as input. If that filename
+            is found, it returns the corresponding index. Otherwise,
+            it returns -1.
+
+            \textbf{This function doesn't cause a crash.}
+            
+\begin{lstlisting}[style=code]
+int RecordManager::FindFilenameIndex( string filename )
+{
+    for ( int i = 0; i < MAX_FILES; i++ )
+    {
+        if ( m_filenames[i] == filename )
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+\end{lstlisting}
+
+            \newpage
+            \subsubsection*{lab2\_main.cpp}
+
+            The main file contains 5 tests, each called from main().
+            Initially, the program will crash while running the tests,
+            but as you implement the error checking and exception
+            handling, it should run through all 5 tests.
+
+\begin{lstlisting}[style=code]
+#include "lab2_RecordManager.hpp"
+
+#include <iostream>
+using namespace std;
+
+void Test1()
+{
+    cout << endl << "-------------------------------------" << endl;
+    cout << "TEST 1: Open one file and write to it" << endl << endl;
+    RecordManager record;
+    record.OpenOutputFile( "Test1.txt" );
+    
+    record.DisplayAllOpenFiles();
+    
+    record.WriteToFile( "Test1.txt", "Hello world!" );
+    
+    record.CloseOutputFile( "Test1.txt" );
+    
+    cout << endl << "END OF TEST 1" << endl;
+}
+
+void Test2()
+{
+    cout << endl << "-------------------------------------" << endl;
+    cout << "TEST 2: Open 5 files and write to them" << endl << endl;
+    RecordManager record;
+    record.OpenOutputFile( "Test2_A.txt" );
+    record.OpenOutputFile( "Test2_B.txt" );
+    record.OpenOutputFile( "Test2_C.txt" );
+    record.OpenOutputFile( "Test2_D.txt" );
+    record.OpenOutputFile( "Test2_E.txt" );
+    
+    record.DisplayAllOpenFiles();
+    
+    record.WriteToFile( "Test2_A.txt", "ABCDE" );
+    record.WriteToFile( "Test2_B.txt", "FGHIJ" );
+    record.WriteToFile( "Test2_C.txt", "KLMNO" );
+    record.WriteToFile( "Test2_D.txt", "PQRST" );
+    record.WriteToFile( "Test2_E.txt", "UVWXYZ" );
+    
+    record.CloseOutputFile( "Test2_A.txt" );
+    record.CloseOutputFile( "Test2_B.txt" );
+    record.CloseOutputFile( "Test2_C.txt" );
+    record.CloseOutputFile( "Test2_D.txt" );
+    record.CloseOutputFile( "Test2_E.txt" );
+    
+    cout << endl << "END OF TEST 2" << endl;
+}
+
+void Test3()
+{
+    cout << endl << "-------------------------------------" << endl;
+    cout << "TEST 3: Write to a file that isn't opened" << endl << endl;
+    RecordManager record;
+    
+    record.DisplayAllOpenFiles();
+    
+    record.WriteToFile( "Test2.txt", "How are you?" );
+    
+    cout << endl << "END OF TEST 3" << endl;
+}
+
+void Test4()
+{
+    cout << endl << "-------------------------------------" << endl;
+    cout << "TEST 4: Close a file that isn't opened" << endl << endl;
+    RecordManager record;
+    
+    record.DisplayAllOpenFiles();
+    
+    record.CloseOutputFile( "Test3.txt" );
+
+    cout << endl << "END OF TEST 4" << endl;
+}
+
+void Test5()
+{
+    cout << endl << "-------------------------------------" << endl;
+    cout << "TEST 5: Try to open more than max # of files" << endl << endl;
+    RecordManager record;
+
+    record.OpenOutputFile( "Test5_A.txt" );
+    record.OpenOutputFile( "Test5_B.txt" );
+    record.OpenOutputFile( "Test5_C.txt" );
+    record.OpenOutputFile( "Test5_D.txt" );
+    record.OpenOutputFile( "Test5_E.txt" );
+    record.OpenOutputFile( "Test4_F.txt" ); // too many
+
+    record.DisplayAllOpenFiles();
+
+    cout << endl << "END OF TEST 5" << endl;
+}
+
+int main()
+{
+    Test1();
+    Test2();
+    Test3();
+    Test4();
+    Test5();
+    
+    
+    return 0;
+}
+\end{lstlisting}
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+        \newpage
+        \section*{Adding error checking}
+
+            Within the RecordManager class functions, you will add error
+            checking and \texttt{throw} commands. Outside the class, in
+            main and the tests, you will add the \texttt{try/catch} blocks.
+            
+            \begin{intro}{Throw, try, and catch}
+                \textbf{INSIDE} a function is where the
+                \texttt{throw} command is used. After checking
+                for some error state, the response is to
+                \texttt{throw} the type of exception that has
+                occurred, as well as an error message. 
+                ~\\~\\
+                \textbf{OUTSIDE} a function (at the function-call level)
+                is where \texttt{try} and \texttt{catch} commands
+                are used. When a function that may throw an exception is
+                being called, it should be wrapped within a \texttt{try}
+                block. Then, the \texttt{catch} block(s) follow, to catch
+                different types of exceptions, resolve them, clean up,
+                and allow the program to continue.
+            \end{intro}
+            
+            \subsubsection*{Updating RecordManager::OpenOutputFile}
+            In this function, add an error check before
+            \texttt{m\_outputs[ index ]} is accessed: Check to see
+            if the \textit{index} value is equal to -1. If so, throw
+            a \texttt{runtime\_error} like this:
+
+\begin{lstlisting}[style=code]
+if ( index == -1 )
+{
+    throw runtime_error( "No available files" );
+}    
+\end{lstlisting}
+
+            \subsubsection*{Updating RecordManager::CloseOutputFile}
+            This function should also throw a \texttt{runtime\_error} if
+            the returned index is -1.
+
+            \subsubsection*{Updating RecordManager::WriteToFile}
+            This function should also throw a \texttt{runtime\_error} if
+            the returned index is -1.
+
+            \subsubsection*{Updating RecordManager::DisplayAllOpenFiles}
+            This function won't cause any exceptions. Therefore,
+            you should add the function specifier, \texttt{noexcept},
+            to the end of the signature - both in the declaration and
+            the definition.
+
+            \subsubsection*{Updating RecordManager::FindAvailableFile}
+            Add the \texttt{noexcept} function specifier.
+
+            \subsubsection*{Updating RecordManager::FindFilenameIndex}
+            Add the \texttt{noexcept} function specifier.
+
+            \hrulefill
+            \subsubsection*{Testing it out}
+
+            Now when you run the program, it won't flat out crash like
+            before, but it will abort the program once the first exception
+            is hit.
+
+\begin{framed}
+\begin{lstlisting}[style=output]
+-------------------------------------
+TEST 1: Open one file and write to it
+
+Open files: 
+0. Test1.txt
+
+END OF TEST 1
+
+-------------------------------------
+TEST 2: Open 5 files and write to them
+
+Open files: 
+0. Test2_A.txt
+1. Test2_B.txt
+2. Test2_C.txt
+3. Test2_D.txt
+4. Test2_E.txt
+
+END OF TEST 2
+
+-------------------------------------
+TEST 3: Write to a file that isn't opened
+
+Open files: 
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  File Test2.txt is not open
+Aborted
+\end{lstlisting}
+\footnotesize (Note: This is the example output for the program running in Linux,
+with the g++ compiler. The result text might look different in Visual Studio.)
+\end{framed}
+
+            Next, \texttt{try/catch} blocks will need to be added
+            in our tests so that the program will complete its execution,
+            even if exceptions are discovered.
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+        \newpage
+        \section*{Adding try/catch}
+
+            When we are calling a function that may cause an exception,
+            that's when we should have a \texttt{try/catch} statement.
+            The functions from \texttt{RecordManager} that may cause
+            exceptions are:
+
+            \begin{itemize}
+                \item \texttt{OpenOutputFile}
+                \item \texttt{CloseOutputFile}
+                \item \texttt{WriteToFile}
+            \end{itemize}
+
+            Test1 and Test2 themselves won't cause any exceptions to be
+            thrown, but if we were to add the try/catch to Test1, it would
+            look like this:
+            
+\begin{lstlisting}[style=code]
+// (...)
+try
+{
+    record.DisplayAllOpenFiles();
+    
+    record.WriteToFile( "Test1.txt", "Hello world!" );
+    
+    record.CloseOutputFile( "Test1.txt" );
+}
+catch( runtime_error& ex )
+{
+    cout << "Error: " << ex.what() << endl;
+}
+// (...)
+\end{lstlisting}
+
+            ~\\
+            We could wrap each individual function in a try/catch,
+            or wrap all three of them together. This is a design decision
+            to make. In general, it is considered good design to wrap your
+            try/catch around the smallest possible amount of code,
+            but it also doesn't need to wrap just one line at a time.
+            Since these three functions are related, we can wrap the three
+            in a single try/catch block and it would be fairly clean.
+
+            Mainly, don't wrap an entire function in a try/catch -
+            only a section working with ``risky" areas.
+
+            \subsection*{Updating Test3, Test4, and Test5}
+            For each of these tests, surround only the function calls
+            that may return with an exception. Remember that any
+            functions marked as \texttt{noexcept} will never throw
+            an exception.
+
+            Once you've updated the entire program, the output should
+            look like this:
+
+\begin{lstlisting}[style=output]
+-------------------------------------
+TEST 1: Open one file and write to it
+
+Open files: 
+0. Test1.txt
+
+END OF TEST 1
+
+-------------------------------------
+TEST 2: Open 5 files and write to them
+
+Open files: 
+0. Test2_A.txt
+1. Test2_B.txt
+2. Test2_C.txt
+3. Test2_D.txt
+4. Test2_E.txt
+
+END OF TEST 2
+
+-------------------------------------
+TEST 3: Write to a file that isn't opened
+
+Open files: 
+Error: File Test2.txt is not open
+
+END OF TEST 3
+
+-------------------------------------
+TEST 4: Close a file that isn't opened
+
+Open files: 
+Error: File Test3.txt is not open
+
+END OF TEST 4
+
+-------------------------------------
+TEST 5: Try to open more than max # of files
+
+Error: No available files
+
+END OF TEST 5
+\end{lstlisting}
+
+           
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ---------------------------------------------------------------------- 
+        \newpage
+        \subsection*{Questions and Answers}
+            Answer the following questions in a .txt file and
+            turn them in with the rest of the lab.
+            You will also want to reference the exception handling
+            lecture for these questions.
+
+            \begin{enumerate}
+                \item What are the four levels of exception safety?
+                \item How many \texttt{catch} blocks can there be
+                    with a single \texttt{try} block?
+                \item Which exceptions are children of the \texttt{logic\_error} exception?
+                \item Which exceptions are children of the \texttt{runtime\_error} exception?
+            \end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+

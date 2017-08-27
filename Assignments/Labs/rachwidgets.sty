@@ -58,15 +58,34 @@
 
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
+
 % Code example frame %
 \lstdefinestyle{code}{
     language=C++,
     showspaces=false,
     showstringspaces=false,
     tabsize=4,
-    basicstyle=\bfseries\scriptsize\color{textz}, 
-    commentstyle=\bfseries\color{commentz},
-    keywordstyle=\bfseries\color{keywordz},
+    basicstyle=\ttfamily\small\color{textz}, 
+    commentstyle=\ttfamily\color{commentz},
+    keywordstyle=\ttfamily\color{keywordz},
+    backgroundcolor=\color{backgroundz},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    stepnumber=1,
+    numbers=left,
+    }
+
+% Code example frame %
+\lstdefinestyle{pycode}{
+    language=Python,
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\small\color{textz}, 
+    commentstyle=\ttfamily\color{commentz},
+    keywordstyle=\ttfamily\color{keywordz},
     backgroundcolor=\color{backgroundz},
     breakatwhitespace=false,
     frame=single,
@@ -81,13 +100,13 @@
     showspaces=false,
     showstringspaces=false,
     tabsize=4,
-    basicstyle=\bfseries\scriptsize\color{previewfg}, 
+    basicstyle=\ttfamily\scriptsize\color{previewfg}, 
     backgroundcolor=\color{previewbg},
     breakatwhitespace=false,
     frame=single,
     keepspaces=true,
     breaklines=true,
-    title=\tiny Example output,
+    %title=\tiny Example output,
     }
 
 % Example text output frame %
@@ -95,11 +114,10 @@
     showspaces=false,
     showstringspaces=false,
     tabsize=4,
-    basicstyle=\bfseries\footnotesize\color{textfg}, 
+    basicstyle=\ttfamily\footnotesize\color{textfg}, 
     backgroundcolor=\color{textbg},
     breakatwhitespace=false,
     frame=single,
     keepspaces=true,
     breaklines=true,
     }
-

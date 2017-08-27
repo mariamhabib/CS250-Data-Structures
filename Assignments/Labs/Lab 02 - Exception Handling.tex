@@ -103,6 +103,13 @@ class RecordManager
             a function that gets called automatically once the object
             is destroyed. This is a good place to close any currently-open
             file streams, if any are open.
+
+            \begin{hint}{Include the hpp file!}
+                Don't forget to include the header file!
+\begin{verbatim}
+#include "lab2_RecordManager.hpp"
+\end{verbatim}
+            \end{hint}
             
 \begin{lstlisting}[style=code]
 RecordManager::~RecordManager()

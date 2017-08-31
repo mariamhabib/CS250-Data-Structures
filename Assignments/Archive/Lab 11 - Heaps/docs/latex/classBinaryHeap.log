@@ -1,0 +1,4713 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.30)  3 MAY 2017 13:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**classBinaryHeap.tex
+(./classBinaryHeap.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+! Undefined control sequence.
+l.1 \hypertarget
+                {classBinaryHeap}{}\section{Binary\+Heap$<$ T $>$ Class Temp...
+
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \hypertarget{c
+                  lassBinaryHeap}{}\section{Binary\+Heap$<$ T $>$ Class Temp...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Undefined control sequence.
+l.1 \hypertarget{classBinaryHeap}{}\section
+                                           {Binary\+Heap$<$ T $>$ Class Temp...
+
+? 
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.1 ...rtarget{classBinaryHeap}{}\section{Binary\+
+                                                  Heap$<$ T $>$ Class Templa...
+
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+Missing character: There is no T in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.3 \subsection
+               *{Public Member Functions}
+? 
+Missing character: There is no * in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Environment DoxyCompactItemize undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \begin{DoxyCompactItemize}
+                              
+? 
+
+Overfull \hbox (27.7778pt too wide) in paragraph at lines 1--6
+[]$\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 1--6
+\OML/cmm/m/it/10 >$
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \hyperlink
+              {classBinaryHeap_a5c1a5fa452e3a008a08b4fe0b0e4599a}{Binary\+He...
+
+? 
+! Undefined control sequence.
+<recently read> \hyperlink 
+                           
+l.6 \hyperlink
+              {classBinaryHeap_a5c1a5fa452e3a008a08b4fe0b0e4599a}{Binary\+He...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.6 \hyperlink{classBinaryHeap_
+                               a5c1a5fa452e3a008a08b4fe0b0e4599a}{Binary\+He...
+
+? 
+! Extra }, or forgotten $.
+l.6 ...naryHeap_a5c1a5fa452e3a008a08b4fe0b0e4599a}
+                                                  {Binary\+Heap} (const vect...
+
+? 
+! Undefined control sequence.
+l.6 ...a5c1a5fa452e3a008a08b4fe0b0e4599a}{Binary\+
+                                                  Heap} (const vector$<$ T $...
+
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \item
+         
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 b
+     ool \hyperlink{classBinaryHeap_a6bbf1a12804cab08943e7b0cd6afa3fb}{Is\+E...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 b
+     ool \hyperlink{classBinaryHeap_a6bbf1a12804cab08943e7b0cd6afa3fb}{Is\+E...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 b
+     ool \hyperlink{classBinaryHeap_a6bbf1a12804cab08943e7b0cd6afa3fb}{Is\+E...
+
+? 
+! Undefined control sequence.
+l.8 bool \hyperlink
+                   {classBinaryHeap_a6bbf1a12804cab08943e7b0cd6afa3fb}{Is\+E...
+
+? 
+! Undefined control sequence.
+l.8 ...eap_a6bbf1a12804cab08943e7b0cd6afa3fb}{Is\+
+                                                  Empty} () const
+? 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \item
+         
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 c
+      onst T \& \hyperlink{classBinaryHeap_adbad89fb493d9c88325b2e9a5e82871a...
+
+? 
+
+Overfull \hbox (672.88477pt too wide) in paragraph at lines 6--10
+[]\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 a\OT1/cm
+r/m/n/10 5\OML/cmm/m/it/10 fa\OT1/cmr/m/n/10 452\OML/cmm/m/it/10 e\OT1/cmr/m/n/
+10 3\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 008\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 08\O
+ML/cmm/m/it/10 b\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 fe\OT1/cmr/m/n/10 0\OML/cmm/m
+/it/10 b\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 4599\OML/cmm/m/it/10
+ a[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 constvector$$T$$\OT1/cmr/m/n/10 &\OML/cmm
+/m/it/10 items\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 bool[][]\OT1/cmr/m/n/10 ()\OML/
+cmm/m/it/10 const[]$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 c
+      onst T \& \hyperlink{classBinaryHeap_adbad89fb493d9c88325b2e9a5e82871a...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no & in font nullfont!
+! Undefined control sequence.
+l.10 const T \& \hyperlink
+                          {classBinaryHeap_adbad89fb493d9c88325b2e9a5e82871a...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 const T \& \hyperlink{classBinaryHeap_
+                                           adbad89fb493d9c88325b2e9a5e82871a...
+
+? 
+! Extra }, or forgotten $.
+l.10 ...aryHeap_adbad89fb493d9c88325b2e9a5e82871a}
+                                                  {Find\+Min} () const
+? 
+! Undefined control sequence.
+l.10 ..._adbad89fb493d9c88325b2e9a5e82871a}{Find\+
+                                                  Min} () const
+? 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \item
+          
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 v
+      oid \hyperlink{classBinaryHeap_a0cead3dc009e8401ac1665d6b424e7e2}{Inse...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 v
+      oid \hyperlink{classBinaryHeap_a0cead3dc009e8401ac1665d6b424e7e2}{Inse...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 v
+      oid \hyperlink{classBinaryHeap_a0cead3dc009e8401ac1665d6b424e7e2}{Inse...
+
+? 
+! Undefined control sequence.
+l.12 void \hyperlink
+                    {classBinaryHeap_a0cead3dc009e8401ac1665d6b424e7e2}{Inse...
+
+? 
+! Undefined control sequence.
+l.12 ...ac1665d6b424e7e2}{Insert} (const T \&new\+
+                                                  Item)
+? 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \item
+          
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 v
+      oid \hyperlink{classBinaryHeap_a1529b44ebc5ab9b2c6b388f2a86ae8df}{Dele...
+
+? 
+
+Overfull \hbox (633.03355pt too wide) in paragraph at lines 10--14
+[]\OML/cmm/m/it/10 dbad\OT1/cmr/m/n/10 89\OML/cmm/m/it/10 fb\OT1/cmr/m/n/10 493
+\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 88325\OML/
+cmm/m/it/10 b\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 9\OML/cmm/m/it/
+10 a\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 82871\OML/cmm/m/it/10 a[
+]\OT1/cmr/m/n/10 ()\OML/cmm/m/it/10 constvoid[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it
+/10 constT\OT1/cmr/m/n/10 &\OML/cmm/m/it/10 newItem\OT1/cmr/m/n/10 )[]$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 v
+      oid \hyperlink{classBinaryHeap_a1529b44ebc5ab9b2c6b388f2a86ae8df}{Dele...
+
+? 
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.14 void \hyperlink
+                    {classBinaryHeap_a1529b44ebc5ab9b2c6b388f2a86ae8df}{Dele...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 void \hyperlink{classBinaryHeap_
+                                     a1529b44ebc5ab9b2c6b388f2a86ae8df}{Dele...
+
+? 
+! Extra }, or forgotten $.
+l.14 ...aryHeap_a1529b44ebc5ab9b2c6b388f2a86ae8df}
+                                                  {Delete\+Min} ()
+? 
+! Undefined control sequence.
+l.14 ...1529b44ebc5ab9b2c6b388f2a86ae8df}{Delete\+
+                                                  Min} ()
+? 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \item
+          
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 v
+      oid {\bfseries Display\+Linear} (ofstream \&output)\hypertarget{classB...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 v
+      oid {\bfseries Display\+Linear} (ofstream \&output)\hypertarget{classB...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 v
+      oid {\bfseries Display\+Linear} (ofstream \&output)\hypertarget{classB...
+
+? 
+
+! LaTeX Error: Command \bfseries invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 void {\bfseries
+                     Display\+Linear} (ofstream \&output)\hypertarget{classB...
+
+? 
+! Undefined control sequence.
+l.16 void {\bfseries Display\+
+                              Linear} (ofstream \&output)\hypertarget{classB...
+
+? 
+! Undefined control sequence.
+l.16 ...y\+Linear} (ofstream \&output)\hypertarget
+                                                  {classBinaryHeap_a39235f96...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.17 
+     
+? 
+
+Overfull \hbox (636.47708pt too wide) in paragraph at lines 14--17
+[]\OT1/cmr/m/n/10 1529\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 44\OML/cmm/m/it/10 ebc\
+OT1/cmr/m/n/10 5\OML/cmm/m/it/10 ab\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 b\OT1/cmr/
+m/n/10 2\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 38
+8\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 86\OML/cm
+m/m/it/10 ae\OT1/cmr/m/n/10 8\OML/cmm/m/it/10 df[]\OT1/cmr/m/n/10 ()\OML/cmm/m/
+it/10 void[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ofstream\OT1/cmr/m/n/10 &\OML/cmm
+/m/it/10 output\OT1/cmr/m/n/10 )[][][]$ 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--19
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 v
+      oid {\bfseries Remove\+In\+Order} (ofstream \&output)\hypertarget{clas...
+
+? 
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.19 void {\bfseries Remove\+
+                             In\+Order} (ofstream \&output)\hypertarget{clas...
+
+? 
+! Undefined control sequence.
+l.19 void {\bfseries Remove\+In\+
+                                 Order} (ofstream \&output)\hypertarget{clas...
+
+? 
+Missing character: There is no ( in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no & in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+! Undefined control sequence.
+l.19 ...In\+Order} (ofstream \&output)\hypertarget
+                                                  {classBinaryHeap_a1e9d5143...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.19 ...eam \&output)\hypertarget{classBinaryHeap_
+                                                  a1e9d5143469a90a880cfd9ea6...
+
+? 
+! Extra }, or forgotten $.
+l.19 ...aryHeap_a1e9d5143469a90a880cfd9ea6c5b5088}
+                                                  {}\label{classBinaryHeap_a...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.20 
+     
+? 
+
+Overfull \hbox (17.72908pt too wide) in paragraph at lines 19--20
+\OT1/cmr/bx/n/10 Re-
+ []
+
+
+Overfull \hbox (66.55524pt too wide) in paragraph at lines 19--20
+\OT1/cmr/bx/n/10 moveInOrder
+ []
+
+
+Overfull \hbox (164.33693pt too wide) in paragraph at lines 19--20
+[]\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 d\OT1/cm
+r/m/n/10 5143469\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 90\OML/cmm/m/it/10 a\OT1/cmr/
+m/n/10 880\OML/cmm/m/it/10 cfd\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 ea\OT1/cmr/m/n/
+10 6\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 5088[]
+[]$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactItemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \end{DoxyCompactItemize}
+                             
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.21 \end{DoxyCompactItemize}
+                             
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.21 \end{DoxyCompactItemize}
+                             
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.21 \end{DoxyCompactItemize}
+                             
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.21 \end{DoxyCompactItemize}
+                             
+? 
+! Undefined control sequence.
+l.22 \subsection
+                *{Private Member Functions}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \subsection*
+                 {Private Member Functions}
+? 
+Missing character: There is no * in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Environment DoxyCompactItemize undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \begin{DoxyCompactItemize}
+                               
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--25
+[]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 v
+      oid \hyperlink{classBinaryHeap_aaaf3be9f83d101dd14f7c18a43d3d4a4}{Buil...
+
+? 
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.25 void \hyperlink
+                    {classBinaryHeap_aaaf3be9f83d101dd14f7c18a43d3d4a4}{Buil...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 void \hyperlink{classBinaryHeap_
+                                     aaaf3be9f83d101dd14f7c18a43d3d4a4}{Buil...
+
+? 
+! Extra }, or forgotten $.
+l.25 ...aryHeap_aaaf3be9f83d101dd14f7c18a43d3d4a4}
+                                                  {Build\+Heap} ()
+? 
+! Undefined control sequence.
+l.25 ...aaaf3be9f83d101dd14f7c18a43d3d4a4}{Build\+
+                                                  Heap} ()
+? 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \item
+          
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 v
+      oid \hyperlink{classBinaryHeap_ac52a0be1ef7171a4262019c8f00315b6}{Perc...
+
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 v
+      oid \hyperlink{classBinaryHeap_ac52a0be1ef7171a4262019c8f00315b6}{Perc...
+
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 v
+      oid \hyperlink{classBinaryHeap_ac52a0be1ef7171a4262019c8f00315b6}{Perc...
+
+? 
+! Undefined control sequence.
+l.27 void \hyperlink
+                    {classBinaryHeap_ac52a0be1ef7171a4262019c8f00315b6}{Perc...
+
+? 
+! Undefined control sequence.
+l.27 ...a0be1ef7171a4262019c8f00315b6}{Percolate\+
+                                                  Down} (int hole\+Index)
+? 
+! Undefined control sequence.
+l.27 ...19c8f00315b6}{Percolate\+Down} (int hole\+
+                                                  Index)
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactItemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \end{DoxyCompactItemize}
+                             
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 \end{DoxyCompactItemize}
+                             
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.28 \end{DoxyCompactItemize}
+                             
+? 
+! Undefined control sequence.
+l.29 \subsection
+                *{Private Attributes}
+? 
+Missing character: There is no * in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: Environment DoxyCompactItemize undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \begin{DoxyCompactItemize}
+                               
+? 
+
+Overfull \hbox (623.5026pt too wide) in paragraph at lines 25--32
+[]\OML/cmm/m/it/10 aaf\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 be\OT1/cmr/m/n/10 9\OML
+/cmm/m/it/10 f\OT1/cmr/m/n/10 83\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 101\OML/cmm/m
+/it/10 dd\OT1/cmr/m/n/10 14\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 7\OML/cmm/m/it/10 
+c\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 43\OML/cmm/m/it/10 d\OT1/c
+mr/m/n/10 3\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 a\OT1/cmr/m/n/10
+ 4[]()\OML/cmm/m/it/10 void[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 intholeIndex\O
+T1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--32
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 u
+      nsigned int {\bfseries m\+\_\+size}\hypertarget{classBinaryHeap_aa213b...
+
+? 
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.32 unsigned int {\bfseries m\+
+                                \_\+size}\hypertarget{classBinaryHeap_aa213b...
+
+? 
+! Undefined control sequence.
+l.32 unsigned int {\bfseries m\+\_\+
+                                    size}\hypertarget{classBinaryHeap_aa213b...
+
+? 
+! Undefined control sequence.
+l.32 ...ed int {\bfseries m\+\_\+size}\hypertarget
+                                                  {classBinaryHeap_aa213ba6c...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.32 ... m\+\_\+size}\hypertarget{classBinaryHeap_
+                                                  aa213ba6c286d9c781ee58bb4f...
+
+? 
+! Extra }, or forgotten $.
+l.32 ...aryHeap_aa213ba6c286d9c781ee58bb4fdc59779}
+                                                  {}\label{classBinaryHeap_a...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.33 
+     
+? 
+
+Overfull \hbox (193.79753pt too wide) in paragraph at lines 32--33
+\OT1/cmr/bx/n/10 m[]size$[]\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 213\OML/cmm/m/it/1
+0 ba\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 286\OML/cmm/m/it/10 d\OT
+1/cmr/m/n/10 9\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 781\OML/cmm/m/it/10 ee\OT1/cmr/
+m/n/10 58\OML/cmm/m/it/10 bb\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 fdc\OT1/cmr/m/n/1
+0 59779[][]$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 v
+      ector$<$ T $>$ {\bfseries m\+\_\+array}\hypertarget{classBinaryHeap_a1...
+
+? 
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.35 vector$<$ T $>$ {\bfseries m\+
+                                   \_\+array}\hypertarget{classBinaryHeap_a1...
+
+? 
+! Undefined control sequence.
+l.35 vector$<$ T $>$ {\bfseries m\+\_\+
+                                       array}\hypertarget{classBinaryHeap_a1...
+
+? 
+! Undefined control sequence.
+l.35 ...T $>$ {\bfseries m\+\_\+array}\hypertarget
+                                                  {classBinaryHeap_a189e2b7f...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.35 ...m\+\_\+array}\hypertarget{classBinaryHeap_
+                                                  a189e2b7f5214172b241bef49c...
+
+? 
+! Extra }, or forgotten $.
+l.35 ...aryHeap_a189e2b7f5214172b241bef49c340f796}
+                                                  {}\label{classBinaryHeap_a...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 
+     
+? 
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--36
+\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--36
+\OML/cmm/m/it/10 >$
+ []
+
+
+Overfull \hbox (204.3957pt too wide) in paragraph at lines 35--36
+\OT1/cmr/bx/n/10 m[]array$[]\OT1/cmr/m/n/10 189\OML/cmm/m/it/10 e\OT1/cmr/m/n/1
+0 2\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 7\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 5214172
+\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 241\OML/cmm/m/it/10 bef\OT1/cmr/m/n/10 49\OML
+/cmm/m/it/10 c\OT1/cmr/m/n/10 340\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 796[][]$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactItemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \end{DoxyCompactItemize}
+                             
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.37 \end{DoxyCompactItemize}
+                             
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.37 \end{DoxyCompactItemize}
+                             
+? 
+! Undefined control sequence.
+l.40 \subsection
+                {Constructor \& Destructor Documentation}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \subsection{C
+                  onstructor \& Destructor Documentation}
+? 
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no & in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+l.43 \subsubsection
+                   [{\texorpdfstring{Binary\+Heap(const vector$<$ T $>$ \&it...
+
+? 
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+l.43 \subsubsection[{\texorpdfstring
+                                    {Binary\+Heap(const vector$<$ T $>$ \&it...
+
+? 
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.43 \subsubsection[{\texorpdfstring{Binary\+
+                                             Heap(const vector$<$ T $>$ \&it...
+
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no & in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no > in font nullfont!
+! Misplaced alignment tab character &.
+l.43 ...$ \&items)}{BinaryHeap(const vector< T > &
+                                                  items)}}]{\setlength{\righ...
+
+? 
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.43 ...pt plus 5cm}template$<$typename T $>$ {\bf
+                                                   Binary\+Heap}$<$ T $>$\+:...
+
+? 
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.43 ...cm}template$<$typename T $>$ {\bf Binary\+
+                                                  Heap}$<$ T $>$\+::{\bf Bin...
+
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.43 ...pename T $>$ {\bf Binary\+Heap}$<$ T $>$\+
+                                                  ::{\bf Binary\+Heap} (
+? 
+Missing character: There is no : in font nullfont!
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+l.43 ... T $>$ {\bf Binary\+Heap}$<$ T $>$\+::{\bf
+                                                   Binary\+Heap} (
+? 
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.43 ...bf Binary\+Heap}$<$ T $>$\+::{\bf Binary\+
+                                                  Heap} (
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+
+! LaTeX Error: Environment DoxyParamCaption undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \begin{DoxyParamCaption}
+                             
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 40--45
+[] 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 40--45
+\OML/cmm/m/it/10 <$ 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 40--45
+\OML/cmm/m/it/10 >$ 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 40--45
+\OML/cmm/m/it/10 <$ 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 40--45
+\OML/cmm/m/it/10 >$ 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 40--45
+\OML/cmm/m/it/10 <$ 
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 40--45
+\OML/cmm/m/it/10 >$  
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \item[{const vector$<$ T $>$ \&}]
+                                      {items}
+? 
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParamCaption}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \end{DoxyParamCaption}
+                           
+? 
+Missing character: There is no ) in font nullfont!
+! Undefined control sequence.
+l.47 ...ce{0.3cm}{\ttfamily [inline]}}\hypertarget
+                                                  {classBinaryHeap_a5c1a5fa4...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.47 ...ly [inline]}}\hypertarget{classBinaryHeap_
+                                                  a5c1a5fa452e3a008a08b4fe0b...
+
+? 
+! Extra }, or forgotten $.
+l.47 ...aryHeap_a5c1a5fa452e3a008a08b4fe0b0e4599a}
+                                                  {}\label{classBinaryHeap_a...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.48 
+     
+? 
+
+Overfull \hbox (207.0912pt too wide) in paragraph at lines 45--48
+\OT1/cmtt/m/n/10 [inline]$[]\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 
+1\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 fa\OT1/cmr/m/n/10 452\OML/
+cmm/m/it/10 e\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 008\OML/cmm/m/i
+t/10 a\OT1/cmr/m/n/10 08\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 fe\
+OT1/cmr/m/n/10 0\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 e\OT1/cmr/m
+/n/10 4599\OML/cmm/m/it/10 a[][]$ 
+ []
+
+
+! LaTeX Error: Environment DoxyParams undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \begin{DoxyParams}
+                       {Parameters}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \begin{DoxyParams}{P
+                         arameters}
+? 
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+! Misplaced alignment tab character &.
+l.50 {\em items} &
+                   $<$const vector$<$\+T$>$\&$>$ the initial items to put in...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+l.50 {\em items} & $<$const vector$<$\+
+                                       T$>$\&$>$ the initial items to put in...
+
+? 
+Missing character: There is no T in font nullfont!
+Missing character: There is no & in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.51 \hline
+           
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 49--51
+[]
+ []
+
+
+Overfull \hbox (23.2554pt too wide) in paragraph at lines 49--51
+\OT1/cmr/m/it/10 items
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 49--51
+\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (23.3334pt too wide) in paragraph at lines 49--51
+\OML/cmm/m/it/10 <$$>$$>$
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParams}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \end{DoxyParams}
+                     
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 F
+      irst, copy the items from the items vector into the m\+\_\+arrays vect...
+
+? 
+Missing character: There is no F in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.53 ...e items from the items vector into the m\+
+                                                  \_\+arrays vector. However...
+
+? 
+! Undefined control sequence.
+l.53 ...ems from the items vector into the m\+\_\+
+                                                  arrays vector. However, we...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.53 ...e do not put anything at position 0 in m\+
+                                                  \_\+array, so make sure yo...
+
+? 
+! Undefined control sequence.
+l.53 ... not put anything at position 0 in m\+\_\+
+                                                  array, so make sure you\te...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+! Undefined control sequence.
+l.53 ..._\+array, so make sure you\textquotesingle
+                                                  {}re storing items in i+1 ...
+
+? 
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.53 ...otesingle{}re storing items in i+1 for m\+
+                                                  \_\+array, when it is item...
+
+? 
+! Undefined control sequence.
+l.53 ...ingle{}re storing items in i+1 for m\+\_\+
+                                                  array, when it is item i f...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.53 ...m the items vector. Then, call the Build\+
+                                                  Heap function.
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 53--54
+[]
+ []
+
+! Undefined control sequence.
+l.55 \subsection
+                {Member Function Documentation}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \subsection{M
+                  ember Function Documentation}
+? 
+Missing character: There is no M in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+l.58 \subsubsection
+                   [{\texorpdfstring{Build\+Heap()}{BuildHeap()}}]{\setlengt...
+
+? 
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+l.58 \subsubsection[{\texorpdfstring
+                                    {Build\+Heap()}{BuildHeap()}}]{\setlengt...
+
+? 
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.58 \subsubsection[{\texorpdfstring{Build\+
+                                            Heap()}{BuildHeap()}}]{\setlengt...
+
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.58 ...us 5cm}template$<$typename T $>$ void {\bf
+                                                   Binary\+Heap}$<$ T $>$\+:...
+
+? 
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.58 ...mplate$<$typename T $>$ void {\bf Binary\+
+                                                  Heap}$<$ T $>$\+::Build\+H...
+
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.58 ...e T $>$ void {\bf Binary\+Heap}$<$ T $>$\+
+                                                  ::Build\+Heap (
+? 
+Missing character: There is no : in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.58 ...oid {\bf Binary\+Heap}$<$ T $>$\+::Build\+
+                                                  Heap (
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no ( in font nullfont!
+
+! LaTeX Error: Environment DoxyParamCaption undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \begin{DoxyParamCaption}
+                             
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParamCaption}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \end{DoxyParamCaption}
+                           
+? 
+Missing character: There is no ) in font nullfont!
+Missing character: There is no , in font nullfont!
+! Undefined control sequence.
+l.62 ...line]}, {\ttfamily [private]}}\hypertarget
+                                                  {classBinaryHeap_aaaf3be9f...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.62 ...y [private]}}\hypertarget{classBinaryHeap_
+                                                  aaaf3be9f83d101dd14f7c18a4...
+
+? 
+! Extra }, or forgotten $.
+l.62 ...aryHeap_aaaf3be9f83d101dd14f7c18a43d3d4a4}
+                                                  {}\label{classBinaryHeap_a...
+
+? 
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+l.63 Iterate through indexes from \mbox{[}m\+
+                                             \_\+size/2, 0), decrementing yo...
+
+? 
+! Undefined control sequence.
+l.63 Iterate through indexes from \mbox{[}m\+\_\+
+                                                 size/2, 0), decrementing yo...
+
+? 
+! Undefined control sequence.
+l.63 ...ch time. Within the loop, call Percolate\+
+                                                  Down on the current value ...
+
+? 
+! Undefined control sequence.
+l.65 \subsubsection
+                   [{\texorpdfstring{Delete\+Min()}{DeleteMin()}}]{\setlengt...
+
+? 
+! Undefined control sequence.
+l.65 \subsubsection[{\texorpdfstring
+                                    {Delete\+Min()}{DeleteMin()}}]{\setlengt...
+
+? 
+! Undefined control sequence.
+l.65 \subsubsection[{\texorpdfstring{Delete\+
+                                             Min()}{DeleteMin()}}]{\setlengt...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.65 ...tlength{\rightskip}{0pt plus 5cm}template$
+                                                  <$typename T $>$ void {\bf...
+
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+! Undefined control sequence.
+l.65 ...us 5cm}template$<$typename T $>$ void {\bf
+                                                   Binary\+Heap}$<$ T $>$\+:...
+
+? 
+! Undefined control sequence.
+l.65 ...mplate$<$typename T $>$ void {\bf Binary\+
+                                                  Heap}$<$ T $>$\+::Delete\+...
+
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+! Undefined control sequence.
+<recently read> \+
+                  
+l.65 ...e T $>$ void {\bf Binary\+Heap}$<$ T $>$\+
+                                                  ::Delete\+Min (
+? 
+! Undefined control sequence.
+l.65 ...id {\bf Binary\+Heap}$<$ T $>$\+::Delete\+
+                                                  Min (
+? 
+
+! LaTeX Error: Environment DoxyParamCaption undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \begin{DoxyParamCaption}
+                             
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParamCaption}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \end{DoxyParamCaption}
+                           
+? 
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 )\hspace{0.3cm}{\ttfamily
+                               [inline]}}\hypertarget{classBinaryHeap_a1529b...
+
+? 
+! Extra }, or forgotten $.
+l.69 )\hspace{0.3cm}{\ttfamily [inline]}}
+                                         \hypertarget{classBinaryHeap_a1529b...
+
+? 
+! Undefined control sequence.
+l.69 ...ce{0.3cm}{\ttfamily [inline]}}\hypertarget
+                                                  {classBinaryHeap_a1529b44e...
+
+? 
+
+! LaTeX Error: Command \itshape invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ... position 1) to the value of the {\itshape
+                                                   last} item in the heap (p...
+
+? 
+! Undefined control sequence.
+l.70 ...shape last} item in the heap (position m\+
+                                                  \_\+size). Then, decrement...
+
+? 
+! Undefined control sequence.
+l.70 ...e last} item in the heap (position m\+\_\+
+                                                  size). Then, decrement m\+...
+
+? 
+! Undefined control sequence.
+l.70 ...position m\+\_\+size). Then, decrement m\+
+                                                  \_\+size, and call Percola...
+
+? 
+! Undefined control sequence.
+l.70 ...tion m\+\_\+size). Then, decrement m\+\_\+
+                                                  size, and call Percolate\+...
+
+? 
+! Undefined control sequence.
+l.70 ...ecrement m\+\_\+size, and call Percolate\+
+                                                  Down on index 1. \index{Bi...
+
+? 
+! Undefined control sequence.
+l.72 \subsubsection
+                   [{\texorpdfstring{Find\+Min() const }{FindMin() const }}]...
+
+? 
+! Undefined control sequence.
+l.72 \subsubsection[{\texorpdfstring
+                                    {Find\+Min() const }{FindMin() const }}]...
+
+? 
+! Undefined control sequence.
+l.72 \subsubsection[{\texorpdfstring{Find\+
+                                           Min() const }{FindMin() const }}]...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.72 ...tlength{\rightskip}{0pt plus 5cm}template$
+                                                  <$typename T $>$ const T\&...
+
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+! Undefined control sequence.
+l.72 ...m}template$<$typename T $>$ const T\& {\bf
+                                                   Binary\+Heap}$<$ T $>$\+:...
+
+? 
+! Undefined control sequence.
+l.72 ...e$<$typename T $>$ const T\& {\bf Binary\+
+                                                  Heap}$<$ T $>$\+::Find\+Min (
+
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+! Undefined control sequence.
+<recently read> \+
+                  
+l.72 ...>$ const T\& {\bf Binary\+Heap}$<$ T $>$\+
+                                                  ::Find\+Min (
+? 
+! Undefined control sequence.
+l.72 ... T\& {\bf Binary\+Heap}$<$ T $>$\+::Find\+
+                                                  Min (
+? 
+
+! LaTeX Error: Environment DoxyParamCaption undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \begin{DoxyParamCaption}
+                             
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParamCaption}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \end{DoxyParamCaption}
+                           
+? 
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ) const\hspace{0.3cm}{\ttfamily
+                                     [inline]}}\hypertarget{classBinaryHeap_...
+
+? 
+! Extra }, or forgotten $.
+l.76 ) const\hspace{0.3cm}{\ttfamily [inline]}}
+                                               \hypertarget{classBinaryHeap_...
+
+? 
+! Undefined control sequence.
+l.76 ...ce{0.3cm}{\ttfamily [inline]}}\hypertarget
+                                                  {classBinaryHeap_adbad89fb...
+
+? 
+
+! LaTeX Error: Environment DoxyReturn undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \begin{DoxyReturn}
+                       {Returns}
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyReturn}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \end{DoxyReturn}
+                     
+? 
+! Undefined control sequence.
+l.82 \subsubsection
+                   [{\texorpdfstring{Insert(const T \&new\+Item)}{Insert(con...
+
+? 
+! Undefined control sequence.
+l.82 \subsubsection[{\texorpdfstring
+                                    {Insert(const T \&new\+Item)}{Insert(con...
+
+? 
+! Undefined control sequence.
+l.82 ...on[{\texorpdfstring{Insert(const T \&new\+
+                                                  Item)}{Insert(const T &new...
+
+? 
+! Misplaced alignment tab character &.
+l.82 ...ert(const T \&new\+Item)}{Insert(const T &
+                                                  newItem)}}]{\setlength{\ri...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.82 ...tlength{\rightskip}{0pt plus 5cm}template$
+                                                  <$typename T $>$ void {\bf...
+
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+! Undefined control sequence.
+l.82 ...us 5cm}template$<$typename T $>$ void {\bf
+                                                   Binary\+Heap}$<$ T $>$\+:...
+
+? 
+! Undefined control sequence.
+l.82 ...mplate$<$typename T $>$ void {\bf Binary\+
+                                                  Heap}$<$ T $>$\+::Insert (
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+! Undefined control sequence.
+<recently read> \+
+                  
+l.82 ...e T $>$ void {\bf Binary\+Heap}$<$ T $>$\+
+                                                  ::Insert (
+? 
+
+! LaTeX Error: Environment DoxyParamCaption undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \begin{DoxyParamCaption}
+                             
+? 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \item
+          [{const T \&}]{new\+Item}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \item[{const T \&}]
+                        {new\+Item}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \item[{const T \&}]
+                        {new\+Item}
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \item[{const T \&}]
+                        {new\+Item}
+? 
+! Undefined control sequence.
+l.84 \item[{const T \&}]{new\+
+                              Item}
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParamCaption}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \end{DoxyParamCaption}
+                           
+? 
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 )\hspace{0.3cm}{\ttfamily
+                               [inline]}}\hypertarget{classBinaryHeap_a0cead...
+
+? 
+! Extra }, or forgotten $.
+l.86 )\hspace{0.3cm}{\ttfamily [inline]}}
+                                         \hypertarget{classBinaryHeap_a0cead...
+
+? 
+! Undefined control sequence.
+l.86 ...ce{0.3cm}{\ttfamily [inline]}}\hypertarget
+                                                  {classBinaryHeap_a0cead3dc...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 
+     
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 55--87
+[]
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--87
+\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--87
+\OML/cmm/m/it/10 >$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--87
+\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--87
+\OML/cmm/m/it/10 >$
+ []
+
+
+Overfull \hbox (41.99963pt too wide) in paragraph at lines 55--87
+\OT1/cmtt/m/n/10 [inline]
+ []
+
+
+Overfull \hbox (1167.08018pt too wide) in paragraph at lines 55--87
+\OT1/cmtt/m/n/10 [private]$[]\OML/cmm/m/it/10 aaf\OT1/cmr/m/n/10 3\OML/cmm/m/it
+/10 be\OT1/cmr/m/n/10 9\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 83\OML/cmm/m/it/10 d\O
+T1/cmr/m/n/10 101\OML/cmm/m/it/10 dd\OT1/cmr/m/n/10 14\OML/cmm/m/it/10 f\OT1/cm
+r/m/n/10 7\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 18\OML/cmm/m/it/10 a\OT1/cmr/m/n/10
+ 43\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 d\OT1/cmr/m/n/10 4\OML/c
+mm/m/it/10 a\OT1/cmr/m/n/10 4[][]\OML/cmm/m/it/10 Iteratethroughindexesfrom[]m[
+]size=\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)\OML/cmm/m/it/10 ; 
+decrementingyourcounterby\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 eachtime:Withinthelo
+op; callPercolateDownonthecurrentvalueofthecounter:\OT1/cmr/m/n/10 [[]][]$$\OML
+/cmm/m/it/10 typenameT$$void[]$$T$$\OT1/cmr/m/n/10 ::
+ []
+
+
+Overfull \hbox (1622.5884pt too wide) in paragraph at lines 55--87
+\OML/cmm/m/it/10 DeleteMin\OT1/cmr/m/n/10 ([]) [][][][]\OML/cmm/m/it/10 Ifthehe
+apisempty; justreturn:Otherwise; setthevalueoftheminitemoftheheap\OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 theelementatposition\OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 toth
+evalueofthe[]itemintheheap\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 positionm[]size\OT1
+/cmr/m/n/10 )\OML/cmm/m/it/10 :Then; decrementm[]size; andcallPercolateDownonin
+dex\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 [[]][]$$\OML/cmm/m/it/10 
+typenameT$$constT\OT1/cmr/m/n/10 &[]$$\OML/cmm/m/it/10 T$$\OT1/cmr/m/n/10 ::
+ []
+
+
+Overfull \hbox (989.62372pt too wide) in paragraph at lines 55--87
+\OML/cmm/m/it/10 FindMin\OT1/cmr/m/n/10 ([])\OML/cmm/m/it/10 const [][][][][]T\
+OT1/cmr/m/n/10 &\OML/cmm/m/it/10 theminimumitemintheheap\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 atindex\OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 [[]][]$$\
+OML/cmm/m/it/10 typenameT$$void[]$$T$$\OT1/cmr/m/n/10 ::
+ []
+
+
+Overfull \hbox (358.90538pt too wide) in paragraph at lines 55--87
+\OML/cmm/m/it/10 Insert\OT1/cmr/m/n/10 ([]) [][][][]$ 
+ []
+
+
+! LaTeX Error: Environment DoxyParams undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \begin{DoxyParams}
+                       {Parameters}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \begin{DoxyParams}{P
+                         arameters}
+? 
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.89 {\em new\+
+               Item} & $<$const T\&$>$ The new item to insert\\
+? 
+! Misplaced alignment tab character &.
+l.89 {\em new\+Item} &
+                       $<$const T\&$>$ The new item to insert\\
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no & in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.90 \hline
+           
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 88--90
+[]
+ []
+
+
+Overfull \hbox (36.82198pt too wide) in paragraph at lines 88--90
+\OT1/cmr/m/it/10 newItem
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 88--90
+\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 88--90
+\OML/cmm/m/it/10 >$
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParams}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.91 \end{DoxyParams}
+                     
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 I
+      f m\+\_\+size is one less than the size of the m\+\_\+array, then tell...
+
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.92 If m\+
+           \_\+size is one less than the size of the m\+\_\+array, then tell...
+
+? 
+! Undefined control sequence.
+l.92 If m\+\_\+
+               size is one less than the size of the m\+\_\+array, then tell...
+
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.92 ...+size is one less than the size of the m\+
+                                                  \_\+array, then tell m\+\_...
+
+? 
+! Undefined control sequence.
+l.92 ...e is one less than the size of the m\+\_\+
+                                                  array, then tell m\+\_\+ar...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.92 ...he size of the m\+\_\+array, then tell m\+
+                                                  \_\+array to resize to dou...
+
+? 
+! Undefined control sequence.
+l.92 ...ize of the m\+\_\+array, then tell m\+\_\+
+                                                  array to resize to double ...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+l.92 ...rrent size (use the vector\textquotesingle
+                                                  {}s resize() function.)
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 92--93
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 A
+      fterward\+:
+? 
+Missing character: There is no A in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.94 Afterward\+
+                :
+? 
+Missing character: There is no : in font nullfont!
+
+! LaTeX Error: Environment DoxyEnumerate undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 \begin{DoxyEnumerate}
+                          
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 94--96
+[]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 94--96
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 \item C
+            reate an integer called {\itshape hole}, and assign it to the cu...
+
+? 
+Missing character: There is no C in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.96 ... and assign it to the current value of m\+
+                                                  \_\+size.
+? 
+! Undefined control sequence.
+l.96 ... assign it to the current value of m\+\_\+
+                                                  size.
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (17.37767pt too wide) in paragraph at lines 96--97
+\OT1/cmr/m/it/10 hole
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \item I
+            ncrement m\+\_\+size by one
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.97 \item Increment m\+
+                        \_\+size by one
+? 
+! Undefined control sequence.
+l.97 \item Increment m\+\_\+
+                            size by one
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \item C
+            reate a loop. It will continue looping W\+H\+I\+LE hole $>$ 1 \&...
+
+? 
+Missing character: There is no C in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no W in font nullfont!
+! Undefined control sequence.
+l.98 ...reate a loop. It will continue looping W\+
+                                                  H\+I\+LE hole $>$ 1 \&\& n...
+
+? 
+Missing character: There is no H in font nullfont!
+! Undefined control sequence.
+l.98 ...te a loop. It will continue looping W\+H\+
+                                                  I\+LE hole $>$ 1 \&\& new\...
+
+? 
+Missing character: There is no I in font nullfont!
+! Undefined control sequence.
+l.98 ...a loop. It will continue looping W\+H\+I\+
+                                                  LE hole $>$ 1 \&\& new\+It...
+
+? 
+Missing character: There is no L in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no & in font nullfont!
+Missing character: There is no & in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+! Undefined control sequence.
+l.98 ... looping W\+H\+I\+LE hole $>$ 1 \&\& new\+
+                                                  Item $<$ m\+\_\+array\mbox...
+
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.98 ...H\+I\+LE hole $>$ 1 \&\& new\+Item $<$ m\+
+                                                  \_\+array\mbox{[} hole / 2...
+
+? 
+! Undefined control sequence.
+l.98 ...\+LE hole $>$ 1 \&\& new\+Item $<$ m\+\_\+
+                                                  array\mbox{[} hole / 2 \mb...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no E in font nullfont!
+! Undefined control sequence.
+l.98 ...nd at the end of each cycle, it should E\+
+                                                  X\+E\+C\+U\+TE hole /= 2
+? 
+Missing character: There is no X in font nullfont!
+! Undefined control sequence.
+l.98 ...at the end of each cycle, it should E\+X\+
+                                                  E\+C\+U\+TE hole /= 2
+? 
+Missing character: There is no E in font nullfont!
+! Undefined control sequence.
+l.98 ...the end of each cycle, it should E\+X\+E\+
+                                                  C\+U\+TE hole /= 2
+? 
+Missing character: There is no C in font nullfont!
+! Undefined control sequence.
+l.98 ... end of each cycle, it should E\+X\+E\+C\+
+                                                  U\+TE hole /= 2
+? 
+Missing character: There is no U in font nullfont!
+! Undefined control sequence.
+l.98 ...d of each cycle, it should E\+X\+E\+C\+U\+
+                                                  TE hole /= 2
+? 
+Missing character: There is no T in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 2 in font nullfont!
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 98--99
+\OML/cmm/m/it/10 >$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 98--99
+\OML/cmm/m/it/10 <$
+ []
+
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no W in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.100 3a. Within the loop, set the element of m\+
+                                                 \_\+array at position hole ...
+
+? 
+! Undefined control sequence.
+l.100 ...thin the loop, set the element of m\+\_\+
+                                                  array at position hole to ...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.100 ...n hole to the value of the element of m\+
+                                                  \_\+array at position hole/2.
+
+? 
+! Undefined control sequence.
+l.100 ...le to the value of the element of m\+\_\+
+                                                  array at position hole/2.
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 100--101
+[]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \item A
+             fter the loop, set the element of m\+\_\+array at position hole...
+
+? 
+Missing character: There is no A in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.101 \item After the loop, set the element of m\+
+                                                  \_\+array at position hole...
+
+? 
+! Undefined control sequence.
+l.101 ...fter the loop, set the element of m\+\_\+
+                                                  array at position hole equ...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+! Undefined control sequence.
+l.101 ...array at position hole equal to the new\+
+                                                  Item.
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{DoxyEnumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \end{DoxyEnumerate}
+                         \index{Binary\+Heap@{Binary\+Heap}!Is\+Empty@{Is\+E...
+
+? 
+! Undefined control sequence.
+l.104 \subsubsection
+                    [{\texorpdfstring{Is\+Empty() const }{IsEmpty() const }}...
+
+? 
+Missing character: There is no [ in font nullfont!
+! Undefined control sequence.
+l.104 \subsubsection[{\texorpdfstring
+                                     {Is\+Empty() const }{IsEmpty() const }}...
+
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.104 \subsubsection[{\texorpdfstring{Is\+
+                                          Empty() const }{IsEmpty() const }}...
+
+? 
+Missing character: There is no E in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+! Undefined control sequence.
+l.104 ...s 5cm}template$<$typename T $>$ bool {\bf
+                                                   Binary\+Heap}$<$ T $>$\+:...
+
+? 
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.104 ...plate$<$typename T $>$ bool {\bf Binary\+
+                                                  Heap}$<$ T $>$\+::Is\+Empty (
+
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.104 ... T $>$ bool {\bf Binary\+Heap}$<$ T $>$\+
+                                                  ::Is\+Empty (
+? 
+Missing character: There is no : in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.104 ... bool {\bf Binary\+Heap}$<$ T $>$\+::Is\+
+                                                  Empty (
+? 
+Missing character: There is no E in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ( in font nullfont!
+
+! LaTeX Error: Environment DoxyParamCaption undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \begin{DoxyParamCaption}
+                              
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParamCaption}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 \end{DoxyParamCaption}
+                            
+? 
+Missing character: There is no ) in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+! Undefined control sequence.
+l.108 ...e{0.3cm}{\ttfamily [inline]}}\hypertarget
+                                                  {classBinaryHeap_a6bbf1a12...
+
+? 
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...y [inline]}}\hypertarget{classBinaryHeap_
+                                                  a6bbf1a12804cab08943e7b0cd...
+
+? 
+! Extra }, or forgotten $.
+l.108 ...ryHeap_a6bbf1a12804cab08943e7b0cd6afa3fb}
+                                                  {}\label{classBinaryHeap_a...
+
+? 
+
+! LaTeX Error: Environment DoxyReturn undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \begin{DoxyReturn}
+                        {Returns}
+? 
+! Undefined control sequence.
+l.110 bool true if m\+
+                      \_\+array is empty, or false otherwise.
+? 
+! Undefined control sequence.
+l.110 bool true if m\+\_\+
+                          array is empty, or false otherwise.
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyReturn}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \end{DoxyReturn}
+                      
+? 
+! Undefined control sequence.
+l.114 \subsubsection
+                    [{\texorpdfstring{Percolate\+Down(int hole\+Index)}{Perc...
+
+? 
+! Undefined control sequence.
+l.114 \subsubsection[{\texorpdfstring
+                                     {Percolate\+Down(int hole\+Index)}{Perc...
+
+? 
+! Undefined control sequence.
+l.114 \subsubsection[{\texorpdfstring{Percolate\+
+                                                 Down(int hole\+Index)}{Perc...
+
+? 
+! Undefined control sequence.
+l.114 ...texorpdfstring{Percolate\+Down(int hole\+
+                                                  Index)}{PercolateDown(int ...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.114 ...length{\rightskip}{0pt plus 5cm}template$
+                                                  <$typename T $>$ void {\bf...
+
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+! Undefined control sequence.
+l.114 ...s 5cm}template$<$typename T $>$ void {\bf
+                                                   Binary\+Heap}$<$ T $>$\+:...
+
+? 
+! Undefined control sequence.
+l.114 ...plate$<$typename T $>$ void {\bf Binary\+
+                                                  Heap}$<$ T $>$\+::Percolat...
+
+? 
+Missing character: There is no < in font nullfont!
+Missing character: There is no > in font nullfont!
+! Undefined control sequence.
+<recently read> \+
+                  
+l.114 ... T $>$ void {\bf Binary\+Heap}$<$ T $>$\+
+                                                  ::Percolate\+Down (
+? 
+! Undefined control sequence.
+l.114 ...\bf Binary\+Heap}$<$ T $>$\+::Percolate\+
+                                                  Down (
+? 
+
+! LaTeX Error: Environment DoxyParamCaption undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \begin{DoxyParamCaption}
+                              
+? 
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \item
+           [{int}]{hole\+Index}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \item[{int}]
+                  {hole\+Index}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \item[{int}]
+                  {hole\+Index}
+? 
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 \item[{int}]
+                  {hole\+Index}
+? 
+! Undefined control sequence.
+l.116 \item[{int}]{hole\+
+                         Index}
+? 
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParamCaption}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{DoxyParamCaption}
+                            
+? 
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 )\hspace{0.3cm}{\ttfamily
+                                [inline]}, {\ttfamily [private]}}\hypertarge...
+
+? 
+
+! LaTeX Error: Command \ttfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 ...ce{0.3cm}{\ttfamily [inline]}, {\ttfamily
+                                                   [private]}}\hypertarget{c...
+
+? 
+! Extra }, or forgotten $.
+l.118 ...tfamily [inline]}, {\ttfamily [private]}}
+                                                  \hypertarget{classBinaryHe...
+
+? 
+! Undefined control sequence.
+l.118 ...ine]}, {\ttfamily [private]}}\hypertarget
+                                                  {classBinaryHeap_ac52a0be1...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.119 
+      
+? 
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 101--119
+\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 101--119
+\OML/cmm/m/it/10 >$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 101--119
+\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 101--119
+\OML/cmm/m/it/10 >$
+ []
+
+
+Overfull \hbox (897.99384pt too wide) in paragraph at lines 101--119
+\OT1/cmtt/m/n/10 [inline]$[]\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 bbf\OT1/cmr/m/n/1
+0 1\OML/cmm/m/it/10 a\OT1/cmr/m/n/10 12804\OML/cmm/m/it/10 cab\OT1/cmr/m/n/10 0
+8943\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 7\OML/cmm/m/it/10 b\OT1/cmr/m/n/10 0\OML/
+cmm/m/it/10 cd\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 afa\OT1/cmr/m/n/10 3\OML/cmm/m/
+it/10 fb[][][]booltrueifm[]arrayisempty; orfalseotherwise:\OT1/cmr/m/n/10 [[]][
+]$$\OML/cmm/m/it/10 typenameT$$void[]$$T$$\OT1/cmr/m/n/10 ::
+ []
+
+
+Overfull \hbox (448.87288pt too wide) in paragraph at lines 101--119
+\OML/cmm/m/it/10 PercolateDown\OT1/cmr/m/n/10 ([]) []\OML/cmm/m/it/10 ; [][][][
+]$ 
+ []
+
+
+! LaTeX Error: Environment DoxyParams undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \begin{DoxyParams}
+                        {Parameters}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \begin{DoxyParams}{P
+                          arameters}
+? 
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.121 {\em hole\+
+                 Index} & $<$int$>$ The position in the heap to percolate do...
+
+? 
+! Misplaced alignment tab character &.
+l.121 {\em hole\+Index} &
+                          $<$int$>$ The position in the heap to percolate do...
+
+? 
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
+l.122 \hline
+            
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 120--122
+[]
+ []
+
+
+Overfull \hbox (30.43314pt too wide) in paragraph at lines 120--122
+\OT1/cmr/m/it/10 holeIn-
+ []
+
+
+Overfull \hbox (14.34991pt too wide) in paragraph at lines 120--122
+\OT1/cmr/m/it/10 dex
+ []
+
+
+Overfull \hbox (15.5556pt too wide) in paragraph at lines 120--122
+\OML/cmm/m/it/10 <$$>$
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyParams}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \end{DoxyParams}
+                      
+? 
+
+! LaTeX Error: Environment DoxyEnumerate undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \begin{DoxyEnumerate}
+                           
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \item C
+             reate an integer called child
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 126--126
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \item C
+             reate an integer called child
+? 
+Missing character: There is no C in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \item C
+             reate a temp T item, and assign it to the value of the element ...
+
+? 
+Missing character: There is no C in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.127 ...ign it to the value of the element of m\+
+                                                  \_\+array at the hole\+Index.
+
+? 
+! Undefined control sequence.
+l.127 ...it to the value of the element of m\+\_\+
+                                                  array at the hole\+Index.
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.127 ...the element of m\+\_\+array at the hole\+
+                                                  Index.
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \item L
+             oop while hole\+Index $\ast$ 2 $<$= m\+\_\+size\+: 3a. Set chil...
+
+? 
+Missing character: There is no L in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.128 \item Loop while hole\+
+                             Index $\ast$ 2 $<$= m\+\_\+size\+: 3a. Set chil...
+
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.128 ... Loop while hole\+Index $\ast$ 2 $<$= m\+
+                                                  \_\+size\+: 3a. Set child ...
+
+? 
+! Undefined control sequence.
+l.128 ...p while hole\+Index $\ast$ 2 $<$= m\+\_\+
+                                                  size\+: 3a. Set child to h...
+
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.128 ...e hole\+Index $\ast$ 2 $<$= m\+\_\+size\+
+                                                  : 3a. Set child to hole\+I...
+
+? 
+Missing character: There is no : in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.128 ...$= m\+\_\+size\+: 3a. Set child to hole\+
+                                                  Index $\ast$ 2.
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 128--129
+\OMS/cmsy/m/n/10 ^^C$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 128--129
+\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 128--129
+\OMS/cmsy/m/n/10 ^^C$
+ []
+
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.130 3b. If the child is not m\+
+                                 \_\+size, and the element of m\+\_\+array a...
+
+? 
+! Undefined control sequence.
+l.130 3b. If the child is not m\+\_\+
+                                     size, and the element of m\+\_\+array a...
+
+? 
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.130 ...s not m\+\_\+size, and the element of m\+
+                                                  \_\+array at child+1 is le...
+
+? 
+! Undefined control sequence.
+l.130 ...t m\+\_\+size, and the element of m\+\_\+
+                                                  array at child+1 is less t...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.130 ...t child+1 is less than the element of m\+
+                                                  \_\+array at child\+: Incr...
+
+? 
+! Undefined control sequence.
+l.130 ...ild+1 is less than the element of m\+\_\+
+                                                  array at child\+: Incremen...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.130 ...an the element of m\+\_\+array at child\+
+                                                  : Increment child by 1.
+? 
+Missing character: There is no : in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 130--131
+[]
+ []
+
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.132 3c. If the element of m\+
+                               \_\+array at child is less than the temp valu...
+
+? 
+! Undefined control sequence.
+l.132 3c. If the element of m\+\_\+
+                                   array at child is less than the temp valu...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.132 ...ay at child is less than the temp value\+
+                                                  : Set the element of m\+\_...
+
+? 
+Missing character: There is no : in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.132 ... the temp value\+: Set the element of m\+
+                                                  \_\+array at position hole...
+
+? 
+! Undefined control sequence.
+l.132 ... temp value\+: Set the element of m\+\_\+
+                                                  array at position hole\+In...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.132 ...lement of m\+\_\+array at position hole\+
+                                                  Index to the element of m\...
+
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.132 ...osition hole\+Index to the element of m\+
+                                                  \_\+array at position chil...
+
+? 
+! Undefined control sequence.
+l.132 ...ion hole\+Index to the element of m\+\_\+
+                                                  array at position child. O...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no O in font nullfont!
+! Undefined control sequence.
+l.132 ...nt of m\+\_\+array at position child. O\+
+                                                  T\+H\+E\+R\+W\+I\+SE break.
+? 
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.132 ...of m\+\_\+array at position child. O\+T\+
+                                                  H\+E\+R\+W\+I\+SE break.
+? 
+Missing character: There is no H in font nullfont!
+! Undefined control sequence.
+l.132 ...m\+\_\+array at position child. O\+T\+H\+
+                                                  E\+R\+W\+I\+SE break.
+? 
+Missing character: There is no E in font nullfont!
+! Undefined control sequence.
+l.132 ...\_\+array at position child. O\+T\+H\+E\+
+                                                  R\+W\+I\+SE break.
+? 
+Missing character: There is no R in font nullfont!
+! Undefined control sequence.
+l.132 ...+array at position child. O\+T\+H\+E\+R\+
+                                                  W\+I\+SE break.
+? 
+Missing character: There is no W in font nullfont!
+! Undefined control sequence.
+l.132 ...ray at position child. O\+T\+H\+E\+R\+W\+
+                                                  I\+SE break.
+? 
+Missing character: There is no I in font nullfont!
+! Undefined control sequence.
+l.132 ... at position child. O\+T\+H\+E\+R\+W\+I\+
+                                                  SE break.
+? 
+Missing character: There is no S in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 132--133
+[]
+ []
+
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.134 3d. At the end of the loop cycle, set hole\+
+                                                  Index to the child.
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 134--135
+[]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \item S
+             et the element of m\+\_\+array at position hole\+Index to the t...
+
+? 
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no m in font nullfont!
+! Undefined control sequence.
+l.135 \item Set the element of m\+
+                                  \_\+array at position hole\+Index to the t...
+
+? 
+! Undefined control sequence.
+l.135 \item Set the element of m\+\_\+
+                                      array at position hole\+Index to the t...
+
+? 
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.135 ...lement of m\+\_\+array at position hole\+
+                                                  Index to the temp value.
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{DoxyEnumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 \end{DoxyEnumerate}
+                         
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 T
+       he documentation for this class was generated from the following file...
+
+? 
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.138 ...s was generated from the following file\+
+                                                  :\begin{DoxyCompactItemize}
+? 
+Missing character: There is no : in font nullfont!
+
+! LaTeX Error: Environment DoxyCompactItemize undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 ...llowing file\+:\begin{DoxyCompactItemize}
+                                                  
+? 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 138--140
+[]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 B
+       inary\+Heap.\+hpp\end{DoxyCompactItemize}
+? 
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.140 Binary\+
+              Heap.\+hpp\end{DoxyCompactItemize}
+? 
+Missing character: There is no H in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no . in font nullfont!
+! Undefined control sequence.
+l.140 Binary\+Heap.\+
+                     hpp\end{DoxyCompactItemize}
+? 
+Missing character: There is no h in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactItemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 Binary\+Heap.\+hpp\end{DoxyCompactItemize}
+                                                
+? 
+)
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*\end
+
+*\end
+! TeX capacity exceeded, sorry [input stack size=5000].
+\end #1->\csname end#1
+                      \endcsname \@checkend {#1}\expandafter \endgroup \if@e...
+<*> \end
+        
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
+Here is how much of TeX's memory you used:
+ 27 strings out of 494953
+ 452 string characters out of 6180977
+ 59336 words of memory out of 5000000
+ 3409 multiletter control sequences out of 15000+600000
+ 4462 words of font info for 17 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 5000i,4n,5000p,354b,110s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

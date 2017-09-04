@@ -1,0 +1,275 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{boxedminipage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{CS 250}
+\chead{Fall 2017}
+\rhead{Lab 1: STL Containers}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{By Rachel Morris, \footnotesize last updated \today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+    \chapter*{Lab 4: Testing} \stepcounter{chapter}
+
+        \section*{Information}
+            \paragraph{ Topics: } Unit tests, debugging
+            \paragraph{ Turn in: } All source files (.cpp and .hpp).
+            \paragraph{ Starter files: } Download on GitHub or D2L.
+
+\renewcommand*\DTstylecomment{\rmfamily\color{green}\textsc}
+
+\begin{framed}
+\dirtree{%
+.1 Lab 04 - Testing/.
+.2 lab04\_testing{.}cpp \dots{} \begin{minipage}[t]{5cm} Contains main() \end{minipage}.
+.2 lab04\_function1{.}hpp \dots{} \begin{minipage}[t]{6cm} First testing challenge \end{minipage}.
+.2 lab04\_function2{.}hpp \dots{} \begin{minipage}[t]{6cm} Second testing challenge \end{minipage}.
+.2 lab04\_function3{.}hpp \dots{} \begin{minipage}[t]{6cm} Third testing challenge \end{minipage}.
+.2 lab04\_function4{.}hpp \dots{} \begin{minipage}[t]{6cm} Fourth testing challenge \end{minipage}.
+.3 CodeBlocks Project/.
+.4 CodeBlocks Project{.}cbp \dots{} \begin{minipage}[t]{4.5cm} If you're using Code::Blocks instead of Visual Studio, you can open up this project file to get started\end{minipage}.
+}    
+\end{framed}
+
+If you're using Visual Studio
+\footnote{Why is the Code::Blocks project included? Because I work in Linux so I don't use Visual Studio. ;P}
+you'll have to create a new \textbf{Empty Project}
+and add these files in. For more information on how to use Visual Studio,
+please reference \\
+\texttt{https://github.com/Rachels-Courses/Course-Common-Files/} \\
+and go to 
+\textbf{Course-Common-Files / STUDENT\_REFERENCE / HOW\_TO / Visual\_Studio.md}
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+    \section*{Getting started}
+
+    For this lab, there are already several functions included.
+    \textbf{Each of these functions have logic errors.} You will be
+    writing unit tests to test out the expected functionality, and
+    to locate \textit{where} the error is, then fix it.
+
+    Function stubs are also already provided - you just have to fill them in.
+    The program is built so that it should launch and automatically run the
+    tests without you having to do any coding outside of the tests themselves.
+
+    \textbf{Do not modify main() or anything in lab04\_testing.cpp!}
+
+    \subsection*{Tests}
+
+    Within each of the \textit{function} hpp files, there will be a function
+    that needs fixing at the top.
+
+    For example, in \texttt{lab04\_function1.hpp}, we have:
+    
+\begin{lstlisting}[style=code]
+int AddThree( int a, int b, int c )
+{
+    return a + b + b;
+}
+\end{lstlisting}
+
+    And there is a tester function set up, with one test already written to
+    give you an example.
+    
+    ~\\
+    For a test, first we figure out a \textbf{test case}. A test case
+    here will be, ``For these inputs, what is the expected output?"
+    We can write this in code by creating variables for all the input
+    variables, creating a variable to store what the \textit{expected}
+    output is, and then calling the function and storing its return
+    value in an \textit{actual output} variable.
+
+    Then, we compare the \textit{expected output} with the \textit{actual output},
+    and if they're the same - the test passed! If they're not the same,
+    then the test failed.
+    \textbf{You are not duplicating the functionality of the original
+    function in the test! That defeats the purpose of the test!} You're
+    merely examining the output obtained by calling the function, and
+    making sure it returns the correct information.
+
+    \newpage
+    Here's the first test written for the \texttt{AddThree} function:
+    
+\begin{lstlisting}[style=code]
+void Test_AddThree()
+{
+    cout << "************ Test_AddThree ************" << endl;
+
+    int input1, input2, input3;
+    int expectedOutput;
+    int actualOutput;
+
+    /* TEST 1 ********************************************/
+    input1 = 1; input2 = 1; input3 = 1;
+    expectedOutput = 3;
+
+    actualOutput = AddThree( input1, input2, input3 );
+    if ( actualOutput == expectedOutput )
+    {
+        cout << "Test_AddThree: Test 1 passed!" << endl;
+    }
+    else
+    {
+        cout << "Test_AddThree: Test 1 FAILED!" << endl;
+    }
+    // ... etc ...
+}
+\end{lstlisting}
+
+    One test isn't enough to cover all possibilities, so you will
+    need to add additional tests to make sure the \texttt{AddThree}
+    function works for all reasonable cases.
+
+    For example, the existing test checks that three numbers with the same
+    values (all 1's) result in a 3. It does, but there's still an error
+    with the original function!
+    You might implement tests for three different numbers, or positive and
+    negative numbers, in order to cover all reasonable cases. You don't
+    have to test over a wide range of numbers, just a sufficiently
+    different set of numbers.
+
+    Your task for the test of the \texttt{Test\_AddThree} function is
+    simply to fill in the inputs and outputs variables...
+    
+\begin{lstlisting}[style=code]
+input1 = 0;             // change me
+input2 = 0;             // change me
+input3 = 0;             // change me
+expectedOutput = -1;    // change me
+\end{lstlisting}
+
+    ...and afterwards the code is already there to call the function
+    and compare the outputs.
+
+\begin{lstlisting}[style=code]
+actualOutput = AddThree( input1, input2, input3 );
+if ( actualOutput == expectedOutput )
+{
+    cout << "Test_AddThree: Test 2 passed!" << endl;
+}
+else
+{
+    cout << "Test_AddThree: Test 2 FAILED!" << endl;
+}
+\end{lstlisting}
+
+    \subsection*{Running the tests}
+
+    When you run the program, it will have a menu with options to
+    test each function:
+
+\begin{lstlisting}[style=output]
+***************************************
+**              TESTER               **
+***************************************
+ 1. Test AddThree
+ 2. Test IsOverdrawn
+ 3. Test TranslateWord
+ 4. Test GetLength
+ 5. Quit
+
+Test which function? 
+\end{lstlisting}
+
+    When you select one of the functions, it will run the tests and display
+    whether each test passed or failed.
+
+\begin{lstlisting}[style=output]
+************ Test_AddThree ************
+Test_AddThree: Test 1 passed!
+Test_AddThree: Test 2 FAILED!
+Test_AddThree: Test 3 FAILED!
+\end{lstlisting}
+
+    Based on which test failed, you can look at the inputs and outputs
+    to help you figure out where the logic error is at in these functions.
+    
+    \newpage
+    \section*{Function 1: AddThree}
+
+        \begin{verbatim} int AddThree( int a, int b, int c ) \end{verbatim}
+
+        \paragraph{Expected functionality:} This function should take
+        in three integer variables as input: a, b, and c. Within the
+        function, it should be adding a, b, and c together, and returning
+        the sum.
+
+    \hrulefill
+    
+    \section*{Function 2: IsOverdrawn}
+    
+        \begin{verbatim} bool IsOverdrawn( float balance ) \end{verbatim}
+            
+        \paragraph{Expected functionality:} This function takes in some
+        float variable, the user's balance, as the input. Its result
+        is either \textbf{true} if the account is overdrawn, or \textbf{false}
+        if not. A negative balance is considered overdrawn, while \$0 or
+        positive dollar values are considered not overdrawn.
+    
+    \hrulefill
+    
+    \section*{Function 3: TranslateWord}
+    
+        \begin{verbatim} string TranslateWord(string word) \end{verbatim}
+
+        \paragraph{Expected functionality:} This function takes in some
+        English word as a string. Its output is another string, but in
+        Esperanto. The function should support the following translations:
+
+        \begin{center}            
+            \begin{tabular}{| c | c |}
+                \hline{}
+                \textbf{English} & \textbf{Esperanto} \\ \hline{}
+                cat & kato \\ \hline
+                dog & hundo \\ \hline
+                mouse & muso \\ \hline
+                bird & birdo \\ \hline
+            \end{tabular}
+        \end{center}
+
+        And if the word passed in as input is not known, it will return ``unknown".
+    
+    \newpage
+    
+    \section*{Function 4: GetLength}
+    
+        \begin{verbatim} int GetLength(string word) \end{verbatim}
+
+        \paragraph{Expected functionality:} This function takes a string
+        as input and returns the amount of characters in it, so it returns an int.
+        Make sure to test with several words of different lengths to make sure
+        the function works.
+
+    \hrulefill
+
+    \section*{Turn in}
+
+    You will write the tests, and also fix the logic errors of the functions.
+    You will turn in all the source files.
+    
+
+\end{document}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{rachwidgets}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{listings}
+\usepackage{mdframed}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{framed}
+\usepackage{tcolorbox}
+\usepackage{dirtree}
+\usepackage{lipsum} % for dummy text only
+
+\definecolor{commentz}{rgb}{0,0.02,0.6}
+\definecolor{keywordz}{rgb}{0.69,0.18, 0.36}
+\definecolor{backgroundz}{rgb}{1.0, 0.95, 0.77}
+\definecolor{textz}{rgb}{0.54, 0.27, 0.07}
+\definecolor{hintboxz}{rgb}{0.9, 1.0, 0.9}
+\definecolor{errorboxz}{rgb}{1.0, 0.9, 0.9}
+\definecolor{previewbg}{rgb}{0.1, 0.1, 0.1}
+\definecolor{previewfg}{rgb}{1, 1, 1}
+\definecolor{textbg}{rgb}{1, 1, 1}
+\definecolor{textfg}{rgb}{0, 0, 0}
+
+\definecolor{intro}{rgb}{0.9, 0.9, 1.0}
+\definecolor{error}{rgb}{1.0, 0.9, 0.9}
+\definecolor{hint}{rgb}{0.9, 1.0, 0.9}
+
+% Side wrap: %
+% \begin{wrapfigure}{r}{0.4\textwidth} \begin{mdframed}[backgroundcolor=intro]
+% \end{mdframed} \end{wrapfigure}
+
+% Write example code: %
+%\begin{lstlisting}[style=code]
+
+% Write example program output %
+% \begin{lstlisting}[style=output]
+
+% Write example text file output %
+% \begin{lstlisting}[style=textfile]
+
+% Intro %
+% \begin{mdframed}[backgroundcolor=intro] 
+
+% Hint %
+% \begin{mdframed}[backgroundcolor=hint] 
+
+% Error %
+% \begin{mdframed}[backgroundcolor=error]
+
+\newenvironment{intro}[1]{  \begin{mdframed}[backgroundcolor=intro]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
+
+\newenvironment{hint}[1]{   \begin{mdframed}[backgroundcolor=hint]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
+
+\newenvironment{error}[1]{  \begin{mdframed}[backgroundcolor=error]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+
+% Code example frame %
+\lstdefinestyle{code}{
+    language=C++,
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\small\color{textz}, 
+    commentstyle=\ttfamily\color{commentz},
+    keywordstyle=\ttfamily\color{keywordz},
+    backgroundcolor=\color{backgroundz},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    stepnumber=1,
+    numbers=left,
+    }
+
+% Code example frame %
+\lstdefinestyle{pycode}{
+    language=Python,
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\small\color{textz}, 
+    commentstyle=\ttfamily\color{commentz},
+    keywordstyle=\ttfamily\color{keywordz},
+    backgroundcolor=\color{backgroundz},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    stepnumber=1,
+    numbers=left,
+    }
+
+% Example program output frame %
+\lstdefinestyle{output}{
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\scriptsize\color{previewfg}, 
+    backgroundcolor=\color{previewbg},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    %title=\tiny Example output,
+    }
+
+% Example text output frame %
+\lstdefinestyle{textfile}{
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\footnotesize\color{textfg}, 
+    backgroundcolor=\color{textbg},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    }

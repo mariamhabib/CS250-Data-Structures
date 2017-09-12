@@ -1,0 +1,81 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{boxedminipage}
+
+\newcommand{\laClass}{CS 250\ }
+\newcommand{\laSemester}{Fall 2017\ }
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\laClass}
+\chead{\laSemester}
+\rhead{Project 1: Linked Lists}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{By Rachel Morris, \footnotesize last updated \today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+    \chapter*{Project 1: Linked List} \stepcounter{chapter}
+
+        \section*{Information}
+            \paragraph{ Topics: } Linked lists, pointers, basic program implementation
+            \paragraph{ Turn in: } All source files (.cpp and .hpp).
+            \paragraph{ Starter files: } Download on GitHub or D2L.
+
+\renewcommand*\DTstylecomment{\rmfamily\color{green}\textsc}
+
+\begin{framed}
+\dirtree{%
+.1 Project 1 - Linked List/.
+.2 project1\_main{.}cpp
+    \dots{} \begin{minipage}[t]{5cm} Contains main() \end{minipage}.
+.2 project1\_LinkedList{.}hpp
+    \dots{} \begin{minipage}[t]{5cm} Class declaration \end{minipage}.
+.2 project1\_LinkedList{.}cpp
+    \dots{} \begin{minipage}[t]{5cm} Class function definitions \end{minipage}.
+.2 lab5\_Tester{.}hpp
+    \dots{} \begin{minipage}[t]{6cm} Unit test functions \end{minipage}.
+.2 cuTEST/
+    \dots{} \begin{minipage}[t]{6cm} Unit test framework \end{minipage}.
+.3 Menu{.}hpp.
+.3 StringUtil{.}hpp.
+.3 TesterBase{.}hpp.
+.3 TesterBase{.}cpp.
+.2 CodeBlocks Project/.
+.3 Lab 05 - Dynamic Array Wrapper{.}cbp
+    \dots{} \begin{minipage}[t]{2cm}
+        Code::Blocks project file
+    \end{minipage}.
+}
+\end{framed}
+
+Your project needs to be compiling as a C++11 project.
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+    \section*{Getting started}
+
+        
+
+
+\end{document}
+
+
+
+
+
+
+
+
+

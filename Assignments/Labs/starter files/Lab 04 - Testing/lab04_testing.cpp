@@ -2,10 +2,10 @@
 #include <string>
 using namespace std;
 
-#include "lab03a_function1.hpp"
-#include "lab03a_function2.hpp"
-#include "lab03a_function3.hpp"
-#include "lab03a_function4.hpp"
+#include "lab04_function1.hpp"
+#include "lab04_function2.hpp"
+#include "lab04_function3.hpp"
+#include "lab04_function4.hpp"
 
 
 /*** DO NOT MODIFY MAIN *******************/

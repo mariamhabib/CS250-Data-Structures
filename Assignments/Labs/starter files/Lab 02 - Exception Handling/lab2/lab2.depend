@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1503787429 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-08/Lab 02 - Exception Handling/lab2/lab2/lab2_main.cpp
+	"lab2_RecordManager.hpp"
+	<iostream>
+
+1503792535 /home/rayechell/TEACHING/cs250/cs-250-private-files/Labs 2017-08/Lab 02 - Exception Handling/lab2/lab2/lab2_RecordManager.hpp
+	<string>
+	<iostream>
+	<fstream>
+	<stdexcept>
+

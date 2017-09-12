@@ -53,7 +53,7 @@
 <td class='prereq'> SmartDynamicArray constructor </td>
 <td class='result'> failed </td>
 <td class='expected'> m_data = 0<br> </td>
-<td class='actual'> m_data = 00x1ed0150<br> </td>
+<td class='actual'> m_data = 00x1d38150<br> </td>
 <td class='comments'> Created new empty SmartDynamicArray </td>
 </tr>
 <tr class='fail'>
@@ -62,7 +62,7 @@
 <td class='prereq'> SmartDynamicArray constructor </td>
 <td class='result'> failed </td>
 <td class='expected'> m_itemCount = 0<br> </td>
-<td class='actual'> m_itemCount = 32309616<br> </td>
+<td class='actual'> m_itemCount = 30638448<br> </td>
 <td class='comments'> Created new empty SmartDynamicArray </td>
 </tr>
 <tr class='pass'>
@@ -95,8 +95,8 @@
 <td class='test'> When m_data is already pointing to an address, make the address doesn't change </td>
 <td class='prereq'> AllocateMemory </td>
 <td class='result'> passed </td>
-<td class='expected'> m_data = 0x1ed0938<br> </td>
-<td class='actual'> m_data = 0x1ed09380x1ed0938<br> </td>
+<td class='expected'> m_data = 0x1d38938<br> </td>
+<td class='actual'> m_data = 0x1d389380x1d38938<br> </td>
 <td class='comments'> Created new SmartDynamicArray, set its m_data to some address, called AllocateMemory. m_data should still point to original address and not a new address. </td>
 </tr>
 <tr class='summary'>
@@ -121,7 +121,7 @@
 <td class='prereq'> DeallocateMemory </td>
 <td class='result'> failed </td>
 <td class='expected'> m_data = 0<br> </td>
-<td class='actual'> m_data = 00x1ed1908<br> </td>
+<td class='actual'> m_data = 00x1d39908<br> </td>
 <td class='comments'> Created new SmartDynamicArray, set its m_data to some address, called DeallocateMemory. Memory should be freed (can't test this) & m_data set to nullptr. </td>
 </tr>
 <tr class='summary'>
@@ -248,7 +248,7 @@
 <td class='prereq'> Pop, Push </td>
 <td class='result'> failed </td>
 <td class='expected'> m_itemCount = 0<br> </td>
-<td class='actual'> m_itemCount = 32311568<br> </td>
+<td class='actual'> m_itemCount = 30640400<br> </td>
 <td class='comments'> Created empty SmartDynamicArray, called Pop </td>
 </tr>
 <tr class='fail'>
@@ -257,7 +257,7 @@
 <td class='prereq'> Pop, Push </td>
 <td class='result'> failed </td>
 <td class='expected'> m_itemCount = 0<br> </td>
-<td class='actual'> m_itemCount = 32311568<br> </td>
+<td class='actual'> m_itemCount = 30640400<br> </td>
 <td class='comments'> Created empty SmartDynamicArray, called Push, then called Pop </td>
 </tr>
 <tr class='fail'>
@@ -266,7 +266,7 @@
 <td class='prereq'> Pop, Push </td>
 <td class='result'> failed </td>
 <td class='expected'> m_itemCount = 2<br> </td>
-<td class='actual'> m_itemCount = 32311568<br> </td>
+<td class='actual'> m_itemCount = 30640400<br> </td>
 <td class='comments'> Created empty SmartDynamicArray, called Push 5 times, then Pop 3 times </td>
 </tr>
 <tr class='summary'>

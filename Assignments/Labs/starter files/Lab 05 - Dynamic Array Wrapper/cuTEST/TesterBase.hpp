@@ -20,10 +20,13 @@ class TesterBase
 	void AddTest( const TestListItem& test );
 
 	protected:
+	void OutputHeader();
+	void OutputFooter();
 	void TestAll();
 
 	list<TestListItem> m_tests;
 	int m_totalTestCount;
+	int m_totalTestPass;
 
     // Per test...:
 	void StartTestSet( const string& name, const vector<string>& prereqs );

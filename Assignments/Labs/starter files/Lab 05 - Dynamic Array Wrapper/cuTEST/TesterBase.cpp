@@ -5,31 +5,92 @@
 TesterBase::TesterBase()
 {
 	m_totalTestCount = 0;
+	m_totalTestPass = 0;
 	m_output.open( "../test_result.html" );
-	m_header.open( "../cuTEST/cutest_header.html" );
 
-	string buffer;
-	while ( getline( m_header, buffer ) )
-	{
-        m_output << buffer << endl;
-	}
-
-	m_header.close();
+    OutputHeader();
 }
 
 TesterBase::~TesterBase()
 {
-	m_footer.open( "../cuTEST/cutest_base.html" );
-
-	string buffer;
-	while ( getline( m_footer, buffer ) )
-	{
-        m_output << buffer << endl;
-	}
-
-	m_footer.close();
-
+    OutputFooter();
     m_output.close();
+}
+
+void TesterBase::OutputHeader()
+{
+    m_output << "<!DOCTYPE html>" << endl;
+    m_output << "<html>" << endl;
+    m_output << "    <head>" << endl;
+    m_output << "        <title> cuTEST Test Results </title>" << endl;
+
+    m_output << "        <style type='text/css'>" << endl;
+    m_output << "            body { font-family: monospace; font-size: 1.5em; }" << endl;
+    m_output << "            .warning { background: ffed24#; font-size: 20px; text-align: center; }" << endl;
+    m_output << "            .result-success { background: #24ff24; font-size: 20px; text-align: center; }" << endl;
+    m_output << "            .result-failure { background: #ff7095; font-size: 20px; text-align: center; }" << endl;
+
+    m_output << "            table { width: 100%; border: solid 1px #aaaaaa; }" << endl;
+    m_output << "            table tr.pass { background: #ccffcc; }" << endl;
+    m_output << "            table tr.fail { background: #ffcccc; }" << endl;
+
+    m_output << "            table tr.summary { background: #000000; color: #ffffff; }" << endl;
+
+    m_output << "            table tr.descriptions { font-size: 8pt; text-align: center; }" << endl;
+
+    m_output << "            table .col_set      { width: 10%; }" << endl;
+    m_output << "            table .col_test     { width: 20%; }" << endl;
+    m_output << "            table .col_prereq   { width: 10%; }" << endl;
+    m_output << "            table .col_result   { width: 5%; }" << endl;
+    m_output << "            table .col_expected { width: 10%; }" << endl;
+    m_output << "            table .col_actual   { width: 10%; }" << endl;
+    m_output << "            table .col_comments { width: 35%; }" << endl;
+    m_output << "            table .spacer { height: 100px; }" << endl;
+    m_output << "        </style>" << endl;
+    m_output << "    </head>" << endl;
+
+    m_output << "    <body>" << endl;
+    m_output << "    <div class='warning'>Warning: Make sure to check if all tests finish (there will be a message at the end of the file) - <br>" << endl;
+    m_output << "    It is possible for your program to crash early, but still show that tests have passed because it hasn't gone through everything.</div>" << endl;
+
+    m_output << "    <table>" << endl;
+    m_output << "        <tr>" << endl;
+    m_output << "            <th class='col_set'> Test set </th>" << endl;
+    m_output << "            <th class='col_test'> Test </th>" << endl;
+    m_output << "            <th class='col_prereq'> Prerequisite functions </th>" << endl;
+    m_output << "            <th class='col_result'> Pass/fail </th>" << endl;
+    m_output << "            <th class='col_expected'> Expected output </th>" << endl;
+    m_output << "            <th class='col_actual'> Actual output </th>" << endl;
+    m_output << "            <th class='col_comments'> Comments </th>" << endl;
+    m_output << "        </tr>" << endl;
+
+    m_output << "        <tr class='descriptions'>" << endl;
+    m_output << "            <td>  </td>" << endl;
+    m_output << "            <td>  </td>" << endl;
+    m_output << "            <td> Functions that need to be implemented for these tests to work right </td>" << endl;
+    m_output << "            <td>  </td>" << endl;
+    m_output << "            <td> The output expected from the function's return </td>" << endl;
+    m_output << "            <td> What was actually returned from the function </td>" << endl;
+    m_output << "            <td> Additional notes from the test </td>" << endl;
+    m_output << "        </tr>" << endl;
+
+}
+
+void TesterBase::OutputFooter()
+{
+    m_output << "    </table>" << endl;
+
+    if ( m_subtest_totalPasses == m_subtest_totalTests )
+    {
+        m_output << "    <div class='result-success'>" << m_totalTestCount << " testsets ran; " << m_totalTestPass << " testsets passed</div>" << endl;
+    }
+    else
+    {
+        m_output << "    <div class='result-failure '>" << m_totalTestCount << " testsets ran; " << m_totalTestPass << " testsets passed</div>" << endl;
+    }
+
+    m_output << "    </body>" << endl;
+    m_output << "</html>" << endl;
 }
 
 void TesterBase::Start()
@@ -40,12 +101,21 @@ void TesterBase::Start()
 
 void TesterBase::TestAll()
 {
+    int counter = 1;
+    cout << endl;
     for ( list<TestListItem>::iterator it = m_tests.begin(); it != m_tests.end(); it++ )
     {
         if ( it->testAggregate == false )
         {
-            it->callFunction();
+            cout << "Running testset " << counter << " out of " << m_totalTestCount << ": \t"
+                << it->name << endl;
+            int result = it->callFunction();
+            if ( result == 1 )
+            {
+                m_totalTestPass++;
+            }
         }
+        counter++;
     }
 }
 

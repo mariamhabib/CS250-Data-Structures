@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,onepage]{book}
+\documentclass[a4paper,12pt,oneside]{book}
 \usepackage[utf8]{inputenc}
 \title{}
 \author{Rachel Morris}
@@ -31,12 +31,12 @@
             \includegraphics{images/linked-list-title.png}
         \end{center}
 
-        \section*{Information}
+        \section{Information}
             \paragraph{ Topics: } Linked lists, pointers, basic program implementation
             \paragraph{ Turn in: } All source files (.cpp and .hpp).
             \paragraph{ Starter files: } Download on GitHub or D2L.
         
-        \subsection*{About}
+        \subsection{About}
     
             In this project, you will be implementing a Doubly Linked List.
             
@@ -97,11 +97,14 @@ Your project needs to be compiling as a C++11 project. To set this up
 in Code::Blocks, go to Settings, Compiler, then in the Compiler Flags
 pane, check the ``Have g++ follow the C++11 ISO C++ language standard".
 
+
+    \tableofcontents
+
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
     \newpage
-    \section*{Linked List basics}
+    \chapter{Doubly Linked List basics}
 
         A linked list is a type of structure that only allocates memory for new objects as-needed.
         Unlike the Dynamic Array, it doesn't pre-allocate large chunks of memory and resize as 
@@ -110,7 +113,7 @@ pane, check the ``Have g++ follow the C++11 ISO C++ language standard".
 
         A linked list requires two different classes: A Node and a LinkedList.
 
-    \subsection*{Node}
+    \section{Node}
         
         \begin{wrapfigure}{r}{0.4\textwidth}
         \includegraphics[height=4cm]{images/justanode.png}
@@ -126,8 +129,13 @@ pane, check the ``Have g++ follow the C++11 ISO C++ language standard".
         
         When a Node is first created, its next and previous pointers should
         be pointing to \texttt{nullptr}.
+        
+        \subsection{Constructor}
+        
+        Make sure to initialize the Node's previous and next pointers to
+        \texttt{nullptr} in its constructor.
     
-    \subsection*{LinkedList}
+    \section{LinkedList}
         
         \begin{wrapfigure}{r}{0.4\textwidth}
         \includegraphics[height=4cm]{images/justalist.png}
@@ -147,7 +155,7 @@ pane, check the ``Have g++ follow the C++11 ISO C++ language standard".
         When the LinkedList is destroyed, its destructor should be responsible
         for freeing up all the memory allocated for the Node items.
 
-    \subsection*{Adding new items}
+    \subsection{Adding new items}
     
         When a Push or Insert function is called, the LinkedList needs to...
         
@@ -184,7 +192,6 @@ void Push( T data )
             we have to do is update its \textit{first} and \textit{last} Node* pointers
             to the newNode that we've created.
         
-        \newpage
         \paragraph{Non-empty LinkedList:}
         
             \begin{center}
@@ -218,7 +225,7 @@ void Push( T data )
         \end{error}
         
         
-    \subsection*{Removing items}
+    \subsection{Removing items}
     
         When you remove an item from the LinkedList, you will have to update
         the pointers of the LinkedList, as well as any Nodes that were neighbors
@@ -268,7 +275,6 @@ void Pop( T data )
 }
 \end{lstlisting}
         
-        \newpage
         \paragraph{Pop when we have more than one item in the list}
         
             In our DoublyLinkedList we can Pop items off from the front
@@ -322,53 +328,222 @@ ptrSecond->ptrPrev = nullptr;
 // ...
 \end{verbatim}                
             \end{hint}
+            
+    \subsection{Accessing items}
     
-    \subsection*{List traversal}
+        For our DoublyLinkedList, we will be writing a \texttt{GetFront},
+        \texttt{GetBack}, and \texttt{operator[]} functions. For each
+        of these, the functions will return the data-type related to the
+        data \textit{within} the Node class - the user doesn't care that
+        there are Node objects or not, they only care about the data.
+        
+        \paragraph{Accessing the first and last item}
+        To access the data for the first Node, you simply return the data item.
+        
+\begin{lstlisting}[style=code]
+// Get data at front
+return m_ptrFirst->m_data;
 
-        When traversing the list, we need to make a traversal pointer, 
+// Get data at back
+return m_ptrLast->m_data;
+\end{lstlisting}
+
+        The main thing you have to watch out for here is if the list
+        is empty (or otherwise, if the first pointer or last pointer
+        is set to \texttt{nullptr}).
+    
+        \paragraph{Getting an item at some index}
+    
+        The tricky part is when the user wants to access an item at some
+        position... Because the LinkedList's elements are not contiguous
+        in memory, we cannot access item $n$ as easily as we would with
+        an array. Instead, we have to begin at the first Node and
+        work our way forward (via the next pointers), counting what place
+        we're at. This is known as \textit{traversing the list}.
+    
+        ~\\
+        When traversing the list, we need to make a traversal pointer
+        that begins at the first item, as well as a counter to keep
+        track of our current position in the list.
+        
+\begin{lstlisting}[style=code]
+int counter = 0;
+Node* ptrCurrent = m_ptrFirst;
+\end{lstlisting}
+
+        \begin{error}{Common error: Allocating memory}
+            Note here that the \texttt{ptrCurrent} pointer is simply
+            a pointer to some existing memory; we are \textbf{NOT}
+            allocating new memory here!
+        \end{error}
+
+        Then, we simply need to ``walk forward" the amount of times
+        specified in the parameters. The header for the \texttt{operator[]}
+        function in our program look like this:
+        
+\begin{verbatim}
+CustomerData& LinkedList::operator[]( const int index )
+\end{verbatim}
+        
+        so in this case, we want to go to position \textit{index}.
+        
+        
         which begins at the first item, and steps through each node via 
         each node's ptrNext pointer.
 
         We cannot randomly access data in a linked list because it is not 
         implemented with an array. Because we only keep track of the first 
         and last item with pointers, we have to traverse the list to find some 
-        item at position n.
+        item at position n. When can we stop ``walking" the list? Once
+        our \texttt{counter} is equal to the \texttt{index}!
 
-        First, we create a pointer:
-
-    \begin{verbatim} 
-        Node<T>* ptrCurrent;
-    \end{verbatim} 
-
-        We do not allocate memory with this pointer! This pointer is meant to point at existing data.
-
-        To begin at the beginning of the list, you need to point this to the first item:
-
-    \begin{verbatim} 
-        ptrCurrent = m_ptrFirst;
-    \end{verbatim} 
-
-        And to step to the next item, make use of ptrNext:
-
-    \begin{verbatim} 
-        ptrCurrent = ptrCurrent->ptrNext; // Go to the next item
-    \end{verbatim} 
-        
-        If you want to go to item n in the list, then you'll just have to do the above step n times (via a loop.)
-
-        You can traverse a few ways. If you have a specific position you want to stop at, use an integer counter.
-
-        If you want to traverse over a full list, you can loop while the traversal pointer is not nullptr.
-        
-    \section*{Common errors}
+\begin{lstlisting}[style=code]
+while ( counter != index )
+{
+    // ...
+}
+\end{lstlisting}    
     
-        \subsection*{New node pointer vs. Traversal pointer}
+    And within the loop, all we have to do is keep moving our traversal
+    pointer forward by one, and incrementing our counter.
     
-        It is common to mix up utilizing pointers for list traversal with utilizing pointers for making new nodes. Know whether you're traversing a list, or creating a new node!
+\begin{lstlisting}[style=code]
+while ( counter != index )
+{
+    // Go to the next item
+    ptrCurrent = ptrCurrent->ptrNext; 
+    counter++;
+}
+\end{lstlisting} 
 
-        When traversing, \underline{you will not allocate new memory!}
+    However, this code on its own could cause a crash - if the size
+    of the list is smaller than the index parameter, then the 
+    ptrCurrent will walk off the list and be set to \texttt{nullptr}.
+    Then, if it tries to access \texttt{ptrCurrent->ptrNext}, the program
+    will crash!
+    
+    So, before you implement any of the ``walking", you should do an error
+    check to make sure the index is valid - and throw an exception if
+    it is invalid! (less than 0, or greater-than-or-equal-to the LinkedList size!)
+    
+    
+    \section{Additional functionality}
+    
+    The LinkedList class will also contain a few simpler functions...
+    
+    \paragraph{IsEmpty} If the item count is 0 return true, otherwise return false.
+    
+    \paragraph{Size} Return the item count.
+    
+    \paragraph{Clear}
+    Create a while loop - it will continue looping \textit{while
+    the list is not empty}. Within this while loop, simply call
+    \texttt{PopFront()} or \texttt{PopBack()}.
+    
+    \paragraph{Constructor} Make sure to initialize the first and last
+    pointers to \texttt{nullptr}, and set the item count to 0.
+    
+    \paragraph{Destructor} Call the \texttt{Clear()} function.
+    
+    \chapter{The rest of the program}
+    
+    \section{The CustomerData class}
+    
+    The data that our Node classes wrap is a CustomerData type.
+    You don't need to necessarily know the specifics about this
+    type to work with the LinkedList, but it is pre-declared
+    in the \texttt{project1\_CustomerData} hpp and cpp files.
+    
+\begin{lstlisting}[style=code]
+struct CustomerData
+{
+    int id;
+    string username;
+    string ssn;
+    string cardNumber;
+    string cardType;
 
-    \chapter*{Doubly Linked List specs}
+    // ...
+};
+\end{lstlisting} 
+    
+    \section{Updating the Program}
+    
+    Once you're finished writing the LinkedList, you will go into the
+    Program class and update it so that it is no longer using the
+    STL \texttt{list} anymore. This requries updating a few areas.
+    
+        \subsection{Class declaration}
+        
+        In \texttt{project1\_program.hpp}, you will first update the member
+        variables so that the \texttt{m\_customers} variable is a
+        \texttt{LinkedList} instead of a
+        \texttt{list<CustomerData>}.
+        
+        \subsection{Program::LoadCustomers()}
+        
+        In this function, instead of using 
+        \texttt{m\_customers.push\_back( data )}, you will update it
+        to use your LinkedList's \texttt{PushBack} function.
+        
+        \subsection{Program::SaveCustomers()}
+
+        For this function, all you have to do is erase the original
+        for loop that iterates through the \texttt{list<Customerdata>}
+        item, and un-comment-out the other for-loop that works
+        with the LinkedList...
+        
+\begin{lstlisting}[style=code]
+for ( int i = 0; i < m_customers.Size(); i++ )
+{
+    CustomerData cd = m_customers[i];
+    output
+        << cd.ssn << "\t"
+        << cd.cardNumber << "\t"
+        << cd.cardType << "\t"
+        << cd.username << "\t"
+        << endl;
+}
+\end{lstlisting} 
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+    \chapter{Grading Breakdown}
+    
+    \begin{center}
+        \includegraphics[width=12cm]{images/gradesheet-project1.png}
+    \end{center}
+    
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+    \chapter{Extra credit: Additional features}
+    
+    If you want to implement some additional features for your LinkedList,
+    you can gain some extra credit on this assignment.
+    
+    \section{Insert}
+    
+        Implement an Insert function that will allow some new data
+        to be added at some \textit{index} (not just the front or back).
+        This needs to also update both its previous and next neighbor
+        Nodes to point to the new item.
+    
+    \section{Remove}
+    
+        Implement a Remove function that will remove some data at
+        some \textit{index} (not just the front or back).
+        This also needs to update both its previous and next neighbor
+        Nodes to point to each other instead of the Node to be removed.
+    
+    \section{operator== and operator!=}
+    
+        Iterate through two DoublyLinkedList (you'll need two ``walker"
+        Node pointers) and compare the data in each Node at each position.
+        If all the data matches up (and the sizes of both lists are the same),
+        then the lists can be considered equal. Operator== would return
+        \texttt{true} and operator!= would return \texttt{false}.
 
 \end{document}
 

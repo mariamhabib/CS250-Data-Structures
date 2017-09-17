@@ -1,0 +1,79 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{dirtree}
+\usepackage{boxedminipage}
+
+\newcommand{\laClass}{CS 210\ }
+\newcommand{\laSemester}{Fall 2017\ }
+
+\newcounter{question}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\laClass}
+\chead{\laSemester}
+\rhead{Exam 1 \testSet}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{\scriptsize By Rachel Morris, last updated \today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+    \chapter*{Exam 1 Review}
+    
+    The exam has 7 questions over the following content. It will be given
+    in the testing center at JCCC over several days.
+
+    \begin{enumerate}
+        \item How is an STL vector implemented behind the scenes? \\
+            See: http://www.cplusplus.com/reference/vector/vector/
+
+        \item How is an STL list implemented behind the scenes? \\
+            See: http://www.cplusplus.com/reference/list/list/
+        
+        \item Make sure you can write the class declarations
+            for Singly Linked List and Doubly Linked List Nodes.
+            
+        \item What is a Circularly Linked List?
+        
+        \item What does a pointer point to when not initialized? What should
+            it be initialized to in order to avoid undefined behavior in
+            your program?
+            
+        \item How do you delete a dynamic variable? How do you delete a dynamic array?
+        
+        \item Make sure to be able to find $O(n)$ values for basic functions.
+        
+        \item Make sure you know how to implement functionality from a DoublyLinkedList, including:
+            
+            \begin{itemize}
+                \item   PushFront
+                \item   PushBack
+                \item   PopFront
+                \item   PopBack
+                \item   GetAtIndex
+            \end{itemize}
+            
+            You will have to implement 3 of them on paper for the exam.
+                   
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\end{document}

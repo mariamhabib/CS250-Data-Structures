@@ -1,0 +1,211 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{rachwidgets}
+
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{listings}
+\usepackage{mdframed}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{framed}
+\usepackage{tcolorbox}
+\usepackage{subcaption}
+\usepackage{wasysym}
+\usepackage{multirow}
+\usepackage{lipsum} % for dummy text only
+
+\definecolor{commentz}{rgb}{0,0.02,0.6}
+\definecolor{keywordz}{rgb}{0.69,0.18, 0.36}
+\definecolor{backgroundz}{rgb}{1.0, 0.95, 0.77}
+\definecolor{textz}{rgb}{0.54, 0.27, 0.07}
+\definecolor{hintboxz}{rgb}{0.9, 1.0, 0.9}
+\definecolor{errorboxz}{rgb}{1.0, 0.9, 0.9}
+\definecolor{previewbg}{rgb}{0.1, 0.1, 0.1}
+\definecolor{previewfg}{rgb}{1, 1, 1}
+\definecolor{textbg}{rgb}{1, 1, 1}
+\definecolor{textfg}{rgb}{0, 0, 0}
+
+\definecolor{intro}{rgb}{0.9, 0.9, 1.0}
+\definecolor{error}{rgb}{1.0, 0.9, 0.9}
+\definecolor{hint}{rgb}{0.9, 1.0, 0.9}
+
+% Conditional: Set this to TRUE if compiling a solution key,
+% or FALSE if compiling a worksheet for students.
+
+\newtoggle{answerkey}
+%\toggletrue{answerkey}
+%\togglefalse{answerkey}
+
+%\iftoggle{answerkey}{ \begin{answer} ANSWER \end{answer} }{ { ~\\ \raisebox{0pt}[4cm][0pt]{  } } }
+%\iftoggle{answerkey}{ \begin{answer} ANSWER \end{answer} }{}
+
+
+% SHOWS ANSWERS IN RED, CHANGE TO WHITE FOR EXAM
+\newenvironment{answer}[0] { \color{red} } { \color{black} }
+
+
+% insert image %
+%\begin{figure}[h]
+%    \includegraphics{images/creative-commons.png}
+%\end{figure}
+
+% left float image %
+%\begin{wrapfigure}{l}{0.25\textwidth}
+%    \includegraphics{images/creative-commons.png}
+%\end{wrapfigure}
+
+
+% Side wrap: %
+% \begin{wrapfigure}{r}{0.4\textwidth} \begin{mdframed}[backgroundcolor=intro]
+% \end{mdframed} \end{wrapfigure}
+
+% Write example code: %
+%\begin{lstlisting}[style=code]
+
+% Write example program output %
+% \begin{lstlisting}[style=output]
+
+% Write example text file output %
+% \begin{lstlisting}[style=textfile]
+
+% TAB
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\newcommand\smtab[1][0.5cm]{\hspace*{#1}}
+\newcommand\ttab[1][0.1cm]{\hspace*{#1}}
+
+% Intro box %
+\newenvironment{intro}[1]{  \begin{mdframed}[backgroundcolor=intro]\noindent \textbf{ #1 } } { \end{mdframed} }
+
+\newenvironment{introNOHEAD}[0]{  \begin{mdframed}[backgroundcolor=intro] } { \end{mdframed} }
+
+% Hint box %
+\newenvironment{hint}[1]{   \begin{mdframed}[backgroundcolor=hint]\noindent \textbf{ #1 } } { \end{mdframed} }
+
+% Error box %
+\newenvironment{error}[1]{  \begin{mdframed}[backgroundcolor=error]\noindent \textbf{ #1 } } { \end{mdframed} }
+
+
+
+% EXAM QUESTION FORMAT
+\newenvironment{examquestion}[4] {\textbf{\footnotesize{#4\%}} Question #1: #2 (#3) \hfill \grader \\ ~ \\ }{ }
+
+% Weighted grading scale
+\newcommand\grader[0] { {\small \smtab \Square \ttab 0 \Square \ttab 1 \Square \ttab 2 \Square \ttab 3 \Square \ttab 4} }
+
+% Example
+%\begin{examquestion}{1}{Closed formula}{1.2}{5}
+%   For then given sequence, find the \textbf{closed formula}.
+%   \footnote{
+%       Closed formula format: $ a_{n} = m \cdot n + b $
+%   }
+%
+%   4, 6, 8, 10, 12
+%
+%   \begin{answer}
+%       \framebox{ $ a_{n} = 2n + 2 $ } \par{}
+%   \end{answer}
+%\end{question}
+
+
+% SIMPLE QUESTION FORMAT
+\newenvironment{question}[2] {\paragraph{Question #1} \hfill \fitb / #2 ~\\}{}
+
+
+
+% ANSWERSHEET
+\newenvironment{answersheetquestion}[3] {\textbf{\footnotesize{#3\%}} Question #1: #2 \hfill \grader ~\\ }{ }
+
+
+% Example
+%\begin{question}{1}{2}
+%    Do a thing
+%
+%    \begin{answer}
+%        \framebox{ $ a_{n} = 2n + 2 $ } \par{}
+%    \end{answer}
+%\end{question}
+
+% Fill in the blank region
+\newcommand\fitb[1][1cm]{ $\rule{#1}{0.15mm}$ }
+
+% Code example frame %
+\lstdefinestyle{code}{
+    language=C++,
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\small\color{textz}, 
+    commentstyle=\ttfamily\color{commentz},
+    keywordstyle=\ttfamily\color{keywordz},
+    backgroundcolor=\color{backgroundz},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    stepnumber=1,
+    numbers=left,
+    }
+
+% Code example frame %
+\lstdefinestyle{pycode}{
+    language=Python,
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\small\color{textz}, 
+    commentstyle=\ttfamily\color{commentz},
+    keywordstyle=\ttfamily\color{keywordz},
+    backgroundcolor=\color{backgroundz},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    stepnumber=1,
+    numbers=left,
+    }
+
+% Example program output frame %
+\lstdefinestyle{output}{
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\scriptsize\color{previewfg}, 
+    backgroundcolor=\color{previewbg},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    %title=\tiny Example output,
+    }
+
+% Example text output frame %
+\lstdefinestyle{textfile}{
+    showspaces=false,
+    showstringspaces=false,
+    tabsize=4,
+    basicstyle=\ttfamily\footnotesize\color{textfg}, 
+    backgroundcolor=\color{textbg},
+    breakatwhitespace=false,
+    frame=single,
+    keepspaces=true,
+    breaklines=true,
+    }
+
+% two columns side-by-side %
+%\begin{figure}[h]
+%    \centering
+%    \begin{subfigure}{.5\textwidth}
+%        \centering
+        %\includegraphics[width=.4\linewidth]{image1}
+%        asdfasdf
+%    \end{subfigure}%
+%    \begin{subfigure}{.5\textwidth}
+%        \centering
+        % \includegraphics[width=.4\linewidth]{image1}
+%        qwerty
+%    \end{subfigure}
+    %\caption{A figure with two subfigures}
+    %\label{fig:test}
+%\end{figure}

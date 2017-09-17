@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{boxedminipage}
+
+\newcommand{\laClass}{CS 250\ }
+\newcommand{\laSemester}{Fall 2017\ }
+\newcommand{\laLab}{Lab 6: Searching and Efficiency\ }
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\laClass}
+\chead{\laSemester}
+\rhead{\laLab}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{By Rachel Morris, \footnotesize last updated \today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+    \chapter*{\laLab} \stepcounter{chapter}
+
+        \section*{Information}
+            \paragraph{ Topics: } Searching, intro to efficiency concepts
+            \paragraph{ Turn in: } Print out the assignment and work it out on paper.
+                Either scan or photograph the assignment once you're done
+                and upload it to the Dropbox.
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+    
+    \section{Stepping through code}
+    
+    \begin{intro}{\ }
+        For the following questions, a search algorithm will be given, 
+        as well as the inputs. You will need to act as the human computer 
+        and step through the algorithm, one command at a time, recording 
+        the changes to the variables and stepping through the flow of the function.
+        
+        For example, if we have the function:
+\begin{verbatim}
+int FindItem( int arr[], int arraySize, int searchItem )
+{	
+	for ( int i = 0; i < arraySize; i++ )
+	{
+		if ( arr[i] == searchItem )
+		{
+			return i;
+		}
+	}
+	
+	return -1;
+}
+\end{verbatim}
+
+        And using the inputs:
+\begin{verbatim}
+int pos = FindItem( { 1, 3, 5, 7 }, 4, 5 );
+\end{verbatim}
+
+    \end{intro}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+

@@ -97,6 +97,21 @@ Your project needs to be compiling as a C++11 project. To set this up
 in Code::Blocks, go to Settings, Compiler, then in the Compiler Flags
 pane, check the ``Have g++ follow the C++11 ISO C++ language standard".
 
+    \section{The tests}
+
+    This project contains unit tests. To begin with, all the functions
+    that you need to implement have exceptions...
+
+\begin{lstlisting}[style=code]
+throw runtime_error( "PopFront() not yet implemented" );
+\end{lstlisting}
+
+    As you're implementing each function, you will remove these
+    \texttt{throw} statements so that the functions will run during the testing.
+    You can still leave some of the throw statements in the functions
+    you're not currently working with; even if Visual Studio stops at
+    a given function, you can stop the program and refresh the test results page.
+
 
     \tableofcontents
 
@@ -154,7 +169,32 @@ pane, check the ``Have g++ follow the C++11 ISO C++ language standard".
         
         When the LinkedList is destroyed, its destructor should be responsible
         for freeing up all the memory allocated for the Node items.
+    
+    \subsection{Constructor}
 
+        Initialize the first and last
+        pointers to \texttt{nullptr}, and set the item count to 0.
+
+    \subsection{Destructor}
+
+        Call the \texttt{Clear()} function. We will have \texttt{Clear()}
+        handle freeing all the memory.
+
+    \subsection{IsEmpty}
+
+    If the item count is 0 return true, otherwise return false.
+    
+    \subsection{Size}
+
+    Return the item count.
+    
+    \subsection{Clear}
+    
+    Create a while loop - it will continue looping \textit{while
+    the list is not empty}. Within this while loop, simply call
+    \texttt{PopFront()} or \texttt{PopBack()}.
+    
+    
     \subsection{Adding new items}
     
         When a Push or Insert function is called, the LinkedList needs to...
@@ -426,24 +466,6 @@ while ( counter != index )
     check to make sure the index is valid - and throw an exception if
     it is invalid! (less than 0, or greater-than-or-equal-to the LinkedList size!)
     
-    
-    \section{Additional functionality}
-    
-    The LinkedList class will also contain a few simpler functions...
-    
-    \paragraph{IsEmpty} If the item count is 0 return true, otherwise return false.
-    
-    \paragraph{Size} Return the item count.
-    
-    \paragraph{Clear}
-    Create a while loop - it will continue looping \textit{while
-    the list is not empty}. Within this while loop, simply call
-    \texttt{PopFront()} or \texttt{PopBack()}.
-    
-    \paragraph{Constructor} Make sure to initialize the first and last
-    pointers to \texttt{nullptr}, and set the item count to 0.
-    
-    \paragraph{Destructor} Call the \texttt{Clear()} function.
     
     \chapter{The rest of the program}
     

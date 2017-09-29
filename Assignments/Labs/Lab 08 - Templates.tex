@@ -1,0 +1,520 @@
+\documentclass[a4paper,12pt,oneside]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{boxedminipage}
+\usepackage{fancyvrb}
+
+\newcommand{\laClass}{CS 250\ }
+\newcommand{\laSemester}{Fall 2017\ }
+\newcommand{\laLab}{Lab 8: Templates\ }
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\laClass}
+\chead{\laSemester}
+\rhead{\laLab}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{By Rachel Morris, \footnotesize last updated \today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+    \chapter*{\laLab} \stepcounter{chapter}
+
+        \section{Information}
+            \paragraph{ Topics: } Templates and functions, templates and classes
+            \paragraph{ Turn in: } All source files (.cpp and .hpp).
+            \paragraph{ Starter files: } Download on GitHub or D2L.
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+
+\renewcommand*\DTstylecomment{\rmfamily\color{green}\textsc}
+
+\begin{framed}
+\dirtree{%
+.1 Lab 08 - Templates/.
+.2 lab8{.}cpp
+    \dots{} \begin{minipage}[t]{5cm} Contains main() \end{minipage}.
+.2 lab8\_sorting{.}hpp
+    \dots{} \begin{minipage}[t]{5cm} File for 1st part of lab \end{minipage}.
+.2 lab8\_arraywrapper{.}cpp
+    \dots{} \begin{minipage}[t]{5cm} File for 2nd part of lab \end{minipage}.
+.2 CodeBlocks Project/
+    \dots{} \begin{minipage}[t]{7cm}
+        Code::Blocks project here
+    \end{minipage}.
+.2 Makefile/
+    \dots{} \begin{minipage}[t]{7cm}
+        Makefile here
+    \end{minipage}.
+.2 VS2015 Project/
+    \dots{} \begin{minipage}[t]{7cm}
+        Visual Studio 2015 project here
+    \end{minipage}.
+}
+\end{framed}
+
+The \texttt{lab8.cpp} file contains \texttt{main()} as well as the
+program code that tests your code. However, these aren't unit tests -
+it is up to you to check the program output and make sure it is
+being displayed correctly.
+
+    \tableofcontents
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+
+    \newpage{}
+
+    \section{Templates and functions: A sort function}
+
+    In the \texttt{Part1()} test in the \texttt{lab8.cpp} file,
+    several arrays are created and then sorted via the \texttt{SelectionSort}
+    function that is declared in the \texttt{lab8\_sorting.hpp} file.
+    Using templates will allow us to write one version of this function
+    that will work for any data-type that has the relational operators
+    implemented for that type (i.e., for your own class, you would implement
+    \texttt{operator<}, \texttt{operator>}, etc.)
+
+    There are three functions that you will have to implement in \texttt{lab8\_sorting.hpp}:
+    SelectionSort, Swap, and DisplayArray.
+
+    \subsection{DisplayArray}
+
+    For this function, use a for loop to iterate through all the elements
+    of the array \texttt{a[]} in a horizontal line. The output should
+    look like this:
+
+\begin{figure}[h]
+\centering
+\begin{BVerbatim}
+'a' 'b' 'c' 'd'
+\end{BVerbatim}
+\end{figure}
+
+    \subsection{Swap}
+
+    The Swap function is used by the SelectionSort function.
+    This function takes two parameters: \texttt{a} and \texttt{b},
+    two elements of some array. Swap should change it so that \texttt{a}
+    has \texttt{b}'s value, and vice versa. 
+
+    The following is an \textbf{incorrect} way to implement Swap:
+    
+\begin{figure}[h]
+\centering
+\begin{BVerbatim}
+// This won't work
+a = b;
+b = a;
+\end{BVerbatim}
+\end{figure}
+
+    You will need to declare
+    a local variable within the function to help you implement
+    the Swap functionality correctly.
+
+
+    \subsection{SelectionSort}
+
+    Within this function, you will implement the simple SelectionSort
+    algorithm. You can find the algorithm's implementation on Wikipedia:
+
+    https://en.wikipedia.org/wiki/Selection\_sort\#Implementation{}
+
+    Make sure to add a comment in your code ``citing" this algorithm
+    within your code - do not pass it off as your own work.
+
+
+    \subsection{Testing}
+
+    When you run the program, the output should look as follows.
+    (Note that this example shows text wrapping, which happens if the
+    window is too small, but your DisplayArray function should display
+    all the elements on the same line.)
+
+\begin{lstlisting}[style=output]
+-----------------------------
+PART 1: TEMPLATES & FUNCTIONS
+-----------------------------
+
+TEST 1
+Before sort: 
+'5' '3' '6' '1' '2' 
+After sort: 
+'1' '2' '3' '5' '6' 
+
+TEST 2
+Before sort: 
+'h' 'e' 'q' 'a' 'd' 'z' 'c' 
+After sort: 
+'a' 'c' 'd' 'e' 'h' 'q' 'z' 
+
+TEST 3
+Before sort: 
+'Andhra Pradesh' 'Goa' 'Haryana' 'Bihar' 'Uttarakhand' 'Telangana' 'Rajasthan' 'Tamil Nadu' 'Punjab' 
+After sort: 
+'Andhra Pradesh' 'Bihar' 'Goa' 'Haryana' 'Punjab' 'Rajasthan' 'Tamil Nadu' 'Telangana' 'Uttarakhand' 
+\end{lstlisting}
+    
+    
+    \newpage{}
+
+    \section{Templates and classes: An array wrapper}
+
+    For this part of the lab, you will implement a barebones static
+    array wrapper, but using a template.
+    The starter code contains the following in \texttt{lab8\_arraywrapper}:
+    
+\begin{lstlisting}[style=code]
+#ifndef _ARRAY_WRAPPER
+#define _ARRAY_WRAPPER
+
+const int MAX_SIZE = 10;
+
+#endif   
+\end{lstlisting}
+
+Within this file, you will declare a class and use templates.
+
+~\\
+\textbf{
+NOTE: Since we're using templates, the class/function declarations
+AND the function definitions must all go in this file.
+}
+
+~\\
+Declare a class named \texttt{ArrayWrapper}. It will have the following
+\textbf{private member variables:}
+
+\begin{itemize}
+    \item   \texttt{m\_data}, an array whose data type is \texttt{T}, the placeholder for the template. Set this array's size to the \texttt{MAX\_SIZE} named constant.
+    \item   \texttt{m\_itemCount}, an integer.
+\end{itemize}
+
+Within the class, you will declare and define the functions. As an example,
+here's a different class as an example:
+
+\begin{figure}[h]
+\centering
+\begin{BVerbatim}
+class Bob
+{
+    Bob() // defined WITHIN the class
+    {
+        name = "Bob";
+    }
+
+    void Display() // defined WITHIN the class
+    {
+        cout << name << endl;
+    }
+
+    private:
+    string name;
+};
+\end{BVerbatim}
+\end{figure}
+
+Implement the following functions:
+
+    \subsection{ArrayWrapper constructor}
+
+    \textbf{Parameters:} None
+
+    ~\\
+    This constructor should initialize \texttt{m\_itemCount} to 0.
+    
+    \subsection{Push}
+
+    \textbf{Parameters:} \texttt{data}, type is the placeholder \texttt{T}.
+
+    ~\\
+    \textbf{Return type:} void
+
+    ~\\
+    If the \texttt{m\_itemCount} is less than \texttt{MAX\_SIZE}, then
+    set \texttt{m\_data} at the next available index (at \texttt{m\_itemCount})
+    to the value passed in as \texttt{data} and increment \texttt{m\_itemCount}.
+    
+    \subsection{Display}
+    
+    \textbf{Parameters:} None
+    
+    ~\\
+    \textbf{Return type:} void
+
+    ~\\
+    Use a for loop to iterate through each element of the array, displaying
+    the value of the element to the screen via \texttt{cout}.
+    Have every element outputted on the same line.
+
+    \newpage
+    \subsection{Testing}
+
+    Before running the program, make sure to comment out the test code:
+    
+\begin{lstlisting}[style=code]
+void Part2()
+{
+    cout << "---------------------------" << endl;
+    cout << "PART 2: TEMPLATES & CLASSES" << endl;
+    cout << "---------------------------" << endl;
+
+    cout << "Uncomment out this code once the ArrayWrapper class is implemented" << endl;
+
+//    // Test 1
+//    cout << endl << "TEST 1" << endl;
+//    ArrayWrapper<int> numArray;
+//    numArray.Push( 2 );
+//    numArray.Push( 4 );
+//    numArray.Push( 6 );
+//    numArray.Push( 8 );
+//    numArray.Push( 10 );
+//    numArray.Display();
+//
+//    // Test 2
+//    cout << endl << "TEST 2" << endl;
+//    ArrayWrapper<char> charArray;
+//    charArray.Push( 'c' );
+//    charArray.Push( 'a' );
+//    charArray.Push( 't' );
+//    charArray.Push( 's' );
+//    charArray.Push( '\0' );
+//    charArray.Display();
+//
+//    // Test 3
+//    cout << endl << "TEST 3" << endl;
+//    ArrayWrapper<string> strArray;
+//    strArray.Push( "Ontario" );
+//    strArray.Push( "Quebec" );
+//    strArray.Push( "Nova Scotia" );
+//    strArray.Push( "Alberta" );
+//    strArray.Push( "British Columbia" );
+//    strArray.Display();
+}
+\end{lstlisting}
+
+    \newpage
+
+    When you run the program, the output should look as follows.
+    (Note that this example shows text wrapping, which happens if the
+    window is too small, but your DisplayArray function should display
+    all the elements on the same line.)
+
+\begin{lstlisting}[style=output]
+---------------------------
+PART 2: TEMPLATES & CLASSES
+---------------------------
+
+TEST 1
+'2' '4' '6' '8' '10' 
+
+TEST 2
+'c' 'a' 't' 's' '' 
+
+TEST 3
+'Ontario' 'Quebec' 'Nova Scotia' 'Alberta' 'British Columbia' 
+\end{lstlisting}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    \newpage
+    \section{Appendix A: Starter code}
+
+    \subsection*{lab8.cpp}
+    
+    \begin{lstlisting}[style=code]
+#include <iostream>
+#include <string>
+using namespace std;
+
+#include "lab8_sorting.hpp"
+#include "lab8_arraywrapper.hpp"
+
+void Part1();
+void Part2();
+
+int main()
+{
+    Part1();
+    Part2();
+
+    return 0;
+}
+
+void Part1()
+{
+    cout << "-----------------------------" << endl;
+    cout << "PART 1: TEMPLATES & FUNCTIONS" << endl;
+    cout << "-----------------------------" << endl;
+
+    // Test 1
+    cout << endl << "TEST 1" << endl;
+    int numArray[] = { 5, 3, 6, 1, 2 };
+    int numArraySize = 5;
+
+    cout << "Before sort: " << endl;
+    DisplayArray( numArray, numArraySize );
+
+    SelectionSort( numArray, numArraySize );
+
+    cout << "After sort: " << endl;
+    DisplayArray( numArray, numArraySize );
+
+    // Test 2
+    cout << endl << "TEST 2" << endl;
+    char charArray[] = { 'h', 'e', 'q', 'a', 'd', 'z', 'c' };
+    int charArraySize = 7;
+
+    cout << "Before sort: " << endl;
+    DisplayArray( charArray, charArraySize );
+
+    SelectionSort( charArray, charArraySize );
+
+    cout << "After sort: " << endl;
+    DisplayArray( charArray, charArraySize );
+
+    // Test 3
+    cout << endl << "TEST 3" << endl;
+    string strArray[] = { "Andhra Pradesh", "Goa", "Haryana", "Bihar", "Uttarakhand", "Telangana", "Rajasthan", "Tamil Nadu", "Punjab" };
+    int strArraySize = 9;
+
+    cout << "Before sort: " << endl;
+    DisplayArray( strArray, strArraySize );
+
+    SelectionSort( strArray, strArraySize );
+
+    cout << "After sort: " << endl;
+    DisplayArray( strArray, strArraySize );
+}
+
+void Part2()
+{
+    cout << "---------------------------" << endl;
+    cout << "PART 2: TEMPLATES & CLASSES" << endl;
+    cout << "---------------------------" << endl;
+
+    cout << "Uncomment out this code once the ArrayWrapper class is implemented" << endl;
+
+//    // Test 1
+//    cout << endl << "TEST 1" << endl;
+//    ArrayWrapper<int> numArray;
+//    numArray.Push( 2 );
+//    numArray.Push( 4 );
+//    numArray.Push( 6 );
+//    numArray.Push( 8 );
+//    numArray.Push( 10 );
+//    numArray.Display();
+//
+//    // Test 2
+//    cout << endl << "TEST 2" << endl;
+//    ArrayWrapper<char> charArray;
+//    charArray.Push( 'c' );
+//    charArray.Push( 'a' );
+//    charArray.Push( 't' );
+//    charArray.Push( 's' );
+//    charArray.Push( '\0' );
+//    charArray.Display();
+//
+//    // Test 3
+//    cout << endl << "TEST 3" << endl;
+//    ArrayWrapper<string> strArray;
+//    strArray.Push( "Ontario" );
+//    strArray.Push( "Quebec" );
+//    strArray.Push( "Nova Scotia" );
+//    strArray.Push( "Alberta" );
+//    strArray.Push( "British Columbia" );
+//    strArray.Display();
+}
+    \end{lstlisting}
+
+    \subsection*{lab8\_sorting.hpp}
+    
+    \begin{lstlisting}[style=code]
+#ifndef _SORTING
+#define _SORTING
+
+/**
+    Sets the value of a to the original value of b,
+    and sets the value of b to the original value of a.
+
+    @param <T&> a   The reference to an element of an array
+    @param <T&> b   The reference to another element of an array
+    @return <void>  No return - values are changed via pass-by-reference parameters
+*/
+template <typename T>
+void Swap( T& a, T& b )
+{
+}
+
+/**
+    Implementation of Selection Sort.
+    See for reference: https://en.wikipedia.org/wiki/Selection_sort#Implementation
+
+    @param <T[]> a  An array to sort
+    @param <int> n  The size of the array a[]
+    @return <void>  No return - array is passed-by-reference and modified directly
+*/
+template <typename T>
+void SelectionSort( T a[], int n )
+{
+}
+
+/**
+    Display each element of the array, from 0 to n-1
+
+    @param <T[]> a  An array to sort
+    @param <int> n  The size of the array a[]
+    @return <void>  No return
+*/
+template <typename T>
+void DisplayArray( const T a[], int n )
+{
+}
+
+#endif
+    \end{lstlisting}
+
+    \subsection*{lab8\_arraywrapper.hpp}
+    
+    \begin{lstlisting}[style=code]
+#ifndef _ARRAY_WRAPPER
+#define _ARRAY_WRAPPER
+
+const int MAX_SIZE = 10;
+
+#endif
+    \end{lstlisting}
+
+\end{document}
+
+
+
+
+
+
+
+
+

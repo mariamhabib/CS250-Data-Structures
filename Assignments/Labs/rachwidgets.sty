@@ -13,7 +13,13 @@
 \usepackage{tcolorbox}
 \usepackage{subcaption}
 \usepackage{wasysym}
+\usepackage{multirow}
+\usepackage{dirtree}
 \usepackage{lipsum} % for dummy text only
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{dirtree}
+\usepackage{boxedminipage}
 
 \definecolor{commentz}{rgb}{0,0.02,0.6}
 \definecolor{keywordz}{rgb}{0.69,0.18, 0.36}
@@ -65,6 +71,7 @@
 
 % Intro box %
 \newenvironment{intro}[1]{  \begin{mdframed}[backgroundcolor=intro]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
+\newenvironment{introNOHEAD}[0]{\begin{mdframed}[backgroundcolor=intro]\noindent } { \end{mdframed} }
 
 % Hint box %
 \newenvironment{hint}[1]{   \begin{mdframed}[backgroundcolor=hint]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
@@ -72,7 +79,12 @@
 % Error box %
 \newenvironment{error}[1]{  \begin{mdframed}[backgroundcolor=error]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
 
+% Answer box %
+\newenvironment{answerbox}[0]{ \begin{mdframed}\noindent } { \end{mdframed} }
 
+% Solution text %
+\newcommand\solution[2] {\iftoggle{answerkey}{\begin{answer}#1\end{answer}}{#2}}
+% \solution{SOLUTION}{ nevermind }
 
 % EXAM QUESTION FORMAT
 \newenvironment{examquestion}[4] {\textbf{\footnotesize{#4\%}} Question #1: #2 (#3) \hfill \grader \\ ~ \\ }{ }
@@ -98,6 +110,8 @@
 % SIMPLE QUESTION FORMAT
 \newenvironment{question}[2] {\paragraph{Question #1} \hfill \fitb / #2 ~\\}{}
 
+\newenvironment{questionNOGRADE}[1] {\paragraph{Question #1} ~\\}{}
+
 % Example
 %\begin{question}{1}{2}
 %    Do a thing
@@ -106,6 +120,8 @@
 %        \framebox{ $ a_{n} = 2n + 2 $ } \par{}
 %    \end{answer}
 %\end{question}
+
+% UNGRADED QUESTION FORMAT
 
 % Fill in the blank region
 \newcommand\fitb[1][1cm]{ $\rule{#1}{0.15mm}$ }
@@ -151,7 +167,7 @@
     showspaces=false,
     showstringspaces=false,
     tabsize=4,
-    basicstyle=\ttfamily\scriptsize\color{previewfg}, 
+    basicstyle=\ttfamily\normalsize\color{previewfg}, 
     backgroundcolor=\color{previewbg},
     breakatwhitespace=false,
     frame=single,
@@ -189,3 +205,12 @@
     %\caption{A figure with two subfigures}
     %\label{fig:test}
 %\end{figure}
+
+% Directory tree %
+%\begin{framed}
+%\dirtree{%
+%.1 PROJECT.
+%.2 assetsManager{.}py.
+%.3 audio.
+%}
+%\end{framed}

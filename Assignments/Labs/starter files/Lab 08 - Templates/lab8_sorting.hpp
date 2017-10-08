@@ -37,6 +37,7 @@ void SelectionSort( T a[], int n )
 template <typename T>
 void DisplayArray( const T a[], int n )
 {
+    cout << n << endl;
 }
 
 #endif

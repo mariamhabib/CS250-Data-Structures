@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1506724317 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Labs/starter files/Lab 08 - Templates/lab8.cpp
+	<iostream>
+	<string>
+	"lab8_sorting.hpp"
+	"lab8_arraywrapper.hpp"
+
+1507175645 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Labs/starter files/Lab 08 - Templates/lab8_sorting.hpp
+
+1506726139 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Labs/starter files/Lab 08 - Templates/lab8_arraywrapper.hpp
+

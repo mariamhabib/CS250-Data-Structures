@@ -13,6 +13,7 @@
 \newcommand{\laClass}{CS 250\ }
 \newcommand{\laSemester}{Fall 2017\ }
 \newcommand{\laLab}{Lab 10: Stacks and Queues\ }
+\newcounter{question}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -25,650 +26,314 @@
 \renewcommand{\headrulewidth}{2pt}
 \renewcommand{\footrulewidth}{1pt}
 
+%\toggletrue{answerkey}
+\togglefalse{answerkey}
+
 \begin{document}
 
     \chapter*{\laLab} \stepcounter{chapter}
 
         \section{Information}
-            \paragraph{ Topics: } Stacks, Queues, Linked Lists
-            \paragraph{ Turn in: } All source files (.cpp and .hpp).
-            \paragraph{ Starter files: } Download on GitHub or D2L.
-
+            \paragraph{ Topics: } Stacks, Queues
+            \paragraph{ Turn in: } Your work in a text file, PDF file, scanned or photographed images.
+            
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
 
-\renewcommand*\DTstylecomment{\rmfamily\color{green}\textsc}
+~\\
+This is another on-paper ``lab", which is meant to help you become
+more familiar with how stacks and queues work.
 
-\begin{framed}
-\dirtree{%
-.1 Lab 10 - Stacks and Queues/.
-.2 lab10\_main{.}cpp
-    \dots{} \begin{minipage}[t]{5cm} Contains main() \end{minipage}.
-.2 lab10\_DoublyLinkedList{.}hpp
-    \dots{} \begin{minipage}[t]{5cm} Doubly Linked List template \end{minipage}.
-.2 CodeBlocks Project/
-    \dots{} \begin{minipage}[t]{7cm}
-        Code::Blocks project here
-    \end{minipage}.
-.2 Queue/.
-.3 Queue{.}hpp.
-.2 Stack/.
-.3 Stack{.}hpp.
-}
-\end{framed}
+    \hrulefill
 
-This program does not have any tests associated with it; you will have to
-manually test it or write your own tests.
+    \section{About: Queues}
 
-    \tableofcontents
+        Queues are first-in-first-out (FIFO) structures. The main
+        functionality of a Queue is \textbf{Push} (to the back),
+        \textbf{Pop} (from the front), and \textbf{Front}, which accesses the first
+        item in the queue.
 
-% ----------------------------------------------------------------------
-% ----------------------------------------------------------------------
-% ----------------------------------------------------------------------
+        Since items are pushed into the back of the queue and pulled out
+        from the front, we essentially will work with the item that has
+        been waiting the longest period of time before any of the items
+        that were added \textit{after it} get removed.
 
-    \newpage{}
+        \begin{center}
+            \begin{tabular}{ | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+                \hline
+                0 & 1 & 2 & 3 & 4
+                \\ \hline
+                FRONT & & & & BACK
+                \\ \hline
+            \end{tabular}
+        \end{center}
 
-    \section{Introduction}
+        
+    \newpage
+    \section{About: Stacks}
 
-    In this lab, you will create a Stack and a Queue in a few short lines of code. A DoublyLinkedList has already been implemented for you, and the Queue and Stack will each inherit from that class.
+        Stacks are last-in-first-out (LIFO) structures. The main
+        functionality of a Queue is \textbf{Push} (to the back),
+        \textbf{Pop} (from the back), and \textbf{Top}, which accesses the
+        last item in the stack (aka the ``top" of the stack).
 
-    Using the functions from DoublyLinkedList, implement Stack and Queue's functions:
+        Stacks are usually thought of as items being stacked vertically,
+        but if you're thinking of an array in a horizontal manner, the ``bottom"
+        is at index 0, and the ``top" is at the index $n-1$, for a stack of size $n$.
 
-    \begin{itemize}
-        \item Push
-        \item Pop
-        \item Get (either Top or Front)
-    \end{itemize}
+        Items are both pushed into the back and popped from the back, so
+        before the ``bottom-most" (first-most) item is removed, all items
+        added \textit{after it} must be removed first.
 
-    main() is already implemented so that the user can select a queue or a stack and, using Polymorphism, it will dynamically create a new queue or stack and run those functions.
+        \begin{center}
+            \begin{tabular}{ | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+                \hline
+                0 & 1 & 2 & 3 & 4
+                \\ \hline
+                BOTTOM & & & & TOP
+                \\ \hline
+            \end{tabular}
+        \end{center}
 
-    \textbf{The implementation of each function will be one line each.}
+        Or...
 
-    To explicitly call a function from the child class, you can prefix the function name with the parent class and template marker:
-
-\begin{lstlisting}[style=code]
-DoublyLinkedList<T>::FunctionThingy( blorp );
-\end{lstlisting}
+        \begin{center}
+            \begin{tabular}{ | c | c |}
+                \hline
+                4 & TOP
+                \\ \hline
+                3 &
+                \\ \hline
+                2 &
+                \\ \hline
+                1 &
+                \\ \hline
+                0 & BOTTOM
+                \\ \hline
+            \end{tabular}
+        \end{center}
 
     \newpage
-    \section{Queue}
 
-    Remember that a Queue is a FIRST IN, FIRST OUT structure.
+    \section{Questions: Queues}
 
-    You will need to answer the following:
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            Draw a \textbf{queue} structure at each step:
 
-    \begin{itemize}
-        \item   When pushing a new item into a queue, where does the new item go? (front? back?)
-        \item   When popping an item out of a queue, which item is removed? (front? back?)
-        \item   When taking an item from a queue (without removing), which item is accesses? (front? back?)
-    \end{itemize}
-    
-    \section{Stack}
+            \begin{enumerate}
+                \item   \begin{verbatim} Push( "A" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | }
+                            A
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "B" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | }
+                            A & B
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "C" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | c | }
+                            A & B & C
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
 
-    Remember that a Stack is a FIRST IN, LAST OUT (or LAST IN, FIRST OUT) structure.
+                \item   \begin{verbatim} Pop(); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | }
+                            B & C
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "D" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | c | }
+                            B & C & D 
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+            \end{enumerate}
+        \end{question}
 
-    You will need to answer the following:
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            For the following queue, write out code commands for the queue
+            (e.g., Push(``..."), Pop(), or Front()) to access element ``D". Write in a linear
+            order. At the end of your steps, the Front() function should return
+            the requested item.
 
-    \begin{itemize}
-        \item   When pushing a new item into a stack, where does the new item go? (front? back?)
-        \item   When popping an item out of a stack, which item is removed? (front? back?)
-        \item   When taking an item from a stack (without removing), which item is accesses? (front? back?)
-    \end{itemize}
+            \begin{center}
+                \begin{tabular}{ | c | c | c | c | c | c | }
+                    \hline
+                    0 & 1 & 2 & 3 & 4 & 5
+                    \\ \hline
+                    A & S & D & F & G & H
+                    \\ \hline
+                \end{tabular}
+            \end{center}
 
-    \newpage{}
-    
-    \section{Sample output}
+            \solution{Pop() Pop() Front()}{}
+        \end{question}
 
-    \subsection{Queue}
+        \newpage
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            For each set of commands, what will be returned by the Front()
+            function after all the commands have been executed?
 
-\begin{lstlisting}[style=output]
---------------------------------
-1. Queue or 2. Stack, or anything else to quit.
->> 1
+            \begin{itemize}
+                \item[a.]   \texttt{Push('A'); Push('B'); Push('C');}
+                    ~\\~\\
+                    \texttt{Front()} returns \solution{'A'}{ \fitb[2cm] }
+                ~\\
+                \item[b.]   \texttt{Push(2); Push(3); Push(4); Pop(); Push(5); Push(6);}
+                    ~\\~\\
+                    \texttt{Front()} returns \solution{3}{ \fitb[2cm] }
+                ~\\
+                \item[c.]   \texttt{Push(0); Pop(); Push(1); Push(2); Pop(); Push(3); Push(4);}
+                    ~\\~\\
+                    \texttt{Front()} returns \solution{2}{ \fitb[2cm] }
+            \end{itemize}
+        \end{question}
 
-Create queue
-Add A, B, C, D
-Size: 4
-Take: A
+        \hrulefill
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{1}
+            Give at least one example of how a queue may be used in computer science.
+            Try to find an example online if you can't think of anything.
+            If you can't find any good examples of software uses for programming,
+            think of other technology/engineering fields and given an example.
+        \end{question}
 
-Current list:
-A	 FIRST
-B
-C
-D	 LAST
-
-Pop 1
-Size: 3
-Take: B
-
-Current list:
-B	 FIRST
-C
-D	 LAST
-\end{lstlisting}
-
+        
     \newpage
-    \subsection{Stack}
-    
-    
-\begin{lstlisting}[style=output]
---------------------------------
-1. Queue or 2. Stack, or anything else to quit.
->> 2
-
-Create stack
-Add A, B, C, D
-Size: 4
-Take: D
-
-Current list:
-A	 FIRST
-B
-C
-D	 LAST
-
-Pop 1
-Size: 3
-Take: C
-
-Current list:
-A	 FIRST
-B
-C	 LAST
-\end{lstlisting}
-
-
-    \newpage
-    \section{Appendix A: Starter code}
-
-%--------------------------------------%
-\subsection*{lab10\_main.cpp}
-
-\begin{lstlisting}[style=code]
-#include <iostream>
-#include <string>
-using namespace std;
-
-#include "Queue/Queue.hpp"
-#include "Stack/Stack.hpp"
-
-int main()
-{
-    bool done = false;
-    while ( !done )
-    {
-        List<string>* listObj = nullptr;
-
-        cout << endl << "--------------------------------" << endl;
-        cout << "1. Queue or 2. Stack, or anything else to quit." << endl << ">> ";
-        int choice;
-        cin >> choice;
-
-        // POLYMORPHISM!!
-        if ( choice == 1 )
-        {
-            cout << endl << "Create queue" << endl;
-            // Initialize as queue
-            listObj = new Queue<string>;
-        }
-        else if ( choice == 2 )
-        {
-            cout << endl << "Create stack" << endl;
-            // Initialize as stack
-            listObj = new Stack<string>;
-        }
-        else
-        {
-            break;
-        }
-
-        cout << "Add A, B, C, D" << endl;
-        listObj->Push( "A" );
-        listObj->Push( "B" );
-        listObj->Push( "C" );
-        listObj->Push( "D" );
-
-        cout << "Size: " << listObj->GetSize() << endl;
-        cout << "Take: " << listObj->Take() << endl;
-
-        cout << endl << "Current list:" << endl;
-        listObj->Display();
-
-        cout << endl << "Pop 1" << endl;
-        listObj->Pop();
-
-        cout << "Size: " << listObj->GetSize() << endl;
-        cout << "Take: " << listObj->Take() << endl;
-
-        cout << endl << "Current list:" << endl;
-        listObj->Display();
-
-        if ( listObj != nullptr )
-        {
-            delete listObj; // free up memory
-        }
-    }
-
-    return 0;
-}
-
-\end{lstlisting}
-%--------------------------------------%
-
-\newpage
-%--------------------------------------%
-\subsection*{lab10\_DoublyLinkedList}
-
-\begin{lstlisting}[style=code]
-#ifndef DOUBLYLINKEDLIST_HPP
-#define DOUBLYLINKEDLIST_HPP
-
-#include <stdexcept>
-using namespace std;
-
-template <typename T>
-class Node
-{
-    public:
-    Node()
-    {
-        m_ptrNext = nullptr;
-        m_ptrPrev = nullptr;
-    }
-
-    T m_data;
-
-    Node<T>* m_ptrNext;
-    Node<T>* m_ptrPrev;
-};
-
-template <typename T>
-class DoublyLinkedList
-{
-    public:
-    DoublyLinkedList()
-    {
-        m_ptrFirst = nullptr;
-        m_ptrLast = nullptr;
-        m_itemCount = 0;
-    }
-
-    virtual ~DoublyLinkedList()
-    {
-        while ( m_ptrFirst != nullptr )
-        {
-            PopBack();
-        }
-    }
-
-    /*
-    Pure virtual functions:
-    Interfaces for children, to be
-    implemented by child classes.
-    */
-    virtual void Push( T data ) = 0;
-    virtual void Pop() = 0;
-    virtual T Take() = 0;
-
-    /*
-    Inherited public functions
-    */
-
-    void Display()
-    {
-        Node<T>* ptrCurrent = m_ptrFirst;
-        while ( ptrCurrent != nullptr )
-        {
-            cout << ptrCurrent->m_data;
-
-            if ( ptrCurrent == m_ptrFirst )
-            {
-                cout << "\t FIRST";
-            }
-            if ( ptrCurrent == m_ptrLast )
-            {
-                cout << "\t LAST";
-            }
-
-            cout << endl;
-
-            ptrCurrent = ptrCurrent->m_ptrNext;
-        }
-    }
-
-    int GetSize()
-    {
-        return m_itemCount;
-    }
-
-    protected:
-    int m_itemCount;
-    Node<T>* m_ptrFirst;
-    Node<T>* m_ptrLast;
-
-    /*
-    Behind-the-scenes inner-workings
-    */
-
-    void PushFront( T data )
-    {
-        Node<T>* newNode = new Node<T>();
-        newNode->m_data = data;
-
-        if ( m_ptrFirst = nullptr )
-        {
-            // Empty list
-            m_ptrFirst = newNode;
-            m_ptrLast = newNode;
-        }
-        else
-        {
-            // Not empty, new node is the new first
-            newNode->m_ptrNext = m_ptrFirst;
-            m_ptrFirst->m_ptrPrev = newNode;
-
-            // Update pointer
-            m_ptrFirst = newNode;
-        }
-
-        m_itemCount++;
-    }
-
-    void PushBack( T data )
-    {
-        Node<T>* newNode = new Node<T>();
-        newNode->m_data = data;
-
-        if ( m_ptrFirst == nullptr )
-        {
-            // Empty list
-            m_ptrFirst = newNode;
-            m_ptrLast = newNode;
-        }
-        else
-        {
-            // Not empty, new node is the new last
-            m_ptrLast->m_ptrNext = newNode;
-            newNode->m_ptrPrev = m_ptrLast;
-
-            // Update pointer
-            m_ptrLast = newNode;
-        }
-
-        m_itemCount++;
-    }
-
-    void Insert( T data, int index )
-    {
-        if ( index > m_itemCount || index < 0 )
-        {
-            throw out_of_range( "Invalid index!" );
-        }
-
-        Node<T>* newNode = new Node<T>();
-        newNode->m_data = data;
-
-        if ( m_ptrFirst = nullptr )
-        {
-            // Empty list
-            m_ptrFirst = newNode;
-            m_ptrLast = newNode;
-        }
-        else
-        {
-            // Traverse list to find position
-            int counter = 0;
-            Node<T>* ptrCurrent = m_ptrFirst;
-
-            while ( counter != index )
-            {
-                counter++;
-            }
-
-            // Add item in list
-            newNode->m_ptrPrev = ptrCurrent->m_ptrPrev;
-            newNode->m_ptrNext = ptrCurrent;
-
-            ptrCurrent->m_ptrPrev->m_ptrNext = newNode;
-            ptrCurrent->m_ptrPrev = newNode;
-        }
-
-        m_itemCount++;
-    }
-
-
-    void PopFront()
-    {
-        if ( m_ptrFirst == nullptr )
-        {
-            return;
-        }
-
-        if ( m_ptrFirst == m_ptrLast )
-        {
-            delete m_ptrLast;
-            m_ptrFirst = nullptr;
-            m_ptrLast = nullptr;
-            m_itemCount--;
-            return;
-        }
-
-        // Keep track of 2nd item
-        Node<T>* ptrSecond = m_ptrFirst->m_ptrNext;
-
-        // Update the 2nd element's prev pointer
-        ptrSecond->m_ptrPrev = nullptr;
-
-        // Clear out the data at m_ptrFirst
-        delete m_ptrFirst;
-
-        // Update first pointer
-        m_ptrFirst = ptrSecond;
-
-        m_itemCount--;
-    }
-
-    void PopBack()
-    {
-        if ( m_ptrLast == nullptr )
-        {
-            return;
-        }
-
-        if ( m_ptrFirst == m_ptrLast )
-        {
-            delete m_ptrLast;
-            m_ptrFirst = nullptr;
-            m_ptrLast = nullptr;
-            m_itemCount--;
-            return;
-        }
-
-        // Keep track of 2nd-to-last item
-        Node<T>* ptrPenultimate = m_ptrLast->m_ptrPrev;
-
-        // Update 2nd-to-last item's next ptr
-        ptrPenultimate->m_ptrNext = nullptr;
-
-        // Clear out data at last element
-        delete m_ptrLast;
-
-        // Update last pointer
-        m_ptrLast = ptrPenultimate;
-
-        m_itemCount--;
-    }
-
-    void Remove( int index )
-    {
-        if ( index > m_itemCount || index < 0 )
-        {
-            throw out_of_range( "Invalid index!" );
-        }
-
-        // Locate item
-        Node<T>* ptrCurrent = m_ptrFirst;
-
-        int counter = 0;
-        while ( counter != index )
-        {
-            counter++;
-        }
-
-        Node<T>* ptrPrev = ptrCurrent->m_ptrPrev;
-        Node<T>* ptrNext = ptrCurrent->m_ptrNext;
-
-        // Update previous item's pointer
-        ptrPrev->m_ptrNext = ptrNext;
-
-        // Update next item's pointer
-        ptrNext->m_ptrPrev = ptrPrev;
-
-        // Free this item
-        delete ptrCurrent;
-
-        m_itemCount--;
-    }
-
-    T& GetFront()
-    {
-        if ( m_ptrFirst == nullptr )
-        {
-            throw out_of_range( "First pointer is nullptr" );
-        }
-
-        return m_ptrFirst->m_data;
-    }
-
-    T& GetBack()
-    {
-        if ( m_ptrLast == nullptr )
-        {
-            throw out_of_range( "Last pointer is nullptr" );
-        }
-
-        return m_ptrLast->m_data;
-    }
-
-    T& Get( int index )
-    {
-        if ( index > m_itemCount || index < 0 )
-        {
-            throw out_of_range( "Invalid index!" );
-        }
-
-        // Locate item
-        Node<T>* ptrCurrent = m_ptrFirst;
-
-        int counter = 0;
-        while ( counter != index )
-        {
-            ptrCurrent = ptrCurrent->m_ptrNext;
-            counter++;
-        }
-
-        return ptrCurrent->m_data;
-    }
-};
-
-template <typename T>
-using List = DoublyLinkedList<T>;
-
-#endif
-
-\end{lstlisting}
-%--------------------------------------%
-
-\newpage
-%--------------------------------------%
-\subsection*{Queue/Queue.hpp}
-
-\begin{lstlisting}[style=code]
-#ifndef QUEUE_HPP
-#define QUEUE_HPP
-
-#include "../DoublyLinkedList.hpp"
-
-template <typename T>
-class Queue : public DoublyLinkedList<T>
-{
-    public:
-    Queue()
-        : DoublyLinkedList<T>()
-    {
-    }
-
-    virtual ~Queue()
-    {
-    }
-
-    virtual void Push( T data )
-    {
-        DoublyLinkedList<T>::PushBack( data );
-    }
-
-    virtual void Pop()
-    {
-        DoublyLinkedList<T>::PopFront();
-    }
-
-    virtual T Take()
-    {
-        return DoublyLinkedList<T>::GetFront();
-    }
-};
-
-#endif
-
-\end{lstlisting}
-%--------------------------------------%
-
-\newpage
-%--------------------------------------%
-\subsection*{Stack/Stack.hpp}
-
-\begin{lstlisting}[style=code]
-#ifndef STACK_HPP
-#define STACK_HPP
-
-#include "../DoublyLinkedList.hpp"
-
-template <typename T>
-class Stack : public DoublyLinkedList<T>
-{
-    public:
-    Stack()
-        : DoublyLinkedList<T>()
-    {
-    }
-
-    virtual ~Stack()
-    {
-    }
-
-    virtual void Push( T data )
-    {
-        DoublyLinkedList<T>::PushBack( data );
-    }
-
-    virtual void Pop()
-    {
-        DoublyLinkedList<T>::PopBack();
-    }
-
-    virtual T Take()
-    {
-        return DoublyLinkedList<T>::GetBack();
-    }
-};
-
-#endif
-
-\end{lstlisting}
-%--------------------------------------%
-
-
+    \section{Questions: Stacks}
+
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            Draw a \textbf{stack} structure at each step:
+
+            \begin{enumerate}
+                \item   \begin{verbatim} Push( "A" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | }
+                            A
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "B" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | }
+                            A & B
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "C" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | c | }
+                            A & B & C
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+
+                \item   \begin{verbatim} Pop(); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | }
+                            B & C
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "D" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | c | }
+                            B & C & D 
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+            \end{enumerate}
+        \end{question}
+        
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            For the following stack, write out code commands for the queue
+            (e.g., Push(``..."), Pop(), or Top()) to access element ``D". Write in a linear
+            order. At the end of your steps, the Front() function should return
+            the requested item.
+
+            \begin{center}
+                \begin{tabular}{ | c | c | c | c | c | c | }
+                    \hline
+                    0 & 1 & 2 & 3 & 4 & 5
+                    \\ \hline
+                    A & S & D & F & G & H
+                    \\ \hline
+                \end{tabular}
+            \end{center}
+
+            \solution{Pop() Pop() Pop() Top()}{}
+        \end{question}
+
+
+        \newpage
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            For each set of commands, what will be returned by the Top()
+            function after all the commands have been executed?
+
+            \begin{itemize}
+                \item[a.]   \texttt{Push('A'); Push('B'); Push('C');}
+                    ~\\~\\
+                    \texttt{Top()} returns \solution{'A'}{ \fitb[2cm] }
+                ~\\
+                \item[b.]   \texttt{Push(2); Push(3); Push(4); Pop(); Push(5); Push(6);}
+                    ~\\~\\
+                    \texttt{Top()} returns \solution{3}{ \fitb[2cm] }
+                ~\\
+                \item[c.]   \texttt{Push(0); Pop(); Push(1); Push(2); Pop(); Push(3); Push(4);}
+                    ~\\~\\
+                    \texttt{Top()} returns \solution{2}{ \fitb[2cm] }
+            \end{itemize}
+        \end{question}
+
+        \hrulefill
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{1}
+            Give at least one example of how a stack may be used in computer science.
+            Try to find an example online if you can't think of anything.
+            If you can't find any good examples of software uses for programming,
+            think of other technology/engineering fields and given an example.
+        \end{question}
+
+        
 \end{document}
 
 

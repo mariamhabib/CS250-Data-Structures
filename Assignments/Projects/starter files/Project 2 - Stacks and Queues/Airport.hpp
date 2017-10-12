@@ -25,7 +25,7 @@ public:
 
 private:
 	int m_maxCapacity;
-    // Add a Stack of Traveller*'s
+    // Add a Queue of Traveller*'s
 };
 
 #endif

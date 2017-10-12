@@ -23,7 +23,7 @@ public:
 	bool IsEmpty();
 
 private:
-    // Add a Queue of Traveller*'s
+    // Add a Stack of Traveller*'s
 };
 
 #endif

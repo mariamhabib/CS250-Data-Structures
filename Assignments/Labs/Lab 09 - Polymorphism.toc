@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1.1}Information}{1}
+\contentsline {paragraph}{ Topics: }{1}
+\contentsline {paragraph}{ Turn in: }{1}
+\contentsline {paragraph}{ Starter files: }{1}
+\contentsline {section}{\numberline {1.2}Class declarations}{3}
+\contentsline {subsection}{\numberline {1.2.1}ICharacter interface class}{3}
+\contentsline {subsection}{\numberline {1.2.2}NPC class}{4}
+\contentsline {subsection}{\numberline {1.2.3}Player class}{4}
+\contentsline {section}{\numberline {1.3}Function definitions}{5}
+\contentsline {subsection}{\numberline {1.3.1}ICharacter::GetAttack}{5}
+\contentsline {subsection}{\numberline {1.3.2}ICharacter::GetHealing}{5}
+\contentsline {subsection}{\numberline {1.3.3}ICharacter::GetHP}{5}
+\contentsline {subsection}{\numberline {1.3.4}ICharacter::GetName}{5}
+\contentsline {subsection}{\numberline {1.3.5}ICharacter::Setup}{6}
+\contentsline {subsection}{\numberline {1.3.6}ICharacter::SubtractDamage}{6}
+\contentsline {subsection}{\numberline {1.3.7}NPC::GetChoice}{6}
+\contentsline {subsection}{\numberline {1.3.8}Player::GetChoice}{6}
+\contentsline {section}{\numberline {1.4}The game}{7}
+\contentsline {subsection}{\numberline {1.4.1}Example output}{8}
+\contentsline {section}{\numberline {1.5}Appendix A: Starter code}{9}

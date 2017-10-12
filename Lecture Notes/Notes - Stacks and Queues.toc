@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1.1}Why Stacks and Queues?}{2}
+\contentsline {section}{\numberline {1.2}How a Queue works}{2}
+\contentsline {section}{\numberline {1.3}How a Stack works}{2}
+\contentsline {section}{\numberline {1.4}}{2}

@@ -1,0 +1,346 @@
+\documentclass[a4paper,12pt,oneside]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{boxedminipage}
+\usepackage{fancyvrb}
+
+\newcommand{\laClass}{CS 250\ }
+\newcommand{\laSemester}{Fall 2017\ }
+\newcommand{\laLab}{Lab 10: Stacks and Queues\ }
+\newcounter{question}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\laClass}
+\chead{\laSemester}
+\rhead{\laLab}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{By Rachel Morris, \footnotesize last updated \today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+%\toggletrue{answerkey}
+\togglefalse{answerkey}
+
+\begin{document}
+
+    \chapter*{\laLab} \stepcounter{chapter}
+
+        \section{Information}
+            \paragraph{ Topics: } Stacks, Queues
+            \paragraph{ Turn in: } Your work in a text file, PDF file, scanned or photographed images.
+            
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+
+~\\
+This is another on-paper ``lab", which is meant to help you become
+more familiar with how stacks and queues work.
+
+    \hrulefill
+
+    \section{About: Queues}
+
+        Queues are first-in-first-out (FIFO) structures. The main
+        functionality of a Queue is \textbf{Push} (to the back),
+        \textbf{Pop} (from the front), and \textbf{Front}, which accesses the first
+        item in the queue.
+
+        Since items are pushed into the back of the queue and pulled out
+        from the front, we essentially will work with the item that has
+        been waiting the longest period of time before any of the items
+        that were added \textit{after it} get removed.
+
+        \begin{center}
+            \begin{tabular}{ | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+                \hline
+                0 & 1 & 2 & 3 & 4
+                \\ \hline
+                FRONT & & & & BACK
+                \\ \hline
+            \end{tabular}
+        \end{center}
+
+        
+    \newpage
+    \section{About: Stacks}
+
+        Stacks are last-in-first-out (LIFO) structures. The main
+        functionality of a Queue is \textbf{Push} (to the back),
+        \textbf{Pop} (from the back), and \textbf{Top}, which accesses the
+        last item in the stack (aka the ``top" of the stack).
+
+        Stacks are usually thought of as items being stacked vertically,
+        but if you're thinking of an array in a horizontal manner, the ``bottom"
+        is at index 0, and the ``top" is at the index $n-1$, for a stack of size $n$.
+
+        Items are both pushed into the back and popped from the back, so
+        before the ``bottom-most" (first-most) item is removed, all items
+        added \textit{after it} must be removed first.
+
+        \begin{center}
+            \begin{tabular}{ | p{2cm} | p{2cm} | p{2cm} | p{2cm} | p{2cm} |}
+                \hline
+                0 & 1 & 2 & 3 & 4
+                \\ \hline
+                BOTTOM & & & & TOP
+                \\ \hline
+            \end{tabular}
+        \end{center}
+
+        Or...
+
+        \begin{center}
+            \begin{tabular}{ | c | c |}
+                \hline
+                4 & TOP
+                \\ \hline
+                3 &
+                \\ \hline
+                2 &
+                \\ \hline
+                1 &
+                \\ \hline
+                0 & BOTTOM
+                \\ \hline
+            \end{tabular}
+        \end{center}
+
+    \newpage
+
+    \section{Questions: Queues}
+
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            Draw a \textbf{queue} structure at each step:
+
+            \begin{enumerate}
+                \item   \begin{verbatim} Push( "A" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | }
+                            A
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "B" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | }
+                            A & B
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "C" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | c | }
+                            A & B & C
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+
+                \item   \begin{verbatim} Pop(); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | }
+                            B & C
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "D" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | c | }
+                            B & C & D 
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+            \end{enumerate}
+        \end{question}
+
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            For the following queue, write out code commands for the queue
+            (e.g., Push(``..."), Pop(), or Front()) to access element ``D". Write in a linear
+            order. At the end of your steps, the Front() function should return
+            the requested item.
+
+            \begin{center}
+                \begin{tabular}{ | c | c | c | c | c | c | }
+                    \hline
+                    0 & 1 & 2 & 3 & 4 & 5
+                    \\ \hline
+                    A & S & D & F & G & H
+                    \\ \hline
+                \end{tabular}
+            \end{center}
+
+            \solution{Pop() Pop() Front()}{}
+        \end{question}
+
+        \newpage
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            For each set of commands, what will be returned by the Front()
+            function after all the commands have been executed?
+
+            \begin{itemize}
+                \item[a.]   \texttt{Push('A'); Push('B'); Push('C');}
+                    ~\\~\\
+                    \texttt{Front()} returns \solution{'A'}{ \fitb[2cm] }
+                ~\\
+                \item[b.]   \texttt{Push(2); Push(3); Push(4); Pop(); Push(5); Push(6);}
+                    ~\\~\\
+                    \texttt{Front()} returns \solution{3}{ \fitb[2cm] }
+                ~\\
+                \item[c.]   \texttt{Push(0); Pop(); Push(1); Push(2); Pop(); Push(3); Push(4);}
+                    ~\\~\\
+                    \texttt{Front()} returns \solution{2}{ \fitb[2cm] }
+            \end{itemize}
+        \end{question}
+
+        \hrulefill
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{1}
+            Give at least one example of how a queue may be used in computer science.
+            Try to find an example online if you can't think of anything.
+            If you can't find any good examples of software uses for programming,
+            think of other technology/engineering fields and given an example.
+        \end{question}
+
+        
+    \newpage
+    \section{Questions: Stacks}
+
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            Draw a \textbf{stack} structure at each step:
+
+            \begin{enumerate}
+                \item   \begin{verbatim} Push( "A" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | }
+                            A
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "B" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | }
+                            A & B
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "C" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | c | }
+                            A & B & C
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+
+                \item   \begin{verbatim} Pop(); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | }
+                            B & C
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+                \item   \begin{verbatim} Push( "D" ); \end{verbatim}
+                    \solution{
+                        \begin{tabular}{ | c | c | c | }
+                            B & C & D 
+                        \end{tabular}
+                    }{ { ~\\ \raisebox{0pt}[0.5cm][0pt]{  } } }
+                
+            \end{enumerate}
+        \end{question}
+        
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            For the following stack, write out code commands for the queue
+            (e.g., Push(``..."), Pop(), or Top()) to access element ``D". Write in a linear
+            order. At the end of your steps, the Front() function should return
+            the requested item.
+
+            \begin{center}
+                \begin{tabular}{ | c | c | c | c | c | c | }
+                    \hline
+                    0 & 1 & 2 & 3 & 4 & 5
+                    \\ \hline
+                    A & S & D & F & G & H
+                    \\ \hline
+                \end{tabular}
+            \end{center}
+
+            \solution{Pop() Pop() Pop() Top()}{}
+        \end{question}
+
+
+        \newpage
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{2}
+            For each set of commands, what will be returned by the Top()
+            function after all the commands have been executed?
+
+            \begin{itemize}
+                \item[a.]   \texttt{Push('A'); Push('B'); Push('C');}
+                    ~\\~\\
+                    \texttt{Top()} returns \solution{'A'}{ \fitb[2cm] }
+                ~\\
+                \item[b.]   \texttt{Push(2); Push(3); Push(4); Pop(); Push(5); Push(6);}
+                    ~\\~\\
+                    \texttt{Top()} returns \solution{3}{ \fitb[2cm] }
+                ~\\
+                \item[c.]   \texttt{Push(0); Pop(); Push(1); Push(2); Pop(); Push(3); Push(4);}
+                    ~\\~\\
+                    \texttt{Top()} returns \solution{2}{ \fitb[2cm] }
+            \end{itemize}
+        \end{question}
+
+        \hrulefill
+        % -------------------------------------------------------------%
+        % - QUESTION --------------------------------------------------%
+        % -------------------------------------------------------------%
+        \stepcounter{question}
+        \begin{question}{\thequestion}{1}
+            Give at least one example of how a stack may be used in computer science.
+            Try to find an example online if you can't think of anything.
+            If you can't find any good examples of software uses for programming,
+            think of other technology/engineering fields and given an example.
+        \end{question}
+
+        
+\end{document}
+
+
+
+
+
+
+
+
+

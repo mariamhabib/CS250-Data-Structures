@@ -359,12 +359,12 @@ m_ptrLast->ptrPrev->ptrNext = nullptr;
 \begin{verbatim}
 // PopBack
 Node* ptrSecondToLast = m_ptrLast->m_ptrPrev;
-ptrSecondToLast->ptrNext = nullptr;
+ptrSecondToLast->m_ptrNext = nullptr;
 // ...
 
 // PopFront
 Node* ptrSecond = m_ptrFirst->m_ptrNext;
-ptrSecond->ptrPrev = nullptr;
+ptrSecond->m_ptrPrev = nullptr;
 // ...
 \end{verbatim}                
             \end{hint}

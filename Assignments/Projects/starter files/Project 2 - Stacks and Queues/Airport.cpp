@@ -15,6 +15,7 @@ void Airport::LineUp(Traveller* traveller)
 //! Get the person at the front of the line
 /**
     Get the person at the front of the queue and return them.
+    Make sure you're also removing that person from the front of the queue.
 
     @return <Traveller*>
 */

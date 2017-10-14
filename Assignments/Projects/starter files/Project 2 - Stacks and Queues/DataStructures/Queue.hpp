@@ -8,53 +8,45 @@ template <typename T>
 class Queue : public LinkedList<T>
 {
 public:
-    //!
+    //! Initializes the Queue
     /**
-        @param <type> asdf
-        @return <type>
+        Nothing needs to be added in here;
+        it will already call the LinkedList's constructor.
     */
     Queue() : LinkedList<T>()
     {
     }
 
-    //!
+    //! Adds a new item to the back of the Queue.
     /**
-        @param <type> asdf
-        @return <type>
+        New item to add to the LinkedList via the PushBack function.
+        
+        @param <T&> newItem
+        @return <void>
     */
 	void Push(T& newItem)
 	{
 	}
 
-    //!
+    //! Removes the front-most item.
     /**
-        @param <type> asdf
-        @return <type>
+        Calls the PopFront function from LinkedList.
+        
+        @return <void>
     */
 	void Pop()
 	{
 	}
 
-    //!
+    //! Returns the front-most item.
     /**
-        @param <type> asdf
-        @return <type>
+        Returns the front-most item by using GetFront from the LinkedList.
+        
+        @return <T&>
     */
 	T& Front()
 	{
 	}
-
-    //!
-    /**
-        @param <type> asdf
-        @return <type>
-    */
-	int Size()
-	{
-	}
-
-private:
-	int m_itemCount;
 };
 
 #endif

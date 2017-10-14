@@ -1,7 +1,7 @@
 var searchData=
 [
   ['setmaxcapacity',['SetMaxCapacity',['../classAirport.html#a74be9f6b0f8c6988319f55f1b6e13b41',1,'Airport']]],
-  ['size',['Size',['../classLinkedList.html#a056e945c3c66cf37a8f5c843f983098d',1,'LinkedList::Size()'],['../classQueue.html#a9eb0b82e83c98424c1078be9d380da89',1,'Queue::Size()'],['../classStack.html#a71b9623c81ddeb690c6fd0c7fb1d7bba',1,'Stack::Size()']]],
+  ['size',['Size',['../classLinkedList.html#a056e945c3c66cf37a8f5c843f983098d',1,'LinkedList']]],
   ['stack',['Stack',['../classStack.html',1,'Stack&lt; T &gt;'],['../classStack.html#aefee698059467258bbd79045aca62a63',1,'Stack::Stack()']]],
   ['stack_2ehpp',['Stack.hpp',['../Stack_8hpp.html',1,'']]],
   ['state',['state',['../structTraveller.html#a029215215a4f7630f2b7cac6e433a0ff',1,'Traveller::state()'],['../States_8hpp.html#a5d74787dedbc4e11c1ab15bf487e61f8',1,'State():&#160;States.hpp']]],

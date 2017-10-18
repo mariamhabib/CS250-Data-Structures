@@ -1,0 +1,180 @@
+\documentclass[a4paper,12pt,oneside]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{boxedminipage}
+\usepackage{fancyvrb}
+
+\newcommand{\laClass}{CS 250\ }
+\newcommand{\laSemester}{Fall 2017\ }
+\newcommand{\laLab}{Lab 11: Priority Queue\ }
+\newcounter{question}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\laClass}
+\chead{\laSemester}
+\rhead{\laLab}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{By Rachel Morris, \footnotesize last updated \today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+%\toggletrue{answerkey}
+\togglefalse{answerkey}
+
+\begin{document}
+
+    \chapter*{\laLab} \stepcounter{chapter}
+
+        \section{Information}
+            \paragraph{ Topics: } Basic priority queue
+            \paragraph{ Turn in: } All source files (.cpp and .hpp).
+            \paragraph{ Starter files: } Download on GitHub or D2L.
+            
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+
+
+
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+
+\renewcommand*\DTstylecomment{\rmfamily\color{green}\textsc}
+
+\begin{framed}
+\dirtree{%
+.1 Lab 11 - Priority Queue/.
+.2 lab11\_main{.}cpp.
+.2 lab11\_PriorityQueue{.}hpp.
+.2 input\_message{.}txt.
+}
+\end{framed}
+
+This program does not have any tests associated with it
+
+
+    \section{About: Priority Queues}
+
+        ``In computer science, a priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a "priority" associated with it. In a priority queue, an element with high priority is served before an element with low priority. If two elements have the same priority, they are served according to their order in the queue.
+
+        ~\\
+        While priority queues are often implemented with heaps, they are conceptually distinct from heaps. A priority queue is an abstract concept like "a list" or "a map"; just as a list can be implemented with a linked list or an array, a priority queue can be implemented with a heap or a variety of other methods such as an unordered array."
+        \footnote{From Wikipedia, Priority queue, https://en.wikipedia.org/wiki/Priority\_queue}
+
+    \newpage
+    \section{Reassembling messages}
+
+    For this lab, we will just work on a small program using a ``Naive Priority Queue".
+    These are relatively inefficient, and just implemented with an array.
+    
+    For this program we will have an input file full of messages that have
+    been received out of order. When working with packets over a network,
+    packets may be received out of order and need to be reassembled.
+    We will use a priority queue to store the messages in the correct order.
+
+    Follow the instructions to implement two functions in the priority queue.
+
+    \subsection{About the Node}
+
+    For this Priority Queue, the Node looks like this:
+
+\begin{lstlisting}[style=code]
+template <typename T>
+struct Node
+{
+    T data;
+    int priority;
+};    
+\end{lstlisting}
+
+    The Node will keep track of the item's data and its priority.
+    Note that a lower priority \# will mean a higher priority item.
+
+
+    \subsection{GetIndexOfHighestPriority}
+
+    This function is responsible for returning the index of a Node with the highest priority.
+
+    Follow these steps:
+
+    \begin{enumerate}
+        \item   Create variables to keep track of the highest priority item...
+            \begin{enumerate}
+                \item   Create a new variable whose data type is \textit{int} named \texttt{minPriority}.
+                    Set it equal to the first Node's priority level: \texttt{m\_data[0].priority}.
+                \item   Create a new variable whose data type is \textit{int} named \texttt{minIndex}.
+                    Set it to 0.
+            \end{enumerate}
+
+            \item Create a for loop that iterates from index 1 to the \texttt{m\_itemCount} (exclusive),
+                incrementing by 1 each time. Within this loop...
+            \begin{enumerate}
+                \item   If the current item's priority, \texttt{m\_data[i].priority}, is less than the current \texttt{minPriority},
+                    then set the value of \texttt{minPriority} to this item's data, and \texttt{minIndex} to this index (\textit{i}).
+            \end{enumerate}
+    \end{enumerate}
+
+    \subsection{Push}
+
+    After the error check / exception throw if statement, add the following code...
+
+    \begin{enumerate}
+        \item   Create an integer variable named \texttt{insertAt}, and initialize it to
+            the \texttt{m\_itemCount}.
+        \item   Create a for-loop that starts at 0 and goes until \texttt{m\_itemCount} (exclusive),
+            incrementing by 1 each time. Within this loop...
+            \begin{enumerate}
+                \item   If the priority value passed in, \texttt{priority}, is smaller than the priority of the current item, \texttt{m\_data[i].priority}, then...
+
+                    \begin{enumerate}
+                        \item set \texttt{insertAt} to the index (\textit{i})
+                        \item call the \texttt{ShiftRight} function, passing in the index.
+                        \item Then, break out of the for loop statement.
+                    \end{enumerate}
+                    
+            \end{enumerate}
+
+        \item Outside of the for loop...
+        \item   Set the data at the \textit{insertAt} position (\texttt{m\_data[insertAt].data} to the \texttt{newData} passed in as a parameter.
+        \item   Set the priority at the \textit{insertAt} position (\texttt{m\_data[insertAt].priority} to the \texttt{priority} passed in as a parameter.
+        \item   Increment \texttt{m\_itemCount} by 1.
+    \end{enumerate}
+
+    \section{Example output}
+
+    Once you're finished, the output should look like this:
+
+\begin{lstlisting}[style=output]
+
+37 items in priority queue
+
+0. 	100	Deleted code is
+1. 	102	debugged code.
+2. 	106	- Jeff Sickel
+(AND SO ON...)
+
+Highest priority: Deleted code is
+\end{lstlisting}
+
+    
+        
+\end{document}
+
+
+
+
+
+
+
+
+

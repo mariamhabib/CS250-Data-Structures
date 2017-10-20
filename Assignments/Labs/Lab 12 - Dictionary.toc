@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1.1}Information}{1}
+\contentsline {paragraph}{ Topics: }{1}
+\contentsline {paragraph}{ Turn in: }{1}
+\contentsline {paragraph}{ Starter files: }{1}
+\contentsline {section}{\numberline {1.2}About: Dictionaries}{2}
+\contentsline {subsection}{\numberline {1.2.1}Key-value pairs}{2}
+\contentsline {subsection}{\numberline {1.2.2}Dictionary basics}{3}
+\contentsline {subsection}{\numberline {1.2.3}Hash functions}{3}
+\contentsline {subsubsection}{Simple Hash function}{4}
+\contentsline {subsection}{\numberline {1.2.4}Collisions}{5}
+\contentsline {subsubsection}{Linear probing}{6}
+\contentsline {subsubsection}{Quadratic probing}{6}
+\contentsline {subsubsection}{Double hashing}{6}
+\contentsline {subsubsection}{Clustering}{6}
+\contentsline {section}{\numberline {1.3}Lab specifications}{7}
+\contentsline {subsection}{\numberline {1.3.1}About the program}{7}

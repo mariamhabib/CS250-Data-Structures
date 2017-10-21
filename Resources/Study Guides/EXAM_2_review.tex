@@ -1,0 +1,104 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage[utf8]{inputenc}
+\title{}
+\author{Rachel Morris}
+\date{\today}
+
+\usepackage{rachwidgets}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{dirtree}
+\usepackage{boxedminipage}
+
+\newcommand{\laClass}{CS 210\ }
+\newcommand{\laSemester}{Fall 2017\ }
+
+\newcounter{question}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\laClass}
+\chead{\laSemester}
+\rhead{Exam 2 Review}
+\rfoot{\thepage\ of \pageref{LastPage}}
+\lfoot{\scriptsize By Rachel Morris, last updated \today}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+    \chapter*{Exam 2 Review}
+    
+    The exam has 12 questions over the following content. It will be given
+    in the testing center at JCCC over several days.
+
+    ~\\
+    You can bring a calculator in order to do modulus operations - non-graphing only!
+
+    ~\\
+    This exam does not have code-writing problems like the first exam.
+
+    \paragraph{Polymorphism}
+
+    \begin{enumerate}
+        \item   Use the lecture slides from http://edu.moosader.com/course/cs200/ for reference.
+        \item   What is Polymorphism? What is its purpose?
+        \item   How do you use Polymorphism in the code?
+        \item   How are pointers used in Polymorphism?
+        \item   How is Polymorphism related to a family of classes?
+        \item   How much functions be declared in the family to ensure that
+                    the correct function is called when using Polymorphism?
+    \end{enumerate}
+
+    \paragraph{Stacks and Queues}
+
+    Questions are similar to the Stack and Queue lab...
+
+    \begin{enumerate}
+        \item   What are the common add, access, and remove functions
+                    for Stacks and for Queues?
+        \item   What is ``FIFO'' and ``LIFO'', and which structures does each belong to?
+        \item   Given a list of items, what is the result after Pop() for a Stack and for a Queue?
+        \item   Draw a diagram of a Stack and a Queue after a series of Push/Pop calls.
+        \item   Given a list of items, how many Pop() commands are needed to access an item, for both a Stack and a Queue.
+    \end{enumerate}
+
+    \paragraph{Dictionaries}
+
+    \begin{enumerate}
+        \item   Be familiar with how to compute Modulus.
+        \item   For some key and some TABLE\_SIZE, be able to compute an index
+        \item   Be able to identify when a generated index creates a collision
+        \item   Be able to step through basic Linear Probing functionality (step forward by 1)
+        \item   Be able to step through basic Quadratic Probing functionality (step forward by $i^{2}$)
+        \item   Given a Hash and a Hash2 function, be able to calculate an index using Double Hashing.
+    \end{enumerate}
+
+    \paragraph{Algorithm Efficiency}
+
+    \begin{enumerate}
+        \item   Use http://bigocheatsheet.com/ for studying from.   \\
+                (A Dictionary is also known as a Hash Table)
+        \item   Know the average efficiency for...:
+        \begin{itemize}
+            \item   Adding an item to the end of an array
+            \item   Adding an item to the end of a linked list
+            \item   Adding an item to a dictionary
+            \item   Accessing an item at some arbitrary position in an array
+            \item   Accessing an item at some arbitrary position in a linked list
+            \item   Searching through an unsorted array for a value
+            \item   Searching through a linked list for a value
+        \end{itemize}
+    \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+\end{document}

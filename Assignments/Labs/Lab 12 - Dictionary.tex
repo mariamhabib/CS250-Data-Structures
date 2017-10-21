@@ -37,10 +37,7 @@
             \paragraph{ Topics: } Dictionary (aka Hash Table / Associative Array)
             \paragraph{ Turn in: } All source files (.cpp and .hpp).
             \paragraph{ Starter files: } Download on GitHub or D2L.
-         
-
-
-
+        
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
@@ -281,10 +278,342 @@ available index.
 
 \section{Lab specifications}
 
+\subsection{Your program should always build}
+
+\begin{error}{\ }
+Before you write any code... build the program.
+
+~\\
+After implementing one function... build the program.
+
+~\\
+It is much easier to debug your syntax and logic errors if the scope
+of what has changed is very small.
+\end{error}
+
 \subsection{About the program}
 
+For this program, a list of students and their student IDs are
+loaded in.
+They will be stored in a Dictionary/Hash Table, and you will need to
+implement the Insert, Hash, and collision functions.
 
+When you run the program, you will have the option of loading in
+a text file of users or generating them. You can use either method.
+
+\begin{lstlisting}[style=output]
+Choose how to create students.
+
+1. Load students from file
+2. Generate students
+>> 2
+100 students generated
+
+Choose the method of collision handling for the table.
+
+1. Store with Linear Probing
+2. Store with Quadratic Probing
+3. Store with Double Hashing
+4. Exit
+>> 1
+Collision method: 0
+
+Output table to: out_linear.txt
+
+0.   Student ID: 786 	 Student Name: izu
+1.   Student ID: 655 	 Student Name: oniwa
+(ETC.)
+\end{lstlisting}
+
+After you choose the collision method, it will display the results
+to the screen as well as to an output text file.
+
+\begin{center}
+    \begin{tabular}{l l l}
+        Linear probing & out\_linear.txt \\
+        Quadratic probing & out\_quadratic.txt \\
+        Double hashing & out\_double.txt    
+    \end{tabular}
+\end{center}
+
+%--------------------------------------------%
+
+\subsection{The StudentTable class}
+
+The class declaration for StudentTable is as follows:
+
+\begin{lstlisting}[style=code]
+class StudentTable
+{
+    public:
+    StudentTable();
+
+    void SetCollisionMethod( CollisionMethod cm );
+    void Insert( int studentId, const string& name );
+    void Output( const string& filename );
+
+    private:
+    int HashFunction( int key );
+
+    /* Linear probing */
+    // You can use my function prototype or write your own.
+    int LinearProbe( int key );
+
+    /* Quadratic probing */
+    // You can use my function prototype or write your own.
+    int QuadraticProbe( int key, int& addValue );
+
+    /* Double hashing */
+    // You can use my function prototype or write your own.
+    int HashFunction2( int key );
+
+    Student m_students[TABLE_SIZE];
+
+    CollisionMethod m_collisionMethod;
+};
+\end{lstlisting}
+
+Of particular note, there is
+
+\begin{center}
+    \texttt{
+        Student m\_students[TABLE\_SIZE];
+    }
+\end{center}
+
+which is where the data will be stored. This is the table. We will
+take some input key - the student ID - and convert it into a valid index.
+If the index generated is already taken by some other data, then we
+use our collision method to generate a new index until we find a free position.
+
+There is also
+
+\begin{center}
+    \texttt{
+        CollisionMethod m\_collisionMethod;
+    }
+\end{center}
+
+With the \texttt{CollisionMethod} type being declared in the StudentTable header file...
+
+\begin{center}
+    \texttt{
+        enum CollisionMethod \{ LINEAR, QUADRATIC, DOUBLE \};
+    }
+\end{center}
+
+In order to check which collision method to call within \texttt{StudentTable},
+you will check what the value of the \texttt{m\_collisionMethod} variable is
+set to like this...
+
+\begin{verbatim}
+    if ( m_collisionMethod == LINEAR )
+    {
+        // ... do stuff ...
+    }
+\end{verbatim}
+
+
+%--------------------------------------------%
+
+\subsection{StudentTable::Insert}
+
+\paragraph{Parameters:}
+
+\begin{itemize}
+    \item   studentId, an integer
+    \item   name, a const string reference
+\end{itemize}
+
+\paragraph{Return type:} void
+
+\paragraph{Functionality:}
+
+\begin{enumerate}
+    \item   Create a new local integer variable named \texttt{index}.
+    \item   Call the \texttt{HashFunction} function, passing in the
+        \texttt{studentId} as the key. Store the result of \texttt{HashFunction}
+        in the \texttt{index} variable.
+    \item   Access the element of \texttt{m\_students} at this index. Set...
+    \begin{enumerate}
+        \item   its \texttt{key} to the \texttt{studentId} parameter.
+        \item   its \texttt{value} to the \texttt{name} parameter.
+    \end{enumerate}
+\end{enumerate}
+
+%--------------------------------------------%
+\hrulefill
+
+\subsection{StudentTable::LinearProbe}
+
+\paragraph{Parameters:}
+
+\begin{itemize}
+    \item   key, an integer
+\end{itemize}
+
+\paragraph{Return type:} int, the index after a linear probe
+
+\paragraph{Functionality:}
+Return the value of the \texttt{key}, plus 1.
+
+%--------------------------------------------%
+\hrulefill
+
+\subsection{StudentTable::QuadraticProbe}
+
+\paragraph{Parameters:}
+
+\begin{itemize}
+    \item   key, an integer
+    \item   addValue, an integer reference
+\end{itemize}
+
+\paragraph{Return type:} int, the index after a quadratic probe
+
+\paragraph{Functionality:}
+Create a local integer variable named \texttt{quadratic}. Assign it
+the value of \texttt{addValue * addValue} (the addValue squared).
+
+Then, increment \texttt{addValue} by 1.
+
+Finally, return \texttt{key + quadratic}.
+
+%--------------------------------------------%
+\hrulefill
+
+\subsection{StudentTable::HashFunction2}
+
+\paragraph{Parameters:}
+
+\begin{itemize}
+    \item   key, an integer
+\end{itemize}
+
+\paragraph{Return type:} int, the index after this hash   
+
+\paragraph{Functionality:}
+
+Return the equation: \texttt{7 - ( key \% 7 )}
+
+
+
+
+%--------------------------------------------%
+\hrulefill
+
+\subsection{StudentTable::HashFunction}
+
+\paragraph{Parameters:}
+
+\begin{itemize}
+    \item   key, an integer
+\end{itemize}
+
+\paragraph{Return type:} int, the resulting index
+
+\paragraph{Functionality:}
+
+The HashFunction is the ``home base", that will make sure we have a valid
+index, and call the appropriate collision method until we have one.
+It will also keep track of the variables used for the Quadratic and Double Hash methods,
+if needed.
+
+For the \texttt{m\_students} array, everything has been initialized so that
+if it is not currently in use, that element's key is -1.
+
+\begin{enumerate}
+    \item   Create a new local integer variable named \texttt{index}.
+        Assign it the value of \texttt{key \% TABLE\_SIZE}.
+    \item   Create a new local integer variable named \texttt{originalIndex}.
+        Assign it the value of \texttt{index}.
+
+    \item   Create a new local integer variable named \texttt{quadraticAdd},
+        and initialize it to 1.
+    \item   Create a new local integer variable named \texttt{doubleHashAdd},
+        and initialize it to 0.
+
+    \item   Create a while loop. It will continue looping while the
+        \texttt{m\_students} element at position \texttt{index} has a
+        \texttt{key} that isn't -1. Within the loop...
+    \begin{enumerate}
+        \item   If the collision method is LINEAR...
+            \begin{enumerate}
+                \item   Call the \texttt{LinearProbe} function,
+                    passing in the current \texttt{index}. Store the
+                    result in the \texttt{index} variable.
+                \item   We need to make sure the index is within the array
+                    bounds, so you will also take the \texttt{index \% TABLE\_SIZE},
+                    and assign the result back into \texttt{index}.
+            \end{enumerate}
+            
+        \item   If the collision method is QUADRATIC...
+            \begin{enumerate}
+                \item   Call the \texttt{QuadraticProbe} function,
+                    passing in the \texttt{originalIndex} and the
+                    \texttt{quadraticAdd} variables. Store the result in the
+                    \texttt{index} variable.
+                \item   We need to make sure the index is within the array
+                    bounds, so you will also take the \texttt{index \% TABLE\_SIZE},
+                    and assign the result back into \texttt{index}.
+            \end{enumerate}
+            
         
+        \item   If the collision method is DOUBLE...
+            \begin{enumerate}
+                \item   Call the \texttt{HashFunction2} function, passing in
+                    the \texttt{originalIndex}. \textbf{Add} the result
+                    onto the \texttt{doubleHashAdd} variable.
+                \item   Set the \texttt{index} to
+                    \texttt{( originalIndex + doubleHashAdd ) \% TABLE\_SIZE}
+            \end{enumerate}
+            
+    \end{enumerate}
+
+    \item   After the while loop has finished, we have a valid index. Return the \texttt{index}.
+    
+\end{enumerate}
+
+\hrulefill
+
+\subsection{Example output}
+
+Once the program has been run, your output text files will look like this:
+
+\begin{lstlisting}[style=textfile]
+0.   Student ID: 786 	 Student Name: izu
+1.   Student ID: 655 	 Student Name: oniwa
+2.   Student ID: 391 	 Student Name: ecew
+3.   Student ID: 653 	 Student Name: otaf
+4.   Student ID: 1052 	 Student Name: ayekut
+5.   Student ID: 529 	 Student Name: iseno
+6.   Student ID: 397 	 Student Name: erum
+7.   
+8.   
+9.   Student ID: 795 	 Student Name: iguz
+10.  Student ID: 272 	 Student Name: arizabo
+11.  
+12.  
+13.  
+14.  Student ID: 145 	 Student Name: etavu
+15.  Student ID: 1063 	 Student Name: ezekali
+16.  Student ID: 540 	 Student Name: oqovi
+17.  Student ID: 669 	 Student Name: ejumu
+18.  Student ID: 669 	 Student Name: oyu
+19.  Student ID: 150 	 Student Name: arukaki
+20.  
+21.  Student ID: 414 	 Student Name: ebox
+(AND SO ON...)
+\end{lstlisting}
+
+Make sure to investigate all three output files, out\_linear.txt,
+out\_quadratic.txt, and out\_double.txt, and look at how much
+clustering occurs, or otherwise how spaced out the elements are.
+
+
+
+
+
 \end{document}
 
 

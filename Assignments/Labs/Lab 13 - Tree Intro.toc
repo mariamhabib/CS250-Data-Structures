@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1.1}Information}{1}
+\contentsline {paragraph}{ Topics: }{1}
+\contentsline {paragraph}{ Turn in: }{1}
+\contentsline {paragraph}{ Starter files: }{1}
+\contentsline {paragraph}{ Penalties: }{1}
+\contentsline {section}{\numberline {1.2}About: Trees}{3}
+\contentsline {section}{\numberline {1.3}About: Recursion}{3}
+\contentsline {section}{\numberline {1.4}Lab specifications}{4}
+\contentsline {subsection}{\numberline {1.4.1}File}{4}
+\contentsline {subsection}{\numberline {1.4.2}Filesystem}{4}
+\contentsline {subsection}{\numberline {1.4.3}Functions}{4}
+\contentsline {subsubsection}{ File* Find( const string\& filename, File* ptrLookAt ) }{4}
+\contentsline {paragraph}{Terminating cases:}{5}
+\contentsline {paragraph}{Recursive cases:}{5}
+\contentsline {subsubsection}{ File* GetFile( list path, const string\& filename, File* current ) }{5}
+\contentsline {paragraph}{Terminating cases:}{5}
+\contentsline {paragraph}{Recursive cases:}{5}

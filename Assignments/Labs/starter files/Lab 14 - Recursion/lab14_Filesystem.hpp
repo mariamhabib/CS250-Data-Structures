@@ -46,12 +46,42 @@ public:
     }
 
 private:
-    // ** Implement these **
+    //! Find a file in the filesystem tree.
+    /**
+        Find a file with the filename given.
+        Inspect the File passed in as the ptrLookAt pointer.
+        If this isn't the file we want, inspect each of this File's children.
+
+        @param<const string&> filename  The name of the file we're searching for
+        @param<File*> ptrLookAt         The file we're currently inspecting
+        @return <File*>
+
+        Example call: File* find2 = fs.Find( "file-E.txt" );
+            The public Find function calls
+            return Find( filename, m_ptrRoot )
+    */
     File* Find( const string& filename, File* ptrLookAt )
     {
         return nullptr;
     }
 
+    //! Traverse the file path to find a specific file
+    /**
+        Given the path string passed in, search each directory
+        for the next item in the path string and select that file node
+        to traverse next until we get to the end of the path list.
+        Once we're at the end of the path list, search for the filename passed in.
+        Return this file once found, or nullptr if it isn't found.
+
+        @param<list<string>> path           Path of the file ("/ROOT/folder-1/folder-E/")
+        @param<const string&> filename      Name of the file ("file-E.txt")
+        @param<File*> current               The current file node we're on
+
+        Example call:
+        File* getFile1 = fs.GetFile( { "ROOT", "folder-0", "folder-D" }, "file-D.txt" );
+            The public GetFile function calls
+            return GetFile( path, filename, m_ptrRoot );
+    */
     File* GetFile( list<string> path, const string& filename, File* current )
     {
         return nullptr;

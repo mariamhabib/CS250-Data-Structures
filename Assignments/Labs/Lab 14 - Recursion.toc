@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1.1}Information}{1}
+\contentsline {paragraph}{ Topics: }{1}
+\contentsline {paragraph}{ Turn in: }{1}
+\contentsline {paragraph}{ Starter files: }{1}
+\contentsline {paragraph}{ Penalties: }{1}
+\contentsline {section}{\numberline {1.2}About: Recursion}{2}
+\contentsline {subsection}{\numberline {1.2.1}Simple Examples of Recursion}{2}
+\contentsline {subsection}{\numberline {1.2.2}Filesystem}{4}
+\contentsline {section}{\numberline {1.3}Lab specifications}{6}
+\contentsline {subsection}{\numberline {1.3.1}File}{6}
+\contentsline {subsection}{\numberline {1.3.2}Filesystem}{7}
+\contentsline {subsection}{\numberline {1.3.3}Functions to implement}{8}
+\contentsline {subsubsection}{ File* Find( const string\& filename, File* ptrLookAt ) }{8}
+\contentsline {paragraph}{Terminating cases:}{8}
+\contentsline {paragraph}{Recursive cases:}{8}
+\contentsline {paragraph}{Step-by-step:}{8}
+\contentsline {subsubsection}{ File* GetFile( list path, const string\& filename, File* current ) }{9}
+\contentsline {paragraph}{Terminating cases:}{9}
+\contentsline {paragraph}{Recursive cases:}{9}
+\contentsline {paragraph}{Step-by-step:}{10}

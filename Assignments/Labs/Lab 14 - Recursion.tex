@@ -38,16 +38,6 @@
             \paragraph{ Turn in: } All source files (.cpp and .hpp).
             \paragraph{ Starter files: } Download on GitHub or D2L.
 
-\renewcommand*\DTstylecomment{\rmfamily\color{green}\textsc}
-
-\begin{framed}
-\dirtree{%
-.1 Lab 13 - Dictionary/.
-.2 lab13\_main{.}cpp.
-.2 lab13\_Filesystem{.}hpp.
-.2 StringUtil{.}hpp.
-}
-\end{framed}
 
             \paragraph{ Penalties: }
                 The following items will negatively impact your score.
@@ -72,18 +62,191 @@
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
 
-
-% ----------------------------------------------------------------------
-% ----------------------------------------------------------------------
-% ----------------------------------------------------------------------
-
 \tableofcontents
-
-
-\section{About: Trees}
 
 \section{About: Recursion}
 
+Recursion is about breaking up a problem into steps that are the same,
+and following these steps over and over until some \textbf{terminating case}
+is triggered, causing the recursion to stop and begin back-tracking through
+all the levels.
+
+Sometimes, you can solve the same sorts of problems with a simple loop,
+but other times, recursion is the most effective way to solve a problem.
+For example, we will work with a mock ``file system" in this lab,
+and traverse through the filesystem using recursion.
+
+\subsection{Simple Examples of Recursion}
+
+Let's start off small. Say we want to calculate $n!$, $n$-factorial.
+
+With a simple loop, we could calculate it like this:
+
+\begin{lstlisting}[style=code]
+int CalculateFactorial_Loop( int value )
+{
+    int result = value;
+    for ( int i = value-1; i > 0; i-- )
+    {
+        result *= i;
+    }
+    return result;
+}
+\end{lstlisting}
+
+But if we are breaking it down into a recursive problem, we think about it like this...
+
+~\\
+\textbf{Recursing down:}
+~\\
+
+\begin{tabular}{p{6cm} p{6cm}}
+    
+    What is $n!$ & It is $(n-1)! \times n$.
+    \\ 
+    OK, but what is $(n-1)!$ & It is $(n-2)! \times (n-1)$.
+    \\
+    OK, but what is $(n-2)!$ & It is $(n-3)! \times (n-2)$.
+    \\
+    ...
+    \\
+    OK, but what is $4!$ & It is $3! \times 4$.
+    \\
+    OK, but what is $3!$ & It is $2! \times 3$.
+    \\
+    OK, but what is $2!$ & It is $1! \times 2$.
+    \\
+    OK, but what is $1!$ & It is 1.
+\end{tabular}
+
+    ~\\
+    Oh, I have a number now! I can solve the rest!!
+    ~\\~\\
+    \textbf{Returning up:}
+    ~\\
+
+\begin{tabular}{p{6cm} p{6cm}}
+    What is $2!$ & It is $1! \times 2$, which is $1 \times 2 = 2$.
+    \\
+    What is $3!$ & It is $2! \times 3$, which is $2 \times 3 = 6$.
+    \\
+    What is $4!$ & It is $3! \times 4$, which is $6 \times 4 = 24$.
+    \\
+    What is $5!$ & It is $4! \times 5$, which is $24 \times 5 = 120$.
+\end{tabular}
+
+~\\
+And so on, until we reach $n$, and return finally, once and for all.
+
+~\\
+Code-wise, this function would look like this:
+
+\begin{lstlisting}[style=code]
+int CalculateFactorial( int n )
+{
+    if ( n == 1 )
+    {
+        // Terminating case
+        return 1;
+    }
+
+    return n * CalculateFactorial( n-1 );
+}
+\end{lstlisting}
+
+\newpage
+{}
+Similarly, a function to figure out the $n$th term of a Fibonacci sequence looks like this:
+
+\begin{lstlisting}[style=code]
+int Fib( int n )
+{
+    if ( n == 0 )
+    {
+        return 0;
+    }
+
+    if ( n == 1 )
+    {
+        return 1;
+    }
+
+    return Fib( n-1 ) + Fib( n-2 );
+}
+\end{lstlisting}
+
+(Where the Fibonacci sequence is 1 1 2 3 5 8 13, ...)
+
+\subsection{Filesystem}
+
+In this lab, we will be traversing a filesystem. Let's think about Windows
+for a minute, and how a path might look like this:
+
+\begin{center}
+    \texttt{C:$\backslash$Users$\backslash$Bob$\backslash$Games$\backslash$PickinSticks.exe}
+\end{center}
+
+At each level of the directory, there may be 0 or more folders, as well as 0 or more files.
+Let's say we wanted to display all items in the Games folder, as well as any subfolders.
+How could we do this?
+
+\newpage
+
+Let's say we have a directory like this:
+
+\begin{itemize}
+    \item   Games$\backslash$
+    \begin{itemize}
+        \item   Jazz$\backslash$
+        \begin{itemize}
+            \item   Jazz.exe
+            \item   Jazz.cfg
+        \end{itemize}
+        
+        \item   Keen$\backslash$
+        \begin{itemize}
+            \item   Keen1
+            \begin{itemize}
+                \item   Keen1.exe
+            \end{itemize}
+            \item   Keen4
+            \begin{itemize}
+                \item   Keen4.exe
+            \end{itemize}
+            \item   Register.bat
+        \end{itemize}
+        
+        \item   PickinSticks.exe
+    \end{itemize}
+\end{itemize}
+
+And we are coming up with a function to list out all files and folders in the Games directory...
+
+\begin{enumerate}
+    \item   Item $1$ in Games: ``Jazz". This is a folder; display its contents.
+    \begin{enumerate}
+        \item   Item $1$ in Jazz: ``Jazz.exe". This is not a folder.
+        \item   Item $2$ in Jazz: ``Jazz.cfg". This is not a folder.
+    \end{enumerate}
+    
+    \item   Item $2$ in Games, display its name. ``Keen". This is a folder; display its contents.
+    \begin{enumerate}
+        \item   Item $1$ in Keen: ``Keen1". This is a folder; display its contents.
+        \begin{enumerate}
+            \item   Item $1$ in Keen1: ``Keen1.exe". This is not a folder.
+        \end{enumerate}
+        
+        \item   Item $2$ in Keen: ``Keen4". This is a folder; display its contents.
+        \begin{enumerate}
+            \item   Item $1$ in Keen4: ``Keen4.exe". This is not a folder.
+        \end{enumerate}
+
+        \item   Item $3$ in Keen: ``Register.bat"
+    \end{enumerate}
+    
+    \item   Item $3$ in Games: ``PickinSticks.exe". This is not a folder.
+    \item   Done.
+\end{enumerate}
 
 \newpage
 
@@ -97,6 +260,20 @@ A Filesystem and File class are already created, and you will add functionality.
 
 \subsection{File}
 
+\begin{lstlisting}[style=code]
+struct File
+{
+	File();
+	~File();
+
+	vector<File*> childrenPtrs;
+	File* ptrParent;
+
+	bool isDirectory; // traversible if true
+	string name;
+};
+\end{lstlisting}
+
 You do not have to update anything with File. The File has a constructor
 and a destructor - the destructor is responsible for deleting any of its children.
 A File also has a vector of pointers to child Files, and a pointer to its
@@ -104,7 +281,45 @@ parent File.
 It also has a boolean to describe if it is a directory or not, and it has
 a name string.
 
+\newpage
+
 \subsection{Filesystem}
+
+\begin{lstlisting}[style=code]
+class Filesystem
+{
+public:
+    // public interfaces
+    File* Find( const string& filename );
+    
+    File* GetFile( const list<string>& path,
+        const string& filename );
+
+private:
+    /* You implement these */
+    File* Find( const string& filename,
+        File* ptrLookAt );
+        
+    File* GetFile( list<string> path,
+        const string& filename, File* current );
+
+public:
+    // Constructor / destructor
+	Filesystem();
+	~Filesystem();
+    
+	string GetPath( File* ptrFile );
+	int GetSize();  // Get size
+
+private:
+    // Create data for our lab
+	void CreateFilesystem();
+
+private:
+	File* m_ptrRoot;
+	int m_nodeCount;
+};
+\end{lstlisting}
 
 The file system has two member variables: \texttt{m\_ptrRoot}, a File pointer,
 and \texttt{m\_nodeCount}. Similarly to a linked list, we only need to store
@@ -122,19 +337,22 @@ Both of these functions are overloaded; the ones under
 Within these functions, they call the recursive version, passing in the
 \texttt{m\_ptrRoot} as the starting point.
 
-\subsection{Functions}
+
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+% ----------------------------------------------------------------------
+
+
+\subsection{Functions to implement}
 
 \subsubsection{ File* Find( const string\& filename, File* ptrLookAt ) }
 
 For this function, we look for a File object, whose name is filename.
 If that File is found, we return it as File*. If it is not found, we return nullptr.
-
 Conceptually, first the root is searched. If the filename isn't found at
 the root, then we look at each of the root's children: We do the same search in each SUBTREE of that child.
-
 Therefore, you will need to iterate over the list of childrenPtrs of the
 ptrLookAt current File, and run the same routine on each of those children.
-
 If one of the calls covering the child subtree found the file we're looking
 for, continue passing that found File* ``upward".
 
@@ -146,17 +364,47 @@ We will either be returning nullptr if we've searched all the children of a node
 
 We will need to recurse (call Find with new arguments) for all child Files of the ptrLookAt current File. If the child call gives us something that isn't a nullptr, we return that upward.
 
+\paragraph{Step-by-step:}
+
+\begin{enumerate}
+    \item   Terminating cases:
+    \begin{enumerate}
+        \item   If the name of the File being pointed to by ptrLookAt matches the filename parameter, then return ptrLookAt.
+        \item   If the size of the childrenPtrs is 0 \\
+        \small (\texttt{ptrLookAt->childrenPtrs.size() == 0}), \\
+        \normalsize
+        then return nullptr.
+    \end{enumerate}
+
+    \item   Recursion: If we haven't hit an endpoint (found the file, or no file exists), then investigate the next set of children.
+    \item   Iterate through all the children with a for-loop like this: \\
+        \footnotesize
+        \texttt{for ( unsigned int i = 0; i < ptrLookAt->childrenPtrs.size(); i++ )} \\ \\
+        \normalsize
+        Within the for loop...
+        \begin{enumerate}
+            \item   Create a File pointer.
+            \item   Call the Find function again, assigning its return value to your File pointer.
+                    Pass in the same \texttt{filename} parameter, but pass in
+                    the current child as the next node to check.
+                \\
+                \texttt{File* ret = Find( filename, ptrLookAt->childrenPtrs[i] );}
+            \item   If the return value is NOT nullptr, then return the result.
+            \item   Otherwise, continue looping.
+        \end{enumerate}
+    \item   Once the end of the for loop is reached, it means that the file was not found.
+            In this case, return nullptr.
+\end{enumerate}
+
+\hrulefill
 
 \subsubsection{ File* GetFile( list path, const string\& filename, File* current ) }
 
 For this function, a path is passed in. At that path, the filename passed
 in is expected to be found. We start at \texttt{m\_ptrRoot} on the first call.
-
 If the ROOT is the only item in the path, this is the directory we search,
 and look at all the children to try to find a file with the same name as filename.
-
 However, if we are not at the current path, we need to call GetFile again with a new path and a new current pointer. We will need to move forward one directory (as given by the first item, or front() item, of our path), and call the function again.
-
 You will need to utilize \texttt{path.pop\_front()} and
 \texttt{path.size()} and \texttt{path.front()} in this function.
 
@@ -164,19 +412,60 @@ You will need to utilize \texttt{path.pop\_front()} and
 \paragraph{Terminating cases:}
 
 If there is nothing left in our path list, then we are at the directory that our file should be in.
-
 Check all the children of the current File. If any of the files match the filename, return that child. Otherwise, return nullptr - because we are in the correct directory, but that file is not found.
 
 \paragraph{Recursive cases:}
 
 If we are not at the correct path (i.e., path.size() is not 0), then we need to go to the next folder.
-
 Search through the current File's children, looking for a folder that matches the path.front()'s name. Once you've found the directory, call GetFile again with the updated arguments.
-
 (Again, if we're at a directory and can't find a subfolder with the name given in the path, return nullptr because the search failed.)
 
+\paragraph{Step-by-step:}
+
+\begin{enumerate}
+    \item   First, pop the front-most item from the \texttt{path}; this is the root folder.
 
 
+    \item[]
+    \item[] TERMINATING CASE - DONE TRAVERSING THE FOLDERS:
+    \item   If the path size \texttt{if ( path.size() == 0 )} is now 0,
+            that means we've reached the end of the folder list, and now we look for the file.
+            
+    \begin{enumerate}
+        \item   Loop through all the child pointers of the \texttt{current} File pointer... \\
+            \footnotesize 
+                \texttt{for ( unsigned int i = 0; i < current->childrenPtrs.size(); i++ )}
+            \normalsize 
+                
+        \begin{enumerate}
+            \item   If the name of the current child pointer is equal to the \texttt{filename}, \\
+                \texttt{if ( current->childrenPtrs[i]->name == filename )} \\
+                then return this child. \\ \texttt{return current->childrenPtrs[i];}
+        \end{enumerate}
+        \item   If the end of the loop has been reached, that means we couldn't find the file at this path.
+                Therefore, return nullptr.
+    \end{enumerate}
+    
+    \item[]
+    \item[] RECURSION - TRAVERSING THE FOLDERS:
+    \item   Loop through all the child pointers to look for the next folder to traverse... \\
+            \footnotesize 
+            \texttt{for ( unsigned int i = 0; i < current->childrenPtrs.size(); i++ )}
+            \normalsize 
+    \begin{enumerate}
+        \item   Check if this item's name matches the next folder in the path. \\
+                \texttt{if ( current->childrenPtrs[i]->name == path.front() )}
+            \begin{enumerate}
+                \item   Call the GetFile function recursively, with the path, the filename,
+                        and the current pointer's children. Return this function call. \\
+                        \footnotesize 
+                        \texttt{return GetFile( path, filename, current->childrenPtrs[i] );}
+                        \normalsize 
+            \end{enumerate}
+    \end{enumerate}
+
+    \item   At the end of the for loop, if no next folder to traverse is found, then return nullptr.
+\end{enumerate}
 
 
 

@@ -18,3 +18,4 @@
 \contentsline {paragraph}{Terminating cases:}{9}
 \contentsline {paragraph}{Recursive cases:}{9}
 \contentsline {paragraph}{Step-by-step:}{10}
+\contentsline {section}{\numberline {1.4}Example output}{11}

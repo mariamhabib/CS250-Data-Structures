@@ -467,7 +467,44 @@ Search through the current File's children, looking for a folder that matches th
     \item   At the end of the for loop, if no next folder to traverse is found, then return nullptr.
 \end{enumerate}
 
+    \section{Example output}
 
+    \begin{lstlisting}[style=output]
+ / ROOT
+ / ROOT / file-0.txt
+ / ROOT / file-1.txt
+ / ROOT / file-2.txt
+ / ROOT / folder-0
+ / ROOT / folder-1
+ / ROOT / folder-0 / folder-D
+ / ROOT / file-0.txt / file-A.txt
+ / ROOT / file-1.txt / file-B.txt
+ / ROOT / file-2.txt / file-C.txt
+ / ROOT / folder-0 / folder-D / file-D.txt
+ / ROOT / folder-1 / folder-E
+ / ROOT / file-0.txt / file-A.txt
+ / ROOT / file-1.txt / file-B.txt
+ / ROOT / file-2.txt / file-C.txt
+ / ROOT / folder-1 / folder-E / file-E.txt
+Total nodes: 16
+
+Find file1.txt ...
+File: file-1.txt, Parent: ROOT, 
+	 Path:  / ROOT / file-1.txt
+
+Find file2.txt ...
+File: file-E.txt, Parent: folder-E, 
+	 Path:  / ROOT / folder-1 / folder-E / file-E.txt
+
+Get file ROOT / folder-0 / folder-D / file-D.txt ...
+Front: ROOT
+GetFile, 2, file-D.txt, ROOT
+Front: folder-0
+GetFile, 1, file-D.txt, folder-0
+Front: folder-D
+GetFile, 0, file-D.txt, folder-D
+file-D.txt
+    \end{lstlisting}
 
 
 

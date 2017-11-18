@@ -180,17 +180,17 @@ int Tester::Test_Insert()
         if ( bst.m_ptrRoot->ptrLeft == nullptr )
         {
             segfaultRisk = true;
-            Set_ActualOutput  ( "left child", "nullptr" );
+            Set_ActualOutput  ( "left child", string( "nullptr" ) );
             TestFail();
         }
         else if ( bst.m_ptrRoot->ptrLeft->key != "A" )
         {
-            Set_ActualOutput  ( "left child", bst.m_ptrRoot->ptrLeft->key );
+            Set_ActualOutput  ( "left child", string( bst.m_ptrRoot->ptrLeft->key ) );
             TestFail();
         }
         else
         {
-            Set_ActualOutput  ( "left child", bst.m_ptrRoot->ptrLeft->key );
+            Set_ActualOutput  ( "left child", string( bst.m_ptrRoot->ptrLeft->key ) );
             TestPass();
         }
     }  FinishTest();
@@ -211,17 +211,17 @@ int Tester::Test_Insert()
         Set_ExpectedOutput( "right child", string( "C" ) );
         if ( bst.m_ptrRoot->ptrRight == nullptr )
         {
-            Set_ActualOutput  ( "right child", "nullptr" );
+            Set_ActualOutput  ( "right child", string( "nullptr" ) );
             TestFail();
         }
         else if ( bst.m_ptrRoot->ptrRight->key != "C" )
         {
-            Set_ActualOutput  ( "right child", bst.m_ptrRoot->ptrRight->key );
+            Set_ActualOutput  ( "right child", string( bst.m_ptrRoot->ptrRight->key ) );
             TestFail();
         }
         else
         {
-            Set_ActualOutput  ( "right child", bst.m_ptrRoot->ptrRight->key );
+            Set_ActualOutput  ( "right child", string( bst.m_ptrRoot->ptrRight->key ) );
             TestPass();
         }
     }  FinishTest();
@@ -302,12 +302,12 @@ int Tester::Test_Insert()
         if ( bst.m_ptrRoot->ptrLeft != nullptr )
         {
             segfaultRisk = true;
-            Set_ActualOutput    ( "Root's left child", "NOT NULL" );
+            Set_ActualOutput    ( "Root's left child", string( "NOT NULL" ) );
             TestFail();
         }
         else
         {
-            Set_ActualOutput    ( "Root's left child", "nullptr" );
+            Set_ActualOutput    ( "Root's left child", string( "nullptr" ) );
             TestPass();
         }
     }  FinishTest();
@@ -329,17 +329,17 @@ int Tester::Test_Insert()
         if ( bst.m_ptrRoot->ptrRight == nullptr )
         {
             segfaultRisk = true;
-            Set_ActualOutput  ( "right child", "nullptr" );
+            Set_ActualOutput  ( "right child", string( "nullptr" ) );
             TestFail();
         }
         else if ( bst.m_ptrRoot->ptrRight->key != "B" )
         {
-            Set_ActualOutput  ( "right child", bst.m_ptrRoot->ptrRight->key );
+            Set_ActualOutput  ( "right child", string( bst.m_ptrRoot->ptrRight->key ) );
             TestFail();
         }
         else
         {
-            Set_ActualOutput  ( "right child", bst.m_ptrRoot->ptrRight->key );
+            Set_ActualOutput  ( "right child", string( bst.m_ptrRoot->ptrRight->key ) );
             TestPass();
         }
     }  FinishTest();
@@ -361,12 +361,12 @@ int Tester::Test_Insert()
         Set_ExpectedOutput  ( "B's left child", string( "nullptr" ) );
         if ( bst.m_ptrRoot->ptrRight->ptrLeft != nullptr )
         {
-            Set_ActualOutput    ( "B's left child", "NOT NULL" );
+            Set_ActualOutput    ( "B's left child", string( "NOT NULL" ) );
             TestFail();
         }
         else
         {
-            Set_ActualOutput    ( "B's left child", "nullptr" );
+            Set_ActualOutput    ( "B's left child", string( "nullptr" ) );
             TestPass();
         }
     }  FinishTest();
@@ -381,17 +381,17 @@ int Tester::Test_Insert()
         if ( bst.m_ptrRoot->ptrRight->ptrRight == nullptr )
         {
             segfaultRisk = true;
-            Set_ActualOutput  ( "B's right child", "nullptr" );
+            Set_ActualOutput  ( "B's right child", string( "nullptr" ) );
             TestFail();
         }
         else if ( bst.m_ptrRoot->ptrRight->ptrRight->key != "C" )
         {
-            Set_ActualOutput  ( "B's right child", bst.m_ptrRoot->ptrRight->ptrRight->key );
+            Set_ActualOutput  ( "B's right child", string( bst.m_ptrRoot->ptrRight->ptrRight->key ) );
             TestFail();
         }
         else
         {
-            Set_ActualOutput  ( "B's right child", bst.m_ptrRoot->ptrRight->ptrRight->key );
+            Set_ActualOutput  ( "B's right child", string( bst.m_ptrRoot->ptrRight->ptrRight->key ) );
             TestPass();
         }
     }  FinishTest();
@@ -430,7 +430,7 @@ int Tester::Test_Insert()
 
         oss << bst.m_ptrRoot;
         Set_ExpectedOutput  ( "Root item address", string( "not null" ) );
-        Set_ActualOutput    ( "Root item address", oss.str() );
+        Set_ActualOutput    ( "Root item address", string( oss.str() ) );
         if ( bst.m_ptrRoot == nullptr )
         {
             segfaultRisk = true;
@@ -456,7 +456,7 @@ int Tester::Test_Insert()
         bst.Insert( "A", "abc" );
 
         Set_ExpectedOutput( "m_ptrRoot->key", string( "C" ) );
-        Set_ActualOutput  ( "m_ptrRoot->key", bst.m_ptrRoot->key );
+        Set_ActualOutput  ( "m_ptrRoot->key", string( bst.m_ptrRoot->key ) );
         if ( bst.m_ptrRoot->key != "C" )
         {
             TestFail();
@@ -497,17 +497,17 @@ int Tester::Test_Insert()
         if ( bst.m_ptrRoot->ptrLeft == nullptr )
         {
             segfaultRisk = true;
-            Set_ActualOutput  ( "left child", "nullptr" );
+            Set_ActualOutput  ( "left child", string( "nullptr" ) );
             TestFail();
         }
         else if ( bst.m_ptrRoot->ptrLeft->key != "B" )
         {
-            Set_ActualOutput  ( "left child", bst.m_ptrRoot->ptrLeft->key );
+            Set_ActualOutput  ( "left child", string( bst.m_ptrRoot->ptrLeft->key ) );
             TestFail();
         }
         else
         {
-            Set_ActualOutput  ( "right child", bst.m_ptrRoot->ptrLeft->key );
+            Set_ActualOutput  ( "right child", string( bst.m_ptrRoot->ptrLeft->key ) );
             TestPass();
         }
     }  FinishTest();
@@ -549,17 +549,17 @@ int Tester::Test_Insert()
         if ( bst.m_ptrRoot->ptrLeft->ptrLeft == nullptr )
         {
             segfaultRisk = true;
-            Set_ActualOutput  ( "B's right child", "nullptr" );
+            Set_ActualOutput  ( "B's right child", string( "nullptr" ) );
             TestFail();
         }
         else if ( bst.m_ptrRoot->ptrLeft->ptrLeft->key != "A" )
         {
-            Set_ActualOutput  ( "B's right child", bst.m_ptrRoot->ptrLeft->ptrLeft->key );
+            Set_ActualOutput  ( "B's right child", string( bst.m_ptrRoot->ptrLeft->ptrLeft->key ) );
             TestFail();
         }
         else
         {
-            Set_ActualOutput  ( "B's right child", bst.m_ptrRoot->ptrLeft->ptrLeft->key );
+            Set_ActualOutput  ( "B's right child", string( bst.m_ptrRoot->ptrLeft->ptrLeft->key ) );
             TestPass();
         }
     }  FinishTest();
@@ -951,8 +951,8 @@ int Tester::Test_FindNode()
         bst.Insert( "d", "" );
         Node<string, string>* found = bst.FindNode( "d" );
 
-        Set_ExpectedOutput( "found item key", found->key );
-        Set_ActualOutput  ( "found item key", found->key );
+        Set_ExpectedOutput( "found item key", string( found->key ) );
+        Set_ActualOutput  ( "found item key", string( found->key ) );
         if ( found->key != "d" )
         {
             TestFail();
@@ -1050,7 +1050,7 @@ int Tester::Test_FindParentOfNode()
         Node<string,string>* strParent = bst.FindParentOfNode( "d" );
 
         Set_ExpectedOutput( "parent", string( "c" ) );
-        Set_ActualOutput  ( "parent", strParent->key );
+        Set_ActualOutput  ( "parent", string( strParent->key ) );
         if ( strParent->key != "c" )
         {
             TestFail();
@@ -1107,8 +1107,8 @@ int Tester::Test_GetInOrder()
         string expectedOut = "A B C D E F G H I ";
         string actualOut = bst.GetInOrder();
 
-        Set_ExpectedOutput( "output", expectedOut  );
-        Set_ActualOutput  ( "output", actualOut );
+        Set_ExpectedOutput( "output", string( expectedOut )  );
+        Set_ActualOutput  ( "output", string( actualOut ) );
         if ( actualOut != expectedOut )
         {
             TestFail();
@@ -1143,8 +1143,8 @@ int Tester::Test_GetPreOrder()
         string expectedOut = "F B A D C E G I H ";
         string actualOut = bst.GetPreOrder();
 
-        Set_ExpectedOutput( "output", expectedOut  );
-        Set_ActualOutput  ( "output", actualOut );
+        Set_ExpectedOutput( "output", string( expectedOut )  );
+        Set_ActualOutput  ( "output", string( actualOut ) );
         if ( actualOut != expectedOut )
         {
             TestFail();
@@ -1179,8 +1179,8 @@ int Tester::Test_GetPostOrder()
         string expectedOut = "A C E D B H I G F ";
         string actualOut = bst.GetPostOrder();
 
-        Set_ExpectedOutput( "output", expectedOut  );
-        Set_ActualOutput  ( "output", actualOut );
+        Set_ExpectedOutput( "output", string( expectedOut ) );
+        Set_ActualOutput  ( "output", string( actualOut ) );
         if ( actualOut != expectedOut )
         {
             TestFail();

@@ -995,9 +995,109 @@ Node<char> nodeD;
 
     \newpage
 
-    \subsection{Full, complete, and balanced trees}
+    \subsection{Thinking in subtrees}
 
+    WIP
 
+    \newpage
+    
+    \subsection{Balanced trees}
+
+    The same set of data can be arranged in a binary search tree
+    in different ways, depending on the order that items are added to it.
+
+    For example, lets add the numbers 1 through 7 to a binary tree
+    in different orders.
+
+    \begin{figure}[h]
+        \begin{center}
+            \begin{tikzpicture}
+                \draw (0,3) -- (-2,2);
+                \draw (-2,2) -- (-3,1);
+                \draw (-2,2) -- (-1,1);
+                \draw (0,3) -- (2,2);
+                \draw (2,2) -- (1,1);
+                \draw (2,2) -- (3,1);
+                
+                \filldraw[fill=white] (0, 3) circle (10pt) node {4};
+                \filldraw[fill=white] (-2,2) circle (10pt) node {2};
+                \filldraw[fill=white] (-3,1) circle (10pt) node {1};
+                \filldraw[fill=white] (-1,1) circle (10pt) node {3};
+                \filldraw[fill=white] (2,2) circle (10pt) node {6};
+                \filldraw[fill=white] (1,1) circle (10pt) node {5};
+                \filldraw[fill=white] (3,1) circle (10pt) node {7};
+            \end{tikzpicture}
+        \end{center}
+        \caption{Add numbers: 4, 2, 1, 3, 6, 5, 7}
+    \end{figure}
+
+    Adding numbers like this gives us a nice binary search tree -
+    it is not heavily skewed to one side or the other. This tree
+    is actually \textbf{balanced}.
+
+    \begin{quote}
+        ``a binary tree is \textbf{height balanced}, or simply \textbf{balanced},
+        if the height of any node's right subtree differs from the height of the node's
+        left subtree by no more than 1.''
+        
+        \footnotesize
+        From Data Abstraction \& Problem Solving with C++: Walls and Mirrors 7th ed, by Carrano and Henry, page 452
+    \end{quote}
+
+    However, if we add these numbers in an order such that each new number
+    is greater than the last one, everything gets added to one side of the tree:
+
+    \begin{figure}[h]
+        \begin{center}
+            \begin{tikzpicture}
+                \draw (0,6) -- (1,5.5) -- (2,5) -- (3,4.5) -- (4,4) -- (5,3.5) -- (6,3);
+                
+                \filldraw[fill=white] (0, 6) circle (7pt) node {1};
+                \filldraw[fill=white] (1, 5.5) circle (7pt) node {2};
+                \filldraw[fill=white] (2, 5) circle (7pt) node {3};
+                \filldraw[fill=white] (3, 4.5) circle (7pt) node {4};
+                \filldraw[fill=white] (4, 4) circle (7pt) node {5};
+                \filldraw[fill=white] (5, 3.5) circle (7pt) node {6};
+                \filldraw[fill=white] (6, 3) circle (7pt) node {7};
+            \end{tikzpicture}
+        \end{center}
+        \caption{Add numbers: 1, 2, 3, 4, 5, 6, 7}
+    \end{figure}
+
+    This binary tree is no more efficient to search from a sorted linear array,
+    because everything is off to one side.
+
+    \subsection{Full trees}
+
+    \begin{quote}
+        ``In a \textbf{full binary tree} of height $h$, all nodes that are at a level less than $h$
+        have two children each.''
+        
+        \footnotesize
+        From Data Abstraction \& Problem Solving with C++: Walls and Mirrors 7th ed, by Carrano and Henry, page 451
+    \end{quote}
+    
+    
+    \subsection{Complete trees}
+    
+    \begin{quote}
+        ``A \textbf{complete binary tree} of height $h$ is a binary tree that is full down to level $h-1$, with level $h$
+        filled in from left to right. [...]
+
+        More formally, a binary tree $T$ of height $h$ is complete if
+
+        \begin{enumerate}
+            \item   All nodes at level $h-2$ and above have two children each, and
+            \item   When a node at level $h-1$ has children, all nodes to its left at the same level have two children each, and
+            \item   When a node at level $h-1$ has one child, it is a left child
+        \end{enumerate}
+
+        [...] Note that a full binary tree is complete.''
+        
+        \footnotesize
+        From Data Abstraction \& Problem Solving with C++: Walls and Mirrors 7th ed, by Carrano and Henry, page 451
+    \end{quote}
+    
 \end{document}
 
 

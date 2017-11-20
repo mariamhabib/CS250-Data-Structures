@@ -12,23 +12,23 @@ Johnson County Community College
 
 | Week  | Days   | Topics  |  Lectures          | Programs  | Quizzes | 
 | ------| ------ | -------  | ----------------- | ---------- | -------- |
-| 1     | Jan 16 | 5.1      | [Video](#), [Slides](Lectures/wip5-1.pdf) | [Lab](Labs/Labs/wip5-1.pdf)  | homework  |
-|       | Jan 18 | 5.2      | [Video](#), [Slides](Lectures/wip5-2.pdf) | [Lab](Labs/Labs/wip5-2.pdf)  | homework |
-| 2     | Jan 23 | 5.3      | [Video](#), [Slides](Lectures/wip5-3.pdf) | [Lab](Labs/Labs/wip5-3.pdf)  | homework |
-|       | Jan 25 | 5.4      | [Video](#), [Slides](Lectures/wip5-4.pdf) | [Lab](Labs/Labs/wip5-4.pdf)  | homework |
-| 3     | Jan 30 | 5.5      | [Video](#), [Slides](Lectures/wip5-5.pdf) | [Lab](Labs/Labs/wip5-5.pdf)  | homework|
-|       | Feb 1  | 5.6      | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
-| 4     | Feb 6  | Project  |  |  |  |
-|       | Feb 8  |          |  |  |  |
-| 5     | Feb 13 | Exam Review |  |  |  |
-|       | Feb 15 | Exam     |  |  |  |
+| 1     | Jan 16 | What are data structures, the STL      | [Video](#), [Slides](Lectures/wip5-1.pdf) | [Lab](Labs/Labs/wip5-1.pdf)  | homework  |
+|       | Jan 18 | The Standard Template Library      | [Video](#), [Slides](Lectures/wip5-2.pdf) | [Lab](Labs/Labs/wip5-2.pdf)  | homework |
+| 2     | Jan 23 | Exception handling      | [Video](#), [Slides](Lectures/wip5-3.pdf) | [Lab](Labs/Labs/wip5-3.pdf)  | homework |
+|       | Jan 25 | Wrapping a static array      | [Video](#), [Slides](Lectures/wip5-4.pdf) | [Lab](Labs/Labs/wip5-4.pdf)  | homework |
+| 3     | Jan 30 | Unit testing      | [Video](#), [Slides](Lectures/wip5-5.pdf) | [Lab](Labs/Labs/wip5-5.pdf)  | homework |
+|       | Feb 1  | Wrapping a dynamic array      | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
+| 4     | Feb 6  | Linked Lists  |  |  |  |
+|       | Feb 8  | Linked Lists         |  |  |  |
+| 5     | Feb 13 | Algorithm efficiency, searching algorithms |  |  |  |
+|       | Feb 15 | Sorting algorithms     |  |  |  |
+| 6     | Feb 20 | Exam review      | [Video](#), [Slides](Lectures/wip6-1.pdf) | [Lab](Labs/Labs/wip6-1.pdf)  | homework |
+|       | Feb 22 | Exam      | [Video](#), [Slides](Lectures/wip6-2.pdf) | [Lab](Labs/Labs/wip6-2.pdf)  | homework |
 
 ## Part 2: Stacks, queues, and dictionaries
 
 | Week  | Days   | Topics  |  Lectures          | Programs  | Quizzes | 
 | ------| ------ | -------  | ----------------- | ---------- | -------- |
-| 6     | Feb 20 | 6.1      | [Video](#), [Slides](Lectures/wip6-1.pdf) | [Lab](Labs/Labs/wip6-1.pdf)  | homework |
-|       | Feb 22 | 6.2      | [Video](#), [Slides](Lectures/wip6-2.pdf) | [Lab](Labs/Labs/wip6-2.pdf)  | homework |
 | 7     | Feb 27 | 6.3      | [Video](#), [Slides](Lectures/wip6-3.pdf) | [Lab](Labs/Labs/wip6-3.pdf)  | homework |
 |       | Mar 1  | 6.4      | [Video](#), [Slides](Lectures/wip6-4.pdf) | [Lab](Labs/Labs/wip6-4.pdf)  | homework |
 | 8     | Mar 6  | 6.5      | [Video](#), [Slides](Lectures/wip6-5.pdf) | [Lab](Labs/Labs/wip6-5.pdf)  | homework |
@@ -57,17 +57,6 @@ Johnson County Community College
 |       | May 1  | Final Review     |  |  |  |
 | 17    |        | Final Exam | | |
 
-
-
-## Note to self: To Do list
-
-* Make exercises more concise; have students write in their notebooks in class rather than printing out the assignment sheet.
-* Write 5.4, 5.5
-* Review all exercises, rephrase as needed.
-* Write lecture slides for all topics
-* Make lecture videos for all topics
-* Write projects for chapter 5, 6, 7
-* Write extra credit for chapter 5, 6, 7
 
 ---------------------------------------------------------------------------------
 

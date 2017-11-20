@@ -403,8 +403,8 @@
                     (2,3)  circle (7pt) node {G};
             \end{tikzpicture}
             & &
-            \begin{tikzpicture}
-                \draw[red] (0, 5) -- (-1,4);
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
+                \draw[red,arrow] (0, 5) -- (-0.8,4.2);
                 \draw (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
@@ -435,10 +435,10 @@
             & & \footnotesize 
             Output: \texttt{D B} 
             \\ \\ \\
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw[red] (0, 5) -- (-1,4);
                 \draw (0, 5) -- (1,4);
-                \draw[red] (-1,4) -- (-2,3);
+                \draw[arrow,red] (-1,4) -- (-1.8,3.2);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
                 \draw (1,4) -- (0.5,3);
@@ -459,13 +459,15 @@
                     (2,3)  circle (7pt) node {G};
             \end{tikzpicture}
             & &
-            \begin{tikzpicture}
-                \draw[red] (0, 5) -- (-1,4);
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
+                \draw[red,arrow] (0, 5) -- (-1,4);
                 \draw (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
                 \draw (1,4) -- (0.5,3);
+                
+                \draw[arrow,gray] (-2,3) to[bend left] (-1.3,4);
             
                 \draw[fill=white] 
                     (0,5)  circle (7pt) node {D};
@@ -491,11 +493,11 @@
             & & \footnotesize 
             Output: \texttt{D B A}
             \\ \\ \\
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw[red] (0, 5) -- (-1,4);
                 \draw (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
-                \draw[red] (-1,4) -- (-0.5,3);
+                \draw[red,arrow] (-1,4) -- (-0.6,3.2);
                 \draw (1,4) -- (2,3);
                 \draw (1,4) -- (0.5,3);
             
@@ -515,13 +517,14 @@
                     (2,3)  circle (7pt) node {G};
             \end{tikzpicture}
             & &
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw[red] (0, 5) -- (-1,4);
                 \draw (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
                 \draw (1,4) -- (0.5,3);
+                \draw[arrow,gray] (-0.5,3) to[bend right] (-0.7,4);
             
                 \draw[fill=white] 
                     (0,5)  circle (7pt) node {D};
@@ -547,13 +550,14 @@
             & & \footnotesize 
             Output: \texttt{D B A C}
             \\ \\ \\
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw (0, 5) -- (-1,4);
                 \draw (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
                 \draw (1,4) -- (0.5,3);
+                \draw[arrow,gray] (-1,4) to[bend left] (-0.3,5);
             
                 \draw[white,fill=red] 
                     (0,5)  circle (7pt) node {\textbf{D}};
@@ -571,9 +575,9 @@
                     (2,3)  circle (7pt) node {G};
             \end{tikzpicture}
             & &
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw (0, 5) -- (-1,4);
-                \draw[red] (0, 5) -- (1,4);
+                \draw[red,arrow] (0, 5) -- (0.8,4.2);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
@@ -610,13 +614,13 @@
 
         
         \begin{tabular}{p{5cm} p{1cm} p{5cm}}
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw (0, 5) -- (-1,4);
                 \draw[red] (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
-                \draw[red] (1,4) -- (0.5,3);
+                \draw[red,arrow] (1,4) -- (0.6,3.2);
             
                 \draw[fill=white] 
                     (0,5)  circle (7pt) node {D};
@@ -634,13 +638,14 @@
                     (2,3)  circle (7pt) node {G};
             \end{tikzpicture}
             & &
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw (0, 5) -- (-1,4);
                 \draw[red] (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
                 \draw (1,4) -- (0.5,3);
+                \draw[arrow,gray] (0.5,3) to[bend left] (0.7,4);
             
                 \draw[fill=white] 
                     (0,5)  circle (7pt) node {D};
@@ -666,12 +671,12 @@
             & &  \footnotesize 
             Output: \texttt{D B A C F E}
             \\ \\ \\
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw (0, 5) -- (-1,4);
                 \draw[red] (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
-                \draw[red] (1,4) -- (2,3);
+                \draw[red,arrow] (1,4) -- (1.8,3.2);
                 \draw (1,4) -- (0.5,3);
             
                 \draw[fill=white] 
@@ -690,13 +695,14 @@
                     (2,3)  circle (7pt) node {\textbf{G}};
             \end{tikzpicture}
             & &
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw (0, 5) -- (-1,4);
                 \draw[red] (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
                 \draw (1,4) -- (0.5,3);
+                \draw[arrow,gray] (2,3) to[bend right] (1.3,4);
             
                 \draw[fill=white] 
                     (0,5)  circle (7pt) node {D};
@@ -722,13 +728,14 @@
             & &  \footnotesize 
             Output: \texttt{D B A C F E G}
             \\ \\ \\
-            \begin{tikzpicture}
+            \begin{tikzpicture}[arrow/.style = {thick,-stealth}]
                 \draw (0, 5) -- (-1,4);
                 \draw (0, 5) -- (1,4);
                 \draw (-1,4) -- (-2,3);
                 \draw (-1,4) -- (-0.5,3);
                 \draw (1,4) -- (2,3);
                 \draw (1,4) -- (0.5,3);
+                \draw[arrow,gray] (1,4) to[bend right] (0.3,5);
             
                 \draw[white,fill=red] 
                     (0,5)  circle (7pt) node {\textbf{D}};
@@ -986,6 +993,9 @@ Node<char> nodeD;
         \end{question}
 
 
+    \newpage
+
+    \subsection{Full, complete, and balanced trees}
 
 
 \end{document}

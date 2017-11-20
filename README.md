@@ -18,40 +18,40 @@ Johnson County Community College
 |       | Jan 25 | Wrapping a static array      | [Video](#), [Slides](Lectures/wip5-4.pdf) | [Lab](Labs/Labs/wip5-4.pdf)  | homework |
 | 3     | Jan 30 | Unit testing      | [Video](#), [Slides](Lectures/wip5-5.pdf) | [Lab](Labs/Labs/wip5-5.pdf)  | homework |
 |       | Feb 1  | Wrapping a dynamic array      | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
-| 4     | Feb 6  | Linked Lists  |  |  |  |
-|       | Feb 8  | Linked Lists         |  |  |  |
-| 5     | Feb 13 | Algorithm efficiency, searching algorithms |  |  |  |
-|       | Feb 15 | Sorting algorithms     |  |  |  |
-| 6     | Feb 20 | Exam review      | [Video](#), [Slides](Lectures/wip6-1.pdf) | [Lab](Labs/Labs/wip6-1.pdf)  | homework |
-|       | Feb 22 | Exam      | [Video](#), [Slides](Lectures/wip6-2.pdf) | [Lab](Labs/Labs/wip6-2.pdf)  | homework |
+| 4     | Feb 6  | Linked Lists  | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
+|       | Feb 8  | Linked Lists  | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
+| 5     | Feb 13 | Algorithm efficiency, searching algorithms | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
+|       | Feb 15 | Sorting algorithms    | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
+| 6     | Feb 20 | Exam review     
+|       | Feb 22 | Exam      
 
 ## Part 2: Stacks, queues, and dictionaries
 
 | Week  | Days   | Topics  |  Lectures          | Programs  | Quizzes | 
 | ------| ------ | -------  | ----------------- | ---------- | -------- |
-| 7     | Feb 27 | 6.3      | [Video](#), [Slides](Lectures/wip6-3.pdf) | [Lab](Labs/Labs/wip6-3.pdf)  | homework |
-|       | Mar 1  | 6.4      | [Video](#), [Slides](Lectures/wip6-4.pdf) | [Lab](Labs/Labs/wip6-4.pdf)  | homework |
-| 8     | Mar 6  | 6.5      | [Video](#), [Slides](Lectures/wip6-5.pdf) | [Lab](Labs/Labs/wip6-5.pdf)  | homework |
-|       | Mar 8  | 6.6      | [Video](#), [Slides](Lectures/wip6-6.pdf) | [Lab](Labs/Labs/wip6-6.pdf)  | homework |
-| 9     | Mar 13 | Project      |  |  |  |
-|       | Mar 15 |              |  |  |  |
-| 10    | Mar 20 | Exam Review      |  |  |  |
-|       | Mar 22 | Exam     |  |  |  |
+| 7     | Feb 27 | Polymorphism      | [Video](#), [Slides](Lectures/wip6-3.pdf) | [Lab](Labs/Labs/wip6-3.pdf)  | homework |
+|       | Mar 1  | Templates      | [Video](#), [Slides](Lectures/wip6-4.pdf) | [Lab](Labs/Labs/wip6-4.pdf)  | homework |
+| 8     | Mar 6  | Queues      | [Video](#), [Slides](Lectures/wip6-5.pdf) | [Lab](Labs/Labs/wip6-5.pdf)  | homework |
+|       | Mar 8  | Stacks      | [Video](#), [Slides](Lectures/wip6-6.pdf) | [Lab](Labs/Labs/wip6-6.pdf)  | homework |
+| 9     | Mar 13 | SPRING BREAK      |  |  |  |
+|       | Mar 15 | SPRING BREAK             |  |  |  |
+| 10    | Mar 20 | Dictionaries      | [Video](#), [Slides](Lectures/wip7-1.pdf) | [Lab](Labs/Labs/wip7-1.pdf)  | homework |
+|       | Mar 22 | Other lists     | [Video](#), [Slides](Lectures/wip7-2.pdf) | [Lab](Labs/Labs/wip7-2.pdf)  | homework |
+| 11    | Jan 27 | Exam review      
+|       | Mar 29 | Exam      
 
 
 ## Part 3: Trees, binary search trees, heaps, and balanced search trees
 
 | Week  | Days   | Topics  |  Lectures          | Programs  | Quizzes | 
 | ------| ------ | -------  | ----------------- | ---------- | -------- |
-| 11    | Jan 27 | 7.1      | [Video](#), [Slides](Lectures/wip7-1.pdf) | [Lab](Labs/Labs/wip7-1.pdf)  | homework |
-|       | Mar 29 | 7.2      | [Video](#), [Slides](Lectures/wip7-2.pdf) | [Lab](Labs/Labs/wip7-2.pdf)  | homework |
-| 12    | Apr 30 | 7.3      | [Video](#), [Slides](Lectures/wip7-3.pdf) | [Lab](Labs/Labs/wip7-3.pdf)  | homework |
-|       | Apr 3  | 7.4      | [Video](#), [Slides](Lectures/wip7-4.pdf) | [Lab](Labs/Labs/wip7-4.pdf)  | homework |
-| 13    | Apr 5  | 7.5      | [Video](#), [Slides](Lectures/wip7-5.pdf) | [Lab](Labs/Labs/wip7-5.pdf)  | homework |
-|       | Apr 10 | 7.6      | [Video](#), [Slides](Lectures/wip7-6.pdf) | [Lab](Labs/Labs/wip7-6.pdf)  | homework |
-| 14    | Apr 12 | 7.7      | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
-|       | Apr 17 | Project      |  |  |  |
-| 15    | Apr 19 |              |  |  |  |
+| 12    | Apr 30 | Trees      | [Video](#), [Slides](Lectures/wip7-3.pdf) | [Lab](Labs/Labs/wip7-3.pdf)  | homework |
+|       | Apr 3  | Trees      | [Video](#), [Slides](Lectures/wip7-4.pdf) | [Lab](Labs/Labs/wip7-4.pdf)  | homework |
+| 13    | Apr 5  | Binary Search Trees      | [Video](#), [Slides](Lectures/wip7-5.pdf) | [Lab](Labs/Labs/wip7-5.pdf)  | homework |
+|       | Apr 10 | Binary Search Trees      | [Video](#), [Slides](Lectures/wip7-6.pdf) | [Lab](Labs/Labs/wip7-6.pdf)  | homework |
+| 14    | Apr 12 | Intro to Heaps      | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
+|       | Apr 17 | Intro to Balanced Search Trees  | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
+| 15    | Apr 19 | Wrap up             |  |  |  |
 |       | Apr 24 | Exam Review      |  |  |  |
 | 16    | Apr 26 | Exam     |  |  |  |
 |       | May 1  | Final Review     |  |  |  |

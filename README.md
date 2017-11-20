@@ -45,17 +45,17 @@ Johnson County Community College
 
 | Week  | Days   | Topics  |  Lectures          | Programs  | Quizzes | 
 | ------| ------ | -------  | ----------------- | ---------- | -------- |
-| 12    | Apr 30 | Trees      | [Video](#), [Slides](Lectures/wip7-3.pdf) | [Lab](Labs/Labs/wip7-3.pdf)  | homework |
-|       | Apr 3  | Trees      | [Video](#), [Slides](Lectures/wip7-4.pdf) | [Lab](Labs/Labs/wip7-4.pdf)  | homework |
-| 13    | Apr 5  | Binary Search Trees      | [Video](#), [Slides](Lectures/wip7-5.pdf) | [Lab](Labs/Labs/wip7-5.pdf)  | homework |
-|       | Apr 10 | Binary Search Trees      | [Video](#), [Slides](Lectures/wip7-6.pdf) | [Lab](Labs/Labs/wip7-6.pdf)  | homework |
-| 14    | Apr 12 | Intro to Heaps      | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
-|       | Apr 17 | Intro to Balanced Search Trees  | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
-| 15    | Apr 19 | Wrap up             |  |  |  |
-|       | Apr 24 | Exam Review      |  |  |  |
-| 16    | Apr 26 | Exam     |  |  |  |
-|       | May 1  | Final Review     |  |  |  |
-| 17    |        | Final Exam | | |
+| 12      | Apr 3  | Trees      | [Video](#), [Slides](Lectures/wip7-4.pdf) | [Lab](Labs/Labs/wip7-4.pdf)  | homework |
+|     | Apr 5  | Binary Search Trees      | [Video](#), [Slides](Lectures/wip7-5.pdf) | [Lab](Labs/Labs/wip7-5.pdf)  | homework |
+| 13      | Apr 10 | Binary Search Trees      | [Video](#), [Slides](Lectures/wip7-6.pdf) | [Lab](Labs/Labs/wip7-6.pdf)  | homework |
+|     | Apr 12 | Intro to Heaps      | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
+| 14      | Apr 17 | Intro to Balanced Search Trees  | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
+|     | Apr 19 | Wrap up             |  |  |  |
+| 15      | Apr 24 | Exam Review      |  |  |  |
+|     | Apr 26 | Exam     |  |  |  |
+| 16      | May 1  | Final Review     |  |  |  |
+|       | May 3  | Final Review     |  |  |  |
+| 17    | May 12-17 | FINALS WEEK | | |
 
 
 ---------------------------------------------------------------------------------

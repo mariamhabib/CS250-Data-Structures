@@ -28,13 +28,13 @@
 \contentsline {paragraph}{Linux:}{10}
 \contentsline {paragraph}{Mac:}{10}
 \contentsline {subsection}{\numberline {1.3.4}Cloning the repository}{11}
-\contentsline {section}{\numberline {1.4}Moving your files over}{13}
-\contentsline {section}{\numberline {1.5}Add, Commit, Pull, Push}{13}
-\contentsline {subsection}{\numberline {1.5.1}Add files}{13}
-\contentsline {subsection}{\numberline {1.5.2}Commit files}{14}
-\contentsline {subsection}{\numberline {1.5.3}Pull and Push files}{15}
-\contentsline {section}{\numberline {1.6}Viewing on the web interface}{16}
-\contentsline {subsection}{\numberline {1.6.1}Commit history (FYI)}{16}
-\contentsline {subsection}{\numberline {1.6.2}Wiki (FYI)}{18}
-\contentsline {subsection}{\numberline {1.6.3}Issues (FYI)}{18}
-\contentsline {subsection}{\numberline {1.6.4}Pages (FYI)}{19}
+\contentsline {section}{\numberline {1.4}Moving your files over}{12}
+\contentsline {section}{\numberline {1.5}Add, Commit, Pull, Push}{12}
+\contentsline {subsection}{\numberline {1.5.1}Add files}{12}
+\contentsline {subsection}{\numberline {1.5.2}Commit files}{13}
+\contentsline {subsection}{\numberline {1.5.3}Pull and Push files}{14}
+\contentsline {section}{\numberline {1.6}Viewing on the web interface}{15}
+\contentsline {subsection}{\numberline {1.6.1}Commit history (FYI)}{15}
+\contentsline {subsection}{\numberline {1.6.2}Wiki (FYI)}{17}
+\contentsline {subsection}{\numberline {1.6.3}Issues (FYI)}{17}
+\contentsline {subsection}{\numberline {1.6.4}Pages (FYI)}{18}

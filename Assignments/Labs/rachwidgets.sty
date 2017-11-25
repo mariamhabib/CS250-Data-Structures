@@ -11,12 +11,8 @@
 \usepackage{wrapfig}
 \usepackage{framed}
 \usepackage{tcolorbox}
-\usepackage{subcaption}
-\usepackage{wasysym}
-\usepackage{tikz} % draw stuff
+\usepackage{dirtree}
 \usepackage{lipsum} % for dummy text only
-\usepackage{circuitikz} % draw circuits
-\usepackage{colortbl} % cell bg colors
 
 \definecolor{commentz}{rgb}{0,0.02,0.6}
 \definecolor{keywordz}{rgb}{0.69,0.18, 0.36}
@@ -33,28 +29,6 @@
 \definecolor{error}{rgb}{1.0, 0.9, 0.9}
 \definecolor{hint}{rgb}{0.9, 1.0, 0.9}
 
-% Conditional: Set this to TRUE if compiling a solution key,
-% or FALSE if compiling a worksheet for students.
-
-\newtoggle{answerkey}
-\toggletrue{answerkey}
-%\togglefalse{answerkey}
-
-%\iftoggle{answerkey}{ \begin{answer} ANSWER \end{answer} }{ { ~\\ \raisebox{0pt}[4cm][0pt]{  } } }
-%\iftoggle{answerkey}{ \begin{answer} ANSWER \end{answer} }{}
-%\newcommand\vspace[1][1cm]{ ~\\ \raisebox{0pt}[#1][0pt]{  } }
-
-\newcommand\venndiagram{ \begin{tikzpicture}
-                \draw (0,0) -- (4,0) -- (4,4) -- (0,4) -- (0,0) node[anchor=south west] {U};
-                \draw (1.5, 2.5) circle (1cm) node[anchor=south east] {A};
-                \draw (2.5, 2.5) circle (1cm) node[anchor=south west] {B};
-                \draw (2, 1.5) circle (1cm) node[below] {C};
-            \end{tikzpicture} }
-
-% SHOWS ANSWERS IN RED, CHANGE TO WHITE FOR EXAM
-\newenvironment{answer}[0] { \color{red} } { \color{black} }
-
-
 % Side wrap: %
 % \begin{wrapfigure}{r}{0.4\textwidth} \begin{mdframed}[backgroundcolor=intro]
 % \end{mdframed} \end{wrapfigure}
@@ -68,71 +42,23 @@
 % Write example text file output %
 % \begin{lstlisting}[style=textfile]
 
-% TAB
-\newcommand\tab[1][1cm]{\hspace*{#1}}
-\newcommand\smtab[1][0.5cm]{\hspace*{#1}}
-\newcommand\ttab[1][0.1cm]{\hspace*{#1}}
+% Intro %
+% \begin{mdframed}[backgroundcolor=intro] 
 
-\newcommand\notonkey[2] {\iftoggle{answerkey}{ #2 }{ #1 }}
+% Hint %
+% \begin{mdframed}[backgroundcolor=hint] 
 
-% Intro box %
+% Error %
+% \begin{mdframed}[backgroundcolor=error]
+
 \newenvironment{intro}[1]{  \begin{mdframed}[backgroundcolor=intro]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
 
-\newenvironment{introNOHEAD}[1]{  \begin{mdframed}[backgroundcolor=intro] } { \end{mdframed} }
-
-% Hint box %
 \newenvironment{hint}[1]{   \begin{mdframed}[backgroundcolor=hint]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
 
-% Error box %
 \newenvironment{error}[1]{  \begin{mdframed}[backgroundcolor=error]\noindent \textbf{ #1 } \\ } { \end{mdframed} }
 
-% Solution text %
-\newcommand\solution[2] {\iftoggle{answerkey}{\begin{answer}#1\end{answer}}{#2}}
-% \solution{SOLUTION}{ nevermind }
+\newcommand\tab[1][1cm]{\hspace*{#1}}
 
-\newenvironment{answerbox}[0]{ \begin{mdframed}\noindent } { \end{mdframed} }
-
-% EXAM QUESTION FORMAT
-\newenvironment{examquestion}[4] {\textbf{\footnotesize{#4\%}} Question #1: #2 (#3) \hfill \grader \\ ~ \\ }{ }
-
-% Weighted grading scale
-\newcommand\grader[0] { {\small \smtab \Square \ttab 0 \Square \ttab 1 \Square \ttab 2 \Square \ttab 3 \Square \ttab 4} }
-
-% Example
-%\begin{examquestion}{1}{Closed formula}{1.2}{5}
-%   For then given sequence, find the \textbf{closed formula}.
-%   \footnote{
-%       Closed formula format: $ a_{n} = m \cdot n + b $
-%   }
-%
-%   4, 6, 8, 10, 12
-%
-%   \begin{answer}
-%       \framebox{ $ a_{n} = 2n + 2 $ } \par{}
-%   \end{answer}
-%\end{question}
-
-
-% SIMPLE QUESTION FORMAT
-\newenvironment{question}[2] {\paragraph{Question #1} \hfill \fitb / #2 ~\\}{}
-
-\newenvironment{questionNOGRADE}[1] {\paragraph{Question #1} ~\\}{}
-
-% ANSWERSHEET
-\newenvironment{answersheetquestion}[3] {\textbf{\footnotesize{#3\%}} Question #1: #2 \hfill \grader ~\\ }{ }
-
-
-% Example
-%\begin{question}{1}{2}
-%    Do a thing
-%
-%    \begin{answer}
-%        \framebox{ $ a_{n} = 2n + 2 $ } \par{}
-%    \end{answer}
-%\end{question}
-
-% Fill in the blank region
-\newcommand\fitb[1][1cm]{ $\rule{#1}{0.15mm}$ }
 
 % Code example frame %
 \lstdefinestyle{code}{
@@ -140,7 +66,7 @@
     showspaces=false,
     showstringspaces=false,
     tabsize=4,
-    basicstyle=\ttfamily\small\color{textz},
+    basicstyle=\ttfamily\small\color{textz}, 
     commentstyle=\ttfamily\color{commentz},
     keywordstyle=\ttfamily\color{keywordz},
     backgroundcolor=\color{backgroundz},
@@ -158,7 +84,7 @@
     showspaces=false,
     showstringspaces=false,
     tabsize=4,
-    basicstyle=\ttfamily\small\color{textz},
+    basicstyle=\ttfamily\small\color{textz}, 
     commentstyle=\ttfamily\color{commentz},
     keywordstyle=\ttfamily\color{keywordz},
     backgroundcolor=\color{backgroundz},
@@ -175,7 +101,7 @@
     showspaces=false,
     showstringspaces=false,
     tabsize=4,
-    basicstyle=\ttfamily\scriptsize\color{previewfg},
+    basicstyle=\ttfamily\scriptsize\color{previewfg}, 
     backgroundcolor=\color{previewbg},
     breakatwhitespace=false,
     frame=single,
@@ -189,27 +115,10 @@
     showspaces=false,
     showstringspaces=false,
     tabsize=4,
-    basicstyle=\ttfamily\footnotesize\color{textfg},
+    basicstyle=\ttfamily\footnotesize\color{textfg}, 
     backgroundcolor=\color{textbg},
     breakatwhitespace=false,
     frame=single,
     keepspaces=true,
     breaklines=true,
     }
-
-% two columns side-by-side %
-%\begin{figure}[h]
-%    \centering
-%    \begin{subfigure}{.5\textwidth}
-%        \centering
-        %\includegraphics[width=.4\linewidth]{image1}
-%        asdfasdf
-%    \end{subfigure}%
-%    \begin{subfigure}{.5\textwidth}
-%        \centering
-        % \includegraphics[width=.4\linewidth]{image1}
-%        qwerty
-%    \end{subfigure}
-    %\caption{A figure with two subfigures}
-    %\label{fig:test}
-%\end{figure}

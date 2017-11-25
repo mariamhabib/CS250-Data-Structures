@@ -34,4 +34,7 @@
 \contentsline {subsection}{\numberline {1.5.2}Commit files}{14}
 \contentsline {subsection}{\numberline {1.5.3}Pull and Push files}{15}
 \contentsline {section}{\numberline {1.6}Viewing on the web interface}{16}
-\contentsline {subsection}{\numberline {1.6.1}View history}{16}
+\contentsline {subsection}{\numberline {1.6.1}Commit history (FYI)}{16}
+\contentsline {subsection}{\numberline {1.6.2}Wiki (FYI)}{18}
+\contentsline {subsection}{\numberline {1.6.3}Issues (FYI)}{18}
+\contentsline {subsection}{\numberline {1.6.4}Pages (FYI)}{19}

@@ -35,13 +35,13 @@ Johnson County Community College
 | 12    | Apr 3  | C15, C16 | Trees
 |       | Apr 5  | I6 | Iterators
 | 13    | Apr 10 | C15, C16 | Trees
-|       | Apr 12 | C17 | Heaps
-| 14    | Apr 17 | C18 | Dictionaries
-|       | Apr 19 | | Dictionaries
-| 15    | Apr 24 | C19 | Balanced Search Trees
-|       | Apr 26 | C19 | Balanced Search Trees
-| 16    | May 1  | 
-|       | May 3  | Final Review     |  |  |  |
+|       | Apr 12 | | Trees
+| 14    | Apr 17 | C17 | Heaps
+|       | Apr 19 | | Heaps
+| 15    | Apr 24 | C18 | Dictionaries
+|       | Apr 26 | | Dictionaries
+| 16    | May 1  | C19 | Balanced Search Trees
+|       | May 3  | | Balanced Search Trees, Final Review     |  |  |  |
 | 17    | May 12-17 | FINALS WEEK | | |
 
 

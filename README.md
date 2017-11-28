@@ -8,53 +8,40 @@ Johnson County Community College
 
 # Week-by-week
 
-## Part 1: Introduction to data structures, and linked lists
-
-| Week  | Days   | Topics  |  Lectures          | Programs  | Quizzes | 
-| ------| ------ | -------  | ----------------- | ---------- | -------- |
-| 1     | Jan 16 | What are data structures, the STL      | [Video](#), [Slides](Lectures/wip5-1.pdf) | [Lab](Labs/Labs/wip5-1.pdf)  | homework  |
-|       | Jan 18 | The Standard Template Library      | [Video](#), [Slides](Lectures/wip5-2.pdf) | [Lab](Labs/Labs/wip5-2.pdf)  | homework |
-| 2     | Jan 23 | Exception handling      | [Video](#), [Slides](Lectures/wip5-3.pdf) | [Lab](Labs/Labs/wip5-3.pdf)  | homework |
-|       | Jan 25 | Wrapping a static array      | [Video](#), [Slides](Lectures/wip5-4.pdf) | [Lab](Labs/Labs/wip5-4.pdf)  | homework |
-| 3     | Jan 30 | Unit testing      | [Video](#), [Slides](Lectures/wip5-5.pdf) | [Lab](Labs/Labs/wip5-5.pdf)  | homework |
-|       | Feb 1  | Wrapping a dynamic array      | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
-| 4     | Feb 6  | Linked Lists  | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
-|       | Feb 8  | Linked Lists  | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
-| 5     | Feb 13 | Algorithm efficiency, searching algorithms | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
-|       | Feb 15 | Sorting algorithms    | [Video](#), [Slides](Lectures/wip5-6.pdf) | [Lab](Labs/Labs/wip5-6.pdf)  | homework |
-| 6     | Feb 20 | Exam review     
-|       | Feb 22 | Exam      
-
-## Part 2: Stacks, queues, and dictionaries
-
-| Week  | Days   | Topics  |  Lectures          | Programs  | Quizzes | 
-| ------| ------ | -------  | ----------------- | ---------- | -------- |
-| 7     | Feb 27 | Polymorphism      | [Video](#), [Slides](Lectures/wip6-3.pdf) | [Lab](Labs/Labs/wip6-3.pdf)  | homework |
-|       | Mar 1  | Templates      | [Video](#), [Slides](Lectures/wip6-4.pdf) | [Lab](Labs/Labs/wip6-4.pdf)  | homework |
-| 8     | Mar 6  | Queues      | [Video](#), [Slides](Lectures/wip6-5.pdf) | [Lab](Labs/Labs/wip6-5.pdf)  | homework |
-|       | Mar 8  | Stacks      | [Video](#), [Slides](Lectures/wip6-6.pdf) | [Lab](Labs/Labs/wip6-6.pdf)  | homework |
-| 9     | Mar 13 | SPRING BREAK      |  |  |  |
-|       | Mar 15 | SPRING BREAK             |  |  |  |
-| 10    | Mar 20 | Dictionaries      | [Video](#), [Slides](Lectures/wip7-1.pdf) | [Lab](Labs/Labs/wip7-1.pdf)  | homework |
-|       | Mar 22 | Other lists     | [Video](#), [Slides](Lectures/wip7-2.pdf) | [Lab](Labs/Labs/wip7-2.pdf)  | homework |
-| 11    | Jan 27 | Exam review      
-|       | Mar 29 | Exam      
-
-
-## Part 3: Trees, binary search trees, heaps, and balanced search trees
-
-| Week  | Days   | Topics  |  Lectures          | Programs  | Quizzes | 
-| ------| ------ | -------  | ----------------- | ---------- | -------- |
-| 12      | Apr 3  | Trees      | [Video](#), [Slides](Lectures/wip7-4.pdf) | [Lab](Labs/Labs/wip7-4.pdf)  | homework |
-|     | Apr 5  | Binary Search Trees      | [Video](#), [Slides](Lectures/wip7-5.pdf) | [Lab](Labs/Labs/wip7-5.pdf)  | homework |
-| 13      | Apr 10 | Binary Search Trees      | [Video](#), [Slides](Lectures/wip7-6.pdf) | [Lab](Labs/Labs/wip7-6.pdf)  | homework |
-|     | Apr 12 | Intro to Heaps      | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
-| 14      | Apr 17 | Intro to Balanced Search Trees  | [Video](#), [Slides](Lectures/wip7-7.pdf) | [Lab](Labs/Labs/wip7-7.pdf)  | homework |
-|     | Apr 19 | Wrap up             |  |  |  |
-| 15      | Apr 24 | Exam Review      |  |  |  |
-|     | Apr 26 | Exam     |  |  |  |
-| 16      | May 1  | Final Review     |  |  |  |
-|       | May 3  | Final Review     |  |  |  |
+| Week  | Days   | Chapters | Topics |  Lectures          | Programs  | Quizzes | 
+| ------| ------ | -------- | ------ | ----------------- | ---------- | -------- |
+| 1     | Jan 16 | C1, I1, I7 | What are data structures? C++ review, The Standard Template Library
+|       | Jan 18 | C2 | Intro to recursion
+| 2     | Jan 23 | C3 | Array-based implementations
+|       | Jan 25 | I2 | Pointers, polymorphism, and memory allocation
+| 3     | Jan 30 | C4 | Link-based implementations
+|       | Feb 1  | C5 | Recursion as a problem-solving technique
+| 4     | Feb 6  | | Exam review
+|       | Feb 8  | | Exam 1
+| 5     | Feb 13 | I3, C6, C7 | Exceptions, Stacks
+|       | Feb 15 | | Stacks
+| 6     | Feb 20 | C8, C9 | Lists
+|       | Feb 22 | | Lists
+| 7     | Feb 27 | C10 | Algorithm efficiency
+|       | Mar 1  | C11 | Sorting algorithms and their efficiency
+| 8     | Mar 6  | I4, C12 | Class relationships and reuse, sorted lists
+|       | Mar 8  | | Sorted lists
+| 9     | Mar 13 | | SPRING BREAK  
+|       | Mar 15 | | SPRING BREAK  
+| 10    | Mar 20 | C13, C14 | Queues
+|       | Mar 22 | I5 | Overloaded operators and friend access
+| 11    | Jan 27 | | Exam review
+|       | Mar 29 | | Exam 2
+| 12    | Apr 3  | C15, C16 | Trees
+|       | Apr 5  | I6 | Iterators
+| 13    | Apr 10 | C15, C16 | Trees
+|       | Apr 12 | | Trees
+| 14    | Apr 17 | C17 | Heaps
+|       | Apr 19 | | Heaps
+| 15    | Apr 24 | C18 | Dictionaries
+|       | Apr 26 | | Dictionaries
+| 16    | May 1  | C19 | Balanced Search Trees
+|       | May 3  | | Balanced Search Trees, Final Review     |  |  |  |
 | 17    | May 12-17 | FINALS WEEK | | |
 
 

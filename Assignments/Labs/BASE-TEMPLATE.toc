@@ -1,0 +1,7 @@
+\contentsline {paragraph}{Topics:}{1}
+\contentsline {paragraph}{Turn in:}{1}
+\contentsline {paragraph}{Starter files:}{1}
+\contentsline {paragraph}{Grading:}{1}
+\contentsline {section}{\numberline {1.1}About}{3}
+\contentsline {section}{\numberline {1.2}Lab specifications}{3}
+\contentsline {section}{\numberline {1.3}Example output}{3}

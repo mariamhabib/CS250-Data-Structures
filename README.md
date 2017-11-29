@@ -2,6 +2,8 @@
 
 Johnson County Community College
 
+Spring 2018
+
 [Week-by-week](#Week-by-week) | [Instructor information](#instructor-information)
 
 ----------------------------------------------------------------------------------

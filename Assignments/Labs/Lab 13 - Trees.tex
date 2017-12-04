@@ -26,7 +26,7 @@
 \renewcommand{\headrulewidth}{2pt}
 \renewcommand{\footrulewidth}{1pt}
 
-%\toggletrue{answerkey}
+\toggletrue{answerkey}
 \togglefalse{answerkey}
 
 %
@@ -37,12 +37,14 @@
 
 \begin{document}
 
+    \notonkey{
     \chapter*{\laLab} \stepcounter{chapter}
 
         \section{Information}
             \paragraph{ Topics: } Trees
             \paragraph{ Turn in: } This is another on-paper ``lab". Turn in a text file, PDF file, scanned or photographed images.
-            
+
+            Make sure to notice the difference between a binary tree and a binary search tree.
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
 % ----------------------------------------------------------------------
@@ -156,6 +158,7 @@
         \end{itemize}
 
         \hrulefill
+        }
 
         % -------------------------------------------------------------%
         % - QUESTION --------------------------------------------------%
@@ -163,6 +166,7 @@
         \stepcounter{question}
         \begin{question}{\thequestion}{4}
 
+            \notonkey{
             For the given tree:
             
             \begin{center}
@@ -193,25 +197,27 @@
                     
                 \end{tikzpicture}
             \end{center}
+            }{}
 
             \begin{itemize}
                 \item[a.]   What are all the (listed) ancestors of $Russian$?
-                    \solution{ Slavic, Proto-indo-european }{ \vspace{0.5cm} }
+                    \solution{ \\ Slavic, Proto-indo-european }{ \vspace{0.5cm} }
                 
                 \item[b.]   What are all the (listed) descendants of $Indo-iranian$?
-                    \solution{ Persian, Sanskrit, Hindi, Urdu }{ \vspace{0.5cm} }
+                    \solution{ \\ Persian, Sanskrit, Hindi, Urdu }{ \vspace{0.5cm} }
                 
                 \item[c.]   What are all the (listed) siblings of $Polish$?
-                    \solution{ Russian and Bulgarian }{ \vspace{0.5cm} }
+                    \solution{ \\ Russian and Bulgarian }{ \vspace{0.5cm} }
                 
                 \item[d.]   What are all the (listed) leaves of the tree?
-                    \solution{ Polish, Russian, Bulgarian, Persian, Hindi, Urdu }{ \vspace{0.5cm} }
+                    \solution{ \\ Polish, Russian, Bulgarian, Persian, Hindi, Urdu }{ \vspace{0.5cm} }
             \end{itemize}
             
         \end{question}
 
-    \newpage
+\notonkey{ \newpage }{ \hrulefill }
 
+        \notonkey{
         \paragraph{Path:} A path between two nodes, $n_{a}$ and $n_{b}$,
             is a series of connecting edges between these two nodes.
 
@@ -224,7 +230,8 @@
         \paragraph{Node Height:} Given any node $n$, the Height of $n$ is
             the longest path from $n$ to a leaf. Leaves have a height of 0.
 
-        \hrulefill
+        \hrulefill{}
+        }{}
         
         % -------------------------------------------------------------%
         % - QUESTION --------------------------------------------------%
@@ -232,6 +239,7 @@
         \stepcounter{question}
         \begin{question}{\thequestion}{4}
 
+            \notonkey{
             For the given tree:
             
             \begin{center}
@@ -272,6 +280,7 @@
                     
                 \end{tikzpicture}
             \end{center}
+            }{}
 
             \begin{itemize}
                 \item[a.]   Write out all the Nodes in the path from \textit{Lab 13} to \textit{C:$\backslash$}.
@@ -315,7 +324,9 @@
             
         \end{question}
 
-    \newpage
+\notonkey{ \newpage }{ \hrulefill }
+
+    \notonkey{
 
     \subsection{Traversals}
     
@@ -768,7 +779,7 @@
         nature of tree traversal.
 
     \newpage
-
+    }{}
         % -------------------------------------------------------------%
         % - QUESTION --------------------------------------------------%
         % -------------------------------------------------------------%
@@ -776,8 +787,9 @@
         \begin{question}{\thequestion}{2}
 
             Traverse the following tree using \textbf{pre-order} traversal. Write
-            out each Node as you ``process" it. ~\\
-            
+            out each Node as you ``process" it. 
+            \notonkey{
+            ~\\
             \begin{tikzpicture}
                 \draw (0, 5) -- (-1,4);
                 \draw (0, 5) -- (1,4);
@@ -804,7 +816,7 @@
                 \draw[fill=white] 
                     (3,2)  circle (7pt) node {P};
             \end{tikzpicture}
-
+            }{}
             \solution{
                 H I W U T S U P
             }{ }
@@ -820,7 +832,9 @@
         \begin{question}{\thequestion}{2}
 
             Traverse the following tree using \textbf{post-order} traversal. Write
-            out each Node as you ``process" it. ~\\
+            out each Node as you ``process" it.
+
+            \notonkey{~\\
             
             \begin{tikzpicture}
                 \draw (0, 5) -- (-1,4);
@@ -851,6 +865,7 @@
                 \draw[fill=white] 
                     (3,2)  circle (7pt) node {G};
             \end{tikzpicture}
+            }{}
 
             \solution{
                 C A T S R G O O D
@@ -867,7 +882,9 @@
         \begin{question}{\thequestion}{2}
 
             Traverse the following tree using \textbf{in-order} traversal. Write
-            out each Node as you ``process" it. ~\\
+            out each Node as you ``process" it.
+
+            \notonkey{~\\
             
             \begin{tikzpicture}
                 \draw (0, 5) -- (-1,4);
@@ -889,6 +906,7 @@
                 \draw[fill=white] 
                     (0.5,3)  circle (7pt) node {H};
             \end{tikzpicture}
+            }{}
             
             \solution{
                 G R A P H S
@@ -896,7 +914,7 @@
             
         \end{question}
 
-        \newpage
+\notonkey{ \newpage }{ \hrulefill }
 
         % -------------------------------------------------------------%
         % - QUESTION --------------------------------------------------%
@@ -904,6 +922,7 @@
         \stepcounter{question}
         \begin{question}{\thequestion}{3}
 
+            \notonkey{
             A \textbf{binary search tree} is a type of tree where each node
             can have 0, 1, or 2 children, but no more than 2.
             For any Node $n$, any nodes to the \textbf{left} of $n$ are less than $n$.
@@ -930,16 +949,48 @@
                     \filldraw[black,fill=white] (1,2) circle (10pt) node {D};
                     \filldraw[black,fill=white] (-2,1) circle (10pt) node {A};
                 \end{tikzpicture}
-
+            }{}
+            
             \begin{itemize}
                 \item[a.]   Add: \texttt{B, A, D, C, F, E}
-                    \solution{}{ \vspace{3cm} }
+                    \solution{
+                    \begin{tikzpicture}
+                        \draw (-2,-1) -- (0,0) -- (2,-1);
+                        \draw (2,-3) -- (3,-2);
+                        \draw (3,-2) -- (2,-1) -- (1,-2);
+                        \filldraw[fill=white] (0,0) circle (10pt) node{B};
+                        \filldraw[fill=white] (-2,-1) circle (10pt) node{A};
+                        \filldraw[fill=white] (2,-1) circle (10pt) node{D};
+                        \filldraw[fill=white] (1,-2) circle (10pt) node{C};
+                        \filldraw[fill=white] (3,-2) circle (10pt) node{F};
+                        \filldraw[fill=white] (2,-3) circle (10pt) node{E};
+                    \end{tikzpicture}
+                    }{ \vspace{3cm} }
                     
                 \item[b.]   Add: \texttt{A, B, C, D, E}
-                    \solution{}{ \vspace{3cm} }
+                    \solution{
+                    \begin{tikzpicture}
+                        \draw (0,0) -- (4,-2);
+                        \filldraw[fill=white] (0,0) circle (10pt) node{A};
+                        \filldraw[fill=white] (1,-0.5) circle (10pt) node{B};
+                        \filldraw[fill=white] (2,-1) circle (10pt) node{C};
+                        \filldraw[fill=white] (3,-1.5) circle (10pt) node{D};
+                        \filldraw[fill=white] (4,-2) circle (10pt) node{E};
+                    \end{tikzpicture}
+                    }{ \vspace{3cm} }
                     
                 \item[c.]   Add: \texttt{E, D, C, B, A}
-                    \solution{}{ \vspace{3cm} }
+                    \solution{
+                    \begin{tikzpicture}
+                        \draw (0,0) -- (-4,-2);
+                        
+                        \filldraw[fill=white] (0,0) circle (10pt) node{E};
+                        \filldraw[fill=white] (-1,-0.5) circle (10pt) node{D};
+                        \filldraw[fill=white] (-2,-1) circle (10pt) node{C};
+                        \filldraw[fill=white] (-3,-1.5) circle (10pt) node{B};
+                        \filldraw[fill=white] (-4,-2) circle (10pt) node{A};
+                    \end{tikzpicture}
+                    }{ \vspace{3cm} }
                     
             \end{itemize}
         
@@ -947,7 +998,7 @@
             
         \end{question}
 
-        \newpage
+\notonkey{ \newpage }{ \hrulefill }
 
 
         % -------------------------------------------------------------%
@@ -955,7 +1006,8 @@
         % -------------------------------------------------------------%
         \stepcounter{question}
         \begin{question}{\thequestion}{1}
-            
+
+            \notonkey{
             For a \textbf{binary search tree}, we have a Node declared like this:
                     
 \footnotesize 
@@ -983,30 +1035,50 @@ Node<char> nodeD;
             write out the
             code (or pseudocode) to relate each node together. \\
             (e.g. \texttt{nodeA->ptrLeft = \&nodeB;})
+
+            }{}
             
             \begin{itemize}
                 \item[a.]   \texttt{B, A, D, C}
-                    \solution{}{ \vspace{3cm} }
+                    \solution{
+
+                        \texttt{nodeB->ptrLeft = \&nodeA;} \\
+                        \texttt{nodeB->ptrRight = \&nodeD;} \\
+                        \texttt{nodeD->ptrLeft = \&nodeC;} \\
+
+                    }{ \vspace{3cm} }
                     
                 \item[b.]   \texttt{A, B, C, D}
-                    \solution{}{ \vspace{3cm} }
+                    \solution{
+
+                        \texttt{nodeA->ptrRight = \&nodeB;} \\
+                        \texttt{nodeB->ptrRight = \&nodeC;} \\
+                        \texttt{nodeC->ptrRight = \&nodeD;} \\
+
+                    }{ \vspace{3cm} }
 
                 \item[c.]   \texttt{D, C, B, A}
-                    \solution{}{ \vspace{3cm} }
+                    \solution{
+
+                        \texttt{nodeD->ptrLeft = \&nodeC;} \\
+                        \texttt{nodeC->ptrLeft = \&nodeB;} \\
+                        \texttt{nodeB->ptrLeft = \&nodeA;} \\
+
+                    }{ \vspace{3cm} }
                     
             \end{itemize}
             
         \end{question}
 
-
-    \newpage
+\notonkey{ \newpage }{ \hrulefill }
 
     \subsection{Thinking in subtrees}
 
     WIP
 
-    \newpage
-    
+\notonkey{ \newpage }{ \hrulefill }
+
+    \notonkey{
     \subsection{Balanced trees}
 
     The same set of data can be arranged in a binary search tree
@@ -1103,6 +1175,7 @@ Node<char> nodeD;
         \footnotesize
         From Data Abstraction \& Problem Solving with C++: Walls and Mirrors 7th ed, by Carrano and Henry, page 451
     \end{quote}
+    }{}
     
 \end{document}
 

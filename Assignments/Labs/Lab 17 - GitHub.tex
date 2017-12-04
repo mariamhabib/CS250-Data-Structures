@@ -496,6 +496,8 @@
             \texttt{git push}
         \end{center}
 
+        (Note, for your first push you might need to use \texttt{git push -u origin master})
+
         It will have some messages about setting up defaults. There are
         a lot of extra features of Git that you can study up on later,
         but these are just the basics!
@@ -507,6 +509,26 @@
             \includegraphics[width=14cm]{images/git-pushed.png}
             \caption{A successful push}
         \end{figure}
+
+    \newpage
+
+        \subsection{Setting name and email}
+
+        When you first make a commit, Git will complain about some configs not being set:
+
+        \begin{figure}[h]
+            \centering
+            \includegraphics{images/git-config.png}
+            \caption{Asking to set up config}
+        \end{figure}
+
+        The items you set for these will show up in your commits online.
+        You can set them up by typing:
+        
+        \begin{center}
+            \texttt{git config --global user.email "YOUREMAIL"} \\
+            \texttt{git config --global user.name "YOURNAME"}
+        \end{center}
         
     \newpage
 
@@ -525,27 +547,32 @@
             \caption{Repository on the web}
         \end{figure}
 
+    \newpage
+    
         \subsection{Commit history (FYI)}
 
         Click on the \textbf{commits} link from the web interface.
-
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=5cm]{images/github-commits.png}
-            \caption{Repository on the web}
-        \end{figure}
         
         It will bring up a list of all the commits done in this repository.
-
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=14cm]{images/github-commits2.png}
-            \caption{Viewing all commits}
-        \end{figure}
-
         You can click on a commit message to view all the changes for all
         the files.
 
+        \begin{figure}[h]
+            \centering
+            \includegraphics[height=4cm]{images/github-commits.png}
+            \caption{Repository on the web}
+            
+            ~\\
+            \includegraphics[height=4cm]{images/github-commits2.png}
+            \caption{Viewing all commits}
+
+            ~\\
+            \includegraphics[height=4cm]{images/github-commits3.png}
+            \caption{Viewing one commit}
+        \end{figure}
+
+    \newpage
+        
         \begin{figure}[h]
             \centering
             \includegraphics[width=14cm]{images/github-commits3.png}
@@ -565,7 +592,7 @@
             \includegraphics[width=14cm]{images/github-wiki.png}
         \end{figure}
 
-    \hrulefill
+    \newpage
 
     \subsection{Issues (FYI)}
 

@@ -1,5 +1,58 @@
 # Project 3 Hints
 
+Make sure to pay attention to the member variables available in each class...
+
+```c++
+template <typename TK, typename TD>
+class Node
+{
+public:
+    Node();
+    ~Node();
+    Node<TK, TD>* ptrLeft;
+    Node<TK, TD>* ptrRight;
+    TD data;
+    TK key;
+};
+```
+
+```c++
+template <typename TK, typename TD>
+class BinarySearchTree
+{
+public:
+    BinarySearchTree();
+    ~BinarySearchTree();
+    void Insert( const TK& newKey, const TD& newData );
+    void Delete( const TK& key );
+    bool Contains( const TK& key );
+    bool RecursiveContains( const TK& key, Node<TK, TD>* ptrCurrent );
+    string GetInOrder();
+    string GetPreOrder();
+    string GetPostOrder();
+    TK* GetMax();
+    int GetCount();
+    int GetHeight();
+    TD* GetData( const TK& key );
+    Node<TK, TD>* FindNode( const TK& key );
+    Node<TK, TD>* RecursiveFindNode( const TK& key, Node<TK, TD>* ptrCurrent );
+    Node<TK, TD>* FindParentOfNode( const TK& key );
+    void RecursiveInsert( const TK& newKey, const TD& newData, Node<TK, TD>* ptrCurrent );
+    void GetInOrder( Node<TK, TD>* ptrCurrent, stringstream& stream );
+    void GetPreOrder( Node<TK, TD>* ptrCurrent, stringstream& stream );
+    void GetPostOrder( Node<TK, TD>* ptrCurrent, stringstream& stream );
+    TK* GetMax( Node<TK, TD>* ptrCurrent );
+    int GetHeight( Node<TK, TD>* ptrCurrent );
+
+private:
+    Node<TK, TD>* m_ptrRoot;
+    int m_nodeCount;
+
+friend class Tester;
+};
+```
+
+
 ## Get Max
 
 ```TK* GetMax( Node<TK, TD>* ptrCurrent )```

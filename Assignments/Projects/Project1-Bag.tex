@@ -8,7 +8,7 @@
 \newcommand{\laTitle}       {Bag ADT}
 \newcommand{\laStarterFiles}{Download from GitHub.}
 \newcommand{\laTopics}      {Data structures, array implementations}
-\setcounter{chapter}{1}
+\setcounter{chapter}{0}
 \setcounter{section}{1}
 \addtocounter{section}{-1}
 \newcounter{question}
@@ -18,7 +18,7 @@
 
 \input{INSTRUCTIONS-PROJECT}
 
-    \section{About}
+    \chapter{About}
 
         For this first project, we will step through implementing
         a bag object with a static array. This project will be a bit
@@ -28,9 +28,9 @@
         You can also use Chapter 3 of the textbook for additional information
         on how to implement these functions.
 
-    \section{Project specifications}
+        \chapter{Project setup}
 
-        \subsection{Setting up an IDE}
+        \section{Setting up an IDE}
 
             IDE stands for ``Integrated Development Environment''. An IDE
             is a program that contains the text editor for code, as well
@@ -53,7 +53,7 @@
 
         \newpage
 
-        \subsection{Creating a project}
+        \section{Creating a project}
 
             \subsubsection{In Visual Studio}
 
@@ -230,11 +230,164 @@ int main()
             \end{figure}
 
             Make sure the program builds and runs before continuing.
+
+    \chapter{Creating the Bag class}
+
+        For now, we will be working in the Bag.hpp file. First, we need
+        to add the preprocessor directives to make sure no issues occur
+        should the .hpp file be included from multiple source files.
+
+\begin{figure}[h]
+\begin{lstlisting}[style=code]
+#ifndef _BAG_HPP
+#define _BAG_HPP
+
+#endif
+\end{lstlisting}
+\caption*{Bag.hpp}
+\end{figure}
+
+        The labels here, \texttt{\_BAG\_HPP}, are up to you,
+        but they should be something unique enough to cut down on the
+        likelihood that you'd have naming conflicts.
+
+        Next, we will create the templated class declaration:
+
+\begin{figure}[h]
+\begin{lstlisting}[style=code]
+template <typename T>
+class Bag
+{
+private:
+public:
+};
+\end{lstlisting}
+\end{figure}
+
+        Templates allow us to create container classes that can store
+        \textit{any} data type. Instead of writing separate Bags for \texttt{int},
+        \texttt{string}, \texttt{float}, etc. data types, we use the
+        type-name \texttt{T} as a placeholder.
+
+        \newpage
+
+        \section{Variable and function declarations}
+
+        The Bag class will have the following private member variables:
+
+        \begin{center}
+            \begin{tabular}{p{3cm} p{3cm} p{6cm}}
+                \textbf{Name} & \textbf{Data type} & \textbf{Description}
+                \\ \hline
+                \texttt{m\_itemCount} & integer & Keeps track of the amount of items inserted in the array.
+                \\ \\
+                \texttt{ARRAY\_SIZE} & const integer & Keeps track of the size of the array.
+            \end{tabular}
+        \end{center}
+
+        And it will have the following private member methods:
+        
+        \begin{center}
+            \begin{tabular}{p{7cm} p{6cm}}
+                \textbf{Function header} & \textbf{Description}
+                \\ \hline
+                \texttt{void ShiftRight( int atIndex )} & Moves everything \textit{atIndex} and afterwards to the right by 1 spot.
+                \\ \\
+                \texttt{void ShiftLeft( int atIndex )} & Moves everything after \textit{atIndex} to the left by 1 spot.
+            \end{tabular}
+        \end{center}
+
+        And the following public member methods:
+        
+        \begin{center}
+            \begin{tabular}{p{7cm} p{6cm}}
+                \textbf{Function header} & \textbf{Description}
+                \\ \hline
+                \texttt{Bag()}
+                    & The constructor, which initializes member variables.
+                \\ \\
+                \texttt{~Bag()}
+                    & The destructor.
+                \\ \\
+                \texttt{int Size() const}
+                    & Returns the amount of items store in the array.
+                \\ \\
+                \texttt{bool IsEmpty() const}
+                    & Returns whether the array is empty.
+                \\ \\
+                \texttt{bool IsFull() const}
+                    & Returns whether the array is full.
+                \\ \\
+                \texttt{bool Push( const T\& newItem )}
+                    & Adds a new item to the end of the sequence of items.
+                \\ \\
+                \texttt{bool Pop()}
+                    & Removes the last item in the sequence.
+            \end{tabular}
+        \end{center}
+        
+        \begin{center}
+            \begin{tabular}{p{7cm} p{6cm}}
+                \textbf{Function header} & \textbf{Description}
+                \\ \hline
+                \texttt{void Clear()}
+                    & Clears out the list.
+                \\ \\
+                \texttt{int GetCountOf( const T\& item ) const}
+                    & Returns the amount of instances of the given item in the array.
+                \\ \\
+                \texttt{bool Contains( const T\& item ) const}
+                    & Returns whether the item is contained in the array.
+                \\ \\
+                \texttt{bool Remove( const T\& item )}
+                    & Remove all items that match.
+                \\ \\
+                \texttt{bool Remove( int atIndex )}
+                    & Remove the item at a specific index.
+                \\ \\
+                \texttt{bool Insert( int atIndex, const T\& item )}
+                    & Insert an item in the middle of other items.
+                \\ \\
+                \texttt{T\& Get( int atIndex )}
+                    & Get an item in the array at a specific index
+                \\ \\
+                \texttt{T\& GetFront()}
+                    & Get the first item in the array.
+                \\ \\
+                \texttt{T\& GetBack()}
+                    & Get the last item in the array.
+            \end{tabular}
+        \end{center}
+
+        We will implement each of these one-at-a-time, and write tests
+        to check the functionality.
+
+        \section{Constructor and destuctor}
+
+        \section{Implementing Push}
+
+        \section{Implementing Size and testing}
+
+        \section{Implementing IsEmpty and IsFull and testing}
+
+        \section{Implementing Get, GetFront, and GetBack and testing}
+
+        \section{Implementing Contains and testing}
+
+        \section{Implementing GetCountOf and testing}
+
+        \section{Implementing Clear and testing}
+
+        \section{Implementing Insert and ShiftRight and testing}
+
+        \section{Implementing Pop and testing}
+
+        \section{Implementing Remove and ShiftLeft and testing}
                 
     \newpage
 
-    \section{Example output}
+    \chapter{Example output}
 
-    \section{Grading breakdown}
+    \chapter{Grading breakdown}
 
 \input{BASE-FOOT}

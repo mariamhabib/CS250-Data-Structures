@@ -1,0 +1,240 @@
+\input{BASE-HEAD}
+\newcommand{\laClass}       {CS 250}
+\newcommand{\laSemester}    {Spring 2018}
+\newcommand{\laChapter}     {}
+\newcommand{\laType}        {Project}
+\newcommand{\laAssignment}  {1}
+\newcommand{\laPoints}      {5}
+\newcommand{\laTitle}       {Bag ADT}
+\newcommand{\laStarterFiles}{Download from GitHub.}
+\newcommand{\laTopics}      {Data structures, array implementations}
+\setcounter{chapter}{1}
+\setcounter{section}{1}
+\addtocounter{section}{-1}
+\newcounter{question}
+\toggletrue{answerkey}
+\togglefalse{answerkey}
+\input{BASE-HEADER}
+
+\input{INSTRUCTIONS-PROJECT}
+
+    \section{About}
+
+        For this first project, we will step through implementing
+        a bag object with a static array. This project will be a bit
+        hand-holdey, so you can get used to the tools and basics of
+        coding in C++.
+
+        You can also use Chapter 3 of the textbook for additional information
+        on how to implement these functions.
+
+    \section{Project specifications}
+
+        \subsection{Setting up an IDE}
+
+            IDE stands for ``Integrated Development Environment''. An IDE
+            is a program that contains the text editor for code, as well
+            as some project management tools and debugging tools.
+
+            We will step through how to create a project in both Visual Studio
+            and in Code::Blocks. If you're working on your own computer,
+            you can get a free version of Visual Studio Community Edition. If
+            VS is too bulky or slow, or if you're not running Windows, then
+            Code::Blocks is a good option as well.
+
+            \paragraph{Visual Studio:}
+                \texttt{https://www.visualstudio.com/vs/community/}
+
+            \paragraph{Code::Blocks:}
+                \texttt{http://codeblocks.org/downloads/26}
+
+                Note: If installing for Windows, download the version that
+                says ``mingw-setup.exe''.
+
+        \newpage
+
+        \subsection{Creating a project}
+
+            \subsubsection{In Visual Studio}
+
+                When you first open up Visual Studio, it will have a welcome page.
+                You can select New Project from here, or from File $>$ New $>$ Project...
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=5cm]{images-2018-01/vs-newproject.png}
+                    %\caption{The ``New Project...'' button in Visual Studio}
+                \end{figure}
+
+                On the New Project dialog window, make sure to select Visual C++ on the left side,
+                and then Empty Project in the middle pane.
+                (Note: You might have to install additional files to use C++)
+
+                Set the project Name and Location at the bottom.
+                
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=14cm]{images-2018-01/vs-newproject2.png}
+                    %\caption{Selecting ``Empty Project'' and setting Name and Location.}
+                \end{figure}
+
+                Afterwards, click on OK.
+
+                The project is created, but will be empty and contain no source files.
+
+                To add an empty file, In the Solution Explorer, right-click your project file and go to Add $>$ New Item...
+
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=12cm]{images-2018-01/vs-addnewitem.png}
+                    %\caption{Selecting ``Empty Project'' and setting Name and Location.}
+                \end{figure}
+
+                If you're creating the file to store your main() function, select the C++ File.
+                
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=14cm]{images-2018-01/vs-newcpp.png}
+                    %\caption{Selecting ``Empty Project'' and setting Name and Location.}
+                \end{figure}
+
+                Give it a name, and click Add.
+
+            \newpage
+
+            \subsubsection{In Code::Blocks}
+
+                When you first open up Code::Blocks, it will have a welcome page.
+                You can select Create a new project from here, or from File $>$ New $>$ Project...
+            
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=12cm]{images-2018-01/codeblocks_newproject.png}
+                \end{figure}
+
+                On the New from template window that pops up, select Empty project and click Go.
+            
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=10cm]{images-2018-01/codeblocks_emptyproject.png}
+                \end{figure}
+
+                \newpage
+
+                On the next screen...
+            
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=10cm]{images-2018-01/codeblocks_newproject_dialog.png}
+                \end{figure}
+
+                first click ``...'' and select a directory where you want to store your project folder.
+
+                After you have done so, give your project a title - a folder will be created for it automatically.
+
+                Then click Next.
+
+                \newpage
+
+                The next window asks about Debug and Release options - leave these as the defaults and click Finish.
+            
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=10cm]{images-2018-01/codeblocks_debugrelease.png}
+                \end{figure}
+
+                The project will be empty. To add a new file, do the following:
+
+                Go to File $>$ New $>$ Empty file.
+
+                It will ask, ``Do you want to add this new file in the active project (has to be saved first)?''
+                Click on ``yes'' and save your source file. Make sure the filename ends with ``.cpp''.
+                Click ``Save'' once done making the file.
+            
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=10cm]{images-2018-01/codeblocks_newfile.png}
+                \end{figure}
+
+                Another window pops up asking about debug and release. Leave these both checked and click Ok.
+            
+                \begin{figure}[h]
+                    \centering
+                    \includegraphics[width=10cm]{images-2018-01/codeblocks_debugagain.png}
+                \end{figure}
+
+        \section{Creating files}
+
+            For this project, you will need to make two files: A .cpp file to store your program code,
+            and a header file, ``Bag.hpp''. Your .cpp file can have any name, such as ``project1.cpp'',
+            ``main.cpp'', etc.
+
+            \begin{intro}{Why .hpp?}
+                Many C++ programmers will name their header files with the .h extension, but some use
+                .hpp. A common reason for this is if you're writing code FOR C++, not for C AND C++ together.
+                Some libraries were written in C but can be used in both languages, while libraries
+                written IN C++ and FOR C++ may opt to use ``.hpp'' as their header extensions.
+            \end{intro}
+
+        \newpage
+
+        \section{Starter code}
+
+            In your .cpp source file, let's start out with some basic code.
+            Type out the following:
+
+\begin{lstlisting}[style=code]
+#include <iostream>
+#include <string>
+#include "Bag.hpp"
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello, world!" << endl;
+
+    // Don't let the program stop immediately
+    cin.ignore();
+    cin.get();
+
+    return 0;
+}
+\end{lstlisting}
+
+            \paragraph{Visual Studio:} To build and run in Visual Studio, click on the ``Local Windows Debugger'' button or hit F5.
+        
+            \begin{figure}[h]
+                \centering
+                \includegraphics{images-2018-01/vs-play.png}
+            \end{figure}
+
+            It may ask if you want to build first before you run. Click on Yes -- You will always want to click on Yes here.
+
+            If the build fails, it will ask if you still want to run - say NO. Otherwise, if the build was successful, it will run your program.
+
+            \begin{error}{Always run with the debugger}
+                In the past, you might have gone through the dropdown menu and
+                started your program \textit{without} debugging so that the program
+                wouldn't exit immediately. \textbf{DON'T DO THIS.}
+                The debugger gives you invaluable tools for fidning errors and dealing
+                with crashes.
+            \end{error}
+
+            ~\\
+            \paragraph{Code::Blocks:} To build and run in Code::Blocks, click on the ``Build and run'' button, or hit F9.
+            
+            \begin{figure}[h]
+                \centering
+                \includegraphics{images-2018-01/codeblocks_buildrun.png}
+            \end{figure}
+
+            Make sure the program builds and runs before continuing.
+                
+    \newpage
+
+    \section{Example output}
+
+    \section{Grading breakdown}
+
+\input{BASE-FOOT}

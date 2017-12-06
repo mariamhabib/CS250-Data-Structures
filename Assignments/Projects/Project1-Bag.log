@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.9)  23 SEP 2017 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.9)  6 DEC 2017 12:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Project 01 - Linked List.tex"
-(./Project 01 - Linked List.tex
+**Project1-Bag.tex
+(./Project1-Bag.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+(./BASE-HEAD.tex (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -987,76 +987,318 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@out=\write4
 \tcb@record@out=\write5
 )
-(/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen190
+\captionmargin@=\dimen191
+\captionwidth=\dimen192
+\caption@tempdima=\dimen193
+\caption@indent=\dimen194
+\caption@parindent=\dimen195
+\caption@hangindent=\dimen196
+)
+\c@ContinuedFloat=\count148
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+\c@subfigure=\count149
+\c@subtable=\count150
+)
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen197
+\pgffor@skip=\dimen198
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count151
+\pgfplotmarksize=\dimen199
+)
+\tikz@lastx=\dimen256
+\tikz@lasty=\dimen257
+\tikz@lastxsaved=\dimen258
+\tikz@lastysaved=\dimen259
+\tikzleveldistance=\dimen260
+\tikzsiblingdistance=\dimen261
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count152
+\tikznumberofchildren=\count153
+\tikznumberofcurrentchild=\count154
+\tikz@fig@count=\count155
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count156
+\pgfmatrixcurrentcolumn=\count157
+\pgf@matrix@numberofcolumns=\count158
+)
+\tikz@expandcount=\count159
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count160
+)
+(/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2015/05/15 The CircuiTikz circuit drawing package version 0
+.4
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen262
+) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/circuitikz.code.tex
+\pgf@circ@Rlen=\dimen263
+
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmath.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircnpoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircinputarrows.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/circuitikz1.code.tex
+\pgf@circ@res@up=\dimen264
+\pgf@circ@res@down=\dimen265
+\pgf@circ@res@zero=\dimen266
+\pgf@circ@res@left=\dimen267
+\pgf@circ@res@right=\dimen268
+\pgf@circ@res@other=\dimen269
+\pgf@circ@res@step=\dimen270
+\pgf@circ@res@temp=\dimen271
+\pgfstartlinewidth=\dimen272
+))
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks37
+\minrowclearance=\skip119
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks38
+\t@pgfplots@tokb=\toks39
+\t@pgfplots@tokc=\toks40
+\pgfplots@tmpa=\dimen273
+\c@pgfplots@coordindex=\count161
+\c@pgfplots@scanlineindex=\count162
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryfpu.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count163
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count164
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count165
+\t@pgfplotstable@a=\toks41
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count166
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen274
+\pgfdecoratedremainingdistance=\dimen275
+\pgfdecoratedinputsegmentcompleteddistance=\dimen276
+\pgfdecoratedinputsegmentremainingdistance=\dimen277
+\pgf@decorate@distancetomove=\dimen278
+\pgf@decorate@repeatstate=\count167
+\pgfdecorationsegmentamplitude=\dimen279
+\pgfdecorationsegmentlength=\dimen280
+)
+\tikz@lib@dec@box=\box68
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count168
+\pgfplots@xmin@reg=\dimen281
+\pgfplots@xmax@reg=\dimen282
+\pgfplots@ymin@reg=\dimen283
+\pgfplots@ymax@reg=\dimen284
+\pgfplots@zmin@reg=\dimen285
+\pgfplots@zmax@reg=\dimen286
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))) (/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.sty
 Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 
 (/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.tex
 `dirtree' v0.32, 2012/12/11 (jcc)
-\DT@offset=\dimen190
-\DT@width=\dimen191
-\DT@sep=\dimen192
-\DT@all=\dimen193
-\DT@rulewidth=\dimen194
-\DT@dotwidth=\dimen195
-\DTbaselineskip=\dimen196
-\DT@counti=\count148
-\DT@countii=\count149
-\DT@countiii=\count150
-\DT@countiv=\count151
-\DT@indent=\dimen197
-\DT@parskip=\dimen198
-\DT@baselineskip=\dimen199
+\DT@offset=\dimen287
+\DT@width=\dimen288
+\DT@sep=\dimen289
+\DT@all=\dimen290
+\DT@rulewidth=\dimen291
+\DT@dotwidth=\dimen292
+\DTbaselineskip=\dimen293
+\DT@counti=\count169
+\DT@countii=\count170
+\DT@countiii=\count171
+\DT@countiv=\count172
+\DT@indent=\dimen294
+\DT@parskip=\dimen295
+\DT@baselineskip=\dimen296
 )
 File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count152
-))
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip119
-\f@ncyO@elh=\skip120
-\f@ncyO@erh=\skip121
-\f@ncyO@olh=\skip122
-\f@ncyO@orh=\skip123
-\f@ncyO@elf=\skip124
-\f@ncyO@erf=\skip125
-\f@ncyO@olf=\skip126
-\f@ncyO@orf=\skip127
+\fancy@headwidth=\skip120
+\f@ncyO@elh=\skip121
+\f@ncyO@erh=\skip122
+\f@ncyO@olh=\skip123
+\f@ncyO@orh=\skip124
+\f@ncyO@elf=\skip125
+\f@ncyO@erf=\skip126
+\f@ncyO@olf=\skip127
+\f@ncyO@orf=\skip128
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty)
-(./Project 01 - Linked List.aux)
-\openout1 = `"Project 01 - Linked List.aux"'.
+(/usr/share/texlive/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty)))
+\c@question=\count173
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+(./BASE-HEADER.tex (./Project1-Bag.aux)
+\openout1 = `Project1-Bag.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count153
-\scratchdimen=\dimen256
-\scratchbox=\box64
-\nofMPsegments=\count154
-\nofMParguments=\count155
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count156
-\MPscratchDim=\dimen257
-\MPnumerator=\count157
-\makeMPintoPDFobject=\count158
-\everyMPtoPDFconversion=\toks36
+\scratchcounter=\count174
+\scratchdimen=\dimen297
+\scratchbox=\box69
+\nofMPsegments=\count175
+\nofMParguments=\count176
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count177
+\MPscratchDim=\dimen298
+\MPnumerator=\count178
+\makeMPintoPDFobject=\count179
+\everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1072,39 +1314,152 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count159
-\AtBeginShipoutBox=\box65
+\c@lstlisting=\count180
+\AtBeginShipoutBox=\box70
 
 ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
+your preamble.
+ on input line 22.
+
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 26.
+(lastpage)             ! on input line 22.
+) (./INSTRUCTIONS-PROJECT.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
-<images/linked-list-title.png, id=4, 331.2375pt x 159.59625pt>
-File: images/linked-list-title.png Graphic file (type png)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
-<use images/linked-list-title.png>
-Package pdftex.def Info: images/linked-list-title.png used on input line 31.
-(pdftex.def)             Requested size: 331.23668pt x 159.59584pt.
- [1
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 6.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/linked-list-title
-.png>]
-Overfull \hbox (9.76207pt too wide) in paragraph at lines 93--93
-[]|\OT1/cmtt/m/n/12 project1[]LinkedList.cpp ... []| 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] (./Project1-Bag.toc)
+\tf@toc=\write6
+\openout6 = `Project1-Bag.toc'.
+
+
+[2
+
+]) [3] <images-2018-01/vs-newproject.png, id=23, 306.14375pt x 338.26375pt>
+File: images-2018-01/vs-newproject.png Graphic file (type png)
+
+<use images-2018-01/vs-newproject.png>
+Package pdftex.def Info: images-2018-01/vs-newproject.png used on input line 65
+.
+(pdftex.def)             Requested size: 142.26378pt x 157.18777pt.
+
+<images-2018-01/vs-newproject2.png, id=25, 879.285pt x 472.76625pt>
+File: images-2018-01/vs-newproject2.png Graphic file (type png)
+
+<use images-2018-01/vs-newproject2.png>
+Package pdftex.def Info: images-2018-01/vs-newproject2.png used on input line 7
+7.
+(pdftex.def)             Requested size: 398.33858pt x 214.17117pt.
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 77--79
+ [][] 
  []
 
+<images-2018-01/vs-addnewitem.png, id=26, 730.73pt x 406.51875pt>
+File: images-2018-01/vs-addnewitem.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--93
-[]\OT1/cmtt/m/n/12 CustomerData, the data
+<use images-2018-01/vs-addnewitem.png>
+Package pdftex.def Info: images-2018-01/vs-addnewitem.png used on input line 89
+.
+(pdftex.def)             Requested size: 341.43306pt x 189.9473pt.
+ [4 <./images-2018-01/vs-newproject.png> <./images-2018-01/vs-newproject2.png>]
+
+<images-2018-01/vs-newcpp.png, id=33, 788.9475pt x 444.66125pt>
+File: images-2018-01/vs-newcpp.png Graphic file (type png)
+
+<use images-2018-01/vs-newcpp.png>
+Package pdftex.def Info: images-2018-01/vs-newcpp.png used on input line 97.
+(pdftex.def)             Requested size: 398.33858pt x 224.50804pt.
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 97--99
+ [][] 
  []
 
+[5 <./images-2018-01/vs-addnewitem.png> <./images-2018-01/vs-newcpp.png>]
+<images-2018-01/codeblocks_newproject.png, id=39, 676.5275pt x 367.3725pt>
+File: images-2018-01/codeblocks_newproject.png Graphic file (type png)
 
-Overfull \hbox (22.11208pt too wide) in paragraph at lines 93--93
-[]|\OT1/cmtt/m/n/12 project1[]CustomerData.hpp ... []| 
- []
+<use images-2018-01/codeblocks_newproject.png>
+Package pdftex.def Info: images-2018-01/codeblocks_newproject.png used on input
+ line 112.
+(pdftex.def)             Requested size: 341.43306pt x 185.41232pt.
 
+<images-2018-01/codeblocks_emptyproject.png, id=40, 604.2575pt x 459.7175pt>
+File: images-2018-01/codeblocks_emptyproject.png Graphic file (type png)
+
+<use images-2018-01/codeblocks_emptyproject.png>
+Package pdftex.def Info: images-2018-01/codeblocks_emptyproject.png used on inp
+ut line 119.
+(pdftex.def)             Requested size: 284.52756pt x 216.46709pt.
+ [6 <./images-2018-01/codeblocks_newproject.png> <./images-2018-01/codeblocks_e
+mptyproject.png>]
+<images-2018-01/codeblocks_newproject_dialog.png, id=46, 549.05125pt x 478.7887
+6pt>
+File: images-2018-01/codeblocks_newproject_dialog.png Graphic file (type png)
+ <use images-2018-01/codeblocks_newproject_dialog.png>
+Package pdftex.def Info: images-2018-01/codeblocks_newproject_dialog.png used o
+n input line 128.
+(pdftex.def)             Requested size: 284.52756pt x 248.12411pt.
+ [7 <./images-2018-01/codeblocks_newproject_dialog.png>]
+<images-2018-01/codeblocks_debugrelease.png, id=52, 549.05125pt x 478.78876pt>
+File: images-2018-01/codeblocks_debugrelease.png Graphic file (type png)
+
+<use images-2018-01/codeblocks_debugrelease.png>
+Package pdftex.def Info: images-2018-01/codeblocks_debugrelease.png used on inp
+ut line 143.
+(pdftex.def)             Requested size: 284.52756pt x 248.12411pt.
+
+<images-2018-01/codeblocks_newfile.png, id=53, 612.2875pt x 390.45876pt>
+File: images-2018-01/codeblocks_newfile.png Graphic file (type png)
+
+<use images-2018-01/codeblocks_newfile.png>
+Package pdftex.def Info: images-2018-01/codeblocks_newfile.png used on input li
+ne 156.
+(pdftex.def)             Requested size: 284.52756pt x 181.44228pt.
+
+<images-2018-01/codeblocks_debugagain.png, id=54, 404.51125pt x 269.005pt>
+File: images-2018-01/codeblocks_debugagain.png Graphic file (type png)
+
+<use images-2018-01/codeblocks_debugagain.png>
+Package pdftex.def Info: images-2018-01/codeblocks_debugagain.png used on input
+ line 163.
+(pdftex.def)             Requested size: 284.52756pt x 189.21754pt.
+ [8 <./images-2018-01/codeblocks_debugrelease.png> <./images-2018-01/codeblocks
+_newfile.png>] [9 <./images-2018-01/codeblocks_debugagain.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1114,126 +1469,51 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
+<images-2018-01/vs-play.png, id=64, 192.72pt x 54.2025pt>
+File: images-2018-01/vs-play.png Graphic file (type png)
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+<use images-2018-01/vs-play.png>
+Package pdftex.def Info: images-2018-01/vs-play.png used on input line 209.
+(pdftex.def)             Requested size: 192.71951pt x 54.20236pt.
 
-[2] (./Project 01 - Linked List.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+ []
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write6
-\openout6 = `"Project 01 - Linked List.toc"'.
+<images-2018-01/codeblocks_buildrun.png, id=65, 157.58875pt x 65.24374pt>
+File: images-2018-01/codeblocks_buildrun.png Graphic file (type png)
 
- [3
-
-]
-Chapter 2.
-<images/justanode.png, id=24, 293.095pt x 271.0125pt>
-File: images/justanode.png Graphic file (type png)
-
-<use images/justanode.png>
-Package pdftex.def Info: images/justanode.png used on input line 134.
-(pdftex.def)             Requested size: 123.08563pt x 113.81102pt.
-
-<images/justalist.png, id=25, 293.095pt x 271.0125pt>
-File: images/justalist.png Graphic file (type png)
-
-<use images/justalist.png>
-Package pdftex.def Info: images/justalist.png used on input line 156.
-(pdftex.def)             Requested size: 123.08563pt x 113.81102pt.
- [4
-
- <./images/justanode.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 203.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 203.
- [5 <./images/justalist.png>] <images/linkedlist-empty-newnode.png, id=35, 442.
-65375pt x 159.59625pt>
-File: images/linkedlist-empty-newnode.png Graphic file (type png)
-
-<use images/linkedlist-empty-newnode.png>
-Package pdftex.def Info: images/linkedlist-empty-newnode.png used on input line
- 228.
-(pdftex.def)             Requested size: 315.66423pt x 113.81102pt.
-
-<images/linkedlist-existing-newnode.png, id=36, 442.65375pt x 401.5pt>
-File: images/linkedlist-existing-newnode.png Graphic file (type png)
-
-<use images/linkedlist-existing-newnode.png>
-Package pdftex.def Info: images/linkedlist-existing-newnode.png used on input l
-ine 238.
-(pdftex.def)             Requested size: 250.95763pt x 227.62204pt.
- [6 <./images/linkedlist-empty-newnode.png>] [7 <./images/linkedlist-existing-n
-ewnode.png>]
-<images/linkedlist-popping.png, id=47, 631.35875pt x 472.76625pt>
-File: images/linkedlist-popping.png Graphic file (type png)
-
-<use images/linkedlist-popping.png>
-Package pdftex.def Info: images/linkedlist-popping.png used on input line 325.
-(pdftex.def)             Requested size: 341.97873pt x 256.0748pt.
- [8]
-Package mdframed Info: Not enough space on this page on input line 370.
- [9 <./images/linkedlist-popping.png>]
-Package mdframed Info: Not enough space on this page on input line 370.
-
-[10] [11] [12]
-Chapter 3.
-[13
-
-] [14]
-Chapter 4.
-<images/gradesheet-project1.png, id=72, 540.0175pt x 633.36626pt>
-File: images/gradesheet-project1.png Graphic file (type png)
-
-<use images/gradesheet-project1.png>
-Package pdftex.def Info: images/gradesheet-project1.png used on input line 537.
-
-(pdftex.def)             Requested size: 341.43306pt x 400.46284pt.
- [15
-
- <./images/gradesheet-project1.png>]
-Chapter 5.
+<use images-2018-01/codeblocks_buildrun.png>
+Package pdftex.def Info: images-2018-01/codeblocks_buildrun.png used on input l
+ine 229.
+(pdftex.def)             Requested size: 157.58835pt x 65.24358pt.
+ [10 <./images-2018-01/vs-play.png>] [11 <./images-2018-01/codeblocks_buildrun.
+png>] (./BASE-FOOT.tex
 
 AED: lastpage setting LastPage
-[16
-
-] (./Project 01 - Linked List.aux) ) 
+[12] (./Project1-Bag.aux) ) ) 
 Here is how much of TeX's memory you used:
- 21532 strings out of 493029
- 414304 string characters out of 6136235
- 597819 words of memory out of 5000000
- 24736 multiletter control sequences out of 15000+600000
- 11561 words of font info for 44 fonts, out of 8000000 for 9000
+ 40176 strings out of 493029
+ 976892 string characters out of 6136235
+ 1344547 words of memory out of 5000000
+ 43110 multiletter control sequences out of 15000+600000
+ 14682 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,12n,75p,10455b,1284s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Project 01 - Linked List.pdf" (16 pages, 267631 bytes).
+ 63i,11n,79p,10438b,1298s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Project1-Bag.pdf (12 pages, 508341 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

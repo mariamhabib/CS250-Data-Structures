@@ -101,3 +101,37 @@ Cases:
     * Find the MaxHeight of the left subtree and the right subtree, storing each in variables.
     * Compare which is greater
     * Return GREATER + 1
+    
+## Contains
+
+```c++
+    bool Contains( const TK& key )
+    {
+		Node<TK, TD>* ptrCurrent = m_ptrRoot;
+
+		// Keep looping until we're out of nodes
+		while (ptrCurrent != nullptr)
+		{
+			// Did we find it?
+			if (key == ptrCurrent->key)
+			{
+				// Found the node we're looking for - return true
+				return true;
+			}
+			else if (key < ptrCurrent->key)
+			{
+				// Go left and search there
+				ptrCurrent = ptrCurrent->ptrLeft;
+			}
+			else if (key > ptrCurrent->key)
+			{
+				// Go right and search there
+				ptrCurrent = ptrCurrent->ptrRight;
+			}
+		}
+
+		return false; // didn't find the node - return false
+    }
+```
+
+Your FindNode function will be similar.

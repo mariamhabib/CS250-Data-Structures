@@ -1,39 +1,50 @@
-\footnotesize
-~\\ 
-\textbf{\laType\ \laAssignment: \laTitle \tab } 
-In-class labs are meant to introduce you to a new topic and provide
-some practice with that new topic. Labs should be worked on by each
-individual student, though asking others for help is permitted.
-\underline{Do not} copy code from other sources, and do not give your
-code to other students. Students who commit or aid in plagiarism will
-receive a 0\% on the assignment and be reported.
+~\\ \textbf{\laType\ \laAssignment: \laTitle \tab }
 
-\hrulefill
 \normalsize 
 
     \subsection*{Information}
     
+        In-class labs are meant to introduce you to a new topic and provide
+        some practice with that new topic. 
+    
         \paragraph{Topics:} \laTopics
+        
+        \paragraph{Solo work:}
+        Labs should be worked on by each
+        individual student, though asking others for help is permitted.
+        \underline{Do not} copy code from other sources, and do not give your
+        code to other students.
+        \textbf{ \color{red} Students who commit or aid in plagiarism will receive a 0\% on the assignment and be reported. }
+
+        \paragraph{Building and running:} If you are using Visual Studio,
+            make sure to run \underline{with} debugging.
+            \textbf{ \color{red} Do not run without debugging! }
+
+            ~\\
+            Using the debugger will help you find errors. \\
+            To prevent a program exit, use this before \texttt{return 0;}
+
+            \begin{mdframed} \centering
+                \texttt{ cin.ignore(); \tab cin.get(); }
+            \end{mdframed}
 
         \paragraph{Turn in:}
-            Turn in all source files - .cpp, .hpp, and/or .h files.
-            \textbf{Do not turn in Visual Studio files}.
+            Once you're ready to turn in your code, prepare the files by
+            doing the following: \textbf{(1)} Make a copy of your project folder and name it \texttt{LASTNAME-FIRSTNAME-LABNAME}.
+            \textbf{(2)} Make sure that all source files (.cpp, .hpp, and/or .h files) and the \texttt{Makefile} files
+            are all present.
+            \textbf{(3)} Remove all Visual Studio files - I only want the source files and Makefiles.
+            \textbf{(4)} Zip your project folder as \texttt{LASTNAME-FIRSTNAME-LABNAME.zip}
+            
+            ~\\ \textbf{ \color{red} Never turn in Visual Studio files! }
 
         \paragraph{Starter files:} \laStarterFiles
 
         \paragraph{Grading:}
             Grading is based on completion, if the program functions as intended,
-            and absense of errors. Programs that don't build will receive a 50\%.{}
-            Build errors, runtime errors, logic errors, memory leaks, and ugly code will reduce your score.
+            and absense of errors. \textbf{ \color{red} Programs that don't build will receive 0\%. }
+            Besides build errors, runtime errors, logic errors, memory leaks, and ugly code will reduce your score.
 
-        \paragraph{Building and running:} If you are using Visual Studio,
-            make sure to run \underline{with} debugging. (Don't run without debugging!)
-            Using the debugger will help you find errors. \\
-            To prevent a program exit, use this before \texttt{return 0;}
-\begin{verbatim}
-cin.ignore();
-cin.get();
-\end{verbatim}
 
         \tableofcontents
 

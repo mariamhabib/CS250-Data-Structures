@@ -1,0 +1,734 @@
+\input{BASE-HEAD}
+\newcommand{\laClass}       {CS 250}
+\newcommand{\laSemester}    {Spring 2018}
+\newcommand{\laChapter}     {}
+\newcommand{\laType}        {Lab}
+\newcommand{\laAssignment}  {}
+\newcommand{\laPoints}      {5}
+\newcommand{\laTitle}       {The Standard Template Library}
+\newcommand{\laStarterFiles}{Download from GitHub.}
+\newcommand{\laTopics}      {Vectors, Lists, Stack, Queue, Map}
+\setcounter{chapter}{1}
+\setcounter{section}{1}
+\addtocounter{section}{-1}
+\newcounter{question}
+\toggletrue{answerkey}
+\togglefalse{answerkey}
+\input{BASE-HEADER}
+
+\input{INSTRUCTIONS-LAB}
+
+    \section{About}
+
+    Data structures have been implemented countless times for various languages and various platforms.
+    In the real world, the chances that you'll need to implement a data structure from scratch
+    is somewhat minimal (depending on what you're working on), but it is important to understand
+    \textit{how} different data structures work so that you can make the best design decisions.
+
+    Before we get into the specifics of \textit{how} to make a data structure,
+    it is good to get an introductory understanding of why there are different types of structures,
+    what they do, and how they're used.
+
+    \section{Setting up the project}
+
+    Follow these instructions to keep your source code separate from your project files.
+    This is so that when you submit your source code, it is more managable.
+
+    \begin{enumerate}
+        \item   From the GitHub Labs page, click on the \textbf{starter files} folder.
+        \item   Download the appropriate \textbf{zip} file for this lab.
+        \item   \textbf{ \underline{Extract} } the zip file contents to your desktop (or other harddrive location).
+                \footnote{If you work off a flash drive, the compile process will be very slow.}
+                \footnote{If you \textit{don't} extract the zip file, the compile process won't work.}
+        \item   Open your IDE \footnote{Integrated Development Environment} of choice.
+        \item   Create a project/solution in a \textbf{\underline{different directory}} from your source files.
+        \item   When adding files to your project, navigate to the lab folder and add the source files.
+    \end{enumerate}
+
+    \newpage
+    \section{Lab specifications}
+
+        Each data structure's purpose is to store data and make it accessible
+        to the user. Because of this, common operations include \textbf{add} an item,
+        \textbf{remove} an item, and \textbf{access} an item. Depending on the
+        data structure, where an item can be accessed differs.
+
+% VECTOR --------------------------------------------------------------------------------------------%
+
+        \subsection{Part 1: STL Vector}
+
+        \begin{mdframed}
+            \begin{quote}
+                ``Vectors are sequence containers representing arrays that can change in size.
+
+                Just like arrays, vectors use contiguous storage locations for their elements, which means that their elements can also be accessed using offsets on regular pointers to its elements, and just as efficiently as in arrays. But unlike arrays, their size can change dynamically, with their storage being handled automatically by the container.
+
+                Internally, vectors use a dynamically allocated array to store their elements.''
+
+                \footnotesize{From http://www.cplusplus.com/reference/vector/vector/}
+            \end{quote}
+        \end{mdframed}
+
+        The STL Vector is essentially a class that wraps
+        \footnote{To ``wrap'' something is to store that item in a class, adding a public interface via the class' functions, and possibly adding helper variables.}
+        a dynamic array.
+
+        With the vector, we can add new items with the \texttt{push\_back} function,
+        and remove the last item in the vector's array with the \texttt{pop\_back} function.
+
+        Because a vector is implemented with an array, we can randomly access an element of the vector's array with the subscript operator
+        \footnote{The subscript operator is [ ].}
+
+        And because the dynamic array is wrapped inside a class (the vector class),
+        it gives us a function to get the current amount of items in the array: the \texttt{size} function.
+        If we had implemented a dynamic array on our own, we would have to create a separate
+        integer variable to keep track of the amount of items in the array.
+        \footnote{Or use the \texttt{sizeof} the array, divided by the size of the element data type.}
+
+        \newpage
+
+        Use the documentation to implement the following functionality.
+        
+        \begin{hint}{Documentation links} ~\\
+            \begin{tabular}{ l l }
+                STL Vector: & cplusplus.com/reference/vector/vector \\
+                push\_back: & cplusplus.com/reference/vector/vector/push\_back \\
+                pop\_back:  & cplusplus.com/reference/vector/vector/pop\_back \\
+                size:       & cplusplus.com/reference/vector/vector/size \\
+                operator[]: & cplusplus.com/reference/vector/vector/operator[] \\
+                back:       & cplusplus.com/reference/vector/vector/back
+            \end{tabular}
+        \end{hint}
+
+        ~\\ Create a program loop that will continue running until the user decides to quit.
+        The main menu will have four options: 1. Add a new course,
+        2. Remove the last course, 3. Display the course list, and 4. Quit.
+
+        ~\\ The program will need a \texttt{vector<string>} item to store an array of courses.
+        Make sure that this is declared prior to the program loop starting; if it is declared
+        within the loop, then you'll be working with an empty vector each iteration.
+
+        ~\\ If the user wants to add a new item, ask them for the course name, then
+        use the \texttt{push\_back} function to add it to the vector.
+
+        ~\\ If the user wants to remove the last course, then use the
+        \texttt{pop\_back} function to remove the last item from the vector.
+
+        ~\\ If the user wants to display the entire course list, use the
+        \texttt{size} function and the subscript operator to display each item.
+        The easiest way to do this would be with a for loop, going from $i = 0$ to
+        the vector's $size-1$.
+        \footnote{Your compiler might complain about using an integer variable when
+        comparing to the vector's size, so you could use an \texttt{unsigned int} instead.}
+
+        ~\\ See the \textbf{Example Output} section for what the program should look like.
+
+
+% LIST --------------------------------------------------------------------------------------------%
+        \newpage
+        \subsection{Part 2: STL List}
+
+        \begin{mdframed}
+            \begin{quote}
+                ``Lists are sequence containers that allow constant time insert and erase operations anywhere within the sequence, and iteration in both directions.
+
+                    List containers are implemented as doubly-linked lists; Doubly linked lists can store each of the elements they contain in different and unrelated
+                    storage locations. The ordering is kept internally by the association to each element of a link to the element preceding it and a link to the element following it.
+                    [...]
+
+                    The main drawback of lists [...] compared to these other sequence containers is that they lack direct access to the elements by their
+                    position; For example, to access the sixth element in a list, one has to iterate from a known position (like the beginning or the end) to that position,
+                    which takes linear time in the distance between these. They also consume some extra memory to keep the linking information associated to each element
+                    (which may be an important factor for large lists of small-sized elements).''
+
+                \footnotesize{From http://www.cplusplus.com/reference/list/list/}
+            \end{quote}
+        \end{mdframed}
+
+        We will eventually learn about what a \textit{linked list} is. For now, know that
+        a STL List object is \textit{not} implemented with an array. The elements of an array
+        are stored contiguously\footnote{side-by-side-by-side} in memory, for a linked list the elements are
+        stored in arbitrary\footnote{virtually random} places. Because of this, we cannot
+        randomly access elements of a list like we can in a vector. More specifically,
+        this means we cannot access items with the [ ] operator.
+
+        The easiest elements of a list to access are the \textbf{head} (aka front or first item)
+        and \textbf{tail} (aka back or last item). To step through each element of a list,
+        we need to use something called \textbf{iterators}, which you may not have covered
+        in previous classes. Iterators are covered in Interlude 7, but only the basics will be
+        explained for now.
+
+        Additionally, the STL List also has some useful functions that will sort and reverse the elements of the list.
+
+        \newpage
+        
+        Use the documentation to implement the following functionality.
+        
+        \begin{hint}{Documentation links} ~\\
+            \begin{tabular}{ l l }
+                STL List:       & cplusplus.com/reference/list/list \\
+                push\_back:     & cplusplus.com/reference/list/list/push\_back \\
+                pop\_back:      & cplusplus.com/reference/list/list/pop\_back \\
+                back:           & cplusplus.com/reference/list/list/back \\
+                push\_front:    & cplusplus.com/reference/list/list/push\_front \\
+                pop\_front:     & cplusplus.com/reference/list/list/pop\_front \\
+                front:          & cplusplus.com/reference/list/list/front \\
+                size:           & cplusplus.com/reference/list/list/size \\
+                begin iterator: & cplusplus.com/reference/list/list/begin \\
+                sort:           & cplusplus.com/reference/list/list/sort \\
+                reverse:        & cplusplus.com/reference/list/list/reverse
+            \end{tabular}
+        \end{hint}
+
+        ~\\ Create a program loop that will continue running until the user decides to continue.
+        The main menu has the options: (1) Add new states to front of list, (2) Add new state to back of list,
+        (3) Pop state from front of list, (4) Pop state from end of list, and (5) Continue.
+
+        ~\\ The program will need a \texttt{list<string>} item to store a list of states.
+
+        ~\\ If the user wants to add a state to the front of the list, use the \texttt{push\_front} function.
+        
+        ~\\ If the user wants to add a state to the back of the list, use the \texttt{push\_back} function.
+        
+        ~\\ If the user wants to remove the state at the front of the list, use the \texttt{pop\_front} function.
+        
+        ~\\ If the user wants to remove the state at the back of the list, use the \texttt{pop\_back} function.
+
+        ~\\ Once the user selects \textbf{continue}, it will display the original list, the reversed list,
+        the sorted list, and the reverse-sorted list.
+
+        \newpage
+        You can use the following function to display the list using an iterator:
+
+\begin{lstlisting}[style=code]
+void DisplayList( list<string>& states )
+{
+    for (   list<string>::iterator it = states.begin();
+            it != states.end();
+            it++ )
+    {
+        cout << *it << "\t";
+    }
+    cout << endl;
+}
+\end{lstlisting}
+
+        ~\\ After the user has continued, display the original list of states.
+
+        ~\\ Then, reverse the states list and display that.
+        
+        ~\\ Then, sort the states list and display that.
+        
+        ~\\ Then, reverse the sorted states list and display that.
+
+        ~\\ View the \textbf{Example Output} section to see how the program should run.
+
+
+% QUEUE --------------------------------------------------------------------------------------------%
+        \newpage
+        \subsection{Part 3: STL Queue}
+
+        \begin{mdframed}
+            \begin{quote}
+                ``queues are a type of container adaptor, specifically designed to operate in a FIFO context (first-in first-out), where elements are inserted into one end of the container and extracted from the other. [...]
+
+                Elements are pushed into the "back" of the specific container and popped from its "front".''
+
+                \footnotesize{From http://www.cplusplus.com/reference/queue/queue/}
+            \end{quote}
+        \end{mdframed}
+        
+        \begin{hint}{Documentation links} ~\\
+            \begin{tabular}{ l l }
+                STL Queue:      & cplusplus.com/reference/queue/queue \\
+                push:           & cplusplus.com/reference/queue/queue/push \\
+                pop:            & cplusplus.com/reference/queue/queue/pop \\
+                front:          & cplusplus.com/reference/queue/queue/front \\
+                size:           & cplusplus.com/reference/queue/queue/size \\
+                empty:          & cplusplus.com/reference/queue/queue/empty \\
+            \end{tabular}
+        \end{hint}
+
+        ~\\ For the queue program, do the following:
+
+        ~\\ Create a \texttt{queue<float>} to store a list of pending transactions.
+
+        ~\\ Create a loop, and continue asking the user for the next transaction amount,
+        until they decide to \textbf{continue}. Transactions can be positive (adding to account)
+        or negative (withdrawing from account).
+
+        ~\\ Each time the user adds a transaction amount, push this new amount to the transactions queue.
+
+        ~\\ Once the user chooses to continue, create a \texttt{float} variable to store the user's balance. Initialize it to \texttt{0}.
+
+        ~\\ Loop through the transactions queue while it is not empty. Within the loop...
+
+        Display the front-most transaction amount to the user.
+
+        Add the front-most amount to the balance variable.
+
+        Pop the front of the queue.
+
+        ~\\ Once the loop has completed, display the final balance.
+
+        
+        
+% STACK --------------------------------------------------------------------------------------------%
+        \newpage
+        \subsection{Part 4: STL Stack}
+
+        \begin{mdframed}
+            \begin{quote}
+                ``Stacks are a type of container adaptor, specifically designed to operate in a LIFO context (last-in first-out), where elements are inserted and extracted only from one end of the container. [...]
+
+                Elements are pushed/popped from the "back" of the specific container, which is known as the top of the stack.''
+
+                \footnotesize{From http://www.cplusplus.com/reference/stack/stack/}
+            \end{quote}
+        \end{mdframed}
+
+        
+        \begin{hint}{Documentation links} ~\\
+            \begin{tabular}{ l l }
+                STL Stack:      & cplusplus.com/reference/stack/stack \\
+                push:           & cplusplus.com/reference/stack/stack/push \\
+                pop:            & cplusplus.com/reference/stack/stack/pop \\
+                top:            & cplusplus.com/reference/stack/stack/top \\
+                size:           & cplusplus.com/reference/stack/stack/size \\
+                empty:          & cplusplus.com/reference/stack/stack/empty \\
+            \end{tabular}
+        \end{hint}
+
+        ~\\ For the stack program, create a \texttt{stack<string>} item to store the letters of a word.
+
+        ~\\ Create a loop. Let the user enter the next letter(s) of the word, OR type ``UNDO'' to undo their last letter,
+        or ``DONE'' once they are finished.
+
+        ~\\ When adding a new letter to the word, use the \texttt{push} function.
+
+        ~\\ When removing the last-added letter from the word, use the \texttt{pop} function.
+
+        ~\\ Once the user is done entering letters, create a loop that will continue while the stack is not empty. Within this loop...
+
+        Display the top-most letter in the word stack.
+
+        Pop the top-most letter in the word stack.
+
+        ~\\ See the \textbf{Example Output} section for a preview of the program.
+
+% MAP --------------------------------------------------------------------------------------------%
+        \newpage
+        \subsection{Part 5: STL Map}
+
+        \begin{mdframed}
+            \begin{quote}
+                ``Maps are associative containers that store elements formed by a combination of a key value and a mapped value, following a specific order.
+
+                In a map, the key values are generally used to sort and uniquely identify the elements, while the mapped values store the content associated to this key. The types of key and mapped value may differ''
+
+                \footnotesize{From http://www.cplusplus.com/reference/map/map/}
+            \end{quote}
+        \end{mdframed}
+
+        A map is sometimes known as a \textbf{dictionary} or a \textbf{hash table}. We will learn more about
+        dictionaries later in Chapter 18.
+
+        For a dictionary, a \textbf{key} and a \textbf{value} are associated together. The key
+        can be any data-type, and the value can be any data-type. They may look similar to arrays
+        at first, except instead of having indices from $0$ to $size-1$, the ``index'' can be any
+        data-type.
+        
+        \begin{hint}{Documentation links} ~\\
+            \begin{tabular}{ l l }
+                STL Map:       & cplusplus.com/reference/map/map \\
+            \end{tabular}
+        \end{hint}
+
+        ~\\ At the beginning of your map program, create a map that has a \texttt{char} as the key, and
+        a \texttt{string} as the value. The declaration will look like this:
+
+        \begin{center}
+            \texttt{map<char, string> colors;}
+        \end{center}
+
+        Assign the following values to the colors map:
+        
+        \begin{center}
+            \begin{tabular}{ | c | c | c | c | c | }
+                \hline{}
+                    \textbf{ key } &
+                    \textbf{ value } & &
+                    \textbf{ key } & 
+                    \textbf{ value }
+
+                \\ \hline
+                
+                r & \texttt{ FF0000 } & & c & \texttt{ 00FFFF }
+                \\ \hline
+                g & \texttt{ 00FF00 } & & m & \texttt{ FF00FF }
+                \\ \hline
+                b & \texttt{ 0000FF } & & y & \texttt{ FFFF00 }
+                 \\ \hline
+            \end{tabular}
+        \end{center}
+
+        Assigning these values will look like this:
+        
+        \begin{center}
+            \texttt{colors[ 'r' ]       = "FF0000";}
+        \end{center}
+
+        ~\\ Next, create a loop. Have the user enter a \texttt{char} value.
+
+        ~\\ If their choice is \texttt{'q'}, then exit the program.
+
+        ~\\ Otherwise, use the user's input as a key, and try to display the color associated with it.
+
+        \begin{center}
+            \texttt{cout << "Hex: " << colors[ color ] << endl;}
+        \end{center}
+
+        ~\\ (If no color is associated with that key, then it will be blank.)
+
+        ~\\ See the \textbf{Example Output} section for the output.
+        
+% EXAMPLE OUTPUT --------------------------------------------------------------------------------------------%
+
+    \newpage
+    \section{Example output}
+
+    \subsection{Part 1: STL Vector}
+
+\begin{lstlisting}[style=output]
+----------------------------
+Course list size: 0
+
+1. Add a new course	            2. Remove last course
+3. Display the course list	    4. Quit
+
+>> 1
+
+NEW COURSE
+Enter new course name: CS 200
+
+----------------------------
+Course list size: 1
+
+1. Add a new course	            2. Remove last course
+3. Display the course list	    4. Quit
+
+>> 1
+
+NEW COURSE
+Enter new course name: CS 235
+
+----------------------------
+Course list size: 2
+
+1. Add a new course	            2. Remove last course
+3. Display the course list	    4. Quit
+
+>> 3
+
+VIEW COURSE LIST
+courses[0] = CS 200
+courses[1] = CS 235
+
+----------------------------
+Course list size: 2
+
+1. Add a new course	            2. Remove last course
+3. Display the course list	    4. Quit
+
+>> 2
+
+REMOVE COURSE
+CS 235 removed
+
+----------------------------
+Course list size: 1
+
+1. Add a new course	            2. Remove last course
+3. Display the course list	    4. Quit
+
+>> 1  
+
+NEW COURSE
+Enter new course name: CS 250
+
+----------------------------
+Course list size: 2
+
+1. Add a new course	            2. Remove last course
+3. Display the course list	    4. Quit
+
+>> 1
+
+NEW COURSE
+Enter new course name: CS 211
+
+----------------------------
+Course list size: 3
+
+1. Add a new course	            2. Remove last course
+3. Display the course list	    4. Quit
+
+>> 3
+
+VIEW COURSE LIST
+courses[0] = CS 200
+courses[1] = CS 250
+courses[2] = CS 211
+
+----------------------------
+Course list size: 3
+
+1. Add a new course	            2. Remove last course
+3. Display the course list	    4. Quit
+
+>> 4
+
+Goodbye
+\end{lstlisting}
+
+    \newpage
+    \subsection{Part 2: STL List}
+
+\begin{lstlisting}[style=output]
+----------------------------
+State list size: 0
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		     4. Pop back state
+5. Continue
+
+>> 1
+
+ADD STATE TO FRONT
+Enter new state name: Missouri
+
+----------------------------
+State list size: 1
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		     4. Pop back state
+5. Continue
+
+>> 1
+
+ADD STATE TO FRONT
+Enter new state name: Nebraska
+
+----------------------------
+State list size: 2
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		     4. Pop back state
+5. Continue
+
+>> 2
+
+ADD STATE TO BACK
+Enter new state name: Kansas
+
+----------------------------
+State list size: 3
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		     4. Pop back state
+5. Continue
+
+>> 2
+
+ADD STATE TO BACK
+Enter new state name: Alaska  
+
+----------------------------
+State list size: 4
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		    4. Pop back state
+5. Continue
+
+>> 3
+
+REMOVE STATE FROM FRONT
+Nebraska removed
+
+----------------------------
+State list size: 3
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		     4. Pop back state
+5. Continue
+
+>> 4
+
+REMOVE STATE FROM BACK
+Alaska removed
+
+----------------------------
+State list size: 2
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		     4. Pop back state
+5. Continue
+
+>> 1
+
+ADD STATE TO FRONT
+Enter new state name: Iowa
+
+----------------------------
+State list size: 3
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		     4. Pop back state
+5. Continue
+
+>> 2
+
+ADD STATE TO BACK
+Enter new state name: California
+
+----------------------------
+State list size: 4
+
+1. Add new state to front	 2. Add new state to back
+3. Pop front state		     4. Pop back state
+5. Continue
+
+>> 5
+
+ORIGINAL LIST:
+Iowa	Missouri	Kansas	California	
+
+REVERSED LIST:
+California	Kansas	Missouri	Iowa	
+
+SORTED LIST:
+California	Iowa	Kansas	Missouri	
+
+REVERSE-SORTED LIST:
+Missouri	Kansas	Iowa	California	
+
+Goodbye
+\end{lstlisting}
+
+    \newpage
+    \subsection{Part 3: STL Queue}
+
+\begin{lstlisting}[style=output]
+
+----------------------------
+Transactions queued: 0
+
+1. Enqueue transaction	 2. Continue
+
+>> 1
+
+Enter amount (positive or negative) for next transaction: 9.99
+
+----------------------------
+Transactions queued: 1
+
+1. Enqueue transaction	 2. Continue
+
+>> 1
+
+Enter amount (positive or negative) for next transaction: -5.20
+
+----------------------------
+Transactions queued: 2
+
+1. Enqueue transaction	 2. Continue
+
+>> 1
+
+Enter amount (positive or negative) for next transaction: 15.38 
+
+----------------------------
+Transactions queued: 3
+
+1. Enqueue transaction	 2. Continue
+
+>> 1
+
+Enter amount (positive or negative) for next transaction: -2.33
+
+----------------------------
+Transactions queued: 4
+
+1. Enqueue transaction	 2. Continue
+
+>> 2
+
+9.99 pushed to account
+-5.20 pushed to account
+15.38 pushed to account
+-2.33 pushed to account
+
+Final balance: $17.84
+
+Goodbye
+\end{lstlisting}
+
+    \newpage
+    \subsection{Part 4: STL Stack}
+
+\begin{lstlisting}[style=output]
+Enter the next letter of the word, or UNDO to undo, or DONE to stop.
+>> e
+>> r
+>> r
+>> UNDO
+	 Removed r
+>> e
+>> h
+>> t
+>> -
+>> h
+>> UNDO
+	 Removed h
+>> o
+>> l
+>> l
+>> e
+>> h
+>> DONE
+
+
+Finished word: hello-there
+\end{lstlisting}
+
+    \newpage
+    \subsection{Part 5: STL Map}
+
+\begin{lstlisting}[style=output]
+Enter a color letter, or 'q' to stop: r
+Hex: FF0000
+
+Enter a color letter, or 'q' to stop: g
+Hex: 00FF00
+
+Enter a color letter, or 'q' to stop: b
+Hex: 0000FF
+
+Enter a color letter, or 'q' to stop: c
+Hex: 00FFFF
+
+Enter a color letter, or 'q' to stop: m
+Hex: FF00FF
+
+Enter a color letter, or 'q' to stop: y
+Hex: FFFF00
+
+Enter a color letter, or 'q' to stop: t
+Hex: 
+
+Enter a color letter, or 'q' to stop: q
+Goodbye
+\end{lstlisting}
+    
+
+\input{BASE-FOOT}

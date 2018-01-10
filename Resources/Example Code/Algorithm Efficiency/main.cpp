@@ -14,12 +14,15 @@ using namespace std;
 
 void InitArray( int arrayOfData[], int arraySize )
 {
-    cout << "Initializing..." << endl;
     for ( int i = 0; i < arraySize; i++ )
     {
 	cout << "Adding item " << i << endl;
         arrayOfData[ i ] = rand() % arraySize;
+<<<<<<< HEAD
 	cout << "Value: " << arrayOfData[i] << endl;
+=======
+        cout << "Initializing item " << i << "... value is " << arrayOfData[i] << endl;
+>>>>>>> df3140a840edaca4c69aa37a96dd22024fdc64fe
     }
 }
 

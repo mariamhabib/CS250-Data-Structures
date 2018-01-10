@@ -14,10 +14,10 @@ using namespace std;
 
 void InitArray( int arrayOfData[], int arraySize )
 {
-    cout << "Initializing..." << endl;
     for ( int i = 0; i < arraySize; i++ )
     {
         arrayOfData[ i ] = rand() % arraySize;
+        cout << "Initializing item " << i << "... value is " << arrayOfData[i] << endl;
     }
 }
 

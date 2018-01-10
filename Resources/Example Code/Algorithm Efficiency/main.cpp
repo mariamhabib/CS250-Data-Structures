@@ -17,7 +17,9 @@ void InitArray( int arrayOfData[], int arraySize )
     cout << "Initializing..." << endl;
     for ( int i = 0; i < arraySize; i++ )
     {
+	cout << "Adding item " << i << endl;
         arrayOfData[ i ] = rand() % arraySize;
+	cout << "Value: " << arrayOfData[i] << endl;
     }
 }
 

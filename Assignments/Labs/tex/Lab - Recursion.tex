@@ -1,0 +1,301 @@
+\input{BASE-HEAD}
+\newcommand{\laClass}       {CS 250}
+\newcommand{\laSemester}    {Spring 2018}
+\newcommand{\laChapter}     {}
+\newcommand{\laType}        {Lab}
+\newcommand{\laAssignment}  {}
+\newcommand{\laPoints}      {5}
+\newcommand{\laTitle}       {Recursion}
+\newcommand{\laStarterFiles}{Download from GitHub.}
+\newcommand{\laTopics}      {Writing simple recursive functions}
+\setcounter{chapter}{1}
+\setcounter{section}{1}
+\addtocounter{section}{-1}
+\newcounter{question}
+\toggletrue{answerkey}
+\togglefalse{answerkey}
+\input{BASE-HEADER}
+
+\input{INSTRUCTIONS-LAB}
+
+\section{About}
+
+Recursion can be hard to think in terms of, especially early on.
+For this lab, we will step through some recursive functions,
+and then you will be challenged to try to design solutions for the others.
+
+~\\ Reference the textbook, reading notes, and lectures for help.
+
+\hrulefill
+
+\subsection{Setting up the project}
+
+Download the starter zip file, \texttt{LAB-RECURSION-INTRO.zip}, off GitHub.
+This zip contains the following:
+
+\begin{itemize}
+    \item   \texttt{function1.hpp}
+    \item   \texttt{function2.hpp}
+    \item   \texttt{function3.hpp}
+    \item   \texttt{function4.hpp}
+    \item   \texttt{function5.hpp}
+    \item   \texttt{program\_main.cpp}
+    \item   \texttt{Makefile}
+\end{itemize}
+
+All of these sources belong in one project and are not separate programs.
+
+The main program has a main menu to allow the user to run one function
+at a time. Each of the function files contains stubs for iterative
+and recursive functions.
+
+\newpage
+
+% -------------------------------------------------------------------------------------------- %
+% -------------------------------------------------------------------------------------------- %
+% -------------------------------------------------------------------------------------------- %
+
+\section{Lab specifications}
+
+% -------------------------------------------------------------------------------------------- %
+\subsection{Function 1: CountUp}
+
+\begin{lstlisting}[style=code]
+void CountUp_Iter( int start, int end )
+{
+}
+
+void CountUp_Rec( int start, int end )
+{
+}
+\end{lstlisting}
+
+~\\
+
+For this first set of functions, you will write each of these so that
+they display the numbers between \texttt{start} and \texttt{end} (inclusive),
+going up by 1 each time. The output will look like this:
+
+\begin{lstlisting}[style=output]
+CountUp, Iterative:
+1	2	3	4	5	6	7	8	9	10
+
+CountUp, Recursive:
+1	2	3	4	5	6	7	8	9	10 
+\end{lstlisting}
+
+\subsubsection{Iterative version}
+
+The iterative version is pretty easy - write a for-loop and display each number.
+
+\subsubsection{Recursive version}
+
+For the recursive version, follow these steps:
+
+\begin{itemize}
+    \item   Display \texttt{start}, plus one tab, with a \texttt{cout} statement.
+    \item   \textbf{Terminating case:}
+                If the value of \texttt{start} and \texttt{end} are the same,
+                then \texttt{return;} out of the function.
+    \item   \textbf{Recursive case:}
+                Call \texttt{CountUp\_Rec}, passing in \texttt{start+1} and \texttt{end}.
+\end{itemize}
+
+Once you get it working, move on to the next function.
+
+\newpage
+
+% -------------------------------------------------------------------------------------------- %
+\subsection{Function 2: MultiplyUp}
+
+\begin{lstlisting}[style=code]
+void MultiplyUp_Iter( int start, int end )
+{
+}
+
+void MultiplyUp_Rec( int start, int end )
+{
+}
+\end{lstlisting}
+
+This function is similar to CountUp, except it multiplies the value each time.
+The output will end up looking like this:
+
+\begin{lstlisting}[style=output]
+MultiplyUp, Iterative:
+2	4	16	256	
+
+MultiplyUp, Recursive:
+2	4	16	256	
+\end{lstlisting}
+
+\paragraph{Terminating case:}
+    Stop once \texttt{start} is greater than \texttt{end}. You can use
+    \texttt{return;} to leave a function, even though its return-type is void.
+
+\paragraph{Recursive case:}
+    Call the function again, passing in $start * start$ and $end$.
+
+
+\newpage
+
+% -------------------------------------------------------------------------------------------- %
+\subsection{Function 3: Factorial}
+
+\begin{lstlisting}[style=code]
+int Factorial_Iter( int n )
+{
+    return -1; // placeholder;
+}
+
+int Factorial_Rec( int n )
+{
+    return -1; // placeholder
+}
+\end{lstlisting}
+
+For these functions, some value $n$ is passed in. Each of these will calculate
+$n!$ by computing $n * (n-1) * (n-2) * ... * 2 * 1$.
+For the recursive case, we can think of the calculation recursively:
+
+\begin{center}
+    $n! = n * (n-1)!$ \\ and \\ $n! = n * (n-1) * (n-2)!$
+\end{center}
+
+\paragraph{Terminating case:}
+    End once $n = 1$, returning the value of $n$. (At this point,
+    we don't need to go past 1 in our calculation.)
+
+\paragraph{Recursive case:}
+    Multiply $n$ by $(n-1)!$ \\
+    How do you calculate $(n-1)!$ ? You call \texttt{Factorial\_Rec} again,
+    but passing in $n-1$.
+
+    
+\begin{lstlisting}[style=output]
+Factorial, Iterative:
+
+2! = 2		3! = 6		
+4! = 24		5! = 120		
+6! = 720		7! = 5040		
+8! = 40320		9! = 362880		
+
+Factorial, Recursive:
+
+2! = 2		3! = 6		
+4! = 24		5! = 120		
+6! = 720		7! = 5040		
+8! = 40320		9! = 362880
+\end{lstlisting}
+
+\newpage
+
+% -------------------------------------------------------------------------------------------- %
+\subsection{Function 4: CountConsonants}
+
+\begin{lstlisting}[style=code]
+int CountConsonants_Iter( string text )
+{
+    return -1; // placeholder
+}
+
+int CountConsonants_Rec( string text, int pos )
+{
+    return -1; // placeholder
+}
+\end{lstlisting}
+
+For CountConsonants, it will iterate through each letter in the
+\texttt{text} parameter, incrementing a counter each time it finds a consonant.
+
+You can use the included function, \texttt{bool IsConsonant( char letter )}
+to check each letter.
+
+You can also treat a string as an array of chars, so accessing
+\texttt{text$[$0$]$}
+would give you the first letter. You can also access the string's
+size with \texttt{text.size()}. For instance, if you wanted to display each
+letter from a string \texttt{text}, you could use:
+
+\begin{verbatim}
+for ( int i = 0; i < text.size(); i++ )
+    cout << text[i] << endl;
+\end{verbatim}
+
+\paragraph{Terminating case:}
+    If you're at the end of the string (that is, \texttt{pos = text.size()}),
+    then return 0.
+
+\paragraph{Recursive case:}
+    You will have 1 if the current letter (\texttt{text$[$pos$]$}) is a consonant,
+    and 0 if the current letter is not.
+    Add this value to the consonants 
+    You will add \texttt{CountConsonants\_Rec}, passing in text and $pos+1$.
+
+
+\begin{lstlisting}[style=output]
+GetConsonants, Iterative:
+ * Consonants in aeiou: 0
+ * Consonants in kittens: 5
+ * Consonants in development: 7
+
+
+GetConsonants, Recursive:
+ * Consonants in aeiou: 0
+ * Consonants in kittens: 5
+ * Consonants in development: 7
+\end{lstlisting}
+
+
+\newpage
+
+% -------------------------------------------------------------------------------------------- %
+\subsection{Function 5: GetFirstUppercase}
+
+\begin{lstlisting}[style=code]
+char GetFirstUppercase_Iter( string text )
+{
+    return ' '; // placeholder
+}
+
+char GetFirstUppercase_Rec( string text, int pos )
+{
+    return ' '; // placeholder
+}
+\end{lstlisting}
+
+For this function, it will go through the entire text string.
+If it encounters an uppercase letter, it will return that letter.
+If the entire string is searched and no uppercase letter is found,
+it will return a space char: \texttt{' '}.
+
+For the recursive version, there will be two terminating cases:
+if you find an uppercase letter (then return it), and if
+you get to the end of the string (return \texttt{' '}).
+
+The recursive case should be similar to with the previous function.
+
+\begin{lstlisting}[style=output]
+GetFirstUppercase, Iterative:
+ * First upper-case in how are YOU?: 'Y'
+ * First upper-case in What?: 'W'
+ * First upper-case in where am I?: 'I'
+ * First upper-case in no caps: ' '
+
+
+GetConsonants, Recursive:
+ * First upper-case in how are YOU?: 'Y'
+ * First upper-case in What?: 'W'
+ * First upper-case in where am I?: 'I'
+ * First upper-case in no caps: ''
+\end{lstlisting}
+
+
+
+
+
+
+
+
+
+\input{BASE-FOOT}

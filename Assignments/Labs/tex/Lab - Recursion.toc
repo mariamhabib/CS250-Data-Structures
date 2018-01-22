@@ -1,0 +1,22 @@
+\contentsline {paragraph}{Topics:}{1}
+\contentsline {paragraph}{Solo work:}{1}
+\contentsline {paragraph}{Building and running:}{1}
+\contentsline {paragraph}{Turn in:}{1}
+\contentsline {paragraph}{Starter files:}{1}
+\contentsline {paragraph}{Grading:}{1}
+\contentsline {section}{\numberline {1.1}About}{3}
+\contentsline {subsection}{\numberline {1.1.1}Setting up the project}{3}
+\contentsline {section}{\numberline {1.2}Lab specifications}{4}
+\contentsline {subsection}{\numberline {1.2.1}Function 1: CountUp}{4}
+\contentsline {subsubsection}{Iterative version}{4}
+\contentsline {subsubsection}{Recursive version}{4}
+\contentsline {subsection}{\numberline {1.2.2}Function 2: MultiplyUp}{5}
+\contentsline {paragraph}{Terminating case:}{5}
+\contentsline {paragraph}{Recursive case:}{5}
+\contentsline {subsection}{\numberline {1.2.3}Function 3: Factorial}{6}
+\contentsline {paragraph}{Terminating case:}{6}
+\contentsline {paragraph}{Recursive case:}{6}
+\contentsline {subsection}{\numberline {1.2.4}Function 4: CountConsonants}{7}
+\contentsline {paragraph}{Terminating case:}{7}
+\contentsline {paragraph}{Recursive case:}{7}
+\contentsline {subsection}{\numberline {1.2.5}Function 5: GetFirstUppercase}{8}

@@ -2,6 +2,8 @@
 #include <string>
 using namespace std;
 
+#include <cstdlib>
+
 #include "function1.hpp"
 #include "function2.hpp"
 #include "function3.hpp"

@@ -48,11 +48,11 @@ void Test_IsOverdrawn()
     actualOutput = IsOverdrawn( input );
     if ( actualOutput == expectedOutput )
     {
-        cout << "Test_AddThree: Test 2 passed!" << endl;
+        cout << "Test_IsOverdrawn: Test 2 passed!" << endl;
     }
     else
     {
-        cout << "Test_AddThree: Test 2 FAILED! \n\t"
+        cout << "Test_IsOverdrawn: Test 2 FAILED! \n\t"
         << "Input: " << input << "\n\t"
         << "Expected: " << expectedOutput << "\n\t"
         << "Actual: " << actualOutput << endl << endl;
@@ -68,11 +68,11 @@ void Test_IsOverdrawn()
     actualOutput = IsOverdrawn( input );
     if ( actualOutput == expectedOutput )
     {
-        cout << "Test_AddThree: Test 3 passed!" << endl;
+        cout << "Test_IsOverdrawn: Test 3 passed!" << endl;
     }
     else
     {
-        cout << "Test_AddThree: Test 3 FAILED! \n\t"
+        cout << "Test_IsOverdrawn: Test 3 FAILED! \n\t"
         << "Input: " << input << "\n\t"
         << "Expected: " << expectedOutput << "\n\t"
         << "Actual: " << actualOutput << endl << endl;

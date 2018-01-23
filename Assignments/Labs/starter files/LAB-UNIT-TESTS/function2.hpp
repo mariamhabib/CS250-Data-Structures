@@ -17,7 +17,6 @@ void Test_SumArr()
 {
     cout << "************ Test_SumArr ************" << endl;
 
-    int input1, input2, input3;
     int expectedOutput;
     int actualOutput;
 
@@ -40,14 +39,12 @@ void Test_SumArr()
 
     /* TEST 2 ********************************************/
     // CREATE YOUR OWN TEST
-    input1 = 0;             // change me
-    input2 = 0;             // change me
-    input3 = 0;             // change me
+    int inputArray2[] = { 0 };
     expectedOutput = -1;    // change me
 
 
     // Run test (keep this as-is):
-    actualOutput = SumThree( input1, input2, input3 );
+    actualOutput = SumArray( inputArray2, 1 ); // 2nd argument is size of the array
     if ( actualOutput == expectedOutput )
     {
         cout << "Test_SumArr: Test 2 passed!" << endl;
@@ -62,25 +59,24 @@ void Test_SumArr()
 
     /* TEST 3 ********************************************/
     // CREATE YOUR OWN TEST
-    input1 = 0;             // change me
-    input2 = 0;             // change me
-    input3 = 0;             // change me
+    int inputArray3[] = { 0 };
     expectedOutput = -1;    // change me
 
 
     // Run test (keep this as-is):
-    actualOutput = SumThree( input1, input2, input3 );
+    actualOutput = SumArray( inputArray3, 1 ); // 2nd argument is size of the array
     if ( actualOutput == expectedOutput )
     {
-        cout << "Test_SumArr: Test 3 passed!" << endl;
+        cout << "Test_SumArr: Test 2 passed!" << endl;
     }
     else
     {
-        cout << "Test_SumArr: Test 3 FAILED! \n\t"
+        cout << "Test_SumArr: Test 2 FAILED! \n\t"
         << "Inputs: PUT YOUR INPUTS HERE \n\t"
         << "Expected: " << expectedOutput << "\n\t"
         << "Actual: " << actualOutput << endl << endl;
     }
+
 }
 
 #endif

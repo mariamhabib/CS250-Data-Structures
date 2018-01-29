@@ -5,12 +5,13 @@
 \contentsline {paragraph}{Tips:}{1}
 \contentsline {section}{\numberline {1.1}About}{3}
 \contentsline {subsection}{\numberline {1.1.1}Test files}{3}
-\contentsline {subsection}{\numberline {1.1.2}Two turn ins}{3}
+\contentsline {subsection}{\numberline {1.1.2}Three turn ins}{3}
 \contentsline {section}{\numberline {1.2}Part 1 - Planning Tests}{4}
 \contentsline {section}{\numberline {1.3}Part 2 - Writing Tests}{5}
 \contentsline {subsection}{\numberline {1.3.1}Writing unit tests}{5}
 \contentsline {subsection}{\numberline {1.3.2}Tests to implement}{5}
 \contentsline {subsection}{\numberline {1.3.3}Example test:}{6}
+\contentsline {subsection}{\numberline {1.3.4}Example output:}{7}
 \contentsline {section}{\numberline {1.4}Part 3 - Implementing the List}{7}
 \contentsline {section}{\numberline {1.5}Function Specifications}{8}
 \contentsline {subsection}{\numberline {1.5.1}IsEmpty}{8}
@@ -67,3 +68,4 @@
 \contentsline {subsection}{\numberline {1.5.19}ShiftLeft}{14}
 \contentsline {paragraph}{Inputs:}{14}
 \contentsline {paragraph}{Outputs:}{14}
+\contentsline {section}{\numberline {1.6}Grading breakdown}{15}

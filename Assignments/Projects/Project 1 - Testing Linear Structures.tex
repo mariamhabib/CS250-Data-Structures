@@ -5,7 +5,7 @@
 \newcommand{\laType}        {Project}
 \newcommand{\laAssignment}  {1}
 \newcommand{\laPoints}      {5}
-\newcommand{\laTitle}       {Unit Tests for Linear Structures}
+\newcommand{\laTitle}       {Unit Tests and Linear Structures}
 \newcommand{\laStarterFiles}{Download from GitHub.}
 \newcommand{\laTopics}      {Design, testing, UML, unit tests}
 \setcounter{chapter}{1}
@@ -54,10 +54,11 @@
     list, then the tests should also theoretically work with other linear
     structures.
 
-    \subsection{Two turn ins}
+    \subsection{Three turn ins}
 
-    You will turn in this project in two parts: First, the tests, and second,
-    the class itself.
+    You will turn in this project in three parts: First, the Test Outline
+    document (edit in LibreOffice or MS Word and turn in). Second, the
+    test implementations in the code. Third, the full List implementation.
 
     \newpage
 
@@ -68,11 +69,29 @@
     planning your test sets during class. You can also brainstorm
     with other students on this part.
 
+    ~\\ Your tests should, at minimum, cover all reasonable outputs.
+    For example, for something that returns a \texttt{boolean},
+    we should have tests that expect a true and a false as outputs.
+    For a function that returns an \texttt{integer}, such as \texttt{Size()},
+    you won't test all possible outputs, but at least for 0, 1, and
+    several other values.
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=14cm]{images-2018-01/example-test.png}
+        \caption{An example of tests for the IsEmpty() function, in the Test Outline document.}
+    \end{figure}
+
+    We will work on this part during class, and for Part 1 of the project
+    you can brainstorm and collaborate with other students. However,
+    keep in mind that your code in Part 2 and Part 3 should be your own.
+
     \newpage
     
     \section{Part 2 - Writing Tests}
 
-    \color{red} For the first part of the project you should be working just on the tests. \color{black}
+    \color{red} For this part of the project you should be working just on the tests,
+    not the List functions. \color{black}
     You will upload this project in two parts: Just the tests, and then the
     tests with the List code.
 
@@ -175,7 +194,37 @@ void Tester::Test_Size()
 }
 \end{lstlisting}
 
+    \subsection{Example output:}
+
+    An example of a couple of tests failing, since the List functions haven't
+    been implemented yet.
+    
+\begin{lstlisting}[style=output]
+----------------------------------------------------------------------------
+TEST: Test_Size
+
+Test 1
+Expected size: 0
+Actual size:   -1585510992
+Fail
+
+Test 2
+Expected size: 1
+Actual size:   -1585510992
+Fail
+\end{lstlisting}
+
+    \hrulefill
+
     \section{Part 3 - Implementing the List}
+
+    Once you've implemented the tests, you will be implementing the
+    List functions based on the functionality specified. As you
+    get each function working, your tests should be passing.
+
+    Note that certain tests may rely on the implementation of other
+    functions, such as \texttt{Size()} needing a Push function implemented
+    in order to test for more cases than just an empty list.
 
     \newpage
 
@@ -479,5 +528,22 @@ void Tester::Test_Size()
         Returns \texttt{true} if the shift is successful, or \texttt{false} if not.
 
     \end{framed}
+
+    
+    % ---------------------------------------------------------------- %
+    % ---------------------------------------------------------------- %
+    % ---------------------------------------------------------------- %
+
+    \section{Grading breakdown}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[height=16cm]{images-2018-01/2018-01-project1-breakdown1.png}
+    \end{figure}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics{images-2018-01/2018-01-project1-breakdown2.png}
+    \end{figure}
     
 \input{TEMPLATE-PROJECT-FOOTER}

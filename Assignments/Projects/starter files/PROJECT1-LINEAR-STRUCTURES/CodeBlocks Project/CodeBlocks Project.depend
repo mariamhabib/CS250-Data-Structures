@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1509815825 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/ArrayBag.cpp
+	"ArrayBag.h"
+	<cstddef>
+
+1512583730 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/ArrayBag.h
+	"BagInterface.h"
+	"ArrayBag.cpp"
+
+1509815825 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/BagInterface.h
+	<vector>
+
+1512583696 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/ch03-arrayBag-coredriver.cpp
+	<iostream>
+	<string>
+	"ArrayBag.h"
+
+1512583669 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/ArrayBag.cpp
+	"ArrayBag.h"
+	<cstddef>
+
+1512583696 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag/ch03-arrayBag-coredriver.cpp
+	<iostream>
+	<string>
+	"ArrayBag.h"
+
+1512583938 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag/ArrayBag.h
+	"BagInterface.h"
+
+1509815825 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag/BagInterface.h
+	<vector>
+
+1512583669 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag/ArrayBag.cpp
+	"ArrayBag.h"
+	<cstddef>
+
+1517196003 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/tester_program.cpp
+	<iostream>
+	<string>
+	"Tests.hpp"
+
+1517196133 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/Bag.hpp
+
+1512584909 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/IStructure.hpp
+
+1517195468 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/Bag.cpp
+	"Bag.hpp"
+
+1517196084 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/Tests.hpp
+	"Bag.hpp"
+	<iostream>
+
+1517196036 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag_SOLUTION/Tests.cpp
+	"Tests.hpp"
+
+1517203421 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag-Testing_SOLUTION/Tester.cpp
+	"Tester.hpp"
+
+1517201784 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag-Testing_SOLUTION/Tester.hpp
+	"List.hpp"
+	<iostream>
+
+1517196133 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag-Testing_SOLUTION/Bag.hpp
+
+1517196373 source:/home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag-Testing_SOLUTION/tester_program.cpp
+	<iostream>
+	<string>
+	"Tester.hpp"
+
+1517202087 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag-Testing_SOLUTION/List.hpp
+

@@ -1,0 +1,32 @@
+\contentsline {paragraph}{Topics:}{1}
+\contentsline {paragraph}{Turn in:}{1}
+\contentsline {paragraph}{Starter files:}{1}
+\contentsline {paragraph}{Building and running:}{1}
+\contentsline {paragraph}{Tips:}{1}
+\contentsline {chapter}{\numberline {1}About}{3}
+\contentsline {chapter}{\numberline {2}Project setup}{4}
+\contentsline {section}{\numberline {2.1}Setting up an IDE}{4}
+\contentsline {paragraph}{Visual Studio:}{4}
+\contentsline {paragraph}{Code::Blocks:}{4}
+\contentsline {section}{\numberline {2.2}Creating a project}{5}
+\contentsline {subsubsection}{In Visual Studio}{5}
+\contentsline {subsubsection}{In Code::Blocks}{7}
+\contentsline {section}{\numberline {2.3}Creating files}{10}
+\contentsline {section}{\numberline {2.4}Starter code}{11}
+\contentsline {paragraph}{Visual Studio:}{11}
+\contentsline {paragraph}{Code::Blocks:}{12}
+\contentsline {chapter}{\numberline {3}Creating the Bag class}{13}
+\contentsline {section}{\numberline {3.1}Variable and function declarations}{14}
+\contentsline {section}{\numberline {3.2}Constructor and destuctor}{16}
+\contentsline {section}{\numberline {3.3}Implementing Push}{16}
+\contentsline {section}{\numberline {3.4}Implementing Size and testing}{16}
+\contentsline {section}{\numberline {3.5}Implementing IsEmpty and IsFull and testing}{16}
+\contentsline {section}{\numberline {3.6}Implementing Get, GetFront, and GetBack and testing}{16}
+\contentsline {section}{\numberline {3.7}Implementing Contains and testing}{16}
+\contentsline {section}{\numberline {3.8}Implementing GetCountOf and testing}{16}
+\contentsline {section}{\numberline {3.9}Implementing Clear and testing}{16}
+\contentsline {section}{\numberline {3.10}Implementing Insert and ShiftRight and testing}{16}
+\contentsline {section}{\numberline {3.11}Implementing Pop and testing}{16}
+\contentsline {section}{\numberline {3.12}Implementing Remove and ShiftLeft and testing}{16}
+\contentsline {chapter}{\numberline {4}Example output}{17}
+\contentsline {chapter}{\numberline {5}Grading breakdown}{18}

@@ -1,0 +1,36 @@
+\contentsline {section}{\numberline {1.1}Information}{1}
+\contentsline {paragraph}{ Topics: }{1}
+\contentsline {paragraph}{ Turn in: }{1}
+\contentsline {paragraph}{ Starter files: }{1}
+\contentsline {subsection}{\numberline {1.1.1}About}{1}
+\contentsline {section}{\numberline {1.2}The tests}{2}
+\contentsline {chapter}{\numberline {2}Doubly Linked List basics}{4}
+\contentsline {section}{\numberline {2.1}Node}{4}
+\contentsline {subsection}{\numberline {2.1.1}Constructor}{4}
+\contentsline {section}{\numberline {2.2}LinkedList}{5}
+\contentsline {subsection}{\numberline {2.2.1}Constructor}{5}
+\contentsline {subsection}{\numberline {2.2.2}Destructor}{5}
+\contentsline {subsection}{\numberline {2.2.3}IsEmpty}{5}
+\contentsline {subsection}{\numberline {2.2.4}Size}{5}
+\contentsline {subsection}{\numberline {2.2.5}Clear}{5}
+\contentsline {subsection}{\numberline {2.2.6}Adding new items}{6}
+\contentsline {paragraph}{Empty LinkedList:}{6}
+\contentsline {paragraph}{Non-empty LinkedList:}{7}
+\contentsline {subsection}{\numberline {2.2.7}Removing items}{8}
+\contentsline {paragraph}{Pop when list is empty?}{8}
+\contentsline {paragraph}{Removing last item}{8}
+\contentsline {paragraph}{Pop when we have more than one item in the list}{8}
+\contentsline {subsection}{\numberline {2.2.8}Accessing items}{10}
+\contentsline {paragraph}{Accessing the first and last item}{10}
+\contentsline {paragraph}{Getting an item at some index}{10}
+\contentsline {chapter}{\numberline {3}The rest of the program}{13}
+\contentsline {section}{\numberline {3.1}The CustomerData class}{13}
+\contentsline {section}{\numberline {3.2}Updating the Program}{13}
+\contentsline {subsection}{\numberline {3.2.1}Class declaration}{13}
+\contentsline {subsection}{\numberline {3.2.2}Program::LoadCustomers()}{14}
+\contentsline {subsection}{\numberline {3.2.3}Program::SaveCustomers()}{14}
+\contentsline {chapter}{\numberline {4}Grading Breakdown}{15}
+\contentsline {chapter}{\numberline {5}Extra credit: Additional features}{16}
+\contentsline {section}{\numberline {5.1}Insert}{16}
+\contentsline {section}{\numberline {5.2}Remove}{16}
+\contentsline {section}{\numberline {5.3}operator== and operator!=}{16}

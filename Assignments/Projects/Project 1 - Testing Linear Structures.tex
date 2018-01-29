@@ -1,0 +1,483 @@
+\input{TEMPLATE-PROJECT-TOP}
+\newcommand{\laClass}       {CS 250}
+\newcommand{\laSemester}    {Spring 2018}
+\newcommand{\laChapter}     {}
+\newcommand{\laType}        {Project}
+\newcommand{\laAssignment}  {1}
+\newcommand{\laPoints}      {5}
+\newcommand{\laTitle}       {Unit Tests for Linear Structures}
+\newcommand{\laStarterFiles}{Download from GitHub.}
+\newcommand{\laTopics}      {Design, testing, UML, unit tests}
+\setcounter{chapter}{1}
+\setcounter{section}{1}
+\addtocounter{section}{-1}
+\newcounter{question}
+\toggletrue{answerkey}
+\togglefalse{answerkey}
+\input{TEMPLATE-PROJECT-HEADER}
+
+\input{TEMPLATE-PROJECT-INSTRUCTIONS}
+
+    \section{About}
+
+    Linear data structures may be implemented in different ways behind-the-scenes,
+    but the general functionality should still result in the same outcome.
+    For this project, you will design and implement unit tests for a linear structure,
+    and these tests will be tested against the Bag data type, a smart Dynamic Array,
+    and eventually the Linked List object.
+
+    \subsection{Test files}
+
+    In the starter code, there are the following files:
+
+    \begin{itemize}
+        \item   \texttt{tester\_program.cpp} - contains \texttt{main()}
+        \item   \texttt{Tester.hpp} - the class and function declarations
+        \item   \texttt{Tester.cpp} - the tester function definitions
+        \item   \texttt{List.hpp} - A List class, with stub functions
+    \end{itemize}
+
+    The List class will have placeholders in the methods so that the program
+    will be buildable. You will remove the placeholders as the functions are
+    being implemented.
+
+    Before implementing the functions, your first task is to implement the tests.
+    As you implement the tests, they will start of failing (for the most part),
+    which is good. Then, when you implement the actual functionality, you can
+    validate that it works as intended by whether it passes the tests.
+
+    Your tests may not be correct at first since this might be a new concept,
+    so in some cases it is okay to adjust your tests. You might also have to
+    add additional test cases to more fully cover the functionality.
+
+    Once these tests are implemented and working with a static array-based
+    list, then the tests should also theoretically work with other linear
+    structures.
+
+    \subsection{Two turn ins}
+
+    You will turn in this project in two parts: First, the tests, and second,
+    the class itself.
+
+    \newpage
+
+    \section{Part 1 - Planning Tests}
+
+    Make sure you download the \textbf{Test Outline} document. This is
+    a document you can open up in MS Word or LibreOffice. Work on
+    planning your test sets during class. You can also brainstorm
+    with other students on this part.
+
+    \newpage
+    
+    \section{Part 2 - Writing Tests}
+
+    \color{red} For the first part of the project you should be working just on the tests. \color{black}
+    You will upload this project in two parts: Just the tests, and then the
+    tests with the List code.
+
+    Reference the \textbf{Function Specifications} section for descriptions of the functions
+
+    \subsection{Writing unit tests}
+
+    Each unit test is meant to test one function each, though you might have to rely on
+    multiple functions to fully validate a function. For example, to test the \texttt{Size()}
+    function, you need to be able to add new items to the list, so \texttt{Push(...)} will have
+    to be implemented for the \texttt{Size()} test to work properly.
+
+    ~\\ Each test function may need multiple tests to properly coverage all reasonable
+    use cases.
+
+    ~\\ For each test, you will need to decide on \textbf{inputs} to pass in,
+    and the \textbf{expected output}. To get the \textbf{actual output}, you will
+    call the function being tested, and store its return value in a variable.
+
+    ~\\ You can use an if statement to check whether the actual output matches
+    the expected output. If they match, the individual test can \textit{pass}.
+    If they don't match, the test \textit{fails}.
+
+    ~\\ It's up to you for what to output to the screen, though generally it helps
+    if you output the inputs and outputs, and whether the test passes or fails.
+
+    \subsection{Tests to implement}
+
+    The tests to implement are:
+
+    \begin{center}
+        \begin{tabular}{p{4cm} p{4cm} p{4cm} }
+        Test\_Init() &
+        Test\_ShiftRight() &
+        Test\_ShiftLeft()
+        \\
+        Test\_Size() &
+        Test\_IsEmpty() &
+        Test\_IsFull()
+        \\
+        Test\_PushFront() &
+        Test\_PushBack() &
+        Test\_PopFront()
+        \\
+        Test\_PopBack() &
+        Test\_Clear() &
+        Test\_Get()
+        \\
+        Test\_GetFront() &
+        Test\_GetBack() &
+        Test\_GetCountOf()
+        \\
+        Test\_Contains() &
+        Test\_Remove() &
+        Test\_Insert()
+        \end{tabular}
+    \end{center}
+
+\subsection{Example test:}
+
+\begin{lstlisting}[style=code]
+void Tester::Test_Size()
+{
+    DrawLine();
+    cout << "TEST: Test_Size" << endl;
+
+    {   // Test begin
+        cout << "\n \n Test 1";
+        List<int> testList;
+        int expectedSize = 0;
+        int actualSize = testList.Size();
+
+        cout << "\n Expected size: " << expectedSize;
+        cout << "\n Actual size:   " << actualSize;
+
+        if ( actualSize == expectedSize )
+            cout << "\n Pass";
+        else
+            cout << "\n Fail";
+    }   // Test end
+
+    {   // Test begin
+        cout << endl << "Test 2" << endl;
+        List<int> testList;
+
+        testList.PushBack( 1 );
+        testList.PushBack( 3 );
+
+        int expectedSize = 2;
+        int actualSize = testList.Size();
+
+        cout << "\n Expected size: " << expectedSize;
+        cout << "\n Actual size:   " << actualSize;
+
+        if ( actualSize == expectedSize )
+            cout << "\n Pass";
+        else
+            cout << "\n Fail";
+    }   // Test end
+}
+\end{lstlisting}
+
+    \section{Part 3 - Implementing the List}
+
+    \newpage
+
+    \section{Function Specifications}
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[height=8cm]{images-2018-01/List.png}
+        \caption{A List class UML diagram, implemented with a static array}
+    \end{figure}
+
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{IsEmpty}
+
+    Function header: \texttt{bool    IsEmpty() const}
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        \texttt{true} if there is nothing in the list (i.e., the size is 0), or \texttt{false} if not.
+
+    \end{framed}
+
+    \newpage
+
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{IsFull}
+
+    Function header: \texttt{bool    IsFull() const}
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        \texttt{true} if the list is full (i.e., the \texttt{m\_itemCount} is equal to \texttt{ARRAY\_SIZE}),
+        or \texttt{false} if not.
+        
+    \end{framed}
+
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{Size}
+
+    Function header: \texttt{int     Size() const}
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        Returns the amount of items stored in the list. Will be $\geq 0$.
+
+    \end{framed}
+
+    %\newpage
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{GetCountOf}
+
+    Function header: \texttt{int     GetCountOf( const T\& item ) const}
+
+    \paragraph{Inputs:}
+        \texttt{const T\& item}, where the list contains items of type \texttt{T} (it is a template).
+        The item to be searched for and counted is \texttt{item}.
+
+    \paragraph{Outputs:}
+        Returns the amount of instances of \texttt{item} being found in the list.
+        Will be $\geq 0$.
+
+    \end{framed}
+
+    \newpage
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{Contains}
+
+    Function header: \texttt{bool    Contains( const T\& item ) const}
+
+    \paragraph{Inputs:}
+        \texttt{const T\& item}, where \texttt{item} is the item to search for.
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if \texttt{item} is found in the list, and \texttt{false} otherwise.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{List constructor}
+
+    Function header: \texttt{List()}
+
+    ~\\ Initializes the List class. The list should start off empty.
+
+    \paragraph{Inputs:}
+        None
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{List destructor (no tests)}
+
+    ~\\ Nothing required for the static array version of the List.
+
+    \end{framed}
+
+    \newpage
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{PushFront}
+
+    Function header: \texttt{bool    PushFront( const T\& newItem )}
+
+    \paragraph{Inputs:}
+        \texttt{const T\& item}, the new item to add to the list at the beginning.
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if the operation is a success, and \texttt{false} otherwise.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{PushBack}
+
+    Function header: \texttt{bool    PushBack( const T\& newItem )}
+
+    \paragraph{Inputs:}
+        \texttt{const T\& item}, the new item to add to the list at the end.
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if the operation is a success, and \texttt{false} otherwise.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{Insert}
+
+    Function header: \texttt{bool    Insert( int atIndex, const T\& item )}
+
+    ~\\ Inserts a new item at the given index. Existing items shouldn't
+    be replaced. If there is an item already at the index given, it will be
+    pushed towards the end of the list.
+
+    \paragraph{Inputs:}
+        \begin{itemize}
+            \item   \texttt{int atIndex} - the index where to insert the new item.
+            \item   \texttt{const T\& item} - the new item to insert.
+        \end{itemize}
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if the operation is a success, and \texttt{false} otherwise.
+
+    \end{framed}
+
+    \newpage
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{Get}
+
+    Function header: \texttt{T*      Get( int atIndex )}
+
+    \paragraph{Inputs:}
+        \texttt{int atIndex}, the index of the item to return.
+
+    \paragraph{Outputs:}
+        Returns the address of the item at the index given, or \texttt{nullptr} if it isn't found.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{GetFront}
+
+    Function header: \texttt{T*      GetFront()}
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        Returns the address of the item at the front of the list, or \texttt{nullptr} if the list is empty.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{GetBack}
+
+    Function header: \texttt{T*      GetBack()}
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        Returns the address of the item at the end of the list, or \texttt{nullptr} if the list is empty.
+
+    \end{framed}
+
+    \newpage
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{PopFront}
+
+    Function header: \texttt{bool    PopFront()}
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if removing the item is successful, and \texttt{false} otherwise.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{PopBack}
+
+    Function header: \texttt{bool    PopBack()}
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if removing the item is successful, and \texttt{false} otherwise.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{Remove}
+
+    Function header: \texttt{bool    Remove( const T\& item )}
+    Function header: \texttt{bool    Remove( int atIndex )}
+
+    \paragraph{Inputs:}
+        \begin{itemize}
+            \item   \texttt{const T\& item} - locates all instances of this item in the list and removes it.
+            \item   \texttt{int atIndex} - removes the item at this index.
+        \end{itemize}
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if removing the item is successful, and \texttt{false} otherwise.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{Clear}
+
+    Function header: \texttt{void    Clear()}
+
+    ~\\ Clears out the list. To test this function, you should ensure that
+    the size of the list returns to 0 after this function is called.
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        None
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{ShiftRight}
+
+    Function header: \texttt{bool ShiftRight( int atIndex )}
+
+    ~\\ Moves everything to the right of the index further to the right by one position.
+
+    \paragraph{Inputs:}
+        \texttt{int atIndex} - The index at which to begin moving items forward.
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if the shift is successful, or \texttt{false} if not.
+
+    \end{framed}
+    
+    % ---------------------------------------------------------------- %
+    \begin{framed}
+    \subsection{ShiftLeft}
+
+    Function header: \texttt{bool ShiftLeft( int atIndex )}
+
+    ~\\ Moves everything to the right of the index further to the left by one position.
+    This will overwrite the item at the \texttt{atIndex}.
+
+    \paragraph{Inputs:}
+        None
+
+    \paragraph{Outputs:}
+        Returns \texttt{true} if the shift is successful, or \texttt{false} if not.
+
+    \end{framed}
+    
+\input{TEMPLATE-PROJECT-FOOTER}

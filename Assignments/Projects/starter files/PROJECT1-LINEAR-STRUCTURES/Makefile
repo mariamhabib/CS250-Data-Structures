@@ -59,11 +59,11 @@ debug: before_debug out_debug after_debug
 out_debug: before_debug $(OBJ_DEBUG) $(DEP_DEBUG)
 	$(LD) $(LIBDIR_DEBUG) -o $(OUT_DEBUG) $(OBJ_DEBUG)  $(LDFLAGS_DEBUG) $(LIB_DEBUG)
 
-$(OBJDIR_DEBUG)/__/Tester.o: ../Tester.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../Tester.cpp -o $(OBJDIR_DEBUG)/__/Tester.o
+$(OBJDIR_DEBUG)/__/Tester.o: Tester.cpp
+	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c Tester.cpp -o $(OBJDIR_DEBUG)/__/Tester.o
 
-$(OBJDIR_DEBUG)/__/tester_program.o: ../tester_program.cpp
-	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c ../tester_program.cpp -o $(OBJDIR_DEBUG)/__/tester_program.o
+$(OBJDIR_DEBUG)/__/tester_program.o: tester_program.cpp
+	$(CXX) $(CFLAGS_DEBUG) $(INC_DEBUG) -c tester_program.cpp -o $(OBJDIR_DEBUG)/__/tester_program.o
 
 clean_debug: 
 	rm -f $(OBJ_DEBUG) $(OUT_DEBUG)
@@ -81,11 +81,11 @@ release: before_release out_release after_release
 out_release: before_release $(OBJ_RELEASE) $(DEP_RELEASE)
 	$(LD) $(LIBDIR_RELEASE) -o $(OUT_RELEASE) $(OBJ_RELEASE)  $(LDFLAGS_RELEASE) $(LIB_RELEASE)
 
-$(OBJDIR_RELEASE)/__/Tester.o: ../Tester.cpp
-	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c ../Tester.cpp -o $(OBJDIR_RELEASE)/__/Tester.o
+$(OBJDIR_RELEASE)/__/Tester.o: Tester.cpp
+	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c Tester.cpp -o $(OBJDIR_RELEASE)/__/Tester.o
 
 $(OBJDIR_RELEASE)/__/tester_program.o: ../tester_program.cpp
-	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c ../tester_program.cpp -o $(OBJDIR_RELEASE)/__/tester_program.o
+	$(CXX) $(CFLAGS_RELEASE) $(INC_RELEASE) -c tester_program.cpp -o $(OBJDIR_RELEASE)/__/tester_program.o
 
 clean_release: 
 	rm -f $(OBJ_RELEASE) $(OUT_RELEASE)

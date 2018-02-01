@@ -40,32 +40,32 @@
 \contentsline {paragraph}{Outputs:}{11}
 \contentsline {subsection}{\numberline {1.5.10}Insert}{11}
 \contentsline {paragraph}{Inputs:}{11}
-\contentsline {paragraph}{Outputs:}{11}
-\contentsline {subsection}{\numberline {1.5.11}Get}{12}
-\contentsline {paragraph}{Inputs:}{12}
 \contentsline {paragraph}{Outputs:}{12}
-\contentsline {subsection}{\numberline {1.5.12}GetFront}{12}
-\contentsline {paragraph}{Inputs:}{12}
-\contentsline {paragraph}{Outputs:}{12}
-\contentsline {subsection}{\numberline {1.5.13}GetBack}{12}
-\contentsline {paragraph}{Inputs:}{12}
-\contentsline {paragraph}{Outputs:}{12}
-\contentsline {subsection}{\numberline {1.5.14}PopFront}{13}
+\contentsline {subsection}{\numberline {1.5.11}Get}{13}
 \contentsline {paragraph}{Inputs:}{13}
 \contentsline {paragraph}{Outputs:}{13}
-\contentsline {subsection}{\numberline {1.5.15}PopBack}{13}
+\contentsline {subsection}{\numberline {1.5.12}GetFront}{13}
 \contentsline {paragraph}{Inputs:}{13}
 \contentsline {paragraph}{Outputs:}{13}
-\contentsline {subsection}{\numberline {1.5.16}Remove}{13}
+\contentsline {subsection}{\numberline {1.5.13}GetBack}{13}
 \contentsline {paragraph}{Inputs:}{13}
 \contentsline {paragraph}{Outputs:}{13}
-\contentsline {subsection}{\numberline {1.5.17}Clear}{14}
+\contentsline {subsection}{\numberline {1.5.14}PopFront}{14}
 \contentsline {paragraph}{Inputs:}{14}
 \contentsline {paragraph}{Outputs:}{14}
-\contentsline {subsection}{\numberline {1.5.18}ShiftRight}{14}
+\contentsline {subsection}{\numberline {1.5.15}PopBack}{14}
 \contentsline {paragraph}{Inputs:}{14}
 \contentsline {paragraph}{Outputs:}{14}
-\contentsline {subsection}{\numberline {1.5.19}ShiftLeft}{14}
+\contentsline {subsection}{\numberline {1.5.16}Remove}{14}
 \contentsline {paragraph}{Inputs:}{14}
 \contentsline {paragraph}{Outputs:}{14}
-\contentsline {section}{\numberline {1.6}Grading breakdown}{15}
+\contentsline {subsection}{\numberline {1.5.17}Clear}{15}
+\contentsline {paragraph}{Inputs:}{15}
+\contentsline {paragraph}{Outputs:}{15}
+\contentsline {subsection}{\numberline {1.5.18}ShiftRight}{15}
+\contentsline {paragraph}{Inputs:}{15}
+\contentsline {paragraph}{Outputs:}{15}
+\contentsline {subsection}{\numberline {1.5.19}ShiftLeft}{15}
+\contentsline {paragraph}{Inputs:}{15}
+\contentsline {paragraph}{Outputs:}{15}
+\contentsline {section}{\numberline {1.6}Grading breakdown}{16}

@@ -373,8 +373,12 @@ Fail
     Function header: \texttt{bool    Insert( int atIndex, const T\& item )}
 
     ~\\ Inserts a new item at the given index. Existing items shouldn't
-    be replaced. If there is an item already at the index given, it will be
-    pushed towards the end of the list.
+    be replaced. If there is an item at that position, shift everything right and then
+    insert the new item to that index.
+
+    Only allow \textbf{contiguous} elements - don't allow someone to insert
+    a new item past \texttt{m\_itemCount}. Therefore, valid indices you
+    can insert at are $0 \leq $ atIndex $ \leq $ \texttt{m\_itemCount}.
 
     \paragraph{Inputs:}
         \begin{itemize}
@@ -502,7 +506,7 @@ Fail
 
     Function header: \texttt{bool ShiftRight( int atIndex )}
 
-    ~\\ Moves everything to the right of the index further to the right by one position.
+    ~\\ Moves everything at the index and to the right of the index further to the right by one position.
 
     \paragraph{Inputs:}
         \texttt{int atIndex} - The index at which to begin moving items forward.

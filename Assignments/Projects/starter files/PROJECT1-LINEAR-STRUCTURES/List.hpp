@@ -1,13 +1,15 @@
 #ifndef _LIST_HPP
 #define _LIST_HPP
 
+const int ARRAY_SIZE = 100;
+	
 template <typename T>
 class List
 {
 private:
     // private member variables
     int m_itemCount;
-    const int ARRAY_SIZE = 100;
+	T m_arr[ARRAY_SIZE];
 
     // functions for interal-workings
     bool ShiftRight( int atIndex )

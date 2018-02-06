@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1517884852 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/In Class/Linked Lists/program.cpp
+	<iostream>
+	"LinkedList.hpp"
+	"Tester.hpp"
+
+1517885325 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/In Class/Linked Lists/LinkedList.hpp
+	<iostream>
+	<string>
+	<stdexcept>
+	"Node.hpp"
+
+1517883345 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/In Class/Linked Lists/Node.hpp
+
+1517884858 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/In Class/Linked Lists/Tester.hpp
+	"LinkedList.hpp"
+	<iostream>
+
+1517885422 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/In Class/Linked Lists/Tester.cpp
+	"Tester.hpp"
+

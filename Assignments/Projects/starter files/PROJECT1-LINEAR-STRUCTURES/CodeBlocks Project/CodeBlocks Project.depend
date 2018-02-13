@@ -69,3 +69,18 @@
 
 1517202087 /home/rayechell/TEACHING/cs250/cs-250-private-files/Projects 2018-01/Project 1 - Implement the Bag/Project1-Bag-Testing_SOLUTION/List.hpp
 
+1517196373 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Projects/starter files/PROJECT1-LINEAR-STRUCTURES/tester_program.cpp
+	<iostream>
+	<string>
+	"Tester.hpp"
+
+1518550897 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Projects/starter files/PROJECT1-LINEAR-STRUCTURES/Tester.hpp
+	"List.hpp"
+	<iostream>
+
+1518551139 /home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Projects/starter files/PROJECT1-LINEAR-STRUCTURES/List.hpp
+	<iostream>
+
+1518550924 source:/home/rayechell/TEACHING/cs250/CS250-Data-Structures/Assignments/Projects/starter files/PROJECT1-LINEAR-STRUCTURES/Tester.cpp
+	"Tester.hpp"
+
